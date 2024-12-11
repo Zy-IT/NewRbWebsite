@@ -1,0 +1,154 @@
+import { useNavigate } from 'react-router-dom';
+import Navbar from '../../../../components/Navbar/Navbar';
+import './TimeCertOfDeposit.css';
+
+function TimeCertOfDeposit() {
+
+    const navigate = useNavigate();
+
+    const handletonavigate = () => {
+        navigate('/A&U/ContactUs');
+    }
+
+    const scrolltoTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    return (
+        <div className="TCD-container">
+            <Navbar />
+
+            <div className="TCD-hero">
+                <div className="TCD-hero-content">
+                    <h1>Time Certificate of Deposit</h1>
+                    <p>Maximize your returns with our fixed-term deposit options</p>
+                </div>
+            </div>
+
+            <div className="TCD-wrapper">
+                <section className="TCD-rates">
+                    <h2>Available Terms</h2>
+                    <div className="TCD-rates-grid">
+                        <div className="TCD-rate-card">
+                            <div className="TCD-rate-term">30 Days</div>
+                            <div className="TCD-rate-min">Minimum: ₱10,000</div>
+                        </div>
+                        <div className="TCD-rate-card">
+                            <div className="TCD-rate-term">90 Days</div>
+                            <div className="TCD-rate-min">Minimum: ₱10,000</div>
+                        </div>
+                        <div className="TCD-rate-card">
+                            <div className="TCD-rate-term">180 Days</div>
+                            <div className="TCD-rate-min">Minimum: ₱10,000</div>
+                        </div>
+                        <div className="TCD-rate-card">
+                            <div className="TCD-rate-term">1 Year</div>
+                            <div className="TCD-rate-min">Minimum: ₱10,000</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="TCD-benefits">
+                    <h2>Key Benefits</h2>
+                    <div className="TCD-benefits-grid">
+                        <div className="TCD-benefit-card">
+                            <div className="TCD-benefit-icon">📈</div>
+                            <h3>Higher Returns</h3>
+                            <p>Better interest rates than regular savings accounts</p>
+                        </div>
+                        <div className="TCD-benefit-card">
+                            <div className="TCD-benefit-icon">🔒</div>
+                            <h3>Guaranteed Rates</h3>
+                            <p>Fixed interest rates throughout the term</p>
+                        </div>
+                        <div className="TCD-benefit-card">
+                            <div className="TCD-benefit-icon">⏱️</div>
+                            <h3>Flexible Terms</h3>
+                            <p>Choose from various tenure options</p>
+                        </div>
+                        <div className="TCD-benefit-card">
+                            <div className="TCD-benefit-icon">🏦</div>
+                            <h3>PDIC Insured</h3>
+                            <p>Deposits insured up to ₱500,000</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="TCD-features">
+                    <div className="TCD-features-container">
+                        <div className="TCD-features-content">
+                            <h2>Features & Options</h2>
+                            <ul className="TCD-features-list">
+                                <li>Automatic renewal option</li>
+                                <li>Interest paid at maturity</li>
+                                <li>Multiple term options</li>
+                                <li>Early withdrawal available*</li>
+                                <li>Interest can be credited to savings account</li>
+                            </ul>
+                            <p className="TCD-features-note">*Subject to penalty fees</p>
+                        </div>
+                        <div className="TCD-visit-info">
+                            <h3>Visit Our Branch</h3>
+                            <p>For current rates and personalized service, please visit any of our branches during business hours:</p>
+                            <div className="TCD-hours">
+                                <div className="TCD-hours-item">
+                                    <span>Monday - Friday</span>
+                                    <span>9:00 AM - 3:00 PM</span>
+                                </div>
+                                <div className="TCD-hours-item">
+                                    <span>Saturday</span>
+                                    <span>9:00 AM - 12:00 PM</span>
+                                </div>
+                            </div>
+                            <p className="TCD-visit-note">Our financial advisors will be happy to discuss the best options for your investment needs.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="TCD-requirements">
+                    <h2>Opening Requirements</h2>
+                    <div className="TCD-requirements-grid">
+                        <div className="TCD-requirement-item">
+                            <h3>Individual Account</h3>
+                            <ul>
+                                <li>Valid Government ID</li>
+                                <li>Proof of Address</li>
+                                <li>Minimum Initial Deposit</li>
+                                <li>Completed Application Form</li>
+                            </ul>
+                        </div>
+                        <div className="TCD-requirement-item">
+                            <h3>Corporate Account</h3>
+                            <ul>
+                                <li>Business Registration</li>
+                                <li>Board Resolution</li>
+                                <li>Articles of Incorporation</li>
+                                <li>Corporate Secretary Certificate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="TCD-cta">
+                    <div className="TCD-cta-content">
+                        <h2>Ready to Start Earning More?</h2>
+                        <p>Visit our nearest branch to learn more about our competitive rates</p>
+                        <div className="TCD-cta-buttons">
+                            <button className="TCD-button-primary"
+                            onClick={handletonavigate}
+                            >Apply Now</button>
+                        </div>
+                    </div>
+                </section>
+                <button className='TCD-scroll-top'
+                    onClick={scrolltoTop}
+                > ↑ </button>
+            </div>
+        </div>
+    );
+}
+
+export default TimeCertOfDeposit;

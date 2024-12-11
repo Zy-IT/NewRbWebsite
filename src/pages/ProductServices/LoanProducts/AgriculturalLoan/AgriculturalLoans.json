@@ -1,0 +1,59 @@
+{
+    "categories": [
+        {
+            "id": "Agricultural",
+            "label": "Agricultural Loans"
+        },
+        {
+            "id": "Commercial",
+            "label": "Commercial Loans"
+        },
+        {
+            "id": "Personal",
+            "label": "Personal Loans"
+        }
+        
+    ],
+    "loanProducts": [
+        {
+            "id": "agri-masikap-loan",
+            "icon": "🏗️",
+            "title": "Agri-Masikap Loans",
+            "description": "Financing for agricultural machinery and equipment",
+            "category": "Agricultural",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/loan/AgriculturalLoans/AgriMasikapLoan"
+        },
+        {
+            "id": "agri-sagana-loan",
+            "icon": "🏗️",
+            "title": "Agri-Sagana Loans",
+            "description": "Seasonal loans to support crop cultivation",
+            "category": "Agricultural",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/loan/AgriculturalLoans/AgriSagsaganLoan"
+        },
+        {
+            "id": "crop-loan",
+            "icon": "🏗️",
+            "title": "Crop Loans",
+            "description": "Flexible financing for growing businesses",
+            "category": "Agricultural",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/loan/AgriculturalLoans/CropLoans"
+        }
+ 
+    ]
+}

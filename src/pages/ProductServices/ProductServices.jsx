@@ -1,0 +1,90 @@
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "./ProductServices.css";
+import Navbar from "../../components/Navbar/Navbar";
+
+function ProductServices() {
+    const navigate = useNavigate();
+    const [activeCategory, setActiveCategory] = useState("deposit");
+    const [categories, setCategories] = useState([]);
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/src/pages/ProductServices/ProductServices.json');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const data = await response.json();
+                setCategories(data.categories);
+                setProducts(data.products);
+                setLoading(false);
+            } catch (err) {
+                setError(err.message);
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    const filteredProducts = products.filter(product => product.category === activeCategory);
+
+    if (loading) {
+        return <div className="loading">Loading...</div>;
+    }
+
+    if (error) {
+        return <div className="error">Error: {error}</div>;
+    }
+
+    return (
+        <div className="product-services">
+            <Navbar />
+            
+            <div className="product-services__container">
+                <h1 className="product-services__main-title">Products & Services</h1>
+                
+                <div className="product-services__categories">
+                    {categories.map(category => (
+                        <button
+                            key={category.id}
+                            className={`category-button ${activeCategory === category.id ? 'category-button--active' : ''}`}
+                            onClick={() => setActiveCategory(category.id)}
+                        >
+                            {category.label}
+                        </button>
+                    ))}
+                </div>
+
+                <div className="product-services__grid">
+                    {filteredProducts.map(product => (
+                        <div 
+                            key={product.id} 
+                            className="product-card"
+                            onClick={() => navigate(product.route)}
+                        >
+                            <div className="product-card__image-container">
+                                <img 
+                                    src={product.image} 
+                                    alt={product.title}
+                                    className="product-card__image"
+                                />
+                            </div>
+                            <div className="product-card__content">
+                                <h3 className="product-card__title">{product.title}</h3>
+                                <p className="product-card__description">{product.description}</p>
+                                <button className="product-card__button">Learn More →</button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default ProductServices;

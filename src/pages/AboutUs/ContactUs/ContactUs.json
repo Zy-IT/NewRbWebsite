@@ -1,0 +1,176 @@
+{
+    "branches": [
+        {
+            "id": "Corporate Office",
+            "name": "Corporate Office",
+            "address": "Don Jose Canciller Avenue, Cauayan City",
+            "phone": "(078) 652-1016",
+            "email": "corporate@rbcauayan.com",
+            "hours": "Mon - Fri: 9:00 AM - 5:00 PM",
+            "coordinates": { "lat": 16.93324495296561, "lng": 121.77403643716062 }
+        },
+        {
+            "id": "Cauayan Branch",
+            "name": "Cauayan Branch",
+            "address": "Don Jose Canciller Avenue, Cauayan City",
+            "phone": "+1 (555) 123-4567",
+            "email": "Cauayan@rbcauayan.com",
+            "hours": "Mon - Fri: 9:00 AM - 5:00 PM",
+            "coordinates": { "lat": 16.93324495296561, "lng": 121.77403643716062 }
+        },
+        {
+            "id": "Alicia Branch",
+            "name": "Alicia Branch",
+            "address": "San Mateo Road, Barangay Antonio, Alicia, Isabela",
+            "phone": "(078) 324-6229", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+        },
+        {
+            "id": "Bambang Branch",
+            "name": "Bambang Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+        },
+        {
+            "id": "Cabatuan Branch",
+            "name": "Cabatuan Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 16.953303208838854, "lng": 121.66865745933875 }
+        },
+        {
+            "id": "Camalaniugan Branch",
+            "name": "Camalaniugan Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+        },
+        {
+            "id": "Cordon Branch",
+            "name": "Cordon Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 16.674126761949058, "lng":  121.46575132929247 }
+        },
+        {
+            "id": "Echague Branch",
+            "name": "Echague Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 16.720253376307745, "lng": 121.68446517521777 }
+        },
+        {
+            "id": "Ilagan Branch",
+            "name": "Ilagan Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 17.130491358082377, "lng": 121.866803925612 }
+        },
+        {
+            "id": "Luna Branch",
+            "name": "Luna Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 16.968272235539285, "lng": 121.72982015408284 }
+        },
+        {
+            "id": "Mercedes Branch",
+            "name": "Reina Mercedes Branch",
+            "address": "789 Financial Road, East District",
+            "phone": "+1 (555) 246-8135",
+            "email": "eastside@bankname.com", 
+            "hours": "Mon - Fri: 9:30 AM - 4:30 PM",
+            "coordinates": { "lat": 16.993400250962704, "lng": 121.81064667845335 }
+        },
+        {
+            "id": "Ramon Branch",
+            "name": "Ramon Branch",
+            "address": "789 Financial Road, East District",
+            "phone": "+1 (555) 246-8135",
+            "email": "eastside@bankname.com", 
+            "hours": "Mon - Fri: 9:30 AM - 4:30 PM",
+            "coordinates": { "lat": 16.993400250962704, "lng": 121.81064667845335 }
+        },
+        {
+            "id": "Roxas Branch",
+            "name": "Roxas Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 17.11917360775548, "lng": 121.61672911679143 }
+        },
+        {
+            "id": "Santiago Branch",
+            "name": "Santiago Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 16.68930496436212, "lng": 121.55162627654919 }
+        },
+        {
+            "id": "San Mateo  Branch",
+            "name": "San Mateo  Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+        },
+        {
+            "id": "San Manuel  Branch",
+            "name": "San Manuel Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+        },
+        {
+            "id": "Solano  Branch",
+            "name": "Solano Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+        },
+        {
+            "id": "Tuguegarao  Branch",
+            "name": "Tuguegarao Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 17.6134174419404, "lng":  121.70971599860623 }
+        },
+        {
+            "id": "Tumauini  Branch",
+            "name": "Tumauini Branch",
+            "address": "456 Commerce Avenue, Downtown",
+            "phone": "+1 (555) 987-6543", 
+            "email": "downtown@bankname.com",
+            "hours": "Mon - Fri: 8:30 AM - 5:30 PM",
+            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+        }
+        
+    ]
+}

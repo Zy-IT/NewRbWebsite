@@ -1,0 +1,135 @@
+{
+    "categories": [
+        {
+            "id": "deposit",
+            "label": "Deposit Products"
+        },
+        {
+            "id": "loan",
+            "label": "Loan Products"
+        },
+        {
+            "id": "Other",
+            "label": "other"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "title": "Basic Savings Account",
+            "description": "Start your savings journey with our basic account",
+            "image": "/src/Assets/ProductServices/DepositProducts/Basic_Savings.jpg",
+            "category": "deposit",
+            "route": "/deposit/BasicSavings"
+        },
+        {
+            "id": 2,
+            "title": "Regular Savings Account",
+            "description": "Secure fixed deposits with competitive rates",
+            "image": "/src/Assets/ProductServices/DepositProducts/Regular_Savings.jpg",
+            "category": "deposit",
+            "route": "/deposit/RegularSavings"
+        },
+        {
+            "id": 3,
+            "title": "Checking Account / Demand Deposit",
+            "description": "Start your savings journey with our basic account",
+            "image": "/src/Assets/ProductServices/DepositProducts/Checking_Account.png",
+            "category": "deposit",
+            "route": "/deposit/CheckingDemand"
+        },
+        {
+            "id": 4,
+            "title": "Pensioner Savings Deposit",
+            "description": "Secure fixed deposits with competitive rates",
+            "image": "/src/Assets/ProductServices/DepositProducts/Pensioner.jpg",
+            "category": "deposit",
+            "route": "/deposit/Pensioners"
+        },
+        { 
+            "id": 5,
+            "title": "Student Savings Deposit",
+            "description": "Start your savings journey with our basic account",
+            "image": "/src/Assets/ProductServices/DepositProducts/Student_Savings.jpg",
+            "category": "deposit",
+            "route": "/deposit/StudentSavings"
+        },
+        {
+            "id": 6,
+            "title": "Time certificate of Deposit",
+            "description": "Secure fixed deposits with competitive rates",
+            "image": "/src/Assets/ProductServices/DepositProducts/Time_Cert.jpg",
+            "category": "deposit",
+            "route": "/deposit/TimeCertofDeposit"
+        },
+
+         
+        {
+            "id": 7,
+            "title": "Agricultural Loan",
+            "description": "Quick personal loans with flexible terms",
+            "image": "/src/Assets/ProductServices/LoanProducts/Agricultural_Loan.png",
+            "category": "loan",
+            "route": "/loan/AgriculturalLoans"
+        },
+        {
+            "id": 8,
+            "title": "Commercial Loan",
+            "description": "Grow your business with our financing solutions",
+            "image": "/src/Assets/ProductServices/LoanProducts/Commercial_Loan.png",
+            "category": "loan",
+            "route": "/loan/CommercialLoans"
+        },
+        {
+            "id": 9,
+            "title": "Personal Loan",
+            "description": "Grow your business with our financing solutions",
+            "image": "/src/Assets/ProductServices/LoanProducts/Personal_Loan.png",
+            "category": "loan",
+            "route": "/loan/PersonalLoans"
+        },
+
+
+        {
+            "id": 10,
+            "title": "Inter Branch",
+            "description": "24/7 secure digital banking services",
+            "image": "/src/Assets/ProductServices/OtherServices/InterBranch.png",
+            "category": "Other",
+            "route": "/other/InterBranch"
+        },
+        {
+            "id": 11,
+            "title": "Domestic Remittance",
+            "description": "Expert financial planning and investment advice",
+            "image": "/src/Assets/ProductServices/OtherServices/DomesticRemittance.png",
+            "category": "Other",
+            "route": "/other/DomesticRemittance"
+        },
+        {
+            "id": 12,
+            "title": "Bills Payment",
+            "description": "Expert financial planning and investment advice",
+            "image": "/src/Assets/ProductServices/OtherServices/BillsPayment.png",
+            "category": "Other",
+            "route": "/other/BillsPayment"
+        },
+        {
+            "id": 13,
+            "title": "Fund Transfer",
+            "description": "Expert financial planning and investment advice",
+            "image": "/src/Assets/ProductServices/OtherServices/FundTransfer.png",
+            "category": "Other",
+            "route": "/other/FundTransfer"
+        },
+        {
+            "id": 14,
+            "title": "Mobile / POS ATM",
+            "description": "Expert financial planning and investment advice",
+            "image": "/src/Assets/ProductServices/OtherServices/MobilePOSAtm.jpg",
+            "category": "Other",
+            "route": "/other/MobilePOSATm"
+        }
+       
+    ]
+}

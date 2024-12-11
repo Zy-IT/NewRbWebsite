@@ -1,0 +1,90 @@
+{
+    "categories": [
+  
+    ],
+    "depositProducts": [
+        {
+            "id": 1,
+            "title": "Basic Savings Account",
+            "description": "Perfect for daily banking needs",
+            "category": "Deposit",
+            "icon": "💰",
+            "features": [
+                "No minimum balance",
+                "Free online banking",
+                "24/7 ATM access"
+            ],
+            "route": "/deposit/BasicSavings"
+        },
+        {
+            "id": 2,
+            "title": "Regular Savings Account",
+            "description": "A comprehensive savings account with additional benefits and higher interest rates.",
+            "category": "Deposit",
+            "features": [
+                "Competitive interest rates",
+                "Free online banking",
+                "ATM/Debit card access",
+                "Monthly e-statements"
+            ],
+            "icon": "🏦",
+            "route": "/deposit/RegularSavings"
+        },
+        {
+            "id": 3,
+            "title": "Checking Account / Demand Deposit",
+            "description": "Manage your daily transactions with ease using our checking account services.",
+            "category": "Deposit",
+            "features": [
+                "Free initial checkbook",
+                "Online banking access",
+                "Bill payment facility",
+                "Mobile check deposit"
+            ],
+            "icon": "📝",
+            "route": "/deposit/CheckingDemand"
+        },
+        {
+            "id": 4,
+            "title": "Pensioners Savings Deposit",
+            "description": "Special savings account designed for retirees with exclusive benefits and privileges.",
+            "category": "Deposit",
+            "features": [
+                "Higher interest rates",
+                "Priority banking services",
+                "No maintaining balance",
+                "Special elderly assistance"
+            ],
+            "icon": "👴",
+            "route": "/deposit/Pensioners"
+        },
+        {
+            "id": 5,
+            "title": "Students Saving Deposit",
+            "description": "Help young minds develop saving habits with our student-friendly account.",
+            "category": "Deposit",
+            "features": [
+                "Zero initial deposit",
+                "No maintaining balance",
+                "School ID as requirement",
+                "Financial literacy resources"
+            ],
+            "icon": "🎓",
+            "route": "/deposit/StudentSavings"
+        },
+        {
+            "id": 6,
+            "title": "Time Certificate of Deposit",
+            "description": "Maximize your savings with our fixed-term deposit options offering premium interest rates.",
+            "category": "Deposit",
+            "features": [
+                "Higher interest rates",
+                "Flexible terms",
+                "Guaranteed returns",
+                "Auto-renewal option"
+            ],
+            "icon": "⏰",
+            "route": "/deposit/TimeCertofDeposit"
+        }
+    ]
+}

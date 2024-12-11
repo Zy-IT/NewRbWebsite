@@ -1,0 +1,482 @@
+/* Company Profile Responsive CSS */
+:root {
+    --primary-color: #1A5F7A;
+    --secondary-color: #159895;
+    --accent-color: #57C5B6;
+    --text-dark: #2C3333;
+    --text-light: #F8F9FA;
+    --background-soft: #F5F5F5;
+}
+
+.CP-company-profile {
+    color: var(--text-dark);
+
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Hero Section Responsive Adjustments */
+.CP-hero-section {
+    background: linear-gradient(
+        rgba(26, 95, 122, 0.7), 
+        rgba(26, 95, 122, 0.7)
+    ), url('/src/Assets/bank-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.CP-hero-content {
+    max-width: 90%;
+    width: 800px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+.CP-hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--text-light);
+    letter-spacing: -1px;
+}
+
+.CP-hero-content p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Responsive Sections */
+.CP-timeline-section,
+.CP-founders-section,
+.CP-gallery-section,
+.CP-mission-section {
+    padding: clamp(2rem, 5vw, 6rem) 1rem;
+}
+
+.CP-timeline-section h2,
+.CP-founders-section h2,
+.CP-gallery-section h2 {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.CP-timeline-section h2::after,
+.CP-founders-section h2::after,
+.CP-gallery-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--accent-color);
+}
+
+/* Timeline Responsive */
+.CP-timeline {
+    max-width: 95%;
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.CP-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: var(--secondary-color);
+    transform: translateX(-50%);
+    opacity: 0.3;
+}
+
+.CP-timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.CP-year {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.CP-content {
+    background: white;
+    padding: 1.5rem;
+    border: 2px solid #1A5F7A;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    transition: transform 0.3s ease;
+}
+
+.CP-content:hover {
+    transform: scale(1.02);
+    border: 2px solid linear-gradient(#1A5F7A, hsl(69, 74%, 38%));
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.CP-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+}
+
+/* Founders Section */
+.CP-founders-section {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.CP-founders-card-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; /* Add some space between the card and story */
+    align-items: stretch; /* Ensure both containers have the same height */
+}
+
+.CP-founder-card {
+    flex: 0 0 400px; /* Fixed width for the card */
+    align-items: flex-start;
+    text-align: center;
+    background: var(--background-soft);
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.CP-founder-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.CP-founder-image {
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.CP-founder-card:hover .CP-founder-image {
+    filter: grayscale(0%);
+}
+
+.CP-founder-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    background: white;
+}
+
+.CP-founder-story {
+    flex: 1; /* Allow the story to take up remaining space */
+    background: var(--background-soft);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission Section */
+.CP-mission-section {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 6rem 2rem;
+}
+
+.CP-mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.CP-mission-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.CP-mission-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+/* Board of Directors Responsive */
+.CP-board-hierarchy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    max-width: 95%;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.CP-board-top,
+.CP-board-middle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.CP-board-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.CP-board-directors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.CP-board-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.CP-board-card {
+    width: clamp(200px, 90%, 300px);
+    height: px;
+    max-width: 350px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 1rem;
+}
+
+.CP-board-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.CP-board-card img {
+    width: 100%;
+    height: clamp(250px, 50vw, 400px);
+    border: 2px #1A5F7A;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.CP-board-card:hover img {
+    filter: grayscale(0%);
+}
+
+.CP-board-info {
+    padding: 1.5rem;
+    background: var(--background-soft);
+}
+
+.CP-board-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.CP-board-info p {
+    color: var(--text-dark);
+    opacity: 0.8;
+}
+
+/* Slight size variations for hierarchy */
+.CP-board-founder .CP-board-card {
+    width: clamp(250px, 90%, 300px);
+}
+
+.CP-board-chairman .CP-board-card,
+.CP-board-vice-chairman .CP-board-card {
+    width: clamp(225px, 90%, 275px);
+}
+
+.CP-board-president .CP-board-card {
+    width: clamp(225px, 90%, 275px);
+}
+
+/* Responsive Breakpoints */
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .CP-hero-section {
+        min-height: 60vh;
+    }
+
+    .CP-timeline::before {
+        left: 15px;
+    }
+
+    .CP-timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .CP-content {
+        width: 100%;
+        margin-left: 30px !important;
+        border: 2px solid #57C5B6;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .CP-year {
+        margin-bottom: 1rem;
+    }
+
+    .CP-board-hierarchy {
+        gap: 2rem;
+    }
+
+    .CP-board-top,
+    .CP-board-middle,
+    .CP-board-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CP-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .CP-hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small Devices */
+@media (min-width: 481px) and (max-width: 768px) {
+    .CP-timeline-item:nth-child(even) .CP-content {
+        margin-left: 50px;
+    }
+
+    .CP-timeline-item:nth-child(odd) .CP-content {
+        margin-right: 50px;
+    }
+
+    .CP-timeline::before {
+        left: 30px;
+    }
+}
+
+/* Medium Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .CP-timeline-item {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .CP-timeline-item:nth-child(even) .CP-content {
+        margin-left: 30px;
+    }
+
+    .CP-timeline-item:nth-child(odd) .CP-content {
+        margin-right: 30px;
+    }
+}
+
+/* Large Devices */
+@media (min-width: 1025px) {
+    .CP-timeline-item:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .CP-timeline-item:nth-child(odd) .CP-content {
+        margin-right: 50px;
+    }
+
+    .CP-timeline-item:nth-child(even) .CP-content {
+        margin-left: 50px;
+    }
+}
+
+/* Subtle Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.CP-timeline-item,
+.CP-founder-card,
+.CP-board-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+/* Staggered Animation */
+.CP-timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.CP-timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.CP-timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.CP-timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+.CP-board-directors .CP-board-position:nth-child(1) { animation-delay: 0.1s; }
+.CP-board-directors .CP-board-position:nth-child(2) { animation-delay: 0.2s; }
+.CP-board-directors .CP-board-position:nth-child(3) { animation-delay: 0.3s; }
+.CP-board-directors .CP-board-position:nth-child(4) { animation-delay: 0.4s; }
+.CP-board-directors .CP-board-position:nth-child(5) { animation-delay: 0.5s; }

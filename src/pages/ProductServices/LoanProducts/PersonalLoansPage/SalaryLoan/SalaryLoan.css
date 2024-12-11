@@ -1,0 +1,327 @@
+.Salary-Loan {
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+/* Header Section */
+.SLL-section {
+    width: 100%;
+}
+
+.SLL-header-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
+
+}
+
+.SLL-header {
+    gap: 10px;
+    text-align: center;
+    margin: clamp(2rem, 5vw, 4rem) 0;
+    animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.SLL-title {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.SLL-subtitle {
+    color: #ffffff;
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 30px;
+}
+
+.SLL-header-button {
+    background-color: #ffffff;
+    color: #1a4f7c;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.SLL-header-button:hover {
+    transform: translateY(-2px);
+    background-color: #f5f5f5;
+}
+
+/* Features Section */
+.SLL-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: -40px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.SLL-features-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.SLL-features-card:hover {
+    transform: translateY(-5px);
+}
+
+.SLL-features-icon {
+    font-size: 2.5rem;
+    color: #1a4f7c;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.SLL-features-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.SLL-features-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Description Section */
+.SLL-description-container {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+.SLL-description-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.SLL-description-content h2 {
+    color: #1a4f7c;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.SLL-description-content p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Requirements Section */
+.SLL-requirements-container {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.SLL-requirements-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.SLL-requirements-content h4 {
+    color: #1a4f7c;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.SLL-requirements-content h4:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #1a4f7c, #2874b2);
+}
+
+.SLL-requirements-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SLL-requirements-content li {
+    padding: 20px 0;
+    padding-left: 35px;
+    border-bottom: 1px solid #eef2f7;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.SLL-requirements-content li:last-child {
+    border-bottom: none;
+}
+
+.SLL-requirements-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1a4f7c;
+    font-weight: bold;
+}
+
+.SLL-requirements-content li:hover {
+    padding-left: 40px;
+    color: #1a4f7c;
+}
+
+/* Apply Section */
+.SLL-apply-container {
+    background: linear-gradient(135deg, #1a4f7c 0%, #2874b2 100%);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.SLL-apply-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.SLL-apply-content h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.SLL-apply-content p {
+    color: #ffffff;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.SLL-apply-button {
+    background-color: #ffffff;
+    color: #1a4f7c;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.SLL-apply-button:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+/* Scroll to Top Button */
+.SLL-scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1a4f7c;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    clip-path: polygon(50% 0%, 100% 50%, 85% 50%, 85% 100%, 15% 100%, 15% 50%, 0% 50%);
+}
+
+.SLL-scroll-top:hover {
+    background-color: #2874b2;
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .SLL-title {
+        font-size: 2.2rem;
+    }
+
+    .SLL-subtitle {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .SLL-features {
+        padding: 30px 15px;
+        margin-top: -30px;
+    }
+
+    .SLL-description-container,
+    .SLL-requirements-container {
+        padding: 60px 15px;
+    }
+
+    .SLL-requirements-content {
+        padding: 30px 20px;
+    }
+
+    .SLL-requirements-content h4 {
+        font-size: 1.8rem;
+    }
+
+    .SLL-requirements-content li {
+        font-size: 1rem;
+        padding: 15px 0 15px 30px;
+    }
+
+    .SLL-header-button,
+    .SLL-apply-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .SLL-scroll-top {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+}

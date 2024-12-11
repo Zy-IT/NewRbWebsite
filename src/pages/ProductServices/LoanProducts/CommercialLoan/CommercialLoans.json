@@ -1,0 +1,72 @@
+{
+    "categories": [
+        {
+            "id": "Agricultural",
+            "label": "Agricultural Loans"
+        },
+        {
+            "id": "Commercial",
+            "label": "Commercial Loans"
+        },
+        {
+            "id": "Personal",
+            "label": "Personal Loans"
+        }
+        
+    ],
+    "loanProducts": [
+        {
+            "id": "negro-asenso-loan",
+            "icon": "🌾",
+            "title": "Nego-Asenso Loan",
+            "description": "Short-term loans for seasonal crop production expenses",
+            "category": "Commercial",
+            "features": [
+                "Flexible repayment terms",
+                "Competitive interest rates", 
+                "Quick approval process"
+            ],
+            "route": "/loan/CommercialLoans/NegoAsensoLoan"
+        },
+        {
+            "id": "ka-asenso-loan",
+            "icon": "🚜",
+            "title": "Ka-Asenso Loan", 
+            "description": "Medium-term loans for farm machinery and equipment",
+            "category": "Commercial",
+            "features": [
+                "Up to 7 years repayment",
+                "Low down payment",
+                "Fixed interest rates"
+            ],
+            "route": "/loan/CommercialLoans/KaAsensoLoan"
+        },
+        {
+            "id": "small-business-loan",
+            "icon": "🏗️",
+            "title": "Small Business Loan",
+            "description": "Long-term loans for land acquisition and development",
+            "category": "Commercial",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/loan/CommercialLoans/SmallBusinessLoan"
+        },
+        {
+            "id": "money-shop-loan",
+            "icon": "🏗️",
+            "title": "Money Shop Loan",
+            "description": "Long-term loans for land acquisition and development",
+            "category": "Commercial",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/loan/CommercialLoans/MoneyShopLoan"
+        }
+        
+    ]
+}
