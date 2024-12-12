@@ -118,9 +118,7 @@ function CropLoan () {
             <button
                 className="CLL-scroll-top"
                 onClick={scrollToTop}
-            >
-                ↑
-            </button>
+            > ↑ </button>
         </div>
     );
 }

@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
-import "leaflet/dist/leaflet.css"; // Import Leaflet CSS for styling
-import branchdata from "./ContactUs.json"; // Assuming the coordinates are stored here
+import "leaflet/dist/leaflet.css";
+import branchdata from "./ContactUs.json";
 import Navbar from "../../../components/Navbar/Navbar";
-import markerIconUrl from 'leaflet/dist/images/marker-icon.png'; // Import marker icon image
+import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
 import "./ContactUs.css";
 
 function ContactUs() {
+    const [fullname, setFullName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
     const [selectedBranch, setSelectedBranch] = useState(branchdata.branches[0]);
     const [branchDetails, setBranchDetails] = useState({
         address: "",
@@ -17,8 +22,13 @@ function ContactUs() {
     });
 
     const mapContainerStyle = {
-        width: "100%",
+        width: "1150px",
         height: "400px",
+        border: "2px solid transparent",
+        borderRadius: "10px",
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+        overflow: "hidden",
+        margin: "0 auto"
     };
 
     useEffect(() => {
@@ -31,9 +41,8 @@ function ContactUs() {
             });
         }
 
-        // Set the default marker icon using the imported image
         const defaultIcon = new L.Icon({
-            iconUrl: markerIconUrl, // Use the imported image URL
+            iconUrl: markerIconUrl,
             iconSize: [25, 41],
             iconAnchor: [12, 41],
             popupAnchor: [1, -34],
@@ -64,20 +73,41 @@ function ContactUs() {
         return null;
     }
 
+    const scrolltotop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Add form submission logic here
+        console.log("Form Submitted", { fullname, email, subject, message });
+        // Reset form or show confirmation
+        setFullName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+    }
+
     return (
         <div className="Contact-Us">
             <Navbar />
             <div className="Contact-Us-Container">
-                <div className="CU-header-container">
-                    <div className="CU-header-context">
-                        <h1>Contact Us</h1>
-                        <p>Feel free to reach out to us regarding your concerns</p>
-                        <button onClick={scrolltoBranchSelector}>Select a Branch</button>
+                <section className="CU-header-section">
+                    <div className="CU-header-container">
+                        <div className="CU-header-context">
+                            <h1>Contact Us</h1>
+                            <p>Feel free to reach out to us regarding your concerns</p>
+                            <button onClick={scrolltoBranchSelector}>Select a Branch</button>
+                        </div>
                     </div>
-                </div>
+                </section>
 
                 <div className="CU-body-container">
                     <div className="CU-body-contents">
+                        {/* Maps Section */}
                         <div className="CU-maps-display">
                             <MapContainer
                                 center={selectedBranch.coordinates}
@@ -85,7 +115,6 @@ function ContactUs() {
                                 maxZoom={18}
                                 style={mapContainerStyle}
                             >
-                                {/* Using OpenStreetMap tiles directly */}
                                 <TileLayer
                                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                                     attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
@@ -97,11 +126,12 @@ function ContactUs() {
                             </MapContainer>
                         </div>
 
+                        {/* Branch Selector Section */}
                         <div className="CU-info-section">
                             <div className="CU-branch-selector">
                                 <h2>Select a Branch</h2>
                                 <select
-                                    className="branch-select"
+                                    className="CU-branch-select"
                                     value={selectedBranch.id}
                                     onChange={handleBranchChange}
                                 >
@@ -113,30 +143,94 @@ function ContactUs() {
                                 </select>
                             </div>
 
+                            {/*Branch Details Section */}
                             <div className="CU-branch-details">
                                 <h2>Branch Information</h2>
-                                <div className="branch-info">
-                                    <div className="info-item">
-                                        <i className="location-icon">📍</i>
+                                <div className="CU-branch-info">
+                                    <div className="CU-info-item">
+                                        <i className="CU-location-icon">📍</i>
                                         <p>{branchDetails.address}</p>
                                     </div>
-                                    <div className="info-item">
-                                        <i className="phone-icon">📞</i>
+                                    <div className="CU-info-item">
+                                        <i className="CU-phone-icon">📞</i>
                                         <p>{branchDetails.phone}</p>
                                     </div>
-                                    <div className="info-item">
-                                        <i className="email-icon">✉️</i>
+                                    <div className="CU-info-item">
+                                        <i className="CU-email-icon">✉️</i>
                                         <p>{branchDetails.email}</p>
                                     </div>
-                                    <div className="info-item">
-                                        <i className="time-icon">🕒</i>
+                                    <div className="CU-info-item">
+                                        <i className="CU-time-icon">🕒</i>
                                         <p>{branchDetails.hours}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <section className="CU-email-section">
+                            <div className="CU-form-container">
+                                <div className="CU-form-card">
+                                    <h2 className="CU-form-title">Send us a Message</h2>
+                                    <form onSubmit={handleSubmit} className="CU-form">
+                                        <div className="CU-form-group">
+                                            <label htmlFor="fullname">Full Name</label>
+                                            <input
+                                                id="fullname"
+                                                type="text"
+                                                value={fullname}
+                                                onChange={(e) => setFullName(e.target.value)}
+                                                placeholder="Your full name"
+                                                required
+                                            />
+                                        </div>
+
+                                        <div className="CU-form-group">
+                                            <label htmlFor="email">Email Address</label>
+                                            <input
+                                                id="email"
+                                                type="email"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                placeholder="you@example.com"
+                                                required
+                                            />
+                                        </div>
+
+                                        <div className="CU-form-group">
+                                            <label htmlFor="subject">Subject</label>
+                                            <input
+                                                id="subject"
+                                                type="text"
+                                                value={subject}
+                                                onChange={(e) => setSubject(e.target.value)}
+                                                placeholder="Subject of your message"
+                                                required
+                                            />
+                                        </div>
+
+                                        <div className="CU-form-group">
+                                            <label htmlFor="message">Your Message</label>
+                                            <textarea
+                                                id="message"
+                                                value={message}
+                                                onChange={(e) => setMessage(e.target.value)}
+                                                placeholder="Type your message here"
+                                                required
+                                            />
+                                        </div>
+
+                                        <button type="submit" className="CU-submit-button">
+                                            Send Message
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
+                <button className="CU-scroll-top"
+                    onClick={scrolltotop}
+                > ↑ </button>
             </div>
         </div>
     );

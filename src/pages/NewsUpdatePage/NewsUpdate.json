@@ -1,0 +1,74 @@
+{
+    "categories": [
+        {
+            "id": "News",
+            "label": "News"
+        },
+        {
+            "id": "Events",
+            "label": "Events"
+        },
+        {
+            "id": "Archive",
+            "label": "Archive"
+        }
+    ],
+    "news": [
+        {
+            "id": 1,
+            "title": "1stsample News",
+            "description": "The quick brown fox jump over the head of the lazy dog",
+            "category": "News",
+            "image": "/src/Assets/sampling.jpg",
+            "date": "December 3, 2024"
+        },
+        {
+            "id": 2,
+            "title": "2nd sample News",
+            "description": "The quick brown fox jump over the head of the lazy dog",
+            "category": "News",
+            "image": "/src/Assets/sampling.jpg",
+            "date": "December 12, 2024"
+        },
+        {
+            "id": 3,
+            "title": "3rd sample News",
+            "description": "The quick brown fox jump over the head of the lazy dog",
+            "category": "News",
+            "image": "/src/Assets/sampling.jpg",
+            "date": "December 1, 2024"
+        },
+        {
+            "id": 4,
+            "title": "Christmass Party",
+            "description": "The quick brown fox jump over the head of the lazy dog",
+            "category": "Events",
+            "image": "/src/Assets/sampling.jpg",
+            "date": "December 23, 2023"
+        },
+        {
+            "id": 5,
+            "title": "Team Building",
+            "description": "The quick brown fox jump over the head of the lazy dog",
+            "category": "Events",
+            "image": "/src/Assets/sampling.jpg",
+            "date": "May 5-6, 2024"
+        },
+        {
+            "id": 6,
+            "title": "Check Up",
+            "description": "The quick brown fox jump over the head of the lazy dog",
+            "category": "Archive",
+            "image": "/src/Assets/sampling.jpg",
+            "date": "November 03, 2024"
+        },
+        {
+            "id": 7,
+            "title": "New Branch Opened",
+            "description": "The quick brown fox jump over the head of the lazy dog",
+            "category": "Archive",
+            "image": "/src/Assets/sampling.jpg",
+            "date": "October 13, 2020"
+        }
+    ]
+}

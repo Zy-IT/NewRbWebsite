@@ -92,7 +92,7 @@ function SalaryLoan() {
                     </div>
                     <button className="SLL-scroll-top"
                         onClick={scrolltoTop}
-                    > </button>
+                    > ↑ </button>
                 </div>
             </section>
         </div>
