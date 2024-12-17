@@ -7,7 +7,7 @@ function InterBranchDeposit() {
     const navigate = useNavigate();
 
     const handletonavigate = () => {
-        navigate('/P&S/ContactUs');
+        navigate('/T&C');
     }
 
     const scrolltodescription = () => {

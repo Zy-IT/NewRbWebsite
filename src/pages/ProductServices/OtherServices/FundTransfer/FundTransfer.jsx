@@ -8,7 +8,7 @@ function FundTransfer() {
     const navigate = useNavigate();
 
     const handletonavigate = () => {
-        navigate('/A%U/ContactUs');
+        navigate('/T&C');
     };
 
     

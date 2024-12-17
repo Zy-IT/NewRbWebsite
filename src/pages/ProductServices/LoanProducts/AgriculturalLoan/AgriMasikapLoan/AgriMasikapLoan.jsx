@@ -7,7 +7,7 @@ function AgriMasikapLoan() {
     const navigate = useNavigate();
 
     const handleNavigateToContact = () => {
-        navigate('/A%U/ContactUs');
+        navigate('/T&C');
     };
 
     const scrollToDescription = () => {

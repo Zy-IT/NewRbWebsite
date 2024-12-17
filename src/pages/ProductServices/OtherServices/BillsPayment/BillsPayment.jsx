@@ -10,7 +10,7 @@ function BillsPayment() {
 
     
     const handletonavigate = () => {
-        navigate('/A&U/ContactUs');
+        navigate('/T&C');
     };
 
     const scrolltodescription = () => {

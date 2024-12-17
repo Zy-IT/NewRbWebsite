@@ -36,7 +36,7 @@ import Careers from './pages/AboutUs/Careers';
 import ContactUs from './pages/AboutUs/ContactUs/ContactUs';
 import AnnualReport from './pages/AboutUs/AnnualReport';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
-import TermsCondition from './pages/TermsConditions';
+import TermsCondition from './pages/Application/TermsCondition/TermsConditions';
 
 
 
