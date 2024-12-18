@@ -43,9 +43,15 @@ function TermsCondition() {
 
     return (
         <div className="Terms-and-Condition">
-            <button className="TC-back-button"
-                onClick={goback}
-            >Back</button>
+            <div className="TC-navigation-container">
+                <button className="TC-back-button"
+                    onClick={goback}
+                > <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                    Back</button>
+            </div>
+
             <div className="terms-condition-container">
                 <div className="TC-header-container">
                     <div className="TC-header-content">
@@ -62,7 +68,10 @@ function TermsCondition() {
                             <button
                                 className="TC-toggle-button"
                                 onClick={() => togglevisibility(setlist1Section)}
-                            >Basic Deposit Account</button>
+                            >
+                                Basic Deposit Account
+                                <span className={`TC-dropdown-icon ${list1section ? 'open' : ''}`}>▼</span>
+                            </button>
                             {list1section && (
                                 <div className="TC-BDA-Container">
                                     <div className="TC-BDA-contents">
@@ -112,7 +121,10 @@ function TermsCondition() {
                             <button
                                 className="TC-toggle-button"
                                 onClick={() => togglevisibility(setlist2Section)}
-                            >Interest Bearing Checking Account</button>
+                            >
+                                Interest Bearing Checking Account
+                                <span className={`TC-dropdown-icon ${list2section ? 'open' : ''}`}>▼</span>
+                            </button>
                             {list2section && (
                                 <div className="TC-IBCA-container">
                                     <div className="TC-IBCA-contents">
@@ -212,7 +224,10 @@ function TermsCondition() {
                             <button
                                 className="TC-toggle-button"
                                 onClick={() => togglevisibility(setlist3Section)}
-                            >Regular Checking Account</button>
+                            >
+                                Regular Checking Account
+                                <span className={`TC-dropdown-icon ${list3section ? 'open' : ''}`}>▼</span>
+                            </button>
                             {list3section && (
                                 <div className="TC-RCA-container">
                                     <div className="TC-RCA-contents">
@@ -317,7 +332,10 @@ function TermsCondition() {
                             <button
                                 className="TC-toggle-button"
                                 onClick={() => togglevisibility(setlist4Section)}
-                            >Savings Account</button>
+                            >
+                                Savings Account
+                                <span className={`TC-dropdown-icon ${list4section ? 'open' : ''}`}>▼</span>
+                            </button>
                             {list4section && (
                                 <div className="TC-SA-container">
                                     <div className="TC-SA-contents">
@@ -387,7 +405,10 @@ function TermsCondition() {
                                     <button
                                         className="TC-toggle-button"
                                         onClick={() => togglevisibility(setlist5Section)}
-                                    >DEFINITION OF TERMS</button>
+                                    >
+                                        DEFINITION OF TERMS
+                                        <span className={`TC-dropdown-icon ${list5section ? 'open' : ''}`}>▼</span>
+                                    </button>
                                     {list5section && (
                                         <div className="TC-DOT-section">
                                             <h2>DEFINITION OF TERMS</h2>
@@ -425,7 +446,10 @@ function TermsCondition() {
                                     <button
                                         className="TC-toggle-button"
                                         onClick={() => togglevisibility(setlist6Section)}
-                                    >PROCESSING PERSONAL INFORMATION</button>
+                                    >
+                                        PROCESSING PERSONAL INFORMATION
+                                        <span className={`TC-dropdown-icon ${list6section ? 'open' : ''}`}>▼</span>
+                                    </button>
                                     {list6section && (
                                         <div className="TC-PPI-section">
                                             <h1>PROCESSING PERSONAL INFORMATION</h1>
@@ -490,7 +514,10 @@ function TermsCondition() {
                                     <button
                                         className="TC-toggle-button"
                                         onClick={() => togglevisibility(setlist7section)}
-                                    >RIGHTS OF A DATA SUBJECT</button>
+                                    >
+                                        RIGHTS OF A DATA SUBJECT
+                                        <span className={`TC-dropdown-icon ${list7section ? 'open' : ''}`}>▼</span>
+                                    </button>
                                     {list7section && (
                                         <div className="TC-RDS-section">
                                             <h2>RIGHTS OF A DATA SUBJECT</h2>

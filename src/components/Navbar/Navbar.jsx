@@ -94,7 +94,7 @@ const Navbar = () => {
                 >
                   <Link to="/P&S/DepositProducts">
                     Deposit Products
-                    <span className={styles.dropdownIcon}>▶</span>
+                    <span className={styles.dropdownIcon}>▼</span>
                   </Link>
                   {activeSubMenu === 'deposit' && (
                     <ul className={styles.submenu}>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 >
                   <Link to="/P&S/LoanProducts">
                     Loan Products
-                    <span className={styles.dropdownIcon}>▶</span>
+                    <span className={styles.dropdownIcon}>▼</span>
                   </Link>
                   {activeSubMenu === 'loan' && (
                     <ul className={styles.submenu}>
@@ -130,7 +130,7 @@ const Navbar = () => {
                 >
                   <Link to="/P&S/OtherServices">
                     Other Services
-                    <span className={styles.dropdownIcon}>▶</span>
+                    <span className={styles.dropdownIcon}>▼</span>
                   </Link>
                   {activeSubMenu === 'services' && (
                     <ul className={styles.submenu}>

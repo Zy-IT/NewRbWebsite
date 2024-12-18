@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./DepositProductsPage.css";
+import Navbar from "../../../../components/Navbar/Navbar";
 
 function DepositProductsPage() {
     const navigate = useNavigate();
-    const [activeCategory, setActiveCategory] = useState("Deposit"); 
+    const [activeCategory, setActiveCategory] = useState("Deposit");
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -19,7 +20,7 @@ function DepositProductsPage() {
                 }
                 const data = await response.json();
                 setCategories(data.categories);
-                setProducts(data.depositProducts); 
+                setProducts(data.depositProducts);
                 setLoading(false);
             } catch (err) {
                 setError(err.message);
@@ -46,6 +47,7 @@ function DepositProductsPage() {
 
     return (
         <div className="deposit-page">
+            <Navbar />
             <div className="deposit-header">
                 <h1>Deposit Products</h1>
                 <p>Secure your future with our comprehensive range of deposit solutions</p>
@@ -89,7 +91,7 @@ function DepositProductsPage() {
                                 ))}
                             </ul>
                         </div>
-                        <button 
+                        <button
                             className="learn-more-btn"
                             onClick={(e) => {
                                 e.stopPropagation();

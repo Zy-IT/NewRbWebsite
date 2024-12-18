@@ -36,7 +36,7 @@ function Home() {
     ];
 
     return (
-        <div className="home">
+        <div className="Home">
             <Navbar />
 
             {/* Header Section*/}

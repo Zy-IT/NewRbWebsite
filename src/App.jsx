@@ -37,6 +37,7 @@ import ContactUs from './pages/AboutUs/ContactUs/ContactUs';
 import AnnualReport from './pages/AboutUs/AnnualReport';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
 import TermsCondition from './pages/Application/TermsCondition/TermsConditions';
+import OnlineProcess from './pages/Application/OnlineProcess/OnlineProcess';
 
 
 
@@ -44,7 +45,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App-container">
-        <Navbar />
+
         <main className='Main-content'>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -91,6 +92,7 @@ function App() {
 
             {/*Terms and Conditions page and another set of page again */}
             <Route path="/T&C" element={<TermsCondition />} />
+            <Route path="/Application" element={<OnlineProcess />} />
           </Routes>
         </main>
       </div>
