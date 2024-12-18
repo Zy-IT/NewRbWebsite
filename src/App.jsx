@@ -32,7 +32,7 @@ import BillsPayment from './pages/ProductServices/OtherServices/BillsPayment/Bil
 import FundTransfer from './pages/ProductServices/OtherServices/FundTransfer/FundTransfer';
 import MobilePOSAtm from './pages/ProductServices/OtherServices/MobilePOSAtm/MobilePOSAtm';
 import CompanyProfile from './pages/AboutUs/CompanyProfile/CompanyProfile';
-import Careers from './pages/AboutUs/Careers';
+import Careers from './pages/AboutUs/Careers/Careers';
 import ContactUs from './pages/AboutUs/ContactUs/ContactUs';
 import AnnualReport from './pages/AboutUs/AnnualReport';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';

@@ -1,0 +1,361 @@
+{
+    "departments": [
+        "All",
+        "Audit",
+        "Accounting",
+        "Lending",
+        "Credit Investigation",
+        "IT",
+        "Compliance",
+        "Services and Maintenance",
+        "Cash Unit"
+    ],
+    "jobs": [
+        {
+            "id": 1,
+            "title": "Financial Auditor ",
+            "department": "Audit",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "5+ years",
+            "description": "We're looking for an experienced Audit that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Accountancy, Finance, or related field",
+                "5+ years of experience in Auditing",
+                "Must be available for field work"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Teller ",
+            "department": "Cash Unit",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "1+ years",
+            "description": "We're looking for an experienced Teller that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Finance, or related field",
+                "2+ years of experience in Teller",
+                "Polite and willing to learn"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Loan Officer",
+            "department": "Lending",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "0+ years",
+            "description": "We're looking for an Loan Officer that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Accountancy, or related field ",
+                "3-6 Months working in a bank or such",
+                "Oral and Written Communication",
+                "Attention to Details"
+            ],
+            "benefits": [
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Fraud Investigator ",
+            "department": "Credit Investigation",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "1+ years",
+            "description": "We're looking for an experienced Fraud Investigator that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Criminal Justice, or related field",
+                "1+ years of experience in Investigating Unit",
+                "Polite and willing to learn",
+                "Attention to details"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Software Engineer",
+            "department": "IT",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "2+ years",
+            "description": "We're looking for an experienced Software Engineer that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Information Technology, or related field",
+                "2+ years of experience in Hardware Maintenance",
+                "Polite and willing to learn",
+                "Experience with network configuration"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Compliance Officer",
+            "department": "Compliance",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "2+ years",
+            "description": "We're looking for an experienced Compliance that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Law, or related field",
+                "2+ years of experience in Hardware Maintenance",
+                "Polite and willing to learn",
+                "Experience with network configuration"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Maintenance Technician",
+            "department": "Service and Maintenance",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "0-2+ years",
+            "description": "We're looking for an Maintenance Technician that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "HighSchool Diploma ",
+                "2+ years of experience in Servicing",
+                "Polite and willing to learn",
+                "Patient and Understanding"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Accountant",
+            "department": "Accounting",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "2+ years",
+            "description": "We're looking for an experienced Accountant that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Accountancy, or related field",
+                "2+ years of experience in Hardware Maintenance",
+                "Polite and willing to learn",
+                "Experience with network configuration"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Book Keeper",
+            "department": "Accounting",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "2+ years",
+            "description": "We're looking for an experienced Book Keeper that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Accountancy, Finance, or related field",
+                "2+ years of experience in Book Keeping",
+                "Polite and willing to learn",
+                "Knowledge on Book Keeping"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Field Service Technician",
+            "department": "Service and Maintenance",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "0-2+ years",
+            "description": "We're looking for an Maintenance Technician that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "HighSchool Diploma ",
+                "2+ years of experience in Servicing",
+                "Polite and willing to learn",
+                "Patient and Understanding"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 11,
+            "title": "Collection Specialist",
+            "department": "Credit Investigation",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "1+ years",
+            "description": "We're looking for an experienced Collection Specialist that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Business Administration, or related field",
+                "1+ years of experience in Investigating Unit",
+                "Polite and willing to learn",
+                "Attention to details"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 12,
+            "title": "Data Privacy Officer",
+            "department": "Compliance",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "2+ years",
+            "description": "We're looking for an experienced Compliance that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Law, or related field",
+                "2+ years of experience in Hardware Maintenance",
+                "Polite and willing to learn",
+                "Experience with network configuration"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 13,
+            "title": "IT Support Associate",
+            "department": "IT",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "1+ years",
+            "description": "We're looking for an experienced IT Support that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Information Technology, or related field",
+                "1+ years of experience in Hardware Maintenance",
+                "Polite and willing to learn",
+                "Experience with network configuration"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 14,
+            "title": "Cashier",
+            "department": "Cash Unit",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "1+ years",
+            "description": "We're looking for an experienced Cashier that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Business Administration, or related field",
+                "1+ years of experience in Teller",
+                "Polite and willing to learn"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 15,
+            "title": "Credit Analyst",
+            "department": "Lending",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "0+ years",
+            "description": "We're looking for an Loan Officer that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Finance, or related field ",
+                "3-6 Months working in a bank or such",
+                "Oral and Written Communication",
+                "Attention to Details"
+            ],
+            "benefits": [
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        },
+        {
+            "id": 16,
+            "title": "Internal Auditor ",
+            "department": "Audit",
+            "location": "Cauayan City, Isabela",
+            "type": "Full-time",
+            "experience": "4+ years",
+            "description": "We're looking for an experienced Internal Auditor that can follow that task with minimal vision, more and more details...",
+            "requirements": [
+                "Bachelor's degree in Accountancy, Finance, or related field",
+                "5+ years of experience in Internal Auditing",
+                "Must be available for field work"
+            ],
+            "benefits": [
+                "Competitive salary",
+                "Health insurance",
+                "401(k) matching",
+                "More",
+                "More"
+            ]
+        }
+    ]
+}
