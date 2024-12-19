@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../../components/Navbar/Navbar";
 import { useState, useMemo } from 'react';
 import jobData from './Careers.json';
@@ -27,29 +28,45 @@ function Careers() {
 
     // Filter jobs based on selected department and job type
     const filteredJobs = useMemo(() => {
-        return jobData.jobs.filter(job => 
+        return jobData.jobs.filter(job =>
             (selectedDepartment === 'All' || job.department === selectedDepartment) &&
             (selectedJobType === 'All' || job.type === selectedJobType)
         );
     }, [selectedDepartment, selectedJobType]);
 
+    const scrolltotop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        })
+    }
+
+    const navigate = useNavigate();
+
+    const handletonavigate = () => {
+        navigate('/ApplyJob');
+    }
+
+
     return (
         <div className="Careers">
             <Navbar />
             <div className="C-screen">
-                <div className="C-header-container">
-                    <div className="C-header-content">
-                        <h1>JOIN RB CAUAYAN</h1>
-                        <p>Find your future in our careers</p>
+                <section className="C-header-section">
+                    <div className="C-header-container">
+                        <div className="C-header-content">
+                            <h1>JOIN RB CAUAYAN</h1>
+                            <p>Find your future in our careers</p>
+                        </div>
                     </div>
-                </div>
+                </section>
 
                 <div className="C-body">
                     <div className="C-filter-section">
                         <div className="C-filters-container">
                             <div className="C-filter-dropdown">
                                 <label htmlFor="department-select">Department:</label>
-                                <select 
+                                <select
                                     id="department-select"
                                     value={selectedDepartment}
                                     onChange={(e) => setSelectedDepartment(e.target.value)}
@@ -65,7 +82,7 @@ function Careers() {
 
                             <div className="C-filter-dropdown">
                                 <label htmlFor="jobtype-select">Job Type:</label>
-                                <select 
+                                <select
                                     id="jobtype-select"
                                     value={selectedJobType}
                                     onChange={(e) => setSelectedJobType(e.target.value)}
@@ -159,13 +176,19 @@ function Careers() {
                                         </ul>
                                     </div>
 
-                                    <button className="C-apply-button">Apply Now</button>
+                                    <button className="C-apply-button"
+                                    onClick={handletonavigate}
+                                    >Apply Now</button>
                                 </div>
                             </div>
                         </div>
                     )}
                 </div>
             </div>
+            <button 
+            className="C-scroll-top"
+            onClick={scrolltotop}
+            >↑</button>
         </div>
     );
 }

@@ -7,7 +7,7 @@ function OtherServicesPage() {
     const navigate = useNavigate();
 
     const handleServiceClick = (route) => {
-        navigate(route);  
+        navigate(route);
     };
 
     return (
@@ -15,8 +15,10 @@ function OtherServicesPage() {
             <Navbar />
 
             <div className="OSP-content">
-                <h1 className="OSP-title">Other Services</h1>
-                <p className="OSP-title-description">Explore our range of additional services tailored to meet your needs</p>
+                <div className='OSP-title-content'>
+                    <h1 className="OSP-title">Other Services</h1>
+                    <p className="OSP-title-description">Explore our range of additional services tailored to meet your needs</p>\
+                </div>
                 <div className="OSP-services-grid">
                     {servicesData.services.map((service) => (
                         <div

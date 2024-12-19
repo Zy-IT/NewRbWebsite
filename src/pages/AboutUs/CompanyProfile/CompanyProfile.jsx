@@ -2,6 +2,14 @@ import Navbar from "../../../components/Navbar/Navbar";
 import "./CompanyProfile.css";
 
 function CompanyProfile() {
+
+    const scrolltotop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        })
+    }   
+
     return (
         <div className="CP-company-profile">
             <Navbar />
@@ -174,6 +182,10 @@ function CompanyProfile() {
                     </div>
                 </div>
             </section>
+            <button
+             className="CP-scroll-top"
+             onClick={scrolltotop}
+            >↑</button>
         </div>
     );
 }

@@ -12,9 +12,9 @@
 /*Header Section*/
 .CU-header-section {
     background: linear-gradient(
-            rgba(26, 95, 122, 0.7),
-            rgba(26, 95, 122, 0.7)), 
-            url('/src/Assets/Cauayan.jpg');
+        rgba(26, 95, 122, 0.7), 
+        rgba(26, 95, 122, 0.7)
+    ), url('/src/Assets/Cauayan.jpg');
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -31,13 +31,14 @@
 
 .CU-header-container {
     max-width: 90%;
-    width: 800px;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 750px;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     animation: fadein 0.8s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @keyframes fadein {
@@ -262,7 +263,6 @@
     outline: none;
     box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.4);
 }
-
 
 /*Scroll Top Button*/
 .CU-scroll-top {

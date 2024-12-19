@@ -295,15 +295,16 @@
 }
 
 .SSD-requirements-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    padding: 0.5rem;
 }
 
 .SSD-requirement-card {
     display: flex;
     flex-direction: column;
-    width: 400px;
     gap: 10px;
     padding: 2rem;
     background: #f7fafc;

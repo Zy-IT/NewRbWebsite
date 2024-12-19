@@ -4,13 +4,11 @@ import "./BillsPayments.css";
 import { BsSpeedometer, BsShieldCheck, BsCashStack } from 'react-icons/bs';
 
 
-
 function BillsPayment() {
-    const navigate = useNavigate(); // Initialize useNavigate
-
+    const navigate = useNavigate();
     
     const handletonavigate = () => {
-        navigate('/T&C');
+        navigate('/A&U/ContactUs');
     };
 
     const scrolltodescription = () => {

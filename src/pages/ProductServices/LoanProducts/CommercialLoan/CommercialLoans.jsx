@@ -1,49 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../components/Navbar/Navbar";
 import "./CommercialLoans.css";
+import commercialLoansData from './CommercialLoans.json';
 
 function CommercialLoans () {
     const navigate = useNavigate();
-    const [activeCategory, setActiveCategory] = useState("Commercial");
-    const [categories, setCategories] = useState([]);
-    const [loanProducts, setloanProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('/src/pages/ProductServices/LoanProducts/CommercialLoan/CommercialLoans.json');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-                const data = await response.json();
-                setCategories(data.categories);
-                setloanProducts(data.loanProducts);
-                setLoading(false);
-            } catch (err) {
-                setError(err.message);
-                setLoading(false);
-            }
-        };
-
-        fetchData();
-    }, []);
-
+    const [activeCategory] = useState("Commercial");
+    
+    const { categories, loanProducts } = commercialLoansData;
     const filteredProducts = loanProducts.filter(product => product.category === activeCategory);
 
     const handleLoanCardClick = (route) => {
         navigate(route);
     };
-
-    if (loading) {
-        return <div className="loading">Loading...</div>;
-    }
-
-    if (error) {
-        return <div className="error">Error: {error}</div>;
-    }
 
     const handleCategoryClick = (category) => {
         switch(category) {
@@ -67,7 +37,7 @@ function CommercialLoans () {
             
             <div className="CL-container">
                 <div className="CL-header">
-                    <h1 className="CL-title">Commerial Loans</h1>
+                    <h1 className="CL-title">Commercial Loans</h1>
                     <p className="CL-subtitle">Context needed here</p>
                 </div>
 
@@ -83,7 +53,6 @@ function CommercialLoans () {
                         </button>
                     ))}
                 </div>
-
 
                 <div className="CL-loan-types">
                     {filteredProducts.map(loan => (

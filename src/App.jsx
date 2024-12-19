@@ -1,8 +1,8 @@
 {/*Imported Tools*/ }
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 
 {/*Components of the System*/ }
-import Navbar from "./components/Navbar/Navbar";
+import ScrollToTop from './components/ScrolltoTop';
 {/*Pages  of the WEB*/ }
 import Home from "./pages/Homepage/Home";
 import ProductServices from "./pages/ProductServices/ProductServices";
@@ -38,15 +38,18 @@ import AnnualReport from './pages/AboutUs/AnnualReport';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
 import TermsCondition from './pages/Application/TermsCondition/TermsConditions';
 import OnlineProcess from './pages/Application/OnlineProcess/OnlineProcess';
+import ApplyJob from './pages/Application/Apply/ApplyJob';
 
 
 
 function App() {
+
   return (
     <BrowserRouter>
       <div className="App-container">
 
         <main className='Main-content'>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             {/* Products and Services  Sector*/}
@@ -64,14 +67,14 @@ function App() {
             <Route path="/loan/AgriculturalLoans" element={<AgriculturalLoans />} />
             <Route path="/loan/AgriculturalLoans/AgriMasikapLoan" element={<AgriMasikapLoan />} />
             <Route path="/loan/AgriculturalLoans/AgriSagsaganLoan" element={<AgriSagsaganLoan />} />
-            <Route path="/loan/AgriculturalLoans/CropLoans" element={<CropLoan/>} />
+            <Route path="/loan/AgriculturalLoans/CropLoans" element={<CropLoan />} />
 
             <Route path="/loan/CommercialLoans" element={<CommercialLoans />} />
-            <Route path="/loan/CommercialLoans/NegoAsensoLoan" element={<NegoAsensoLoan/>} />
-            <Route path="/loan/CommercialLoans/KaAsensoLoan" element={<KaAsensoLoan/>} />
+            <Route path="/loan/CommercialLoans/NegoAsensoLoan" element={<NegoAsensoLoan />} />
+            <Route path="/loan/CommercialLoans/KaAsensoLoan" element={<KaAsensoLoan />} />
             <Route path="/loan/CommercialLoans/SmallBusinessLoan" element={<SmallBusinessLoan />} />
-            <Route path="/loan/CommercialLoans/MoneyShopLoan" element={<MoneyShopLoan/>} />
-            
+            <Route path="/loan/CommercialLoans/MoneyShopLoan" element={<MoneyShopLoan />} />
+
             <Route path="/loan/PersonalLoans" element={<PersonalLoans />} />
             <Route path="/loan/PersonalLoans/InstaCashLoan" element={<InstaCashLoan />} />
             <Route path="/loan/PersonalLoans/SalaryLoan" element={<SalaryLoan />} />
@@ -93,6 +96,7 @@ function App() {
             {/*Terms and Conditions page and another set of page again */}
             <Route path="/T&C" element={<TermsCondition />} />
             <Route path="/Application" element={<OnlineProcess />} />
+            <Route path="/ApplyJob" element={<ApplyJob />} />
           </Routes>
         </main>
       </div>

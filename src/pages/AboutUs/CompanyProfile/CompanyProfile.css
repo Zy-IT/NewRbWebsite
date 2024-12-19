@@ -1,4 +1,3 @@
-/* Company Profile Responsive CSS */
 :root {
     --primary-color: #1A5F7A;
     --secondary-color: #159895;
@@ -37,12 +36,13 @@
 .CP-hero-content {
     max-width: 90%;
     width: 800px;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     animation: fadein 0.8s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @keyframes fadein {
@@ -177,12 +177,16 @@
 .CP-founders-card-section {
     display: flex;
     flex-direction: row;
-    gap: 2rem; /* Add some space between the card and story */
-    align-items: stretch; /* Ensure both containers have the same height */
+    gap: 2rem;
+    align-items: stretch;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .CP-founder-card {
-    flex: 0 0 400px; /* Fixed width for the card */
+    flex: 1 1 300px;
+    max-width: 400px; 
+    min-width: 280px; 
     align-items: flex-start;
     text-align: center;
     background: var(--background-soft);
@@ -355,6 +359,30 @@
 .CP-board-president .CP-board-card {
     width: clamp(225px, 90%, 275px);
 }
+
+/*Scroll Top Button*/
+.CP-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.CP-scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Responsive Breakpoints */
 /* Extra Small Devices */

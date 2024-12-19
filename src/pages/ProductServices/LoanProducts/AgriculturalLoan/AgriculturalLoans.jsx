@@ -1,49 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../components/Navbar/Navbar";
 import "./AgriculturalLoans.css";
+import agriculturalLoansData from './AgriculturalLoans.json';
 
 function AgriculturalLoans () {
     const navigate = useNavigate();
-    const [activeCategory, setActiveCategory] = useState("Agricultural");
-    const [categories, setCategories] = useState([]);
-    const [loanProducts, setloanProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('/src/pages/ProductServices/LoanProducts/AgriculturalLoan/AgriculturalLoans.json');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-                const data = await response.json();
-                setCategories(data.categories);
-                setloanProducts(data.loanProducts);
-                setLoading(false);
-            } catch (err) {
-                setError(err.message);
-                setLoading(false);
-            }
-        };
-
-        fetchData();
-    }, []);
-
+    const [activeCategory] = useState("Agricultural");  
+    
+    const { categories, loanProducts } = agriculturalLoansData;
     const filteredProducts = loanProducts.filter(product => product.category === activeCategory);
 
     const handleLoanCardClick = (route) => {
         navigate(route);
     };
-
-    if (loading) {
-        return <div className="loading">Loading...</div>;
-    }
-
-    if (error) {
-        return <div className="error">Error: {error}</div>;
-    }
 
     const handleCategoryClick = (category) => {
         switch(category) {
@@ -83,7 +53,6 @@ function AgriculturalLoans () {
                         </button>
                     ))}
                 </div>
-
 
                 <div className="AL-loan-types">
                     {filteredProducts.map(loan => (
