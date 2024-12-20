@@ -1,5 +1,5 @@
 {/*Imported Tools*/ }
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 {/*Components of the System*/ }
 import ScrollToTop from './components/ScrolltoTop';

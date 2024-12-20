@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../components/Navbar/Navbar";
+import Footer from "../../../../components/Footer/Footer";
 import "./CommercialLoans.css";
 import commercialLoansData from './CommercialLoans.json';
 
-function CommercialLoans () {
+function CommercialLoans() {
     const navigate = useNavigate();
     const [activeCategory] = useState("Commercial");
-    
+
     const { categories, loanProducts } = commercialLoansData;
     const filteredProducts = loanProducts.filter(product => product.category === activeCategory);
 
@@ -16,7 +17,7 @@ function CommercialLoans () {
     };
 
     const handleCategoryClick = (category) => {
-        switch(category) {
+        switch (category) {
             case "Agricultural":
                 navigate("/loan/AgriculturalLoans");
                 break;
@@ -34,7 +35,7 @@ function CommercialLoans () {
     return (
         <div className="CL-personal-loans">
             <Navbar />
-            
+
             <div className="CL-container">
                 <div className="CL-header">
                     <h1 className="CL-title">Commercial Loans</h1>
@@ -56,15 +57,15 @@ function CommercialLoans () {
 
                 <div className="CL-loan-types">
                     {filteredProducts.map(loan => (
-                        <div 
-                            key={loan.id} 
+                        <div
+                            key={loan.id}
                             className="CL-loan-card"
                             onClick={() => handleLoanCardClick(loan.route)}
                         >
                             <div className="CL-loan-icon">{loan.icon}</div>
                             <h3>{loan.title}</h3>
                             <p>{loan.description}</p>
-                            <button 
+                            <button
                                 className="CL-learn-more"
                                 onClick={(e) => {
                                     e.stopPropagation();
@@ -77,6 +78,7 @@ function CommercialLoans () {
                     ))}
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

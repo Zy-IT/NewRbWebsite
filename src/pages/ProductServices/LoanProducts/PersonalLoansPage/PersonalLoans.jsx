@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../components/Navbar/Navbar";
+import Footer from "../../../../components/Footer/Footer";
 import "./PersonalLoans.css";
 import personalLoansData from './PersonalLoans.json';
 
@@ -77,6 +78,7 @@ function PersonalLoans () {
                     ))}
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

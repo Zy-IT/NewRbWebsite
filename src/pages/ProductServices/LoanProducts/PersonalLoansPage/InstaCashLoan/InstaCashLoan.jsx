@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../../components/Navbar/Navbar";
+import Footer from "../../../../../components/Footer/Footer";
 import './InstaCashLoan.css';
 import { BsSpeedometer, BsShieldCheck, BsCashStack } from 'react-icons/bs';
 
@@ -104,6 +105,7 @@ function InstacashLoan() {
                     onClick={scrolltoTop}
                 >↑</button>
             </div>
+            <Footer />
         </div>
     );
 }

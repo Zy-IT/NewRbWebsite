@@ -4,6 +4,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import branchdata from "./ContactUs.json";
 import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
 import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
 import "./ContactUs.css";
 
@@ -172,6 +173,7 @@ function ContactUs() {
                                 <div className="CU-form-card">
                                     <h2 className="CU-form-title">Send us a Message</h2>
                                     <form onSubmit={handleSubmit} className="CU-form">
+                                        {/* Existing form groups remain the same */}
                                         <div className="CU-form-group">
                                             <label htmlFor="fullname">Full Name</label>
                                             <input
@@ -224,6 +226,23 @@ function ContactUs() {
                                         </button>
                                     </form>
                                 </div>
+
+                                <div className="CU-message-content">
+                                    <h3>Get in Touch</h3>
+                                    <p>
+                                        Have questions about our products or services? We're here to help!
+                                        Fill out the form and our team will get back to you within 24 hours.
+                                    </p>
+                                </div>
+
+                                <div className="CU-message-content">
+                                    <h3>Customer Support</h3>
+                                    <p>
+                                        We value your feedback and are committed to providing excellent service.
+                                        Our dedicated support team is ready to assist you with any concerns
+                                        or inquiries you may have about our products and services.
+                                    </p>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -232,6 +251,7 @@ function ContactUs() {
                     onClick={scrolltotop}
                 > ↑ </button>
             </div>
+            <Footer />
         </div>
     );
 }

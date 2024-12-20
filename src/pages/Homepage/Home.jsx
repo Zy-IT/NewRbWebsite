@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 import { ArrowRight, Shield, Landmark, CreditCard } from 'lucide-react';
 import './Home.css';
 
@@ -114,6 +115,8 @@ function Home() {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../../../components/Navbar/Navbar'
+import Footer from '../../../../components/Footer/Footer';
 import "./CheckingAccount.css";
 
 function CheckingAccount() {
@@ -124,6 +125,7 @@ function CheckingAccount() {
                     onClick={scrolltoTop}
                 > ↑ </button>
             </div>
+            <Footer />
         </div>
     );
 }

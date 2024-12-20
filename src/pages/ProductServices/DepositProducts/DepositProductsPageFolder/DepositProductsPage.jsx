@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./DepositProductsPage.css";
 import Navbar from "../../../../components/Navbar/Navbar";
+import Footer from "../../../../components/Footer/Footer";
 import depositData from './DepositProductPage.json';
 
 function DepositProductsPage() {
@@ -61,6 +62,7 @@ function DepositProductsPage() {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 }

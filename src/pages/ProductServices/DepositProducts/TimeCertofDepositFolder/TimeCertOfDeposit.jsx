@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../../../components/Navbar/Navbar';
+import Footer from '../../../../components/Footer/Footer';
 import './TimeCertOfDeposit.css';
 
 function TimeCertOfDeposit() {
@@ -147,6 +148,7 @@ function TimeCertOfDeposit() {
                     onClick={scrolltoTop}
                 > ↑ </button>
             </div>
+            <Footer />
         </div>
     );
 }

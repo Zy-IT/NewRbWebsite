@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
 import { useState, useMemo } from 'react';
 import jobData from './Careers.json';
 import './Careers.css';
@@ -177,7 +178,7 @@ function Careers() {
                                     </div>
 
                                     <button className="C-apply-button"
-                                    onClick={handletonavigate}
+                                        onClick={handletonavigate}
                                     >Apply Now</button>
                                 </div>
                             </div>
@@ -185,10 +186,11 @@ function Careers() {
                     )}
                 </div>
             </div>
-            <button 
-            className="C-scroll-top"
-            onClick={scrolltotop}
+            <button
+                className="C-scroll-top"
+                onClick={scrolltotop}
             >↑</button>
+            <Footer />
         </div>
     );
 }

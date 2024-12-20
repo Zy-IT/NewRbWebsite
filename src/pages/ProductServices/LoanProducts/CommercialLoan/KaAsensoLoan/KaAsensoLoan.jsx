@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Navbar from "../../../../../components/Navbar/Navbar";
+import Footer from "../../../../../components/Footer/Footer";
 import './KaAsensoLoan.css';
 
 function KaAsensoLoan() {
@@ -81,6 +82,7 @@ function KaAsensoLoan() {
                     onClick={scrolltotop}
                 > ↑ </button>
             </div>
+            <Footer />
         </div>
     );
 }

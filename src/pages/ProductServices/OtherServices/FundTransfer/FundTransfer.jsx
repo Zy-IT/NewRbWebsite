@@ -1,5 +1,5 @@
-// FundTransfer.jsx
 import Navbar from "../../../../components/Navbar/Navbar";
+import Footer from "../../../../components/Footer/Footer";
 import { useNavigate } from 'react-router-dom';
 import './FundTransfer.css';
 import { BsSpeedometer, BsShieldCheck, BsCashStack } from 'react-icons/bs';
@@ -105,8 +105,9 @@ function FundTransfer() {
                     onClick={scrolltotop}
                 >↑</button>
             </div>
+            <Footer />
         </div>
     );
-}
+} 
 
 export default FundTransfer;

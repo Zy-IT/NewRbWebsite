@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../../components/Navbar/Navbar";
+import Footer from "../../../../../components/Footer/Footer";
 import './NegoAsensoLoan.css';
 
 function NegoAsensoLoan() {
@@ -86,6 +87,7 @@ function NegoAsensoLoan() {
                     onClick={scrollToTop}
                 >↑</button>
             </div>
+            <Footer />
         </div>
     );
 }

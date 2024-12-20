@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../../components/Navbar/Navbar";
+import Footer from "../../../../../components/Footer/Footer";
 import './AgriMasikapLoan.css';
 
 function AgriMasikapLoan() {
@@ -121,6 +122,7 @@ function AgriMasikapLoan() {
             >
                 ↑
             </button>
+            <Footer />
         </div>
     );
 }

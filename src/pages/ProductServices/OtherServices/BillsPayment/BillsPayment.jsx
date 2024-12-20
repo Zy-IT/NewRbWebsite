@@ -1,5 +1,6 @@
 import Navbar from "../../../../components/Navbar/Navbar";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import Footer from "../../../../components/Footer/Footer";
+import { useNavigate } from "react-router-dom"; // 
 import "./BillsPayments.css";
 import { BsSpeedometer, BsShieldCheck, BsCashStack } from 'react-icons/bs';
 
@@ -104,6 +105,7 @@ function BillsPayment() {
                     onClick={scrolltotop}
                 >↑</button>
             </div>
+            <Footer />  
         </div>
     );
 }

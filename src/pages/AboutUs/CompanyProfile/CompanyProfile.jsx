@@ -1,4 +1,5 @@
 import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
 import "./CompanyProfile.css";
 
 function CompanyProfile() {
@@ -8,7 +9,7 @@ function CompanyProfile() {
             top: 0,
             behavior: "smooth",
         })
-    }   
+    }
 
     return (
         <div className="CP-company-profile">
@@ -183,9 +184,10 @@ function CompanyProfile() {
                 </div>
             </section>
             <button
-             className="CP-scroll-top"
-             onClick={scrolltotop}
+                className="CP-scroll-top"
+                onClick={scrolltotop}
             >↑</button>
+            <Footer />
         </div>
     );
 }

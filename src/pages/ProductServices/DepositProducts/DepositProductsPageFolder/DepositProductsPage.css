@@ -1,14 +1,10 @@
-  /* DepositProductsPage.css */
   .deposit-page {
       padding: 4rem 2rem;
       max-width: 1440px;
       margin: 0 auto;
-      min-height: 100vh;
       background-color: #f8fafc;
-      position: relative;
   }
 
-  /* Enhanced background pattern with subtle animation */
   .deposit-page::before {
       content: '';
       position: fixed;
@@ -16,7 +12,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: 
+      background:
           linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, transparent 50%),
           linear-gradient(45deg, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
       z-index: 0;
@@ -29,18 +25,19 @@
       position: relative;
       z-index: 1;
       transition: transform 0.3s ease;
-      animation: fadein 0.8s ease; 
+      animation: fadein 0.8s ease;
   }
 
   @keyframes fadein {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0px);
+      }
   }
 
   .deposit-header:hover {
@@ -253,19 +250,19 @@
       .deposit-page {
           padding: 2rem 1rem;
       }
-      
+
       .deposit-header h1 {
           font-size: 2.5rem;
       }
-      
+
       .deposit-header p {
           font-size: 1.125rem;
       }
-      
+
       .deposit-grid {
           grid-template-columns: 1fr;
       }
-      
+
       .product-card {
           padding: 2rem;
       }

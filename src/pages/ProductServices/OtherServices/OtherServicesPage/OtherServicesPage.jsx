@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../../../components/Navbar/Navbar';
+import Footer from '../../../../components/Footer/Footer';
 import servicesData from './OtherServicesPage.json';
 import './OtherServicesPage.css';
 
@@ -51,6 +52,7 @@ function OtherServicesPage() {
                     ))}
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

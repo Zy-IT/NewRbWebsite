@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../components/Navbar/Navbar";
+import Footer from "../../../../components/Footer/Footer";
 import './MobilePOSAtm.css';
 import { BsSpeedometer, BsShieldCheck, BsCashStack } from 'react-icons/bs';
 
@@ -105,6 +106,7 @@ function MobilePOSAtm() {
                     onClick={scrolltotop}
                 >↑</button>
             </div>
+            <Footer />
         </div>
     );
 }

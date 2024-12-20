@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../../../components/Navbar/Navbar';
+import Footer from '../../../../components/Footer/Footer';
 import './StudentSavingsDeposit.css';
 
 function StudentSavingDeposit() {
@@ -136,6 +137,7 @@ function StudentSavingDeposit() {
                     onClick={scrolltoTop}
                 > ↑ </button>
             </div>
+            <Footer />
         </div>
     );
 }

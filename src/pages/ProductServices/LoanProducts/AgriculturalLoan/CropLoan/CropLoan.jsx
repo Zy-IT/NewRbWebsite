@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../../components/Navbar/Navbar";
+import Footer from "../../../../../components/Footer/Footer";
 import './CropLoan.css';
 
 function CropLoan () {
@@ -119,6 +120,7 @@ function CropLoan () {
                 className="CLL-scroll-top"
                 onClick={scrollToTop}
             > ↑ </button>
+            <Footer />
         </div>
     );
 }

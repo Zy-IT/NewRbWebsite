@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./NewsUpdate.css";
 
 function NewsUpdate() {
@@ -18,7 +19,7 @@ function NewsUpdate() {
                     throw new Error('Failed to fetch news');
                 }
                 const data = await response.json();
-                
+
                 // Parse and sort news by date in descending order (latest first)
                 const sortedNews = data.news.sort((a, b) => {
                     const dateA = new Date(a.date);
@@ -84,12 +85,12 @@ function NewsUpdate() {
     return (
         <div className="News-Update">
             <Navbar />
-            
+
             <div className="NU-container">
                 <div className='NU-header-container'>
                     <div className='NU-header-content'>
-                        <h1>News and Update</h1> 
-                        <p>Stay Tuned with the latest updates</p> 
+                        <h1>News and Update</h1>
+                        <p>Stay Tuned with the latest updates</p>
                     </div>
                 </div>
 
@@ -133,15 +134,15 @@ function NewsUpdate() {
 
                 {/* News Details Modal */}
                 {selectedNews && (
-                    <div 
+                    <div
                         className="NU-modal-overlay"
                         onClick={closeNewsModal}
                     >
-                        <div 
+                        <div
                             className="NU-modal-content"
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <button 
+                            <button
                                 className="NU-modal-close"
                                 onClick={closeNewsModal}
                             >
@@ -163,10 +164,11 @@ function NewsUpdate() {
                     </div>
                 )}
 
-            <button className='NU-scroll-top'
-            onClick={scrollToTop}
-            > ↑ </button>
+                <button className='NU-scroll-top'
+                    onClick={scrollToTop}
+                > ↑ </button>
             </div>
+            <Footer />
         </div>
     );
 }
