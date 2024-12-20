@@ -118,7 +118,7 @@ function CompanyProfile() {
                     <div className="CP-board-top">
                         <div className="CP-board-founder CP-board-position">
                             <div className="CP-board-card">
-                                <img src="/src/Assets/BoardofDirectors/Founder.jpg" alt="Founder" />
+                                <img src="/src/Assets/Founder.jpg" alt="Founder" />
                                 <div className="CP-board-info">
                                     <h3>Mrs. Juana R. Bucag</h3>
                                     <p>Founder</p>
@@ -129,7 +129,7 @@ function CompanyProfile() {
                     <div className="CP-board-middle">
                         <div className="CP-board-chairman CP-board-position">
                             <div className="CP-board-card">
-                                <img src="/src/Assets/BoardofDirectors/Chairman.jpg" alt="Chairman" />
+                                <img src="/src/Assets/Chairman.jpg" alt="Chairman" />
                                 <div className="CP-board-info">
                                     <h3>Dr. Eduardo R. Bucag</h3>
                                     <p>Chairman of the Board</p>
@@ -138,7 +138,7 @@ function CompanyProfile() {
                         </div>
                         <div className="CP-board-vice-chairman CP-board-position">
                             <div className="CP-board-card">
-                                <img src="/src/Assets/BoardofDirectors/ViceChairman.jpg" alt="Vice Chairman" />
+                                <img src="/src/Assets/ViceChairman.jpg" alt="Vice Chairman" />
                                 <div className="CP-board-info">
                                     <h3>Mr. Edgardo R. Bucag</h3>
                                     <p>Vice Chairman of the Board</p>
@@ -149,7 +149,7 @@ function CompanyProfile() {
                     <div className="CP-board-bottom">
                         <div className="CP-board-president CP-board-position">
                             <div className="CP-board-card">
-                                <img src="/src/Assets/BoardofDirectors/President.jpg" alt="President" />
+                                <img src="/src/Assets/President.jpg" alt="President" />
                                 <div className="CP-board-info">
                                     <h3>Ms. Charita P. Guinid</h3>
                                     <p>President</p>
@@ -158,15 +158,15 @@ function CompanyProfile() {
                         </div>
                         <div className="CP-board-directors">
                             {[
-                                { src: "/src/Assets/BoardofDirectors/BoardDirector1.jpg", name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
+                                { src: "/src/Assets/BoardDirector1.jpg", name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
 
-                                { src: "/src/Assets/BoardofDirectors/BoardDirector4.jpg", name: "Board Director ", title: "Board of Director" },
+                                { src: "/src/Assets/BoardDirector4.jpg", name: "Board Director ", title: "Board of Director" },
 
-                                { src: "/src/Assets/BoardofDirectors/BoardDirector5.jpg", name: "Board Director ", title: "Board of Director" },
+                                { src: "/src/Assets/BoardDirector5.jpg", name: "Board Director ", title: "Board of Director" },
 
-                                { src: "/src/Assets/BoardofDirectors/BoardDirector2.jpg", name: "Board Director ", title: "Board of Director" },
+                                { src: "/src/Assets/BoardDirector2.jpg", name: "Board Director ", title: "Board of Director" },
 
-                                { src: "/src/Assets/BoardofDirectors/BoardDirector3.jpg", name: "Board Director ", title: "Board of Director" }
+                                { src: "/src/Assets/BoardDirector3.jpg", name: "Board Director ", title: "Board of Director" }
                             ].map((director, index) => (
                                 <div key={index} className="CP-board-position">
                                     <div className="CP-board-card">
