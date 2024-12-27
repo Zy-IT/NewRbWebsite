@@ -43,15 +43,21 @@ function RegularSavingsAccount() {
               <h3>Secure Banking</h3>
               <p>Advanced security measures to protect your funds</p>
             </div>
-            <div className="RSA-feature-card">
-              <div className="RSA-feature-icon">📱</div>
-              <h3>Online Banking</h3>
-              <p>24/7 access to your account through our digital platforms</p>
-            </div>
-            <div className="RSA-feature-card">
-              <div className="RSA-feature-icon">💳</div>
-              <h3>ATM Access</h3>
-              <p>Widespread ATM network for convenient withdrawals</p>
+          </div>
+        </section>
+
+        <section className="RSA-description-section">
+          <div className="RSA-description-container">
+            <div className="RSA-description-grid">
+              <div className="RSA-description-content">
+                <h2>What is a Regular Savings Account?</h2>
+                <p>
+                  A Regular Savings Account is a secure and convenient deposit product designed
+                  for individuals or businesses. It enables easy deposit transactions while meeting
+                  the bank's requirements and adhering to its terms and conditions.
+                  Ideal for regular savers seeking a reliable way to manage their funds.
+                </p>
+              </div>
             </div>
           </div>
         </section>

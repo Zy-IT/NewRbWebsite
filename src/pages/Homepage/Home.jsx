@@ -3,10 +3,17 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import { ArrowRight, Shield, Landmark, CreditCard } from 'lucide-react';
 import './Home.css';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
 
+    const navigate = useNavigate();
 
+    const handletonavigate = () => {
+        navigate("/A&U/ContactUs")
+    }
+
+    
     const scrolltoServices = () => {
         const services = document.querySelector('.features-section');
         if (services) {
@@ -106,11 +113,10 @@ function Home() {
                     <h2>Reach out to Us?</h2>
                     <p> Contact us anytime anywhere</p>
                     <div className='cta-buttons'>
-                        <button className='cta-button2'>
-                            Read More
-                        </button>
-                        <button className="cta-button1">
-                            Contact Us
+                        <button
+                            className="cta-button1"
+                        onClick={handletonavigate}
+                        >Contact Us
                         </button>
                     </div>
                 </div>

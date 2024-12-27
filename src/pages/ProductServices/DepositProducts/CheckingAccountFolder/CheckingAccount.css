@@ -20,10 +20,11 @@
 
 .CA-hero {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    height: 225px;
     color: white;
     padding: 5rem 2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     position: relative;
     box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);

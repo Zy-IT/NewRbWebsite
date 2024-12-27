@@ -34,16 +34,6 @@ function CheckingAccount() {
                     <h2>Account Benefits</h2>
                     <div className="CA-benefits-grid">
                         <div className="CA-benefit-card">
-                            <div className="CA-benefit-icon">💳</div>
-                            <h3>Free Debit Card</h3>
-                            <p>Access your funds 24/7 with our secure debit card</p>
-                        </div>
-                        <div className="CA-benefit-card">
-                            <div className="CA-benefit-icon">📱</div>
-                            <h3>Online Banking</h3>
-                            <p>Manage your account anytime, anywhere</p>
-                        </div>
-                        <div className="CA-benefit-card">
                             <div className="CA-benefit-icon">📝</div>
                             <h3>Unlimited Transactions</h3>
                             <p>No limits on withdrawals or deposits</p>
@@ -56,12 +46,17 @@ function CheckingAccount() {
                     </div>
                 </section>
 
+                <section className='CA-description-section'>
+                    <div className='CA-description-container'>
+                        <div className='CA-description-'>
+
+                        </div>
+                    </div>
+                </section>
+
+
                 <section className="CA-features">
                     <div className="CA-features-container">
-                        <div className='CA-features-description'>
-                            <h1>Description</h1>
-                            <p>Our checking account offers a range of features to meet your financial needs</p>
-                        </div>
                         <div className="CA-features-content">
                             <h2>Key Features</h2>
                             <ul className="CA-features-list">

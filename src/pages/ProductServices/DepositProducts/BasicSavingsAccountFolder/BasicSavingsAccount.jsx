@@ -11,7 +11,6 @@ function BasicSavingsAccount() {
     navigate('/T&C');
   }
 
-
   const scrolltoTop = () => {
     window.scrollTo({
       top: 0,
@@ -41,18 +40,21 @@ function BasicSavingsAccount() {
             </div>
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
-              <h3>Zero Minimum Balance</h3>
-              <p>Start saving with any amount you're comfortable with</p>
+              <h3>Small Minimum Balance</h3>
+              <p>Start saving as low as 100.00 Pesos</p>
             </div>
-            <div className="BSA-feature-card">
-              <div className="BSA-feature-icon">📱</div>
-              <h3>Digital Banking</h3>
-              <p>24/7 access to your account through our mobile app</p>
-            </div>
-            <div className="BSA-feature-card">
-              <div className="BSA-feature-icon">💳</div>
-              <h3>ATM Access</h3>
-              <p>Convenient withdrawals through our ATM network</p>
+          </div>
+        </section>
+
+        <section className="BSA-description-section">
+          <div className="BSA-description-container">
+            <div className="BSA-description-content">
+              <h2>What is a Basic Savings Account?</h2>
+              <p>
+                A Basic Savings Account is a savings account designed for individuals who are new
+                to banking and want to start saving with a simple and secure account. It offers
+                competitive interest rates, zero minimum balance, and convenient ATM withdrawals.
+              </p>
             </div>
           </div>
         </section>

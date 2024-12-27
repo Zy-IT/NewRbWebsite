@@ -103,11 +103,59 @@ function CompanyProfile() {
                 </div>
 
                 <div className="CP-mission-section">
-                    <div className="CP-mission-content">
-                        <h2>Our Commitment</h2>
-                        <p>Since our establishment, we have been dedicated to providing simplified and affordable credit solutions
-                            to farmers and businessmen in Cauayan, Isabela and neighboring municipalities. Our commitment to
-                            excellence and customer satisfaction has earned us a loyal customer base that continues to grow.</p>
+                    <div className="CP-mission-vision-row">
+                        <div className="CP-vision-content">
+                            <h2>Our Vision</h2>
+                            <p>To be one of the best provider financial services in the rural banking industry.</p>
+                        </div>
+                        <div className="CP-mission-content">
+                            <h2>Our Mission</h2>
+                            <p>
+                                To help improve quality of life by delivering superior services and operate with a
+                                high level of competence, integrity, honesty, professionalism, and community involvement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="CP-core-values-content">
+                        <h2>Our Core Values</h2>
+                        <ul>
+                            <li>
+                                 <h2>SERVICE</h2>
+                                <p>We provide and deliver the best products and services to all of our clients. We focus on their needs.</p>
+                            </li>
+                            <li>
+                                <h2>INTEGRITY & PROFESSIONALISM</h2>
+                                <p>
+                                    We practice honesty, transparency, fairness and demonstrate mutual respect and trust with others.
+                                    We uphold high ethical standards and conduct ourselves in a manner that dignifies the reputation
+                                    of the bank. We take responsibility and stand up for our actions.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>CARE FOR EMPLOYEES</h2>
+                                <p>We practice a culture that attracts, retains, rewards and empowers employees.</p>
+                            </li>
+                            <li>
+                                <h2>DIVERSITY</h2>
+                                <p>
+                                    We recognize that we have varying and sometimes opposing views.
+                                    This is only because of differences in perceptions and how to improve
+                                    and promote the interest of the company, our clients, and our employees.
+                                    As such, we welcome, listen and respect all perspectives and views.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>EXCELLENCE</h2>
+                                <p>
+                                    We put the company our first priority. We operate as a competitive and profitable
+                                    business and work as a team to attain our organizational goals. We constantly strive
+                                    to be the number one. We act quickly and stand for the highest quality we deliver.
+                                    Our employees are trained to excel, to deliver their best performance and be as
+                                    productive as they can be.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -161,13 +209,13 @@ function CompanyProfile() {
                             {[
                                 { src: "/src/Assets/BoardDirector1.jpg", name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
 
-                                { src: "/src/Assets/BoardDirector4.jpg", name: "Board Director ", title: "Board of Director" },
+                                { src: "/src/Assets/BoardDirector4.jpg", name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
 
-                                { src: "/src/Assets/BoardDirector5.jpg", name: "Board Director ", title: "Board of Director" },
+                                { src: "/src/Assets/BoardDirector5.jpg", name: "Engr. Susana S. Wandag", title: "Board of Director" },
 
-                                { src: "/src/Assets/BoardDirector2.jpg", name: "Board Director ", title: "Board of Director" },
+                                { src: "/src/Assets/BoardDirector2.jpg", name: "Engr. Ronaldo R. Bucag", title: "Board of Director" },
 
-                                { src: "/src/Assets/BoardDirector3.jpg", name: "Board Director ", title: "Board of Director" }
+                                { src: "/src/Assets/BoardDirector3.jpg", name: "Mr. Danilo R. San Pedro", title: "Board of Director" }
                             ].map((director, index) => (
                                 <div key={index} className="CP-board-position">
                                     <div className="CP-board-card">

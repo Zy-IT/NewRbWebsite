@@ -20,7 +20,7 @@
             "title": "Agri-Masikap Loans",
             "description": "Financing for agricultural machinery and equipment",
             "category": "Agricultural",
-            "image": "/src/Assets/ProductServices/LoanProducts/Agricultural_Loan.png",
+            "image": "/src/Assets/Agricultural_Loan.png",
             "route": "/loan/AgriculturalLoans/AgriMasikapLoan"
         },
         {
@@ -28,7 +28,7 @@
             "title": "Agri-Sagsagan Loan",
             "description": "Seasonal loans to support crop cultivation",
             "category": "Agricultural",
-            "image": "/src/Assets/ProductServices/LoanProducts/Commercial_Loan.png",
+            "image": "/src/Assets/Commercial_Loan.png",
             "route": "/loan/AgriculturalLoans/AgriSagsaganLoan"
         },
         {
@@ -36,7 +36,7 @@
             "title": "Crop Loans",
             "description": "Flexible financing for growing businesses",
             "category": "Agricultural",
-            "image": "/src/Assets/ProductServices/LoanProducts/Personal_Loan.png",
+            "image": "/src/Assets/Personal_Loan.png",
             "route": "/loan/AgriculturalLoans/CropLoans"
         },
         
@@ -45,7 +45,7 @@
             "title": "Nego-Asenso Loan ",
             "description": "Flexible financing for growing businesses",
             "category": "Commercial",
-            "image": "/src/Assets/ProductServices/LoanProducts/Personal_Loan.png",
+            "image": "/src/Assets/Personal_Loan.png",
             "route": "/loan/CommercialLoans/NegoAsensoLoan"
         },
         {
@@ -53,7 +53,7 @@
             "title": "Ka-Asenso Loans",
             "description": "Flexible financing for growing businesses",
             "category": "Commercial",
-            "image": "/src/Assets/ProductServices/LoanProducts/Personal_Loan.png",
+            "image": "/src/Assets/Personal_Loan.png",
             "route": "/loan/CommercialLoans/KaAsensoLoan"
         },
         {
@@ -61,7 +61,7 @@
             "title": "Small Business Loans",
             "description": "Flexible financing for growing businesses",
             "category": "Commercial",
-            "image": "/src/Assets/ProductServices/LoanProducts/Personal_Loan.png",
+            "image": "/src/Assets/Personal_Loan.png",
             "route": "loan/CommercialLoans/SmallBusinessLoan"
         },
         {
@@ -69,7 +69,7 @@
             "title": "Money Shop Loans",
             "description": "Flexible financing for growing businesses",
             "category": "Commercial",
-            "image": "/src/Assets/ProductServices/LoanProducts/Personal_Loan.png",
+            "image": "/src/Assets/Personal_Loan.png",
             "route": "/loan/CommercialLoans/MoneyShopLoan"
         },
 
@@ -78,7 +78,7 @@
             "title": "Insta-Cash Loans",
             "description": "Flexible financing for growing businesses",
             "category": "Personal",
-            "image": "/src/Assets/ProductServices/LoanProducts/Personal_Loan.png",
+            "image": "/src/Assets/Personal_Loan.png",
             "route": "/loan/PersonalLoans/InstaCashLoan"
         },
         {
@@ -86,7 +86,7 @@
             "title": "Salary Loans",
             "description": "Flexible financing for growing businesses",
             "category": "Personal",
-            "image": "/src/Assets/ProductServices/LoanProducts/Personal_Loan.png",
+            "image": "/src/Assets/Personal_Loan.png",
             "route": "/loan/PersonalLoans/SalaryLoan"
         }
         

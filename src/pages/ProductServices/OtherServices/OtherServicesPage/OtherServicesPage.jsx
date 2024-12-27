@@ -18,7 +18,7 @@ function OtherServicesPage() {
             <div className="OSP-content">
                 <div className='OSP-title-content'>
                     <h1 className="OSP-title">Other Services</h1>
-                    <p className="OSP-title-description">Explore our range of additional services tailored to meet your needs</p>\
+                    <p className="OSP-title-description">Explore our range of additional services tailored to meet your needs</p>
                 </div>
                 <div className="OSP-services-grid">
                     {servicesData.services.map((service) => (

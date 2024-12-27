@@ -211,7 +211,7 @@
     transition: filter 0.3s ease;
 }
 
-.CP-founder-card:hover .CP-founder-image {
+.CP-founder-card:hover .CP-founder-image { 
     filter: grayscale(0%);
 }
 
@@ -224,37 +224,119 @@
 }
 
 .CP-founder-story {
-    flex: 1; /* Allow the story to take up remaining space */
+    flex: 1; 
     background: var(--background-soft);
     display: flex;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Mission Section */
+/*<-------Mission-Vision Section--------->*/
 .CP-mission-section {
     background: var(--primary-color);
     color: var(--text-light);
     padding: 6rem 2rem;
+    position: relative;
 }
 
-.CP-mission-content {
-    max-width: 800px;
-    margin: 0 auto;
+/* Mission and Vision layout */
+.CP-mission-vision-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    max-width: 1400px;
+    margin: 0 auto 4rem;
+}
+
+.CP-mission-content,
+.CP-vision-content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.CP-mission-content h2,
+.CP-vision-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
-.CP-mission-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-light);
+.CP-mission-content p,
+.CP-vision-content p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    text-align: center;
 }
 
-.CP-mission-content p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    opacity: 0.9;
+/* Simplified Core Values */
+.CP-core-values-content {
+    max-width: 1400px;
+    position: relative;
+    top: 2rem;
+    margin: 3rem auto 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    top: 10px;
 }
+
+.CP-core-values-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.CP-core-values-content ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.CP-core-values-content li {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.75rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.CP-core-values-content li:hover {
+    transform: translateY(-5px);
+    border: 2px solid #F5F5F5 ;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.CP-core-values-content li h2 {
+    position: relative;
+    text-align: center;
+}
+
+.CP-core-values-content li > :first-child {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: white;
+    text-align: center;
+}
+
+.CP-core-values-content li p {
+    font-size: 17px;  
+    line-height: 1.4;   
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin: 0;
+}
+
+
 
 /* Board of Directors Responsive */
 .CP-board-hierarchy {
@@ -384,100 +466,187 @@
 }
 
 
-/* Responsive Breakpoints */
-/* Extra Small Devices */
-@media (max-width: 480px) {
-    .CP-hero-section {
-        min-height: 60vh;
+@media (max-width: 1024px) {
+    .CP-hero-content {
+        max-width: 95%;
+        padding: 2rem;
     }
 
-    .CP-timeline::before {
-        left: 15px;
+    .CP-timeline {
+        max-width: 100%;
+        padding: 0 0.5rem;
     }
 
-    .CP-timeline-item {
-        flex-direction: column;
-        align-items: flex-start;
+    .CP-mission-vision-row {
+        padding: 0 1rem;
+    }
+}
+
+/* Medium Devices - Additional Adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .CP-founders-card-section {
+        justify-content: center;
+        gap: 1.5rem;
     }
 
-    .CP-content {
-        width: 100%;
-        margin-left: 30px !important;
-        border: 2px solid #57C5B6;
-        padding: 20px;
-        border-radius: 10px;
+    .CP-founder-card {
+        flex: 0 1 calc(50% - 1.5rem);
+        min-width: 250px;
     }
 
-    .CP-year {
-        margin-bottom: 1rem;
+    .CP-founder-image {
+        height: 300px;
     }
 
-    .CP-board-hierarchy {
-        gap: 2rem;
+    .CP-board-card {
+        width: calc(50% - 2rem);
+        margin: 1rem;
     }
 
-    .CP-board-top,
-    .CP-board-middle,
-    .CP-board-bottom {
+    .CP-core-values-content {
+        padding: 2rem;
+    }
+}
+
+/* Small Devices - Enhanced */
+@media (min-width: 481px) and (max-width: 768px) {
+    .CP-hero-content {
+        padding: 1.5rem;
+    }
+
+    .CP-hero-content h1 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+    }
+
+    .CP-hero-content p {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    }
+
+    .CP-founders-card-section {
         flex-direction: column;
         align-items: center;
     }
 
-    .CP-hero-content h1 {
-        font-size: 2.5rem;
+    .CP-founder-card {
+        width: 100%;
+        max-width: 400px;
     }
 
-    .CP-hero-content p {
-        font-size: 1.2rem;
-    }
-}
-
-/* Small Devices */
-@media (min-width: 481px) and (max-width: 768px) {
-    .CP-timeline-item:nth-child(even) .CP-content {
-        margin-left: 50px;
+    .CP-mission-content,
+    .CP-vision-content {
+        padding: 2rem 1.5rem;
     }
 
-    .CP-timeline-item:nth-child(odd) .CP-content {
-        margin-right: 50px;
+    .CP-mission-content h2,
+    .CP-vision-content h2 {
+        font-size: 2rem;
     }
 
-    .CP-timeline::before {
-        left: 30px;
-    }
-}
-
-/* Medium Devices */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .CP-timeline-item {
-        flex-direction: row;
-        justify-content: center;
+    .CP-core-values-content ul {
+        grid-template-columns: 1fr;
     }
 
-    .CP-timeline-item:nth-child(even) .CP-content {
-        margin-left: 30px;
-    }
-
-    .CP-timeline-item:nth-child(odd) .CP-content {
-        margin-right: 30px;
+    .CP-board-card img {
+        height: 300px;
     }
 }
 
-/* Large Devices */
-@media (min-width: 1025px) {
-    .CP-timeline-item:nth-child(odd) {
-        flex-direction: row-reverse;
+/* Extra Small Devices - Enhanced */
+@media (max-width: 480px) {
+    .CP-hero-section {
+        padding: 1rem;
     }
 
-    .CP-timeline-item:nth-child(odd) .CP-content {
-        margin-right: 50px;
+    .CP-hero-content {
+        padding: 1rem;
     }
 
-    .CP-timeline-item:nth-child(even) .CP-content {
-        margin-left: 50px;
+    .CP-founders-section,
+    .CP-timeline-section,
+    .CP-gallery-section,
+    .CP-mission-section {
+        padding: 3rem 1rem;
+    }
+
+    .CP-founder-card {
+        margin: 0 auto;
+    }
+
+    .CP-mission-content,
+    .CP-vision-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .CP-mission-content h2,
+    .CP-vision-content h2,
+    .CP-core-values-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .CP-mission-content p,
+    .CP-vision-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .CP-board-card {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .CP-board-info {
+        padding: 1rem;
+    }
+
+    .CP-scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
 }
 
+/* Portrait tablets and large phones */
+@media (max-width: 900px) {
+    .CP-mission-vision-row {
+        flex-direction: column;
+    }
+
+    .CP-mission-content,
+    .CP-vision-content {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Landscape orientation specific */
+@media (max-height: 600px) and (orientation: landscape) {
+    .CP-hero-section {
+        min-height: 100vh;
+    }
+
+    .CP-hero-content {
+        padding: 1.5rem;
+    }
+
+    .CP-board-card img {
+        height: 200px;
+    }
+}
+
+/* High-resolution displays */
+@media (min-width: 1400px) {
+    .CP-hero-content {
+        max-width: 1200px;
+    }
+
+    .CP-timeline,
+    .CP-mission-vision-row,
+    .CP-core-values-content {
+        max-width: 1300px;
+    }
+}
 /* Subtle Animations */
 @keyframes fadeInUp {
     from {
@@ -502,6 +671,12 @@
 .CP-timeline-item:nth-child(2) { animation-delay: 0.2s; }
 .CP-timeline-item:nth-child(3) { animation-delay: 0.3s; }
 .CP-timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+.CP-core-values-content li:nth-child(1) { animation-delay: 0.1s; }
+.CP-core-values-content li:nth-child(2) { animation-delay: 0.2s; }
+.CP-core-values-content li:nth-child(3) { animation-delay: 0.3s; }
+.CP-core-values-content li:nth-child(4) { animation-delay: 0.4s; }
+.CP-core-values-content li:nth-child(5) { animation-delay: 0.5s; }
 
 .CP-board-directors .CP-board-position:nth-child(1) { animation-delay: 0.1s; }
 .CP-board-directors .CP-board-position:nth-child(2) { animation-delay: 0.2s; }

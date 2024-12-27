@@ -56,11 +56,6 @@ function StudentSavingDeposit() {
                             <p>Low maintaining balance perfect for students</p>
                         </div>
                         <div className="SSD-feature-card">
-                            <div className="SSD-feature-icon">📱</div>
-                            <h3>Mobile Banking</h3>
-                            <p>Free access to digital banking services</p>
-                        </div>
-                        <div className="SSD-feature-card">
                             <div className="SSD-feature-icon">🎯</div>
                             <h3>Goal Setting</h3>
                             <p>Track your savings goals easily</p>
