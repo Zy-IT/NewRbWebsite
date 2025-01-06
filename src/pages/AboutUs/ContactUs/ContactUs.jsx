@@ -170,78 +170,84 @@ function ContactUs() {
 
                         <section className="CU-email-section">
                             <div className="CU-form-container">
-                                <div className="CU-form-card">
-                                    <h2 className="CU-form-title">Send us a Message</h2>
-                                    <form onSubmit={handleSubmit} className="CU-form">
-                                        {/* Existing form groups remain the same */}
-                                        <div className="CU-form-group">
-                                            <label htmlFor="fullname">Full Name</label>
-                                            <input
-                                                id="fullname"
-                                                type="text"
-                                                value={fullname}
-                                                onChange={(e) => setFullName(e.target.value)}
-                                                placeholder="Your full name"
-                                                required
-                                            />
+                                <h2 className="CU-form-title">Send us a Message</h2>
+                                <div className="CU-Inner-Container">
+                                    <div className="CU-form-card-container">
+                                        <div className="CU-form-card">
+                                            <form onSubmit={handleSubmit} className="CU-form">
+                                                {/* Existing form groups remain the same */}
+                                                <div className="CU-form-group">
+                                                    <label htmlFor="fullname">Full Name</label>
+                                                    <input
+                                                        id="fullname"
+                                                        type="text"
+                                                        value={fullname}
+                                                        onChange={(e) => setFullName(e.target.value)}
+                                                        placeholder="Your full name"
+                                                        required
+                                                    />
+                                                </div>
+
+                                                <div className="CU-form-group">
+                                                    <label htmlFor="email">Email Address</label>
+                                                    <input
+                                                        id="email"
+                                                        type="email"
+                                                        value={email}
+                                                        onChange={(e) => setEmail(e.target.value)}
+                                                        placeholder="you@example.com"
+                                                        required
+                                                    />
+                                                </div>
+
+                                                <div className="CU-form-group">
+                                                    <label htmlFor="subject">Subject</label>
+                                                    <input
+                                                        id="subject"
+                                                        type="text"
+                                                        value={subject}
+                                                        onChange={(e) => setSubject(e.target.value)}
+                                                        placeholder="Subject of your message"
+                                                        required
+                                                    />
+                                                </div>
+
+                                                <div className="CU-form-group">
+                                                    <label htmlFor="message">Your Message</label>
+                                                    <textarea
+                                                        id="message"
+                                                        value={message}
+                                                        onChange={(e) => setMessage(e.target.value)}
+                                                        placeholder="Type your message here"
+                                                        required
+                                                    />
+                                                </div>
+
+                                                <button type="submit" className="CU-submit-button">
+                                                    Send Message
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div className="CU-Message-Container">
+                                        <div className="CU-message-content">
+                                            <h3>Get in Touch</h3>
+                                            <p>
+                                                Have questions about our products or services? We're here to help!
+                                                Fill out the form and our team will get back to you within 24 hours.
+                                            </p>
                                         </div>
 
-                                        <div className="CU-form-group">
-                                            <label htmlFor="email">Email Address</label>
-                                            <input
-                                                id="email"
-                                                type="email"
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                                placeholder="you@example.com"
-                                                required
-                                            />
+                                        <div className="CU-message-content">
+                                            <h3>Customer Support</h3>
+                                            <p>
+                                                We value your feedback and are committed to providing excellent service.
+                                                Our dedicated support team is ready to assist you with any concerns
+                                                or inquiries you may have about our products and services.
+                                            </p>
                                         </div>
-
-                                        <div className="CU-form-group">
-                                            <label htmlFor="subject">Subject</label>
-                                            <input
-                                                id="subject"
-                                                type="text"
-                                                value={subject}
-                                                onChange={(e) => setSubject(e.target.value)}
-                                                placeholder="Subject of your message"
-                                                required
-                                            />
-                                        </div>
-
-                                        <div className="CU-form-group">
-                                            <label htmlFor="message">Your Message</label>
-                                            <textarea
-                                                id="message"
-                                                value={message}
-                                                onChange={(e) => setMessage(e.target.value)}
-                                                placeholder="Type your message here"
-                                                required
-                                            />
-                                        </div>
-
-                                        <button type="submit" className="CU-submit-button">
-                                            Send Message
-                                        </button>
-                                    </form>
-                                </div>
-
-                                <div className="CU-message-content">
-                                    <h3>Get in Touch</h3>
-                                    <p>
-                                        Have questions about our products or services? We're here to help!
-                                        Fill out the form and our team will get back to you within 24 hours.
-                                    </p>
-                                </div>
-
-                                <div className="CU-message-content">
-                                    <h3>Customer Support</h3>
-                                    <p>
-                                        We value your feedback and are committed to providing excellent service.
-                                        Our dedicated support team is ready to assist you with any concerns
-                                        or inquiries you may have about our products and services.
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                         </section>

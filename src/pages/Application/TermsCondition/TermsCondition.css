@@ -21,7 +21,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #1a73e8, #34a853);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -63,7 +63,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #1a73e8, #34a853);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
 }
 
 .TC-header-content h1 {
@@ -71,7 +71,7 @@
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 2.2rem;
-    background: linear-gradient(90deg, #1a73e8, #34a853);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -165,9 +165,8 @@
 }
 
 /* Action Buttons */
-.TC-back-button,
 .TC-proceed-button {
-    background: linear-gradient(135deg, #1a73e8, #34a853);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
     border: none;
     padding: 15px 30px;

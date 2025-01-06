@@ -4,7 +4,7 @@ import Navbar from "../../../../../components/Navbar/Navbar";
 import Footer from "../../../../../components/Footer/Footer";
 import './CropLoan.css';
 
-function CropLoan () {
+function CropLoan() {
     const navigate = useNavigate();
 
     const handleNavigateToContact = () => {
@@ -66,8 +66,8 @@ function CropLoan () {
                     <div className="CLL-description-content">
                         <h2>Why Choose Crop Loan?</h2>
                         <p>
-                            Agri-Masikap Loan is a unique loan option designed for farmers and agricultural entrepreneurs.
-                            With competitive interest rates, flexible financing options, and growth support,
+                            A loan program specifically for small farmers and fisherfolk who work the land or raise livestock
+                            and have CLOA, EP, or CLT titles. It is mainly meant to support food production,
                             it's the perfect solution for your agricultural business. Explore the benefits and apply now!
                         </p>
                     </div>
@@ -105,8 +105,8 @@ function CropLoan () {
 
             <div className="CLL-cta-section">
                 <div className="CLL-cta-content">
-                    <h2>Ready to Grow Your Agricultural Business?</h2>
-                    <p>Apply for an Agri-Masikap Loan and unlock your farming potential</p>
+                    <h2>Ready to Cultivate Your Success??</h2>
+                    <p>Apply for a Crop Loan today and take your farming to the next level!</p>
                     <button
                         className="CLL-cta-button"
                         onClick={handleNavigateToContact}

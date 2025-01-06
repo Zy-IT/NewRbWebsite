@@ -66,9 +66,9 @@ function AgriMasikapLoan() {
                     <div className="AML-description-content">
                         <h2>Why Choose Agri-Masikap Loan?</h2>
                         <p>
-                            Agri-Masikap Loan is a unique loan option designed for farmers and agricultural entrepreneurs.
-                            With competitive interest rates, flexible financing options, and growth support,
-                            it's the perfect solution for your agricultural business. Explore the benefits and apply now!
+                        A secured loan program specifically designed for Agrarian Reform Program 
+                        beneficiaries to support agricultural activities, including production, processing, marketing, and distribution.
+                        it's the perfect solution for your agricultural business. Explore the benefits and apply now!
                         </p>
                     </div>
                 </div>

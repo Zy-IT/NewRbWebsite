@@ -25,6 +25,8 @@ import SmallBusinessLoan from './pages/ProductServices/LoanProducts/CommercialLo
 import PersonalLoans from './pages/ProductServices/LoanProducts/PersonalLoansPage/PersonalLoans';
 import InstaCashLoan from './pages/ProductServices/LoanProducts/PersonalLoansPage/InstaCashLoan/InstaCashLoan';
 import SalaryLoan from './pages/ProductServices/LoanProducts/PersonalLoansPage/SalaryLoan/SalaryLoan';
+import LoyaltyLoan from './pages/ProductServices/LoanProducts/PersonalLoansPage/LoyaltyLoan/LoyaltyLoan';
+import VisaLoan from './pages/ProductServices/LoanProducts/PersonalLoansPage/VisaLoan/VisaLoan';
 import OtherServices from './pages/ProductServices/OtherServices/OtherServicesPage/OtherServicesPage';
 import InterBranch from './pages/ProductServices/OtherServices/InterBranch/InterBranch';
 import DomesticRemittance from './pages/ProductServices/OtherServices/DomesticRemittance/DomesticRemittance';
@@ -78,6 +80,8 @@ function App() {
             <Route path="/loan/PersonalLoans" element={<PersonalLoans />} />
             <Route path="/loan/PersonalLoans/InstaCashLoan" element={<InstaCashLoan />} />
             <Route path="/loan/PersonalLoans/SalaryLoan" element={<SalaryLoan />} />
+            <Route path="/loan/PersonalLoans/LoyaltyLoan" element={<LoyaltyLoan />} />
+            <Route path="/loan/PersonalLoans/VisaLoan" element={<VisaLoan />} />
             {/*Other Services */}
             <Route path="/P&S/OtherServices" element={<OtherServices />} />
             <Route path="/other/InterBranch" element={<InterBranch />} />

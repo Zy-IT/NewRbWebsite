@@ -16,10 +16,8 @@
 
 /* Hero Section Responsive Adjustments */
 .CP-hero-section {
-    background: linear-gradient(
-        rgba(26, 95, 122, 0.7), 
-        rgba(26, 95, 122, 0.7)
-    ), url('/src/Assets/Cauayan.jpg');
+    background: linear-gradient(rgba(26, 95, 122, 0.7),
+            rgba(26, 95, 122, 0.7)), url('/src/Assets/Cauayan.jpg');
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -50,11 +48,12 @@
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0px);
     }
-    
+
 }
 
 .CP-hero-content h1 {
@@ -72,16 +71,11 @@
 }
 
 /* Responsive Sections */
-.CP-timeline-section,
-.CP-founders-section,
-.CP-gallery-section,
-.CP-mission-section {
+.CP-timeline-section {
     padding: clamp(2rem, 5vw, 6rem) 1rem;
 }
 
-.CP-timeline-section h2,
-.CP-founders-section h2,
-.CP-gallery-section h2 {
+.CP-timeline-section h2 {
     text-align: center;
     font-size: clamp(2rem, 5vw, 2.8rem);
     margin-bottom: 3rem;
@@ -89,9 +83,7 @@
     position: relative;
 }
 
-.CP-timeline-section h2::after,
-.CP-founders-section h2::after,
-.CP-gallery-section h2::after {
+.CP-timeline-section h2::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -102,15 +94,16 @@
     background: var(--accent-color);
 }
 
-/* Timeline Responsive */
+/* Timeline Container */
 .CP-timeline {
     max-width: 95%;
     width: 1100px;
     margin: 0 auto;
     position: relative;
-    padding: 0 1rem;
+    padding: 2rem 0;
 }
 
+/* Vertical Line */
 .CP-timeline::before {
     content: '';
     position: absolute;
@@ -122,16 +115,39 @@
     opacity: 0.3;
 }
 
+/* Timeline Items */
 .CP-timeline-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     position: relative;
     width: 100%;
+    gap: 2rem;
 }
 
+/* Even numbered items (Year on right) */
+.CP-timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Content styling */
+.CP-content {
+    width: 45%;
+    background: white;
+    padding: 1.5rem;
+    border: 2px solid #1A5F7A;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Year styling - Made more compact */
 .CP-year {
+    width: auto;
+    min-width: 120px;
+    max-width: 150px;
+    text-align: center;
     background: var(--primary-color);
     color: white;
     padding: 0.7rem 1.2rem;
@@ -140,26 +156,29 @@
     font-size: 1.1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 2;
-    flex-shrink: 0;
 }
 
-.CP-content {
-    background: white;
-    padding: 1.5rem;
-    border: 2px solid #1A5F7A;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    transition: transform 0.3s ease;
+/* Add connecting lines to years */
+.CP-year::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: var(--secondary-color);
+    opacity: 0.3;
+}
+
+.CP-timeline-item:nth-child(odd) .CP-year::before {
+    right: -20px;
+}
+
+.CP-timeline-item:nth-child(even) .CP-year::before {
+    left: -20px;
 }
 
 .CP-content:hover {
     transform: scale(1.02);
-    border: 2px solid linear-gradient(#1A5F7A, hsl(69, 74%, 38%));
-    padding: 15px;
-    border-radius: 10px;
 }
 
 .CP-content h3 {
@@ -174,19 +193,28 @@
     background: white;
 }
 
+.CP-founders-section h2 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+
+}
+
 .CP-founders-card-section {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     align-items: stretch;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .CP-founder-card {
     flex: 1 1 300px;
-    max-width: 400px; 
-    min-width: 280px; 
+    max-width: 400px;
+    min-width: 280px;
     align-items: flex-start;
     text-align: center;
     background: var(--background-soft);
@@ -211,7 +239,7 @@
     transition: filter 0.3s ease;
 }
 
-.CP-founder-card:hover .CP-founder-image { 
+.CP-founder-card:hover .CP-founder-image {
     filter: grayscale(0%);
 }
 
@@ -224,7 +252,7 @@
 }
 
 .CP-founder-story {
-    flex: 1; 
+    flex: 1;
     background: var(--background-soft);
     display: flex;
     align-items: center;
@@ -310,7 +338,7 @@
 
 .CP-core-values-content li:hover {
     transform: translateY(-5px);
-    border: 2px solid #F5F5F5 ;
+    border: 2px solid #F5F5F5;
     border-radius: 15px;
     transition: transform 0.3s ease;
 }
@@ -320,7 +348,7 @@
     text-align: center;
 }
 
-.CP-core-values-content li > :first-child {
+.CP-core-values-content li> :first-child {
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
@@ -329,16 +357,27 @@
 }
 
 .CP-core-values-content li p {
-    font-size: 17px;  
-    line-height: 1.4;   
+    font-size: 17px;
+    line-height: 1.4;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     margin: 0;
 }
 
 
-
 /* Board of Directors Responsive */
+.CP-gallery-section {
+    margin: 0 auto;
+}
+
+.CP-gallery-section h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
 .CP-board-hierarchy {
     display: flex;
     flex-direction: column;
@@ -522,6 +561,26 @@
         font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     }
 
+    .CP-timeline::before {
+        left: 50%;
+    }
+
+    .CP-timeline-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .CP-timeline-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .CP-year,
+    .CP-content {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
     .CP-founders-card-section {
         flex-direction: column;
         align-items: center;
@@ -647,12 +706,14 @@
         max-width: 1300px;
     }
 }
+
 /* Subtle Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -667,19 +728,58 @@
 }
 
 /* Staggered Animation */
-.CP-timeline-item:nth-child(1) { animation-delay: 0.1s; }
-.CP-timeline-item:nth-child(2) { animation-delay: 0.2s; }
-.CP-timeline-item:nth-child(3) { animation-delay: 0.3s; }
-.CP-timeline-item:nth-child(4) { animation-delay: 0.4s; }
+.CP-timeline-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
 
-.CP-core-values-content li:nth-child(1) { animation-delay: 0.1s; }
-.CP-core-values-content li:nth-child(2) { animation-delay: 0.2s; }
-.CP-core-values-content li:nth-child(3) { animation-delay: 0.3s; }
-.CP-core-values-content li:nth-child(4) { animation-delay: 0.4s; }
-.CP-core-values-content li:nth-child(5) { animation-delay: 0.5s; }
+.CP-timeline-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
 
-.CP-board-directors .CP-board-position:nth-child(1) { animation-delay: 0.1s; }
-.CP-board-directors .CP-board-position:nth-child(2) { animation-delay: 0.2s; }
-.CP-board-directors .CP-board-position:nth-child(3) { animation-delay: 0.3s; }
-.CP-board-directors .CP-board-position:nth-child(4) { animation-delay: 0.4s; }
-.CP-board-directors .CP-board-position:nth-child(5) { animation-delay: 0.5s; }
+.CP-timeline-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.CP-timeline-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.CP-core-values-content li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.CP-core-values-content li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.CP-core-values-content li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.CP-core-values-content li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.CP-core-values-content li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.CP-board-directors .CP-board-position:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.CP-board-directors .CP-board-position:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.CP-board-directors .CP-board-position:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.CP-board-directors .CP-board-position:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.CP-board-directors .CP-board-position:nth-child(5) {
+    animation-delay: 0.5s;
+}

@@ -33,7 +33,7 @@ function NegoAsensoLoan() {
                 <div className="NAL-header-container">
                     <div className="NAL-header">
                         <h1 className="NAL-title">Nego-Asenso Loan</h1>
-                        <p className="NAL-subtitle">NOTICE: Put a subtitle in this content</p>
+                        <p className="NAL-subtitle">A secured loan intended to aid financial needs of business</p>
                         <button className="NAL-header-button"
                             onClick={scrolltoDescription}
                         >Learn More</button>
@@ -41,23 +41,23 @@ function NegoAsensoLoan() {
                 </div>
 
                 <div className="NAL-offers-container">
-                <div className="NAL-offers">
-                    <div className="NAL-offer-card">
-                        <span className="NAL-offer-icon">...</span>
-                        <h3>Title Here</h3>
-                        <p>Kindly input context here</p>
+                    <div className="NAL-offers">
+                        <div className="NAL-offer-card">
+                            <span className="NAL-offer-icon">🏢</span>
+                            <h3>Start-Up Success Package</h3>
+                            <p>Flexible loan terms tailored to your payment capacity.</p>
+                        </div>
+                        <div className="NAL-offer-card">
+                            <span className="NAL-offer-icon">📈</span>
+                            <h3>Business Expansion Boost</h3>
+                            <p>Need more capital for growth? We've got you covered!</p>
+                        </div>
+                        <div className="NAL-offer-card">
+                            <span className="NAL-offer-icon">🤝</span>
+                            <h3>Your Partner in Progress</h3>
+                            <p>Affordable loans to meet your business needs.</p>
+                        </div>
                     </div>
-                    <div className="NAL-offer-card">
-                        <span className="NAL-offer-icon">...</span>
-                        <h3>Title Here</h3>
-                        <p>Kindly input context here</p>
-                    </div>
-                    <div className="NAL-offer-card">
-                        <span className="NAL-offer-icon">...</span>
-                        <h3>Title Here</h3>
-                        <p>Kindly input context here</p>
-                    </div>
-                </div>
                 </div>
 
                 <div className="NAL-description-container">
@@ -65,8 +65,10 @@ function NegoAsensoLoan() {
                         <div className="NAL-description" >
                             <h2>Nego-Asenso Loan</h2>
                             <p>
-                            Kindly input here the context that are needed for the information that is needed.
-
+                                A secured loan designed to meet the financial needs of businesses,
+                                offering highly flexible terms. It can be short-term or long-term,
+                                based on the customer’s preference and repayment ability.
+                                The funds can be used as start-up capital for a new business or to expand an existing one.
                             </p>
                         </div>
                     </div>

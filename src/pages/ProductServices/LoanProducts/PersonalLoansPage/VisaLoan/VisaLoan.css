@@ -1,19 +1,18 @@
-.Inter-Branch-Deposit {
-
+.Insta-Cash-Loan {
     background-color: #f8f9fa;
     overflow-x: hidden;
 }
 
 
-.DR-container {
-    background: linear-gradient(135deg, #005fb8 0%, #0093e9 100%);
+.VL-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     padding: 80px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.DR-container::before {
+.VL-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -31,7 +30,7 @@
 }
 
 
-.DR-header {
+.VL-header {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
@@ -51,7 +50,7 @@
     
 }
 
-.DR-title {
+.VL-title {
     color: #ffffff;
     font-size: 3rem;
     font-weight: 700;
@@ -59,15 +58,15 @@
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
-.DR-subtitle {
+.VL-subtitle {
     color: #ffffff;
     font-size: 1.2rem;
     opacity: 0.95;
     margin-bottom: 30px;
 }
 
-.DR-header-button {
-    background-color: #0093e9;
+.VL-header-button {
+    background-color: #1c7fdb;
     color: white;
     padding: 15px 40px;
     border: none;
@@ -79,13 +78,12 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.DR-header-button:hover {
+.VL-header-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    background-color: #0093e9;
 }
 
-.DR-type-card {
+.VL-type-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
@@ -96,7 +94,7 @@
     z-index: 2;
 }
 
-.DR-offer-card {
+.VL-offer-card {
     background: #ffffff;
     padding: 30px;
     border-radius: 15px;
@@ -107,7 +105,7 @@
     overflow: hidden;
 }
 
-.DR-card-accent {
+.VL-card-accent {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -119,56 +117,58 @@
     transform-origin: left;
 }
 
-.DR-offer-card:hover {
+.VL-offer-card:hover {
     transform: translateY(-5px);
 }
 
-.DR-offer-card:hover .DR-card-accent {
+.VL-offer-card:hover .VL-card-accent {
     transform: scaleX(1);
 }
 
-.DR-offer-icon {
+.VL-offer-icon {
     font-size: 2.5rem;
     color: #005fb8;
     margin-bottom: 20px;
     display: block;
 }
 
-.DR-offer-card h3 {
+.VL-offer-card h3 {
     color: #2c3e50;
     font-size: 1.3rem;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-.DR-description {
+.VL-description {
     background-color: #ffffff;
     padding: 60px 20px;
 }
 
-.DR-description-content {
+.VL-description-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.DR-description-content h2 {
+.VL-description-content h2 {
     color: #005fb8;
     font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
-.DR-description-content p {
+.VL-description-content p {
     color: #005fb8;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.DR-requirements-container {
+.VL-requirements-container {
     background-color: #f8f9fa;
     padding: 60px 20px;
 }
 
-.DR-requirements-list {
+.VL-requirements-list {
     max-width: 600px;
     margin: 0 auto;
     padding: 35px;
@@ -177,19 +177,19 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.DR-requirements-list h4 {
+.VL-requirements-list h4 {
     color: #005fb8;
     font-size: 1.5rem;
     margin-bottom: 25px;
     text-align: center;
 }
 
-.DR-requirements-list ul {
+.VL-requirements-list ul {
     list-style: none;
     padding: 0;
 }
 
-.DR-requirements-list li {
+.VL-requirements-list li {
     padding: 15px 0;
     border-bottom: 1px solid #eef2f7;
     color: #2c3e50;
@@ -199,41 +199,41 @@
     transition: all 0.3s ease;
 }
 
-.DR-requirements-list li:before {
+.VL-requirements-list li:before {
     content: "✓";
     color: #005fb8;
     position: absolute;
     left: 0;
 }
 
-.DR-requirements-list li:hover {
+.VL-requirements-list li:hover {
     padding-left: 30px;
     color: #005fb8;
 }
 
-.DR-apply-container {
-    background: linear-gradient(135deg, #005fb8 0%, #0093e9 100%);
+.VL-apply-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     padding: 70px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.DR-apply-section h3 {
+.VL-apply-section h3 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
-.DR-apply-section p {
+.VL-apply-section p {
     margin-bottom: 30px;
     color: #ffffff;
     opacity: 0.9;
     font-size: 1.1rem;
 }
 
-.DR-apply-button {
-    background-color: #0093e9;
+.VL-apply-button {
+    background-color: #1c7fdb;
     color: white;
     padding: 15px 45px;
     border: none;
@@ -245,12 +245,12 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.DR-apply-button:hover {
+.VL-apply-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.DR-scroll-top {
+.VL-scroVL-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -267,63 +267,63 @@
     z-index: 1000;
   }
   
-  .DR-scroll-top:hover {
+  .VL-scroVL-top:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   }
 
 @media (max-width: 768px) {
-    .DR-container {
+    .VL-container {
         padding: 60px 15px;
     }
 
-    .DR-title {
+    .VL-title {
         font-size: 2.2rem;
     }
 
-    .DR-subtitle {
+    .VL-subtitle {
         font-size: 1.1rem;
         padding: 0 15px;
     }
 
-    .DR-type-card {
+    .VL-type-card {
         padding: 30px 15px;
         margin-top: -30px;
     }
 
-    .DR-offer-card {
+    .VL-offer-card {
         padding: 25px;
     }
 
-    .DR-description {
+    .VL-description {
         padding: 40px 15px;
     }
 
-    .DR-description-content h2 {
+    .VL-description-content h2 {
         font-size: 1.8rem;
     }
 
-    .DR-requirements-container {
+    .VL-requirements-container {
         padding: 40px 15px;
     }
 
-    .DR-requirements-list {
+    .VL-requirements-list {
         padding: 25px;
     }
 
-    .DR-apply-section h3 {
+    .VL-apply-section h3 {
         font-size: 1.8rem;
     }
 
-    .DR-header-button,
-    .DR-apply-button {
+    .VL-header-button,
+    .VL-apply-button {
         padding: 12px 30px;
         font-size: 1rem;
         width: 80%;
         max-width: 300px;
     }
 
-    .DR-scroll-top {
+    .VL-scroVL-top {
         width: 35px;
         height: 35px;
         bottom: 15px;
@@ -332,27 +332,27 @@
 }
 
 @media (max-width: 480px) {
-    .DR-title {
+    .VL-title {
         font-size: 2rem;
     }
 
-    .DR-subtitle {
+    .VL-subtitle {
         font-size: 1rem;
     }
 
-    .DR-offer-card {
+    .VL-offer-card {
         margin: 0 10px;
     }
 
-    .DR-requirements-list h4 {
+    .VL-requirements-list h4 {
         font-size: 1.3rem;
     }
 
-    .DR-requirements-list li {
+    .VL-requirements-list li {
         font-size: 0.95rem;
     }
 
-    .DR-scroll-top {
+    .VL-scroVL-top {
         width: 35px;
         height: 35px;
         bottom: 10px;

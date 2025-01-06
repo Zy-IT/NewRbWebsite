@@ -72,8 +72,12 @@ function DomesticRemittance() {
             <div className="DR-description">
                 <div className="DR-description-content">
                     <h2>Why Choose Domestic Remittance?</h2>
-                    <p>Get the financial boost you need with our hassle-free loan service.
-                        Perfect for emergency expenses, business needs, or personal goals.</p>
+                    <p>
+                        Pay your bills quickly and securely through our platform,
+                        with access to over 600 trusted merchants.
+                        Enjoy the convenience of managing all your payments in one place,
+                        anytime and anywhere.
+                    </p>
                 </div>
             </div>
 

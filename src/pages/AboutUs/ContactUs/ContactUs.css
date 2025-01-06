@@ -181,28 +181,55 @@
 /*-------------Email Section-------------*/
 .CU-email-section {
     min-height: 100vh;
-    padding: 2rem;
+    padding: 1rem;
     background: linear-gradient(135deg, #f4f5f7 0%, #e8edf3 100%);
 }
 
 .CU-form-container {
     max-width: 1200px;
+    width: 95%; 
+    flex: 1;
+    min-height: 700px;
+    max-height: 800px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Changed to 2fr 1fr for form and message */
-    gap: 2rem;
-    padding: 2rem;
+    padding: 1rem; 
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    height: auto;
+    min-height: min-content;
+}
+
+.CU-Inner-Container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 /* Form card styles */
+.CU-form-card-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    height: auto;
+    max-height: auto;
+    padding: 1rem;
+}
+
 .CU-form-card {
     padding: 1.5rem;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 0.5rem;
 }
 
 .CU-form-title {
+    position: relative;
+    text-align: center;
     font-size: 2rem;
     font-weight: 600;
     color: #2d3748;
@@ -214,6 +241,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    flex: 1;
 }
 
 .CU-form-group {
@@ -227,6 +255,13 @@
     font-weight: 500;
     color: #4a5568;
 }
+
+.CU-form-group textarea {
+    min-height: 150px;
+    max-height: 300px;
+    resize: vertical;
+}
+
 
 .CU-form-group input,
 .CU-form-group textarea {
@@ -269,6 +304,10 @@
 }
 
 /* Message content styles */
+.CU-Message-Container {
+    width: 600px;
+    padding: 10px;
+}
 .CU-message-content {
     display: flex;
     flex-direction: column;
@@ -276,7 +315,6 @@
     padding: 2rem;
     background-color: #f8fafc;
     border-radius: 0.5rem;
-    height: 100%;
 }
 
 .CU-message-content h3 {
@@ -337,20 +375,47 @@
     }
 }
 
-@media (max-width: 480px) {
-    .CU-header-context h1 {
-        font-size: 2rem;
-    }
-
-    .CU-maps-display {
-        height: 300px;
-    }
-
-    .CU-info-section {
+@media (max-width: 768px) {
+    .CU-form-container {
+        width: 100%;
         padding: 1rem;
     }
 
-    .CU-info-item {
-        padding: 0.8rem;
+    .CU-Inner-Container {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .CU-form-card-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .CU-Message-Container {
+        width: 100%;
+    }
+
+    .CU-form-group textarea {
+        min-height: 120px; /* Slightly smaller on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .CU-email-section {
+        padding: 0.5rem;
+    }
+
+    .CU-form-container {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .CU-scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
 }

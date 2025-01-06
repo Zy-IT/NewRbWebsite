@@ -63,8 +63,8 @@ function AgriSagsaganLoan() {
                     <div className="ASL-description-content">
                         <h2>Why Choose Agri-Sagsagan Loan?</h2>
                         <p>
-                            Agri-Sagsagan Loan is a unique loan option designed for farmers and agricultural entrepreneurs.
-                            With competitive interest rates, flexible financing options, and growth support,
+                            It’s a secured loan that helps landowners and farmers buy things like work animals, farming tools
+                            and machines, seeds, fertilizers, chickens, livestock, animal feed, and similar supplies.
                             it's the perfect solution for your agricultural business. Explore the benefits and apply now!
                         </p>
                     </div>
@@ -113,7 +113,7 @@ function AgriSagsaganLoan() {
                 </div>
             </section>
 
-            <button 
+            <button
                 className="ASL-scroll-top"
                 onClick={scrollToTop}
             >

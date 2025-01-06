@@ -40,6 +40,32 @@
                 "Comprehensive coverage"
             ],
             "route": "/loan/PersonalLoans/SalaryLoan"
+        },
+        {
+            "id": "loyalty-loan",
+            "icon": "🏗️",
+            "title": "Loyalty Loan",
+            "description": "Long-term loans for land acquisition and development",
+            "category": "Personal",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/loan/PersonalLoans/LoyaltyLoan"
+        },
+        {
+            "id": "visa-loan",
+            "icon": "🏗️",
+            "title": "Visa Loan",
+            "description": "Long-term loans for land acquisition and development",
+            "category": "Personal",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/loan/PersonalLoans/VisaLoan"
         }
     ]
 }

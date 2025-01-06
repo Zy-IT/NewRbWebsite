@@ -21,27 +21,7 @@ function Home() {
         }
     }
 
-
-
     const [selectedFeature, setSelectedFeature] = useState(0);
-
-    const features = [
-        {
-            title: "Deposit Products",
-            description: "Unlock your financial potential with our range of deposit products, designed to help you save and grow your wealth effortlessly.",
-            icon: <Landmark className="w-6 h-6" />
-        },
-        {
-            title: "Loan Products",
-            description: "Make your dreams come true with our easy loan options, giving you the money you need to reach your goals!",
-            icon: <Shield className="w-6 h-6" />
-        },
-        {
-            title: "Other Services",
-            description: "Simplify your life with our range of services, designed to make everyday banking easy and convenient for you!",
-            icon: <CreditCard className="w-6 h-6" />
-        }
-    ];
 
     return (
         <div className="Home">
@@ -63,24 +43,39 @@ function Home() {
             </section>
 
             {/* Features Section */}
-            <section className="features-section">
-                <h2>Why Choose Us</h2>
-                <h2>Products and Services that we offer:</h2>
-                <div className="features-grid">
-                    {features.map((feature, index) => (
-                        <div
-                            key={index}
-                            className={`feature-card ${selectedFeature === index ? 'active' : ''}`}
-                            onMouseEnter={() => setSelectedFeature(index)}
-                        >
-                            <div className="feature-icon">{feature.icon}</div>
-                            <h3>{feature.title}</h3>
-                            <p>{feature.description}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
+           <section className="features-section">
+               <h2>Why Choose Us</h2>
+               <h2>Products and Services that we offer:</h2>
+               <div className="features-grid">
+                   <div
+                       className={`feature-card ${selectedFeature === 0 ? 'active' : ''}`}
+                       onMouseEnter={() => setSelectedFeature(0)}
+                   >
+                       <div className="feature-icon"><Landmark className="w-6 h-6" /></div>
+                       <h3>Deposit Products</h3>
+                       <p>Unlock your financial potential with our range of deposit products, designed to help you save and grow your wealth effortlessly.</p>
+                   </div>
+           
+                   <div
+                       className={`feature-card ${selectedFeature === 1 ? 'active' : ''}`}
+                       onMouseEnter={() => setSelectedFeature(1)}
+                   >
+                       <div className="feature-icon"><Shield className="w-6 h-6" /></div>
+                       <h3>Loan Products</h3>
+                       <p>Make your dreams come true with our easy loan options, giving you the money you need to reach your goals!</p>
+                   </div>
+           
+                   <div
+                       className={`feature-card ${selectedFeature === 2 ? 'active' : ''}`}
+                       onMouseEnter={() => setSelectedFeature(2)}
+                   >
+                       <div className="feature-icon"><CreditCard className="w-6 h-6" /></div>
+                       <h3>Other Services</h3>
+                       <p>Simplify your life with our range of services, designed to make everyday banking easy and convenient for you!</p>
+                   </div>
+               </div>
+           </section>
+           
             {/* Statistics Section */}
             <section className="stats-section">
                 <div className="stats-grid">

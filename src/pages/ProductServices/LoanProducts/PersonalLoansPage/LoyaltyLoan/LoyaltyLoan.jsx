@@ -1,10 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import Navbar from "../../../../../components/Navbar/Navbar";
 import Footer from "../../../../../components/Footer/Footer";
-import './InstaCashLoan.css';
+import './LoyaltyLoan.css';
 import { BsSpeedometer, BsShieldCheck, BsCashStack } from 'react-icons/bs';
 
-function InstacashLoan() {
+function LoyaltyLoan() {
+
     const navigate = useNavigate();
 
     const handletonavigate = () => {
@@ -12,7 +13,7 @@ function InstacashLoan() {
     }
 
     const scrolltodescription = () => {
-        const details = document.querySelector('.ICL-description');
+        const details = document.querySelector('.LL-description');
         if (details) {
             details.scrollIntoView({ behavior: 'smooth' });
         }
@@ -27,67 +28,69 @@ function InstacashLoan() {
 
 
     return (
-        <div className="Insta-Cash-Loan">
+        <div className="Loyalty-Loan">
             <Navbar />
 
-            <div className="ICL-container">
-                <div className="ICL-header">
-                    <h1 className="ICL-title">Insta Cash Loan</h1>
-                    <p className="ICL-subtitle">Your quick and reliable financial partner</p>
+            <div className="LL-container">
+                <div className="LL-header">
+                    <h1 className="LL-title">Loyalty Loan</h1>
+                    <p className="LL-subtitle">Your quick and reliable financial partner</p>
                     <button
-                        className="ICL-header-button"
+                        className="LL-header-button"
                         onClick={scrolltodescription}
                     >Learn More
                     </button>
                 </div>
             </div>
 
-            <div className="ICL-type-card">
-                <div className="ICL-offer-card">
-                    <span className="ICL-offer-icon">
+            <div className="LL-type-card">
+                <div className="LL-offer-card">
+                    <span className="LL-offer-icon">
                         <BsSpeedometer />
                     </span>
                     <h3>Fast Approval</h3>
                     <p>Get approved within 24 hours with minimal requirements</p>
-                    <div className="ICL-card-accent"></div>
+                    <div className="LL-card-accent"></div>
                 </div>
-                <div className="ICL-offer-card">
-                    <span className="ICL-offer-icon">
+                <div className="LL-offer-card">
+                    <span className="LL-offer-icon">
                         <BsCashStack />
                     </span>
                     <h3>Flexible Amount</h3>
                     <p>Borrow from ₱10,000 up to ₱500,000</p>
-                    <div className="ICL-card-accent"></div>
+                    <div className="LL-card-accent"></div>
                 </div>
-                <div className="ICL-offer-card">
-                    <span className="ICL-offer-icon">
+                <div className="LL-offer-card">
+                    <span className="LL-offer-icon">
                         <BsShieldCheck />
                     </span>
                     <h3>Low Interest Rate</h3>
                     <p>Competitive rates starting at 1.3% monthly</p>
-                    <div className="ICL-card-accent"></div>
+                    <div className="LL-card-accent"></div>
                 </div>
             </div>
 
-            <div className="ICL-description">
-                <div className="ICL-description-content">
-                    <h2>Why Choose Insta Cash Loan?</h2>
+            <div className="LL-description">
+                <div className="LL-description-content">
+                    <h2>What is Loyalty Loan?</h2>
                     <p>
-                        A secured loan designed to address urgent personal financial needs.
-                        It can be used for a variety of purposes, including purchasing a house and lot,
-                        appliances, furniture, or a vehicle. Additionally, it can help consolidate debts,
-                        cover home improvements, or pay hospital and other bills.
+                        This loan facility is exclusively offered to dedicated employees of the bank
+                        who have completed ten (10) years of permanent service. It aims to provide
+                        financial support as a reward for their loyalty and commitment.
+                    </p>
+                    <p>
+                        !!!Note: This is only Applicable to Employees of Rural Bank of Cauayuan, INC
                     </p>
                 </div>
             </div>
 
-            <div className="ICL-requirements-container">
-                <div className="ICL-requirements-item">
-                    <div className="ICL-requirements-list">
-                        <h4>Simple Requirements</h4>
+            <div className="LL-requirements-container">
+                <div className="LL-requirements-item">
+                    <div className="LL-requirements-list">
+                        <h4>Requirements</h4>
                         <ul>
-                            <li>Filipino Citizen, 21-65 years old</li>
-                            <li>Minimum gross monthly income of ₱20,000</li>
+                            <li>Regular Employee of Rural Bank of Cauayan, INC</li>
+                            <li>Worked in the Bank for 10+yrs</li>
                             <li>Valid government-issued ID</li>
                             <li>Latest proof of income</li>
                         </ul>
@@ -95,17 +98,17 @@ function InstacashLoan() {
                 </div>
             </div>
 
-            <div className="ICL-apply-container">
-                <div className="ICL-apply-section">
+            <div className="LL-apply-container">
+                <div className="LL-apply-section">
                     <h3>Ready to Apply?</h3>
                     <p>Get the funds you need in as fast as 24 hours</p>
                     <button
-                        className="ICL-apply-button"
+                        className="LL-apply-button"
                         onClick={handletonavigate}
                     >Apply Now</button>
                 </div>
                 <button
-                    className="ICL-scroll-top"
+                    className="LL-scroll-top"
                     onClick={scrolltoTop}
                 >↑</button>
             </div>
@@ -114,4 +117,4 @@ function InstacashLoan() {
     );
 }
 
-export default InstacashLoan;
+export default LoyaltyLoan;

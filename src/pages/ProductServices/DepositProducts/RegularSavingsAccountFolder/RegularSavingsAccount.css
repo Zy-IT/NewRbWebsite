@@ -265,11 +265,6 @@
   z-index: 1;
 }
 
-.RSA-cta:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(30, 60, 114, 0.25);
-}
-
 .RSA-cta-content h2 {
   font-size: 2.4rem;
   margin-bottom: 1.5rem;

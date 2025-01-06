@@ -1,12 +1,11 @@
 .Insta-Cash-Loan {
-
     background-color: #f8f9fa;
     overflow-x: hidden;
 }
 
 
 .ICL-container {
-    background: linear-gradient(135deg, #005fb8 0%, #0093e9 100%);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     padding: 80px 20px;
     text-align: center;
     position: relative;
@@ -67,8 +66,8 @@
 }
 
 .ICL-header-button {
-    background-color: #ffd700;
-    color: #2c3e50;
+    background-color: #1c7fdb;
+    color: white;
     padding: 15px 40px;
     border: none;
     border-radius: 30px;
@@ -82,7 +81,6 @@
 .ICL-header-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    background-color: #ffe44d;
 }
 
 .ICL-type-card {
@@ -153,9 +151,16 @@
 }
 
 .ICL-description-content h2 {
-    color: #2c3e50;
+    color: #005fb8;
     font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 20px;
+}
+
+.ICL-description-content p {
+    color: #005fb8;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .ICL-requirements-container {
@@ -207,7 +212,7 @@
 }
 
 .ICL-apply-container {
-    background: linear-gradient(135deg, #005fb8 0%, #0093e9 100%);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     padding: 70px 20px;
     text-align: center;
     position: relative;
@@ -228,8 +233,8 @@
 }
 
 .ICL-apply-button {
-    background-color: #ffd700;
-    color: #2c3e50;
+    background-color: #1c7fdb;
+    color: white;
     padding: 15px 45px;
     border: none;
     border-radius: 30px;
@@ -243,7 +248,6 @@
 .ICL-apply-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    background-color: #ffe44d;
 }
 
 .ICL-scroll-top {
