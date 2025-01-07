@@ -99,7 +99,6 @@ function App() {
 
             {/*Terms and Conditions page and another set of page again */}
             <Route path="/T&C" element={<TermsCondition />} />
-            <Route path="/Application" element={<OnlineProcess />} />
             <Route path="/ApplyJob" element={<ApplyJob />} />
           </Routes>
         </main>

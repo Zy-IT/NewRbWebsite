@@ -10,6 +10,7 @@
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
+  height: 180px;
   box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
@@ -42,6 +43,29 @@
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.TCD-header-button {
+    position: relative;
+    top: 20px;
+    height: 50px;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #1e3c72;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.TCD-header-button:hover {
+    transform: translateY(-3px);
+    border: 2px solid white;
+    background-color: #1e3c72;
+    color: white;
 }
 
 .TCD-wrapper {

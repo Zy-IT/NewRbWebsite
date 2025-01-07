@@ -11,6 +11,13 @@ function BasicSavingsAccount() {
     navigate('/T&C');
   }
 
+  const scrolltoApply = () => {
+    const Apply = document.querySelector('.BSA-cta');
+    if (Apply) {
+      Apply.scrollIntoView({ behavior: "smooth"});
+    }
+  }
+
   const scrolltoTop = () => {
     window.scrollTo({
       top: 0,
@@ -26,6 +33,9 @@ function BasicSavingsAccount() {
         <div className="BSA-hero-content">
           <h1>Basic Savings Account</h1>
           <p>Start your savings journey with our simple and secure account</p>
+          <button className="BSA-header-button"
+            onClick={scrolltoApply}
+          >Apply Now</button>
         </div>
       </div>
 
@@ -34,16 +44,22 @@ function BasicSavingsAccount() {
           <h2>Account Features</h2>
           <div className="BSA-features-grid">
             <div className="BSA-feature-card">
+              <div className="BSA-feature-icon">💵</div>
+              <h3>Start Saving</h3>
+              <p>Start saving as low as 1000.00 Pesos</p>
+            </div>
+            <div className="BSA-feature-card">
+              <div className="BSA-feature-icon">💵</div>
+              <h3>Maintaining Balance</h3>
+              <p>Keep your balance above the minimum balance for as low as 1,000</p>
+            </div>
+            <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💰</div>
               <h3>Competitive Interest Rates</h3>
               <p>Earn more with our attractive interest rates</p>
             </div>
-            <div className="BSA-feature-card">
-              <div className="BSA-feature-icon">💵</div>
-              <h3>Small Minimum Balance</h3>
-              <p>Start saving as low as 100.00 Pesos</p>
-            </div>
           </div>
+
         </section>
 
         <section className="BSA-description-section">
@@ -64,8 +80,8 @@ function BasicSavingsAccount() {
           <div className="BSA-requirements-container">
             <ul className="BSA-requirements-list">
               <li>Valid ID</li>
-              <li>Initial deposit (any amount)</li>
-              <li>Proof of address</li>
+              <li>Philippines Peso Only</li>
+              <li>1x1 Picture</li>
               <li>Completed application form</li>
             </ul>
           </div>

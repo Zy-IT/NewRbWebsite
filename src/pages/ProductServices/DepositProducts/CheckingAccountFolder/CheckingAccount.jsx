@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../../../../components/Navbar/Navbar'
 import Footer from '../../../../components/Footer/Footer';
 import "./CheckingAccount.css";
+import { DomUtil } from 'leaflet';
 
 function CheckingAccount() {
 
@@ -9,6 +10,13 @@ function CheckingAccount() {
 
     const handletonavigate = () => {
         navigate('/T&C');
+    }
+
+    const scrolltoApply = () => {
+        const Apply = document.querySelector('.CA-cta');
+        if (Apply) {
+            Apply.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 
     const scrolltoTop = () => {
@@ -26,6 +34,9 @@ function CheckingAccount() {
                 <div className="CA-hero-content">
                     <h1>Checking Account/Demand Deposit</h1>
                     <p>Manage your daily transactions with ease and flexibility</p>
+                    <button className='CA-header-button'
+                        onClick={scrolltoApply}
+                    >Apply Now</button>
                 </div>
             </div>
 
@@ -35,13 +46,18 @@ function CheckingAccount() {
                     <div className="CA-benefits-grid">
                         <div className="CA-benefit-card">
                             <div className="CA-benefit-icon">📝</div>
+                            <h3>Start Now</h3>
+                            <p>open an Account starting at 5,000 Php</p>
+                        </div>
+                        <div className="CA-benefit-card">
+                            <div className="CA-benefit-icon">📝</div>
                             <h3>Unlimited Transactions</h3>
                             <p>No limits on withdrawals or deposits</p>
                         </div>
                         <div className="CA-benefit-card">
                             <div className="CA-benefit-icon">✔️</div>
-                            <h3>Zero Balance Option</h3>
-                            <p>Maintain your account with minimal balance</p>
+                            <h3>Interesting Rates</h3>
+                            <p>Annual Interest 0% Compute Based on Average daily Balance</p>
                         </div>
                     </div>
                 </section>
@@ -62,19 +78,11 @@ function CheckingAccount() {
                             <ul className="CA-features-list">
                                 <li>
                                     <span className="CA-check">✓</span>
-                                    Free checkbook for qualified accounts
+                                    Free checkbook
                                 </li>
                                 <li>
                                     <span className="CA-check">✓</span>
-                                    Bill pay services
-                                </li>
-                                <li>
-                                    <span className="CA-check">✓</span>
-                                    Mobile check deposit
-                                </li>
-                                <li>
-                                    <span className="CA-check">✓</span>
-                                    Direct deposit capability
+                                    Free Passbook
                                 </li>
                             </ul>
                         </div>
@@ -88,18 +96,14 @@ function CheckingAccount() {
                             <h3>Documents Needed</h3>
                             <ul>
                                 <li>Valid Government ID</li>
-                                <li>Proof of Address</li>
-                                <li>Tax Identification Number</li>
+                                <li>Complete Application Form</li>
                                 <li>Initial Deposit</li>
                             </ul>
                         </div>
                         <div className="CA-requirement-item">
-                            <h3>Account Fees</h3>
+                            <h3>Special Notice</h3>
                             <ul>
-                                <li>Monthly Maintenance Fee</li>
-                                <li>ATM Network Fee</li>
-                                <li>Check Order Fee</li>
-                                <li>Foreign Transaction Fee</li>
+                                <li>Non-Activity foy a 1 whole year shall be considered as Dormant</li>
                             </ul>
                         </div>
                     </div>

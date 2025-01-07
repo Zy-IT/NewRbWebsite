@@ -11,6 +11,13 @@ function TimeCertOfDeposit() {
         navigate('/T&C');
     }
 
+    const scrolltoApply = () => {
+        const Apply = document.querySelector('.TCD-cta');
+        if (Apply) {
+            Apply.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     const scrolltoTop = () => {
         window.scrollTo({
             top: 0,
@@ -26,6 +33,9 @@ function TimeCertOfDeposit() {
                 <div className="TCD-hero-content">
                     <h1>Time Certificate of Deposit</h1>
                     <p>Maximize your returns with our fixed-term deposit options</p>
+                    <button className='TCD-header-button'
+                    onClick={scrolltoApply}
+                    >Apply Now</button>
                 </div>
             </div>
 

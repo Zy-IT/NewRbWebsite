@@ -11,6 +11,14 @@ function StudentSavingDeposit() {
         navigate('/T&C');
     }
 
+
+    const scrolltoApply = () => {
+        const Apply = document.querySelector('.SSD-cta');
+        if (Apply) {
+            Apply.scrollIntoView({ behavior: 'smooth'});
+        }
+    }
+
     const scrolltoTop = () => {
         window.scrollTo({
             top: 0,
@@ -26,6 +34,9 @@ function StudentSavingDeposit() {
                 <div className="SSD-hero-content">
                     <h1>Student Saving Deposit</h1>
                     <p>Start your savings journey early with our student-friendly account</p>
+                    <button className='SSD-header-button'
+                    onClick={scrolltoApply}
+                    >Apply Now</button>
                 </div>
             </div>
 
@@ -37,12 +48,12 @@ function StudentSavingDeposit() {
                             <span className="SSD-info-label">Initial Deposit</span>
                         </div>
                         <div className="SSD-info-card">
-                            <span className="SSD-info-value">₱500</span>
+                            <span className="SSD-info-value">₱100</span>
                             <span className="SSD-info-label">Maintaining Balance</span>
                         </div>
                         <div className="SSD-info-card">
-                            <span className="SSD-info-value">2%</span>
-                            <span className="SSD-info-label">Interest Rate</span>
+                            <span className="SSD-info-value">0.25%</span>
+                            <span className="SSD-info-label">Interest Rate computed based on Average Daily Balance</span>
                         </div>
                     </div>
                 </section>

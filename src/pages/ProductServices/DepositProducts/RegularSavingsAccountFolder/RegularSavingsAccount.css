@@ -68,6 +68,29 @@
   opacity: 0.9;
 }
 
+.RSA-header-button {
+  position: relative;
+  top: 20px;
+  height: 50px;
+  width: 120px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #2a5298;
+  transition: 0.3s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.RSA-header-button:hover {
+  transform: translateY(-3px);
+  border: 2px solid white;
+  color: white;
+  background-color: #2a5298;
+}
+
 .RSA-wrapper {
   max-width: 1200px;
   margin: 0 auto;

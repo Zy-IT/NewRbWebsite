@@ -11,6 +11,13 @@ function RegularSavingsAccount() {
     navigate("/T&C");
   }
 
+  const scrolltoApply = () => {
+    const Apply = document.querySelector('.RSA-cta');
+    if (Apply) {
+      Apply.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   const scrolltoTop = () => {
     window.scrollTo({
       top: 0,
@@ -26,6 +33,9 @@ function RegularSavingsAccount() {
         <div className="RSA-hero-content">
           <h1>Regular Savings Account</h1>
           <p>Build your savings with our flexible and reliable savings account</p>
+          <button className="RSA-header-button"
+            onClick={scrolltoApply}
+          >Apply Now</button>
         </div>
       </div>
 
@@ -33,15 +43,20 @@ function RegularSavingsAccount() {
         <section className="RSA-features">
           <h2>Account Features</h2>
           <div className="RSA-features-grid">
+            <div className="BSA-feature-card">
+              <div className="BSA-feature-icon">💵</div>
+              <h3>Start Saving</h3>
+              <p>Start saving as low as 1000.00 Pesos</p>
+            </div>
+            <div className="BSA-feature-card">
+              <div className="BSA-feature-icon">💵</div>
+              <h3>Maintaining Balance</h3>
+              <p>Keep your balance above the minimum balance for as low as 1,000</p>
+            </div>
             <div className="RSA-feature-card">
               <div className="RSA-feature-icon">💰</div>
               <h3>Competitive Interest Rates</h3>
               <p>Earn more with our attractive interest rates on your savings</p>
-            </div>
-            <div className="RSA-feature-card">
-              <div className="RSA-feature-icon">🔐</div>
-              <h3>Secure Banking</h3>
-              <p>Advanced security measures to protect your funds</p>
             </div>
           </div>
         </section>
@@ -68,7 +83,7 @@ function RegularSavingsAccount() {
             <ul className="RSA-requirements-list">
               <li>Valid ID</li>
               <li>Minimum initial deposit</li>
-              <li>Proof of address</li>
+              <li>Philippine Peso Only</li>
               <li>Completed application form</li>
             </ul>
           </div>
