@@ -5,14 +5,14 @@
 
 .TCD-hero {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  color: white;
-  padding: 5rem 2rem;
-  text-align: center;
-  margin-bottom: 3rem;
-  position: relative;
-  height: 180px;
-  box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    height: 180px;
+    box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .TCD-hero-content {
@@ -26,11 +26,12 @@
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0px);
     }
-    
+
 }
 
 .TCD-hero-content h1 {
@@ -403,15 +404,15 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     z-index: 1000;
-  }
-  
-  .TCD-scroll-top:hover {
+}
+
+.TCD-scroll-top:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  }
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
