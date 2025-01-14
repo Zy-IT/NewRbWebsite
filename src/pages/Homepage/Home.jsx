@@ -2,32 +2,81 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import ScrollAnimation from '../../components/ScrollAnimation/ScrollAnimation';
-import { ArrowRight, Shield, Landmark, CreditCard } from 'lucide-react';
+import { Shield, Landmark, CreditCard } from 'lucide-react';
+import FounderImage from '../../Assets/50years.jpg';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
-import HomeImage1 from '../../Assets/Home-Image.jpg';
-import HomeImage2 from '../../Assets/Home-image2.png';
-import HomeImage3 from '../../Assets/Home-image3.jpg';
+import News from '../NewsUpdatePage/NewsUpdate.json';
 
 function Home() {
 
-    const images = [HomeImage1, HomeImage2, HomeImage3];
+    const [selectedFeature, setSelectedFeature] = useState(0);
+    const [currentSection, setCurrentSection] = useState('hero');
+    const [showNews, setShowNews] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const [isHeroFading, setIsHeroFading] = useState(false);
+    const [activeCategory, setActiveCategory] = useState('News', 'Events');
+    const [currentPage, setCurrentPage] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+    const cardsPerPage = 3;
 
-    const [currentImage, setCurrentImage] = useState(0);
+    const handleNext = () => {
+        setIsTransitioning(true);
+        setTimeout(() => {
+            const maxPage = Math.ceil(filteredNews.length / cardsPerPage) - 1;
+            setCurrentPage(currentPage => currentPage < maxPage ? currentPage + 1 : 0);
+            setTimeout(() => {
+                setIsTransitioning(false);
+            }, 50);
+        }, 300);
+    };
 
-    const changeBackground = () => {
-        setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }
+    const handlePrev = () => {
+        setIsTransitioning(true);
+        setTimeout(() => {
+            const maxPage = Math.ceil(filteredNews.length / cardsPerPage) - 1;
+            setCurrentPage(currentPage => currentPage > 0 ? currentPage - 1 : maxPage);
+            setTimeout(() => {
+                setIsTransitioning(false);
+            }, 50);
+        }, 300);
+    };
+
+    const handleCategoryChange = (category) => {
+        setIsTransitioning(true);
+        setTimeout(() => {
+            setActiveCategory(category);
+            setCurrentPage(0);
+            setTimeout(() => {
+                setIsTransitioning(false);
+            }, 50);
+        }, 300);
+    };
+
+
+    const filteredNews = News.news
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .filter(item => activeCategory === 'all' || item.category === activeCategory);
+
+    // Get current cards
+    const currentCards = filteredNews.slice(
+        currentPage * cardsPerPage,
+        (currentPage * cardsPerPage) + cardsPerPage
+    );
 
     useEffect(() => {
-        const interval = setInterval(changeBackground, 10000);
-        return () => clearInterval(interval);
-    }, [])
+        const timer = setTimeout(() => {
+            setCurrentSection('fading');
+            setTimeout(() => {
+                setCurrentSection('news');
+                setLoading(false);
 
-    useEffect(() => {
-        const root = document.documentElement;
-        root.style.setProperty("--current-background", `url(${images[currentImage]})`);
-    }, [currentImage]);
+                setShowNews(true);
+            }, 500);
+        }, 4000);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     const navigate = useNavigate();
 
@@ -51,37 +100,106 @@ function Home() {
         navigate("/A&U/CompanyProfile");
     }
 
-
-    const scrolltoServices = () => {
-        const services = document.querySelector('.features-section');
-        if (services) {
-            services.scrollIntoView({ behavior: 'smooth' });
-        }
+    const handletoNews = () => {
+        navigate("/N&U");
     }
 
-    const [selectedFeature, setSelectedFeature] = useState(0);
+    const images = import.meta.glob('/src/Assets/*', { eager: true, import: 'default' });
 
     return (
         <div className="Home">
             <Navbar />
 
             {/* Header Section*/}
-            <section className="hero-section">
-                <div className="hero-content">
-                    <h1>Banking Made Simple</h1>
-                    <h3>with Rural Bank of Cauayan, Inc</h3>
-                    <p>Secure, reliable, and innovative financial solutions for your future</p>
-                    <div className="hero-buttons">
-                        <button className="primary-button"
-                            onClick={scrolltoServices}>
-                            Get Started 🡲
-                        </button>
+            {currentSection === 'hero' && (
+                <section className={`hero-section ${isHeroFading ? 'fade-out' : ''}`}>
+                    <div className="hero-content">
+                        <h1>Banking Made Simple</h1>
+                        <h3>with Rural Bank of Cauayan, Inc</h3>
+                        <p>Secure, reliable, and innovative financial solutions for your future</p>
                     </div>
-                </div>
-            </section >
+                </section>
+            )}
+
+            {currentSection === 'fading' && (
+                <section className={`hero-section fade-out ${isHeroFading ? 'fade-out' : ''}`}>
+                    <div className="hero-content">
+                        <h1>Banking Made Simple</h1>
+                        <h3>with Rural Bank of Cauayan, Inc</h3>
+                        <p>Secure, reliable, and innovative financial solutions for your future</p>
+                    </div>
+                </section>
+            )}
+
+            {/*News Section */}
+            {currentSection === 'news' && (
+                <section className={`News-Section ${showNews ? 'fade-in' : ''}`}>
+                    <div className='News-Container'>
+                        <div className='News-Header'>
+                            <h2>Latest News</h2>
+                            <div className='News-Categories'>
+                                <button
+                                    className={`category-btn ${activeCategory === 'News' ? 'active' : ''}`}
+                                    onClick={handleCategoryChange.bind(this, 'News')} // call handleCategoryChange with argument 'all'
+                                >
+                                    News
+                                </button>
+                                <button
+                                    className={`category-btn ${activeCategory === 'Events' ? 'active' : ''}`}
+                                    onClick={handleCategoryChange.bind(this, 'Events')} // call handleCategoryChange with argument 'all'
+                                >
+                                    Events
+                                </button>
+                            </div>
+                        </div>
+
+                        <div className='News-Carousel'>
+                            <button className='carousel-btn prev' onClick={handlePrev}>
+                                <i className="fas fa-chevron-left"></i>
+                            </button>
+
+                            <div className={`News-Cards ${isTransitioning ? 'transitioning' : ''}`}>
+                                {currentCards.map((item) => {
+                                    const imageSrc = images[`/src/Assets${item.image.replace('/src/Assets', '')}`];
+
+                                    return (
+                                        <div key={item.id} className='News-Card'>
+                                            <div className='News-Image-Container'>
+                                                <img src={imageSrc} alt={item.title} className='News-Image' />
+                                                <span className='News-Category'>{item.category}</span>
+                                            </div>
+                                            <div className='News-Contents'>
+                                                <div className='News-Meta'>
+                                                    <span className='News-Date'>
+                                                        <i className="far fa-calendar-alt"></i>
+                                                        {new Date(item.date).toLocaleDateString()}
+                                                    </span>
+                                                </div>
+                                                <h3>{item.title}</h3>
+                                                <p>{item.content}</p>
+                                                <button
+                                                    className='News-Button'
+                                                    onClick={handletoNews}
+                                                >
+                                                    Read More
+                                                    <i className="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+
+                            <button className='carousel-btn next' onClick={handleNext}>
+                                <i className="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {/* Features Section */}
-            < section className="features-section" >
+            <section className="features-section" >
                 <div className='feature-header'>
                     <h2>Products and Services</h2>
                     <p>Explore our range of products and services tailored to meet your banking needs.</p>
@@ -164,39 +282,46 @@ function Home() {
                             <div className="underline"></div>
                         </div>
 
+                        {/* Image and History Container */}
+                        <div className="about-image-container">
+                            <div className="about-image">
+                                <img src={FounderImage} alt="About Us" />
+                            </div>
+                            <div className="about-history">
+                                <h3>Our History</h3>
+                                <p className="history-content">
+                                    Our Founding Team
+                                    The visionaries who established our foundation
+                                    The RURAL BANK OF CAUAYAN INC. was established on April 7,1965.
+                                    It is the pioneer bank in Cauayan, Isabela founded by Dr. and Mrs. Ireneo C. Bucag Sr. and its incorporator namely: ...
+                                </p>
+                                <button className="read-more-btn" onClick={handletoAboutUs}>
+                                    Read More
+                                    <i className="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
                         <div className="about-grid">
-                            <div className="about-card">
-                                <div className="card-icon">
-                                    <i className="fas fa-bullseye"></i>
+                            <ScrollAnimation delay={0.1}>
+                                <div className="about-card">
+                                    <div className="card-icon">
+                                        <i className="fas fa-bullseye"></i>
+                                    </div>
+                                    <h3>Our Mission</h3>
+                                    <p>To help improve quality of life by delivering superior services and operate with a high level of competence, integrity, honesty, professionalism, and community involvement.</p>
                                 </div>
-                                <h3>Our Mission</h3>
-                                <p>To deliver innovative solutions that empower businesses and individuals to achieve their full potential through cutting-edge technology and exceptional service.</p>
-                            </div>
-
-                            <div className="about-card">
-                                <div className="card-icon">
-                                    <i className="fas fa-eye"></i>
+                            </ScrollAnimation>
+                            <ScrollAnimation delay={0.2}>
+                                <div className="about-card">
+                                    <div className="card-icon">
+                                        <i className="fas fa-eye"></i>
+                                    </div>
+                                    <h3>Our Vision</h3>
+                                    <p>To be one of the best provider financial services in the rural banking industry.</p>
                                 </div>
-                                <h3>Our Vision</h3>
-                                <p>To be the leading force in digital transformation, creating sustainable solutions that shape the future of technology and business.</p>
-                            </div>
+                            </ScrollAnimation>
                         </div>
-
-                        <div className="about-cta">
-                            <button className="read-more-btn" onClick={handletoAboutUs}>
-                                Read More
-                                <i className="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/*News Section */}
-            <section className='News-Section'>
-                <div className='News-Container'>
-                    <div className='News-Content'>
-
                     </div>
                 </div>
             </section>

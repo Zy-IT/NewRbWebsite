@@ -42,20 +42,6 @@
             "route": "/deposit/CheckingDemand"
         },
         {
-            "id": 4,
-            "title": "Pensioners Savings Deposit",
-            "description": "Special savings account designed for retirees with exclusive benefits and privileges.",
-            "category": "Deposit",
-            "features": [
-                "Higher interest rates",
-                "Priority banking services",
-                "No maintaining balance",
-                "Special elderly assistance"
-            ],
-            "icon": "👴",
-            "route": "/deposit/Pensioners"
-        },
-        {
             "id": 5,
             "title": "Students Saving Deposit",
             "description": "Help young minds develop saving habits with our student-friendly account.",

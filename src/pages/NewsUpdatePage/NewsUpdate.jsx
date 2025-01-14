@@ -1,43 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import "./NewsUpdate.css";
+import newsData from './NewsUpdate.json';
 
 function NewsUpdate() {
     const [activeCategory, setActiveCategory] = useState("News");
-    const [categories, setCategories] = useState([]);
+    const [categories] = useState(newsData.categories);
     const [news, setNews] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
     const [selectedNews, setSelectedNews] = useState(null);
 
     useEffect(() => {
-        const fetchNews = async () => {
-            try {
-                const response = await fetch('./src/pages/NewsUpdatePage/NewsUpdate.json');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch news');
-                }
-                const data = await response.json();
-
-                // Parse and sort news by date in descending order (latest first)
-                const sortedNews = data.news.sort((a, b) => {
-                    const dateA = new Date(a.date);
-                    const dateB = new Date(b.date);
-                    return dateB - dateA;
-                });
-
-                setCategories(data.categories)
-                setNews(sortedNews);
-                setLoading(false);
-            } catch (err) {
-                setError(err.message);
-                setLoading(false);
-            }
-        };
-
-        fetchNews();
-    }, [])
+        // Sort news by date in descending order (latest first)
+        const sortedNews = newsData.news.sort((a, b) => {
+            const dateA = new Date(a.date);
+            const dateB = new Date(b.date);
+            return dateB - dateA;
+        });
+        setNews(sortedNews);
+    }, []); 
 
     const filteredNews = news.filter(news => news.category === activeCategory);
 
@@ -56,24 +37,14 @@ function NewsUpdate() {
             }
         };
 
-        // Add event listener when a news item is selected
         if (selectedNews) {
             document.addEventListener('keydown', handleEscKey);
         }
 
-        // Cleanup the event listener
         return () => {
             document.removeEventListener('keydown', handleEscKey);
         };
     }, [selectedNews]);
-
-    if (loading) {
-        return <div className='NU-loading'>Loading...</div>;
-    }
-
-    if (error) {
-        return <div className='NU-error'>Error: {error}</div>;
-    }
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -81,6 +52,8 @@ function NewsUpdate() {
             behavior: 'smooth'
         });
     };
+
+    const images = import.meta.glob('/src/Assets/*.{jpg,jpeg,png}', { eager: true });
 
     return (
         <div className="News-Update">
@@ -109,30 +82,37 @@ function NewsUpdate() {
                 </div>
 
                 <div className='NU-news-details'>
-                    {filteredNews.map(News => (
-                        <div
-                            key={News.id}
-                            className='NU-news-card'
-                            onClick={() => openNewsModal(News)}
-                        >
-                            <div className='NU-news-image-container'>
-                                <img
-                                    src={News.image}
-                                    alt={News.title}
-                                    className='NU-news-image'
-                                />
+                    {filteredNews.map((News) => {
+                        const resolvedImage = images[`/src/Assets${News.image.replace('/src/Assets', '')}`];
+
+                        return (
+                            <div
+                                key={News.id}
+                                className="NU-news-card"
+                                onClick={() => openNewsModal(News)}
+                            >
+                                <div className="NU-news-image-container">
+                                    {resolvedImage?.default ? (
+                                        <img
+                                            src={resolvedImage.default}
+                                            alt={News.title}
+                                            className="NU-news-image"
+                                        />
+                                    ) : (
+                                        <p>Image not found</p>
+                                    )}
+                                </div>
+                                <div className="NU-news-content">
+                                    <h3 className="NU-news-title">{News.title}</h3>
+                                    <p className="NU-news-description">{News.description}</p>
+                                    <button className="NU-news-button">Learn More →</button>
+                                    <p className="NU-news-date">{News.date}</p>
+                                </div>
                             </div>
-                            <div className='NU-news-content'>
-                                <h3 className='NU-news-title'>{News.title}</h3>
-                                <p className='NU-news-description'>{News.description}</p>
-                                <button className='NU-news-button'>Learn More →</button>
-                                <p className='NU-news-date'>{News.date}</p>
-                            </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
 
-                {/* News Details Modal */}
                 {selectedNews && (
                     <div
                         className="NU-modal-overlay"
@@ -149,11 +129,13 @@ function NewsUpdate() {
                                 ×
                             </button>
                             <div className='NU-modal-image-container'>
-                                <img
-                                    src={selectedNews.image}
-                                    alt={selectedNews.title}
-                                    className='NU-modal-image'
-                                />
+                                {selectedNews.image && (
+                                    <img
+                                        src={images[`/src/Assets${selectedNews.image.replace('/src/Assets', '')}`]?.default || ''}
+                                        alt={selectedNews.title}
+                                        className='NU-modal-image'
+                                    />
+                                )}
                             </div>
                             <div className='NU-modal-text-content'>
                                 <h2 className='NU-news-title'>{selectedNews.title}</h2>

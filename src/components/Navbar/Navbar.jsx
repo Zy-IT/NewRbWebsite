@@ -111,7 +111,7 @@ const Navbar = () => {
                   onMouseEnter={() => handleSubMenuEnter('loan')}
                   onMouseLeave={handleSubMenuLeave}
                 >
-                  <Link to="/P&S/LoanProducts">
+                  <Link to="/loan/AgriculturalLoans">
                     Loan Products
                     <span className={styles.dropdownIcon}>▼</span>
                   </Link>
@@ -166,6 +166,7 @@ const Navbar = () => {
             )}
           </li>
           
+          <li><Link to="/ROPA" className={styles.navLink}>ROPA</Link></li>
           <li><Link to="/N&U" className={styles.navLink}>News and Update</Link></li>
         </ul>
 
@@ -264,7 +265,7 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-            
+            <li><Link to="/ROPA" className={styles.mobileNavLink} onClick={toggleMenu}>ROPA</Link></li>
             <li><Link to="/N&U" className={styles.mobileNavLink} onClick={toggleMenu}>News and Update</Link></li>
           </ul>
         )}

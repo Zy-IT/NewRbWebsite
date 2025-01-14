@@ -14,7 +14,7 @@ function BasicSavingsAccount() {
   const scrolltoApply = () => {
     const Apply = document.querySelector('.BSA-cta');
     if (Apply) {
-      Apply.scrollIntoView({ behavior: "smooth"});
+      Apply.scrollIntoView({ behavior: "smooth" });
     }
   }
 

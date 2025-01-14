@@ -19,9 +19,10 @@ function Footer() {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/P&S">Product Services</Link></li>
-                        <li><Link to="/A&U">About Us</Link></li>
+                        <li><Link to="/A&U/CompanyProfile">About Us</Link></li>
                         <li><Link to="/A&U/Careers">Careers</Link></li>
                         <li><Link to="/A&U/ContactUs">Contact Us</Link></li>
+                        <li><Link to="/ROPA">Properties for Sale</Link></li>
                     </ul>
                 </div>
 

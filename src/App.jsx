@@ -36,8 +36,9 @@ import MobilePOSAtm from './pages/ProductServices/OtherServices/MobilePOSAtm/Mob
 import CompanyProfile from './pages/AboutUs/CompanyProfile/CompanyProfile';
 import Careers from './pages/AboutUs/Careers/Careers';
 import ContactUs from './pages/AboutUs/ContactUs/ContactUs';
-import AnnualReport from './pages/AboutUs/AnnualReport';
+import AnnualReport from './pages/AnnualReport/AnnualReport';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
+import Properties from './pages/ROPA/Properties';
 import TermsCondition from './pages/Application/TermsCondition/TermsConditions';
 import OnlineProcess from './pages/Application/OnlineProcess/OnlineProcess';
 import ApplyJob from './pages/Application/Apply/ApplyJob';
@@ -96,7 +97,8 @@ function App() {
             <Route path="/A&U/AnnualReport" element={<AnnualReport />} />
             {/*News and Update */}
             <Route path="/N&U" element={<NewsUpdatePage />} />
-
+            {/* Properties */}
+            <Route path='/ROPA' element={<Properties/>} />
             {/*Terms and Conditions page and another set of page again */}
             <Route path="/T&C" element={<TermsCondition />} />
             <Route path="/ApplyJob" element={<ApplyJob />} />

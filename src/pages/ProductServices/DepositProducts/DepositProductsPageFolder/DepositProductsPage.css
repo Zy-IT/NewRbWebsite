@@ -108,6 +108,8 @@
       transition: all 0.3s ease;
       position: relative;
       border: 2px solid transparent;
+      display: flex;
+      flex-direction: column;
   }
 
   .product-card:hover {
@@ -226,17 +228,15 @@
       border: 2px solid #2563eb;
       cursor: pointer;
       transition: all 0.3s ease;
-      width: 100%;
+      width: calc(100% - 40px);
       font-size: 1rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-  }
-
-  .learn-more-btn:hover {
-      background: #1d4ed8;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
   }
 
   /* Responsive Design */

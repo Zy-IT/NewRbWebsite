@@ -1,0 +1,77 @@
+.annual-report-container {
+    min-height: 100vh;
+    background-color: rgb(249 250 251);
+  }
+  
+  .Report-header {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+  
+  .Report-header-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .Report-header-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(17 24 39);
+  }
+  
+  .Report-main-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .Report-document-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    min-height: 600px;
+    padding: 1.5rem;
+  }
+  
+  .Report-loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  
+  .Report-loading-spinner {
+    height: 2rem;
+    width: 2rem;
+    color: rgb(107 114 128);
+    animation: spin 1s linear infinite;
+  }
+  
+  .Report-loading-text {
+    margin-top: 1rem;
+    color: rgb(75 85 99);
+  }
+  
+  .Report-document-viewer {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(243 244 246);
+    border-radius: 0.25rem;
+  }
+  
+  .Report-document-message {
+    text-align: center;
+    padding: 1rem;
+    color: rgb(75 85 99);
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

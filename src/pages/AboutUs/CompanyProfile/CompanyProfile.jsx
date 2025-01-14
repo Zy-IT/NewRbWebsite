@@ -1,6 +1,17 @@
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
+import ScrollAnimation from "../../../components/ScrollAnimation/ScrollAnimation";
 import "./CompanyProfile.css";
+import CompanyProfileImage from '../../../Assets/CompanyProfile.png';
+import Founder from '../../../Assets/Founder.jpg';
+import Chairman from '../../../Assets/Chairman.jpg';
+import ViceChairMan from '../../../Assets/ViceChairMan.jpg';
+import President from '../../../Assets/President.jpg';
+import BoardDirector1 from '../../../Assets/BoardDirector1.jpg';
+import BoardDirector2 from '../../../Assets/BoardDirector2.jpg';
+import BoardDirector3 from '../../../Assets/BoardDirector3.jpg';
+import BoardDirector4 from '../../../Assets/BoardDirector4.jpg';
+import BoardDirector5 from '../../../Assets/BoardDirector5.jpg';
 
 function CompanyProfile() {
 
@@ -71,7 +82,7 @@ function CompanyProfile() {
                     <h2>Our Pioneering Leaders</h2>
                     <div className="CP-founders-card-section">
                         <div className="CP-founder-card">
-                            <img src="/src/Assets/CompanyProfile.png" alt="Historical Photo" className="CP-founder-image" />
+                            <img src={CompanyProfileImage} alt="Historical Photo" className="CP-founder-image" />
                             <div className="CP-founder-info">
                                 <h3>Our Founding Team</h3>
                                 <p>The visionaries who established our foundation</p>
@@ -121,7 +132,7 @@ function CompanyProfile() {
                         <h2>Our Core Values</h2>
                         <ul>
                             <li>
-                                 <h2>SERVICE</h2>
+                                <h2>SERVICE</h2>
                                 <p>We provide and deliver the best products and services to all of our clients. We focus on their needs.</p>
                             </li>
                             <li>
@@ -163,71 +174,78 @@ function CompanyProfile() {
             {/*Board of Directors Section */}
             <section className="CP-gallery-section">
                 <h2>Board of Directors</h2>
+
                 <div className="CP-board-hierarchy">
-                    <div className="CP-board-top">
-                        <div className="CP-board-founder CP-board-position">
-                            <div className="CP-board-card">
-                                <img src="/src/Assets/Founder.jpg" alt="Founder" />
-                                <div className="CP-board-info">
-                                    <h3>Mrs. Juana R. Bucag</h3>
-                                    <p>Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="CP-board-middle">
-                        <div className="CP-board-chairman CP-board-position">
-                            <div className="CP-board-card">
-                                <img src="/src/Assets/Chairman.jpg" alt="Chairman" />
-                                <div className="CP-board-info">
-                                    <h3>Dr. Eduardo R. Bucag</h3>
-                                    <p>Chairman of the Board</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="CP-board-vice-chairman CP-board-position">
-                            <div className="CP-board-card">
-                                <img src="/src/Assets/ViceChairman.jpg" alt="Vice Chairman" />
-                                <div className="CP-board-info">
-                                    <h3>Mr. Edgardo R. Bucag</h3>
-                                    <p>Vice Chairman of the Board</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="CP-board-bottom">
-                        <div className="CP-board-president CP-board-position">
-                            <div className="CP-board-card">
-                                <img src="/src/Assets/President.jpg" alt="President" />
-                                <div className="CP-board-info">
-                                    <h3>Ms. Charita P. Guinid</h3>
-                                    <p>President</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="CP-board-directors">
-                            {[
-                                { src: "/src/Assets/BoardDirector1.jpg", name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
-
-                                { src: "/src/Assets/BoardDirector4.jpg", name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
-
-                                { src: "/src/Assets/BoardDirector5.jpg", name: "Engr. Susana S. Wandag", title: "Board of Director" },
-
-                                { src: "/src/Assets/BoardDirector2.jpg", name: "Engr. Ronaldo R. Bucag", title: "Board of Director" },
-
-                                { src: "/src/Assets/BoardDirector3.jpg", name: "Mr. Danilo R. San Pedro", title: "Board of Director" }
-                            ].map((director, index) => (
-                                <div key={index} className="CP-board-position">
-                                    <div className="CP-board-card">
-                                        <img src={director.src} alt={director.name} />
-                                        <div className="CP-board-info">
-                                            <h3>{director.name}</h3>
-                                            <p>{director.title}</p>
-                                        </div>
+                    <ScrollAnimation delay={0.1}>
+                        <div className="CP-board-top">
+                            <div className="CP-board-founder CP-board-position">
+                                <div className="CP-board-card">
+                                    <img src={Founder} alt="Founder" />
+                                    <div className="CP-board-info">
+                                        <h3>Mrs. Juana R. Bucag</h3>
+                                        <p>Founder</p>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
                         </div>
+                    </ScrollAnimation>
+                    <div className="CP-board-middle">
+                        <ScrollAnimation delay={0.2}>
+                            <div className="CP-board-chairman CP-board-position">
+                                <div className="CP-board-card">
+                                    <img src={Chairman} alt="Chairman" />
+                                    <div className="CP-board-info">
+                                        <h3>Dr. Eduardo R. Bucag</h3>
+                                        <p>Chairman of the Board</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation delay={0.3}>
+                            <div className="CP-board-vice-chairman CP-board-position">
+                                <div className="CP-board-card">
+                                    <img src={ViceChairMan} alt="Vice Chairman" />
+                                    <div className="CP-board-info">
+                                        <h3>Mr. Edgardo R. Bucag</h3>
+                                        <p>Vice Chairman of the Board</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollAnimation>
+                    </div>
+                    <div className="CP-board-bottom">
+                        <ScrollAnimation>
+                            <div className="CP-board-president CP-board-position">
+                                <div className="CP-board-card">
+                                    <img src={President} alt="President" />
+                                    <div className="CP-board-info">
+                                        <h3>Ms. Charita P. Guinid</h3>
+                                        <p>President</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation>
+                            <div className="CP-board-directors">
+                                {[
+                                    { src: BoardDirector1, name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
+                                    { src: BoardDirector4, name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
+                                    { src: BoardDirector5, name: "Engr. Susana S. Wandag", title: "Board of Director" },
+                                    { src: BoardDirector2, name: "Engr. Ronaldo R. Bucag", title: "Board of Director" },
+                                    { src: BoardDirector3, name: "Mr. Danilo R. San Pedro", title: "Board of Director" }
+                                ].map((director, index) => (
+                                    <div key={index} className="CP-board-position">
+                                        <div className="CP-board-card">
+                                            <img src={director.src} alt={director.name} />
+                                            <div className="CP-board-info">
+                                                <h3>{director.name}</h3>
+                                                <p>{director.title}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </ScrollAnimation>
                     </div>
                 </div>
             </section>

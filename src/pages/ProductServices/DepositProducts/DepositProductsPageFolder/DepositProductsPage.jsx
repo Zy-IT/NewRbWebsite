@@ -8,7 +8,7 @@ import depositData from './DepositProductPage.json';
 function DepositProductsPage() {
     const navigate = useNavigate();
     const [activeCategory] = useState("Deposit");
-    
+
     const filteredProducts = depositData.depositProducts.filter(
         product => product.category === activeCategory
     );
@@ -50,15 +50,17 @@ function DepositProductsPage() {
                                 ))}
                             </ul>
                         </div>
-                        <button
-                            className="learn-more-btn"
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                handleProductClick(product.route);
-                            }}
-                        >
-                            Learn More
-                        </button>
+                        <div>
+                            <button
+                                className="learn-more-btn"
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    handleProductClick(product.route);
+                                }}
+                            >
+                                Learn More
+                            </button>
+                        </div>
                     </div>
                 ))}
             </div>

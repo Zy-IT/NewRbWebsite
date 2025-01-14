@@ -10,7 +10,7 @@
         },
         {
             "id": "Other",
-            "label": "other"
+            "label": "Other Services"
         }
     ],
     "products": [
@@ -38,14 +38,6 @@
             "category": "deposit",
             "route": "/deposit/CheckingDemand"
         },
-        {
-            "id": 4,
-            "title": "Pensioner Savings Deposit",
-            "description": "Secure fixed deposits with competitive rates",
-            "image": "/src/Assets/Pensioner.jpg",
-            "category": "deposit",
-            "route": "/deposit/Pensioners"
-        },
         { 
             "id": 5,
             "title": "Student Savings Deposit",
@@ -63,7 +55,7 @@
             "route": "/deposit/TimeCertofDeposit"
         },
 
-         
+        
         {
             "id": 7,
             "title": "Agricultural Loan",
