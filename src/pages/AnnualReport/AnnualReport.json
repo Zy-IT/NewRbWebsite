@@ -1,0 +1,28 @@
+{
+    "reports": [
+        {
+            "id": 4,
+            "year": 2024,
+            "title": "Annual Report as of 2024",
+            "pdfUrl": "/pdfs/sample.pdf"
+        },
+        {
+            "id": 3,
+            "year": 2023,
+            "title": "Annual Report as of 2023",
+            "pdfUrl": "/pdfs/sample.pdf"
+        },
+        {
+            "id": 2,
+            "year": 2022,
+            "title": "Annual Report 2022",
+            "pdfUrl": "/pdfs/sample.pdf"
+        },
+        {
+            "id": 1,
+            "year": 2021,
+            "title": "Annual Report as of 2021",
+            "pdfUrl": "/pdfs/sample.pdf"
+        }
+    ]
+}

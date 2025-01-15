@@ -1,55 +1,90 @@
-import React, { useState } from 'react';
-import { Loader2 } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';    
+import Footer from '../../components/Footer/Footer';
+import reportsData from './AnnualReport.json';
 import './AnnualReport.css';
 
 const AnnualReport = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    const [documentUrl] = useState(null);
+    const [selectedReport, setSelectedReport] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(false);
 
-    // Simulate document loading
-    React.useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 10000); //15 seconds
-        return () => clearTimeout(timer);
-    }, []);
+    // Sort reports in descending order by id
+    const sortedReports = [...reportsData.reports].sort((a, b) => b.id - a.id);
+
+    const handleReportSelect = (report) => {
+        setSelectedReport(report);
+        setIsLoading(true);
+        setIsTransitioning(true);
+
+        setTimeout(() => {
+            setIsTransitioning(false);
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 500);
+        }, 10000);
+    };
 
     return (
         <div className="annual-report-container">
             <Navbar />
-            {/* Header */}
             <div className="Report-header">
                 <div className="Report-header-content">
-                    <h1 className="Report-header-title">Annual Report</h1>
+                    <h1 className="Report-header-title">Annual Reports</h1>
                 </div>
             </div>
 
-            {/* Main content area */}
             <div className="Report-main-content">
-                <div className="Report-document-container">
-                    {isLoading ? (
-                        // Loading state
-                        <div className="Report-loading-container">
-                            <Loader2 className="Report-loading-spinner" />
-                            <p className="Report-loading-text">Loading annual report...</p>
+                {!selectedReport ? (
+                    <div className="reports-grid">
+                        {sortedReports.map((report) => (
+                            <div
+                                key={report.id}
+                                className={`report-card ${isLoaded ? 'animate' : ''}`}
+                                onClick={() => handleReportSelect(report)}
+                            >
+                                <div className="report-card-content">
+                                    <div>
+                                        <h2>{report.year}</h2>
+                                        <h3>{report.title}</h3>
+                                    </div>
+                                    <div className="card-footer">
+                                        <button className="view-report-btn">View</button>
+                                        <span className="read-more-tag">Read More</span>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <div className="Report-document-container">
+                        {isLoading && (
+                            <div className={`loading-overlay ${!isTransitioning ? 'fade-out' : ''}`}>
+                                <div className="loading-spinner"></div>
+                                <p>Loading Annual Report {selectedReport.year}...</p>
+                            </div>
+                        )}
+                        <div className="report-viewer-header">
+                            <button
+                                className="back-button"
+                                onClick={() => setSelectedReport(null)}
+                            >
+                                ← Back to Reports
+                            </button>
+                            <h2>{selectedReport.title}</h2>
                         </div>
-                    ) : documentUrl ? (
-                        // Document viewer
-                        <div className="Report-document-viewer">
-                            <p className="Report-document-message">
-                                Document viewer would go here - you'll need to implement the actual
-                                document viewing component based on your requirements (PDF.js, Word viewer, etc.)
-                            </p>
-                        </div>
-                    ) : (
-                        // No document state
-                        <div className="loading-container">
-                            <p className="loading-text">No document loaded</p>
-                        </div>
-                    )}
-                </div>
+                        <object
+                            data={selectedReport.pdfUrl}
+                            type="application/pdf"
+                            width="100%"
+                            height="800px"
+                            className={`pdf-object ${!isLoading ? 'fade-in' : ''}`}
+                        >
+                            <p>Your browser does not support PDFs. Please download the PDF to view it.</p>
+                        </object>
+                    </div>
+                )}
             </div>
             <Footer />
         </div>

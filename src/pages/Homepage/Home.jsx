@@ -248,30 +248,30 @@ function Home() {
             </section >
 
             {/* Statistics Section */}
-            < section className="stats-section" >
+            <section className="stats-section">
                 <div className="stats-grid">
                     <div className="stat-card">
-                        <p>Up to</p>
+                        <span className="prefix">Up to</span>
                         <h3>10M</h3>
-                        <p>Loan </p>
+                        <span className="label">Loan</span>
                     </div>
                     <div className="stat-card">
-                        <p>Up to</p>
+                        <span className="prefix">Up to</span>
                         <h3>50M</h3>
-                        <p>Transactions</p>
+                        <span className="label">Transactions</span>
                     </div>
                     <div className="stat-card">
-                        <p>Over</p>
+                        <span className="prefix">Over</span>
                         <h3>16</h3>
-                        <p>Branches</p>
+                        <span className="label">Branches</span>
                     </div>
                     <div className="stat-card">
-                        <p>Weekdays</p>
+                        <span className="prefix">Weekdays</span>
                         <h3>9:30AM-5:00PM</h3>
-                        <p>Support</p>
+                        <span className="label">Support</span>
                     </div>
                 </div>
-            </section >
+            </section>
 
             {/*About Us*/}
             <section className='About-section'>
