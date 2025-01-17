@@ -73,20 +73,19 @@
     height: 50px;
     width: 120px;
     text-align: center;
-    border: 2px solid transparent;
+    border: 2px solid white;
     border-radius: 10px;
     font-weight: 600;
     letter-spacing: 0.3px;
-    color: #004d99;
+    color: white;
+    background-color: #2a5298;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .CA-header-button:hover {
     transform: translateY(-3px);
-    border: 2px solid white;
-    background-color: #2a5298;
-    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .CA-wrapper {

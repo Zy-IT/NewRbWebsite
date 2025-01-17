@@ -76,9 +76,10 @@
     width: 120px;
     padding: 10px;
     text-align: center;
-    border: 2px solid transparent;
+    border: 2px solid white;
     border-radius: 10px;
-    color: #2a5298;
+    color: white;
+    background-color: #2a5298;
     font-weight: 600;
     letter-spacing: 0.3px;
     transition: 0.3s ease;
@@ -87,9 +88,7 @@
 
 .SSD-header-button:hover {
     transform: translateY(-3px);
-    border: 2px solid white;
-    background-color: #2a5298;
-    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .SSD-wrapper {

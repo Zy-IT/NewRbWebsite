@@ -5,7 +5,7 @@
 }
 
 .NAL-container {
-    max-width: 1200px;
+    max-width: 12 00px;
     margin: 0 auto;
     padding: clamp(1rem, 3vw, 2rem);
 }
@@ -160,13 +160,8 @@
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     margin: 3rem 0;
-    border: 2px solid transparent;
+    border: 2px solid #2563eb;
     transition: all 0.3s ease;
-}
-
-.NAL-apply-container:hover {
-    border-color: #2563eb;
-    transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(37, 99, 235, 0.1);
 }
 

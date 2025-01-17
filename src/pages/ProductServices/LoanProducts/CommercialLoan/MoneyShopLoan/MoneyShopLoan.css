@@ -193,14 +193,8 @@
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     margin: 3rem 0;
-    border: 2px solid transparent;
+    border: 2px solid #2563eb;
     transition: all 0.3s ease;
-}
-
-.MSL-appply-container:hover {
-    border-color: #6366f1;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.1);
 }
 
 .MSL-apply-section h3 {

@@ -83,8 +83,8 @@ function NegoAsensoLoan() {
                             onClick={handletonavigate}
                         >Apply Now</button>
                     </div>
-
                 </div>
+                
                 <button className="NAL-scroll-top"
                     onClick={scrollToTop}
                 >↑</button>

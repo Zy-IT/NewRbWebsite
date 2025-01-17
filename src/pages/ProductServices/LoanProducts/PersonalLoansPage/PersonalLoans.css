@@ -68,6 +68,12 @@
     box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
 }
 
+.PL__category-button--active:hover {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
 
 .PL-loan-types {
     display: grid;

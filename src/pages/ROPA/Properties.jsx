@@ -14,6 +14,22 @@ function Properties() {
         }
     }, [selectedProperty]);
 
+    useEffect(() => {
+        const handleEscKey = (event) => {
+            if (event.key === 'Escape' && selectedProperty) {
+                closePropertyModal();
+            }
+        };
+
+        if (selectedProperty) {
+            document.addEventListener('keydown', handleEscKey);
+        }
+
+        return () => {
+            document.removeEventListener('keydown', handleEscKey);
+        };
+    }, [selectedProperty]);
+
     const handleNextImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % selectedProperty.images.length);
     };
@@ -27,6 +43,10 @@ function Properties() {
     const openGoogleMaps = () => {
         const coordinates = "17.408632,121.744082";
         window.open(`https://www.google.com/maps?q=${coordinates}`, '_blank');
+    };
+
+    const closePropertyModal = () => {
+        setSelectedProperty(null);
     };
 
     const images = import.meta.glob('/src/Assets/*.{jpg,jpeg,png}', { eager: true });
@@ -82,11 +102,11 @@ function Properties() {
 
             {/* Overlay */}
             {selectedProperty && (
-                <div className="property-overlay" onClick={() => setSelectedProperty(null)}>
+                <div className="property-overlay" onClick={closePropertyModal}>
                     <div className="overlay-content" onClick={(e) => e.stopPropagation()}>
                         <button
                             className="close-button"
-                            onClick={() => setSelectedProperty(null)}
+                            onClick={closePropertyModal}
                         >
                             ×
                         </button>
