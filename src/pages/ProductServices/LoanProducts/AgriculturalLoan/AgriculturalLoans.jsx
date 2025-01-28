@@ -39,7 +39,6 @@ function AgriculturalLoans () {
             <div className="AL-container">
                 <div className="AL-header">
                     <h1 className="AL-title">Agricultural Loans</h1>
-                    <p className="AL-subtitle">Time to make a change</p>
                 </div>
 
                 {/*Category Mapping via under the Title*/}

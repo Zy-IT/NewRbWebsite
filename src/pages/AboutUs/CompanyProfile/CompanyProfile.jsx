@@ -92,22 +92,22 @@ function CompanyProfile() {
                             <p>The RURAL BANK OF CAUAYAN INC. was established on April 7,1965. It is the pioneer bank in Cauayan, Isabela founded by Dr. and Mrs. Ireneo C. Bucag Sr. and its incorporator namely: Mr. Domingo San Pedro, Mrs. Aurea B. Carpio, Mr. Antonio M. Perez, Mrs. Lourdes Cruz, and Mr. Domingo Simangan.
                                 <br />
                                 <br />
-                                The simplified and affordable credit window that it offers immediately became a word of mouth among farmers and businessmen in Cauayan , Isabela and its nearby municipalities. Since then, it has not stopped counting more and more satisfied and loyal customers.
+                                The simplified and affordable credit window that it offers immediately became a word of mouth among farmers and businessmen in Cauayan, Isabela, and its nearby municipalities. Since then, it has not stopped counting more satisfied and loyal customers.
                                 <br />
                                 <br />
                                 Because of this, Rural Bank of Cauayan Inc. started branching out. Six (6) branches were opened from 1990 to 2000, Eight (8) other branches were inaugurated from 2001-2010, and 3 more branches started operating from 2011 to 2013.
                                 <br />
                                 <br />
-                                As of now, Rural Bank of Cauayan Inc. has a total of 19 branches and 1 Extension Office operating in four provinces in Region 2–Isabela, Cagayan, Quirino and Nueva Vizcaya with resources of over a Billion pesos; and a total of 217 employees.
+                                As of now, Rural Bank of Cauayan Inc. has a total of 16 branches and 2 Branch Lite operating in Provinces in Region 2–Isabela, Cagayan, and Nueva Vizcaya with resources of over a Billion pesos, and a total of 200 employees more or less.
                                 <br />
                                 <br />
-                                The bank’s tremendous growth over the years was fueled by the active & dynamic stewardship of its Members of the Board namely: Dr. Eduardo R. Bucag, Chairman of the Board, Charita P. Guinid, President, Mr. Edgardo R. Bucag, Board of Director, Mr. Ireneo R. Bucag Jr., Board of Director, Engr. Ronaldo R. Bucag, Board of Director, Mrs. Juana R. Bucag, Founder, Mr. Danilo San Pedro, Board of Director, Atty. Malou P. Andres, Board of Director, and Engr, Susana S. Wandag.
+                                The bank’s tremendous growth over the years was fueled by the active & dynamic stewardship of its Members of the Board namely: Dr. Eduardo R. Bucag, Chairman of the Board, Mr. Edgardo R. Bucag Vice Chairman, Board of Director, Mr. Ireneo R. Bucag Jr., Board of Director, Engr. Ronaldo R. Bucag, Board of Director, Mr. Danilo San Pedro, Board of Director, Atty. Malou P. Andres, Board of Director, Engr, Susana S. Wandag, Board of Director, Ms. Shirly Leocel A. Narag.and its dedicated Management Team under the leadership of Ms. Charita P. Guinid-President and its hard-working Chief Operating Officers namely Ms. Marissa M. Paraguison, Ms. Janette B. Domingo, Ms. Emerlyne M. Manangan and Ms. Aileen V. Barlis.
                                 <br />
                                 <br />
-                                Social responsibilities have been a part of Rural Bank of Cauayan’s distinctiveness. For 5 straight years the bank have been conducting Job fair in partnership with LGU Cauayan, DOLE & POEA as a simple way of helping the jobseekers find their employment. Last January 2015, Rural Bank of Cauayan sponsored a 3-day medical, dental, surgical and ophthalmology mission in cooperation with Wichita Falls Country Medical Alliance of North Texas and LGU Cauayan. Local and Fil-Am Doctors from USA collaborated to provide free medical aid to those who are less fortunate in life in Isabela.
+                                Social responsibilities have been a part of Rural Bank of Cauayan’s distinctiveness. By conducting a Job fair, Brigada Eskwela, Operation during Calamities, and Medical Mission.
                                 <br />
                                 <br />
-                                Truly, Rural Bank of Cauayan Inc. has evolved as one of the biggest rural bank in the region and has been receiving recognitions from prestigious institutions. Over the years, it has continued its legacy in good governance and excellent customer service.
+                                Truly, Rural Bank of Cauayan Inc. has evolved as one of the biggest rural banks in the region and has been receiving recognition from prestigious institutions. Over the years, it has continued its legacy of good governance and excellent customer service.
                             </p>
                         </div>
                     </div>
@@ -128,45 +128,125 @@ function CompanyProfile() {
                         </div>
                     </div>
 
-                    <div className="CP-core-values-content">
-                        <h2>Our Core Values</h2>
-                        <ul>
-                            <li>
-                                <h2>SERVICE</h2>
-                                <p>We provide and deliver the best products and services to all of our clients. We focus on their needs.</p>
-                            </li>
-                            <li>
-                                <h2>INTEGRITY & PROFESSIONALISM</h2>
-                                <p>
-                                    We practice honesty, transparency, fairness and demonstrate mutual respect and trust with others.
-                                    We uphold high ethical standards and conduct ourselves in a manner that dignifies the reputation
-                                    of the bank. We take responsibility and stand up for our actions.
-                                </p>
-                            </li>
-                            <li>
-                                <h2>CARE FOR EMPLOYEES</h2>
-                                <p>We practice a culture that attracts, retains, rewards and empowers employees.</p>
-                            </li>
-                            <li>
-                                <h2>DIVERSITY</h2>
-                                <p>
-                                    We recognize that we have varying and sometimes opposing views.
-                                    This is only because of differences in perceptions and how to improve
-                                    and promote the interest of the company, our clients, and our employees.
-                                    As such, we welcome, listen and respect all perspectives and views.
-                                </p>
-                            </li>
-                            <li>
-                                <h2>EXCELLENCE</h2>
-                                <p>
-                                    We put the company our first priority. We operate as a competitive and profitable
-                                    business and work as a team to attain our organizational goals. We constantly strive
-                                    to be the number one. We act quickly and stand for the highest quality we deliver.
-                                    Our employees are trained to excel, to deliver their best performance and be as
-                                    productive as they can be.
-                                </p>
-                            </li>
-                        </ul>
+                    <div className="CP-Core-values-wrapper">
+                        <div className="CP-Core-values-Title">
+                           <h2>Our Core Values</h2> 
+                        </div>
+                        <div className="CP-Core-values-marquee">
+                            <div className="CP-core-values-content">
+                                <ul>
+                                    <li>
+                                        <h2>SERVICE</h2>
+                                        <p>We provide and deliver the best products and services to all of our clients. We focus on their needs.</p>
+                                    </li>
+                                    <li>
+                                        <h2>INTEGRITY & PROFESSIONALISM</h2>
+                                        <p>
+                                            We practice honesty, transparency, fairness and demonstrate mutual respect and trust with others.
+                                            We uphold high ethical standards and conduct ourselves in a manner that dignifies the reputation
+                                            of the bank. We take responsibility and stand up for our actions.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h2>CARE FOR EMPLOYEES</h2>
+                                        <p>We practice a culture that attracts, retains, rewards and empowers employees.</p>
+                                    </li>
+                                    <li>
+                                        <h2>DIVERSITY</h2>
+                                        <p>
+                                            We recognize that we have varying and sometimes opposing views.
+                                            This is only because of differences in perceptions and how to improve
+                                            and promote the interest of the company, our clients, and our employees.
+                                            As such, we welcome, listen and respect all perspectives and views.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h2>EXCELLENCE</h2>
+                                        <p>
+                                            We put the company our first priority. We operate as a competitive and profitable
+                                            business and work as a team to attain our organizational goals. We constantly strive
+                                            to be the number one. We act quickly and stand for the highest quality we deliver.
+                                            Our employees are trained to excel, to deliver their best performance and be as
+                                            productive as they can be.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h2>SERVICE</h2>
+                                        <p>We provide and deliver the best products and services to all of our clients. We focus on their needs.</p>
+                                    </li>
+                                    <li>
+                                        <h2>INTEGRITY & PROFESSIONALISM</h2>
+                                        <p>
+                                            We practice honesty, transparency, fairness and demonstrate mutual respect and trust with others.
+                                            We uphold high ethical standards and conduct ourselves in a manner that dignifies the reputation
+                                            of the bank. We take responsibility and stand up for our actions.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h2>CARE FOR EMPLOYEES</h2>
+                                        <p>We practice a culture that attracts, retains, rewards and empowers employees.</p>
+                                    </li>
+                                    <li>
+                                        <h2>DIVERSITY</h2>
+                                        <p>
+                                            We recognize that we have varying and sometimes opposing views.
+                                            This is only because of differences in perceptions and how to improve
+                                            and promote the interest of the company, our clients, and our employees.
+                                            As such, we welcome, listen and respect all perspectives and views.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h2>EXCELLENCE</h2>
+                                        <p>
+                                            We put the company our first priority. We operate as a competitive and profitable
+                                            business and work as a team to attain our organizational goals. We constantly strive
+                                            to be the number one. We act quickly and stand for the highest quality we deliver.
+                                            Our employees are trained to excel, to deliver their best performance and be as
+                                            productive as they can be.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h2>SERVICE</h2>
+                                        <p>We provide and deliver the best products and services to all of our clients. We focus on their needs.</p>
+                                    </li>
+                                    <li>
+                                        <h2>INTEGRITY & PROFESSIONALISM</h2>
+                                        <p>
+                                            We practice honesty, transparency, fairness and demonstrate mutual respect and trust with others.
+                                            We uphold high ethical standards and conduct ourselves in a manner that dignifies the reputation
+                                            of the bank. We take responsibility and stand up for our actions.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h2>CARE FOR EMPLOYEES</h2>
+                                        <p>We practice a culture that attracts, retains, rewards and empowers employees.</p>
+                                    </li>
+                                    <li>
+                                        <h2>DIVERSITY</h2>
+                                        <p>
+                                            We recognize that we have varying and sometimes opposing views.
+                                            This is only because of differences in perceptions and how to improve
+                                            and promote the interest of the company, our clients, and our employees.
+                                            As such, we welcome, listen and respect all perspectives and views.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h2>EXCELLENCE</h2>
+                                        <p>
+                                            We put the company our first priority. We operate as a competitive and profitable
+                                            business and work as a team to attain our organizational goals. We constantly strive
+                                            to be the number one. We act quickly and stand for the highest quality we deliver.
+                                            Our employees are trained to excel, to deliver their best performance and be as
+                                            productive as they can be.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

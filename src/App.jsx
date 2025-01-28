@@ -1,6 +1,5 @@
 {/*Imported Tools*/ }
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 {/*Components of the System*/ }
 import ScrollToTop from './components/ScrolltoTop';
 {/*Pages  of the WEB*/ }
@@ -40,7 +39,6 @@ import AnnualReport from './pages/AnnualReport/AnnualReport';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
 import Properties from './pages/ROPA/Properties';
 import TermsCondition from './pages/Application/TermsCondition/TermsConditions';
-import OnlineProcess from './pages/Application/OnlineProcess/OnlineProcess';
 import ApplyJob from './pages/Application/Apply/ApplyJob';
 
 
@@ -50,7 +48,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App-container">
-
         <main className='Main-content'>
           <ScrollToTop />
           <Routes>

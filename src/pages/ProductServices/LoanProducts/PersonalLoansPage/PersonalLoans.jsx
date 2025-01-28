@@ -39,7 +39,6 @@ function PersonalLoans () {
             <div className="PL-container">
                 <div className="PL-header">
                     <h1 className="PL-title">Personal Loans</h1>
-                    <p className="PL-subtitle">Time to make a change</p>
                 </div>
 
                 {/*Category Mapping via under the Title*/}

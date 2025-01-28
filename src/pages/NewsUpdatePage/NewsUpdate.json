@@ -16,59 +16,59 @@
     "news": [
         {
             "id": 1,
-            "title": "1stsample News",
-            "description": "The quick brown fox jump over the head of the lazy dog",
+            "title": "Bank Advisory: ",
+            "description": "All Branches of Rural Bank of Cauayan are closed today October 24, 2024 due to Severe Tropical Storm Kristine",
             "category": "News",
-            "image": "/src/Assets/sampling.jpg",
-            "date": "December 3, 2024"
+            "image": "/src/Assets/walangpasok.png",
+            "date": "October 24, 2024"
         },
         {
             "id": 2,
-            "title": "2nd sample News",
-            "description": "The quick brown fox jump over the head of the lazy dog",
+            "title": "Deposit Insuranace: ",
+            "description": "Proteksyong Maaasahan sa Ipong Pinaghirapan",
             "category": "News",
-            "image": "/src/Assets/sampling.jpg",
-            "date": "December 12, 2024"
+            "image": "/src/Assets/Deposit Insurance.jpg",
+            "date": "June 16, 2024"
         },
         {
             "id": 3,
-            "title": "3rd sample News",
-            "description": "The quick brown fox jump over the head of the lazy dog",
+            "title": "Holy Week",
+            "description": "All Branches will be Closed",
             "category": "News",
-            "image": "/src/Assets/sampling.jpg",
-            "date": "December 1, 2024"
+            "image": "/src/Assets/holyweek.jpeg",
+            "date": "March 28, 2024"
         },
         {
             "id": 4,
-            "title": "Christmass Party",
-            "description": "The quick brown fox jump over the head of the lazy dog",
+            "title": "National Banking Week",
+            "description": "Financial Stability, Foundation of Prosperity",
             "category": "Events",
-            "image": "/src/Assets/sampling.jpg",
+            "image": "/src/Assets/NationalBankingWeek2024.jpg",
             "date": "December 23, 2023"
         },
         {
             "id": 5,
-            "title": "Team Building",
-            "description": "The quick brown fox jump over the head of the lazy dog",
+            "title": "45th National Disability Prevention & Rehabilitation Week",
+            "description": "Persons with Disabilities Accesibility and Rights: Towards a sustainable future where no one is left behind (July 17 - 23)",
             "category": "Events",
-            "image": "/src/Assets/sampling.jpg",
-            "date": "May 5-6, 2024"
+            "image": "/src/Assets/NationalDisabilityAffairs.jpg",
+            "date": "july 17, 2023"
         },
         {
             "id": 6,
-            "title": "Check Up",
-            "description": "The quick brown fox jump over the head of the lazy dog",
-            "category": "Archive",
-            "image": "/src/Assets/sampling.jpg",
-            "date": "November 03, 2024"
+            "title": "Saving Consciousness Week",
+            "description": "Magimpok at mamuhunan para sa magandang kinabukasan. Savings Consciousness Week June 30-July 6, 2023.",
+            "category": "Events",
+            "image": "/src/Assets/SavingsConciousnessWeek.jpg",
+            "date": "June 30, 2023"
         },
         {
             "id": 7,
-            "title": "New Branch Opened",
-            "description": "The quick brown fox jump over the head of the lazy dog",
-            "category": "Archive",
-            "image": "/src/Assets/sampling.jpg",
-            "date": "October 13, 2020"
+            "title": "Holiday Advisory",
+            "description": "Please be advised that all rbci branches will be closed on june 28, 2023 in observance of EID'L Adha",
+            "category": "News",
+            "image": "/src/Assets/HolidayAdvisory.png",
+            "date": "June 28, 2023"
         }
     ]
 }

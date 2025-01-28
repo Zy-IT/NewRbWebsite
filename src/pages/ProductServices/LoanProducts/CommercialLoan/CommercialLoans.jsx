@@ -39,7 +39,6 @@ function CommercialLoans() {
             <div className="CL-container">
                 <div className="CL-header">
                     <h1 className="CL-title">Commercial Loans</h1>
-                    <p className="CL-subtitle">Context needed here</p>
                 </div>
 
                 {/*Category Mapping via under the Title*/}
