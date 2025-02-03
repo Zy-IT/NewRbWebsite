@@ -36,6 +36,7 @@
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0px);
@@ -70,13 +71,24 @@
 }
 
 .NAL-header-button {
-    width: 6rem;
+    width: 7rem;
     height: 2.5rem;
     color: white;
-    border: 2px solid transparent;
+    border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    background-color: #2563eb;
+    background-color: #2a5298;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 100;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.NAL-header-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*Offers Section*/
@@ -213,15 +225,15 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     z-index: 1000;
-  }
-  
-  .NAL-scroll-top:hover {
+}
+
+.NAL-scroll-top:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  }
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
 
 
 /* Desktop-specific enhancements */

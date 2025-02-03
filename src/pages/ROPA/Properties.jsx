@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import PropertiesData from "./Properties.json";
@@ -84,7 +84,7 @@ function Properties() {
                                     <p className="property-description">{property.description}</p>
                                     <div className="property-details">
                                         <span>
-                                            <i className="fas fa-ruler-combined"></i> {property.sqfm} sq ft
+                                            <i className="fas fa-ruler-combined"></i> {property.sqfm} sq.m
                                         </span>
                                     </div>
                                     <button
@@ -165,7 +165,7 @@ function Properties() {
                             <p className="overlay-description">{selectedProperty.description}</p>
                             <div className="overlay-details">
                                 <span>
-                                    <i className="fas fa-ruler-combined"></i> {selectedProperty.sqfm} sq ft
+                                    <i className="fas fa-ruler-combined"></i> {selectedProperty.sqfm} sq.m
                                 </span>
                             </div>
                             <div className="overlay-contact">

@@ -40,10 +40,6 @@
       }
   }
 
-  .deposit-header:hover {
-      transform: translateY(-2px);
-  }
-
   .deposit-header h1 {
       font-size: 3.5rem;
       color: #1e293b;
@@ -55,9 +51,6 @@
       transition: color 0.3s ease;
   }
 
-  .deposit-header h1:hover {
-      color: #2563eb;
-  }
 
   .deposit-header h1::after {
       content: '';
@@ -72,10 +65,6 @@
       transition: width 0.3s ease, background-color 0.3s ease;
   }
 
-  .deposit-header:hover h1::after {
-      width: 100px;
-      background: #1d4ed8;
-  }
 
   .deposit-header p {
       font-size: 1.25rem;
@@ -85,10 +74,6 @@
       margin: 0 auto;
       line-height: 1.6;
       transition: color 0.3s ease;
-  }
-
-  .deposit-header:hover p {
-      color: #1e293b;
   }
 
   .deposit-grid {

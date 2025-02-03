@@ -56,18 +56,24 @@
 }
 
 .KAL-header-button {
-    width: 6rem;
+    width: 7rem;
     height: 2.5rem;
     color: white;
-    border: 2px solid transparent;
+    border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    background-color: #2563eb;
-    transition: 0.3s ease;
+    background-color: #2a5298;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 100;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
 
 .KAL-header-button:hover {
     transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*Offers Section*/

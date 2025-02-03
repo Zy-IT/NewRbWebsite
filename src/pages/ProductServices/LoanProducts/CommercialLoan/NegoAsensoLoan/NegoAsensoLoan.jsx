@@ -50,7 +50,7 @@ function NegoAsensoLoan() {
                         <div className="NAL-offer-card">
                             <span className="NAL-offer-icon">📈</span>
                             <h3>Business Expansion Boost</h3>
-                            <p>Need more capital for growth? We've got you covered!</p>
+                            <p>Need more capital for growth? We&apos;ve got you covered!</p>
                         </div>
                         <div className="NAL-offer-card">
                             <span className="NAL-offer-icon">🤝</span>

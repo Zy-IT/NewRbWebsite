@@ -46,12 +46,12 @@ function BasicSavingsAccount() {
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Start Saving</h3>
-              <p>Start saving as low as 1000.00 Pesos</p>
+              <p>Opening Account not more than 100.00 pesos</p>
             </div>
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Maintaining Balance</h3>
-              <p>Keep your balance above the minimum balance for as low as 1,000</p>
+              <p>No Maintaining Balance</p>
             </div>
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💰</div>
@@ -59,7 +59,6 @@ function BasicSavingsAccount() {
               <p>Earn more with our attractive interest rates</p>
             </div>
           </div>
-
         </section>
 
         <section className="BSA-description-section">
@@ -67,9 +66,9 @@ function BasicSavingsAccount() {
             <div className="BSA-description-content">
               <h2>What is a Basic Savings Account?</h2>
               <p>
-                A Basic Savings Account is a savings account designed for individuals who are new
-                to banking and want to start saving with a simple and secure account. It offers
-                competitive interest rates, zero minimum balance, and convenient ATM withdrawals.
+                Interest bearing account designed to promote financial inclusion.
+                This Account will enable filipinos, especially the unserved, to recieve and make 
+                payments, as well as have a facility for store of value.
               </p>
             </div>
           </div>

@@ -60,7 +60,12 @@ function SmallBusinessLoan() {
                     <div className="SBL-description-content">
                         <div className="SBL-description">
                             <h2>What is Small Business Loan</h2>
-                            <p>kindly input the description for udpates</p>
+                            <p>
+                                This is a loan facility granted to valued current account depositors
+                                to support the financial needs of their business operation. Applicant must have a
+                                checking account with the bank for the last three (3) years with good track record and
+                                funding character with the bank.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -76,7 +81,7 @@ function SmallBusinessLoan() {
                     </div>
                 </div>
                 <button className="SBL-scroll-top"
-                onClick={scrolltotop}
+                    onClick={scrolltotop}
                 >↑</button>
             </div>
             <Footer />

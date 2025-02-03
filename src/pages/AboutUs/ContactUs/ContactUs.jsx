@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -20,6 +20,7 @@ function ContactUs() {
         phone: "",
         email: "",
         hours: "",
+        coordinates: "",
     });
 
     const mapContainerStyle = {
@@ -39,6 +40,7 @@ function ContactUs() {
                 phone: selectedBranch.phone,
                 email: selectedBranch.email,
                 hours: selectedBranch.hours,
+                coordinates: selectedBranch.coordinates,
             });
         }
 
@@ -68,6 +70,7 @@ function ContactUs() {
     };
 
     // Map view re-centering logic
+    // eslint-disable-next-line react/prop-types
     function CenterMap({ coordinates }) {
         const map = useMap();
         map.setView(coordinates, map.getZoom());
@@ -83,14 +86,19 @@ function ContactUs() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add form submission logic here
         console.log("Form Submitted", { fullname, email, subject, message });
-        // Reset form or show confirmation
         setFullName('');
         setEmail('');
         setSubject('');
         setMessage('');
     }
+
+    const openGoogleMaps = () => {
+        if (selectedBranch && selectedBranch.coordinates) {
+            const coordinatesString = `${selectedBranch.coordinates.lat},${selectedBranch.coordinates.lng}`;
+            window.open(`https://www.google.com/maps?q=${coordinatesString}`, '_blank');
+        }
+    };
 
     return (
         <div className="Contact-Us">
@@ -164,6 +172,16 @@ function ContactUs() {
                                         <i className="CU-time-icon">🕒</i>
                                         <p>{branchDetails.hours}</p>
                                     </div>
+                                    <div>
+                                        <button
+                                            className="map-button-container"
+                                            onClick={openGoogleMaps}
+                                            title="Open in Google Maps"
+                                        >
+                                            <i className="fas fa-map-marked-alt"></i>
+                                            <span>View on Google Maps</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +252,7 @@ function ContactUs() {
                                         <div className="CU-message-content">
                                             <h3>Get in Touch</h3>
                                             <p>
-                                                Have questions about our products or services? We're here to help!
+                                                Have questions about our products or services? We&apos;re here to help!
                                                 Fill out the form and our team will get back to you within 24 hours.
                                             </p>
                                         </div>

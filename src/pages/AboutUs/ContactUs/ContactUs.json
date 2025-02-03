@@ -4,8 +4,8 @@
             "id": "Corporate Office",
             "name": "Corporate Office",
             "address": "Don Jose Canciller Avenue, Cauayan City",
-            "phone": "(078) 652-1016",
-            "email": "corporate@rbcauayan.com",
+            "phone": "0917-621-9456",
+            "email": "rbci_cauayan01@yahoo.com",
             "hours": "Mon - Fri: 8:00 AM - 5:00 PM",
             "coordinates": { "lat": 16.93324495296561, "lng": 121.77403643716062 }
         },
@@ -13,89 +13,89 @@
             "id": "Cauayan Branch",
             "name": "Cauayan Branch",
             "address": "Don Jose Canciller Avenue, Cauayan City",
-            "phone": "(078) 652-2234",
+            "phone": "0917-621-9456",
             "email": "Cauayan@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 5:00 PM",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 16.93324495296561, "lng": 121.77403643716062 }
         },
         {
             "id": "Alicia Branch",
             "name": "Alicia Branch",
             "address": "San Mateo Road, Barangay Antonio, Alicia, Isabela",
-            "phone": "(078) 325-1398", 
-            "email": "Alicia@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
-            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+            "phone": "0908-820-0757", 
+            "email": "rbci_alicia_br@yahoo.com.ph",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
+            "coordinates": { "lat": 16.779188518890138, "lng": 121.69826359408145 }
         },
         {
             "id": "Bambang Branch",
             "name": "Bambang Branch",
             "address": "National Highway, Banggot, Bambang, Nueva Vizcaya",
-            "phone": "(078) 392-0156", 
-            "email": "Bambang@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
-            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+            "phone": "0998-990-4319", 
+            "email": "rbci_bambang@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
+            "coordinates": { "lat": 16.38955235857619, "lng": 121.1073662221597 }
         },
         {
             "id": "Cabatuan Branch",
             "name": "Cabatuan Branch",
             "address": "National Road, Magdalena, Cabatuan, Isabela",
-            "phone": "(078) 324-8975", 
-            "email": "Cabatuan@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+            "phone": "0968-869-6834", 
+            "email": "rbci_cabatuan@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 16.953303208838854, "lng": 121.66865745933875 }
         },
         {
             "id": "Camalaniugan Branch",
             "name": "Camalaniugan Branch",
             "address": "National Highway, Barangay Bulala, Camalaniugan, Cagayan",
-            "phone": "(078) 395-1190", 
-            "email": "downtown@bankname.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
-            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+            "phone": "0968-864-9103", 
+            "email": "rbci_camalaniugan@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
+            "coordinates": { "lat": 18.260988016983486, "lng": 121.68803199216887 }
         },
         {
             "id": "Cordon Branch",
             "name": "Cordon Branch",
             "address": "Laurel, Cordon, Isabela",
-            "phone": "(078) 325-9316", 
-            "email": "Cordon@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+            "phone": "0998-956-2426", 
+            "email": "rbci_cordon@yahoo.com.ph",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 16.674126761949058, "lng":  121.46575132929247 }
         },
         {
             "id": "Echague Branch",
             "name": "Echague Branch",
             "address": "National Highway, San Fabian, Echague, Isabela",
-            "phone": "(078) 324-6230", 
-            "email": "Echague@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+            "phone": "0968-867-5881", 
+            "email": "rbci_echague@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 16.720253376307745, "lng": 121.68446517521777 }
         },
         {
             "id": "Ilagan Branch",
             "name": "Ilagan Branch",
             "address": "Calamagui 2 Street, Isabela",
-            "phone": "(078) 324-8977", 
-            "email": "Ilagan@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+            "phone": "0968-876-9173", 
+            "email": "rbci_ilagan@yahoo.com.ph",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 17.130491358082377, "lng": 121.866803925612 }
         },
         {
             "id": "Luna Branch",
             "name": "Luna Branch",
             "address": "Centro 1, Luna, Isabela",
-            "phone": "(078) 325-1510", 
-            "email": "Luna@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+            "phone": "0919-071-9683", 
+            "email": "rbci_luna@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 16.968272235539285, "lng": 121.72982015408284 }
         },
         {
             "id": "Mercedes Branch",
             "name": "Reina Mercedes Branch",
             "address": "National Highway, Tallungan, Reina Mercedes, Isabela",
-            "phone": "(078) 324-6232",
-            "email": "ReinaMercedes@rbcauayan.com", 
+            "phone": "0968-850-0543",
+            "email": "rbci_reinamercedes@yahoo.com", 
             "hours": "Mon - Fri: 9:30 AM - 4:30 PM",
             "coordinates": { "lat": 16.993400250962704, "lng": 121.81064667845335 }
         },
@@ -103,73 +103,73 @@
             "id": "Ramon Branch",
             "name": "Ramon Branch",
             "address": "National Highway, Bugallon Proper, Ramon, Isabela",
-            "phone": "(078) 323-0157",
-            "email": "Ramon@rbcauayan.com", 
+            "phone": "0968-861-0137",
+            "email": "rbci_ramon@yahoo.com.ph", 
             "hours": "Mon - Fri: 9:30 AM - 4:30 PM",
-            "coordinates": { "lat": 16.993400250962704, "lng": 121.81064667845335 }
+            "coordinates": { "lat": 16.78358053938094, "lng": 121.53442081625272 }
         },
         {
             "id": "Roxas Branch",
             "name": "Roxas Branch",
             "address": "Sergio Osmenia, Bantug, Roxas, Isabela",
-            "phone": "(078) 325-1398", 
-            "email": "Roxas@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+            "phone": "0919-006-3617 or 078-325-1398", 
+            "email": "rbci_roxas@yahoo.com.ph",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 17.11917360775548, "lng": 121.61672911679143 }
         },
         {
             "id": "Santiago Branch",
             "name": "Santiago Branch",
             "address": "Maharlika Highway, Barangay Villasis, Santiago City, Isabela",
-            "phone": "(078) 325-2687", 
-            "email": "Santiago@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+            "phone": "0919-088-1769", 
+            "email": "rbci_santiago@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 16.68930496436212, "lng": 121.55162627654919 }
         },
         {
             "id": "San Mateo  Branch",
             "name": "San Mateo  Branch",
             "address": "Bonifacio Street, Barangay 3, San Mateo, Isabela",
-            "phone": "(078) 323-0151 ; (078) 323-0677", 
-            "email": "SanMateo@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
-            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+            "phone": "0968-891-7480", 
+            "email": "rbci_sanmateo@yahoo.com.ph",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
+            "coordinates": { "lat": 16.88226203003372, "lng": 121.5881931599634 }
         },
         {
             "id": "San Manuel  Branch",
             "name": "San Manuel Branch",
             "address": "District 3, San Manuel, Isabela",
             "phone": "(078) 652-0128", 
-            "email": "SanManuel@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
-            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+            "email": "rbci_sanmanuel@yahoo.com.ph",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
+            "coordinates": { "lat": 17.02754540447691, "lng": 121.63103526443237 }
         },
         {
             "id": "Solano  Branch",
             "name": "Solano Branch",
             "address": "45B National Highway Quirino, Solano, Nueva Vizcaya",
-            "phone": "(078) 321-0067", 
-            "email": "Solano@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
-            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+            "phone": "0968-868-3698", 
+            "email": "rbci_solano@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
+            "coordinates": { "lat": 16.511801326073265, "lng": 121.17758971880335 }
         },
         {
             "id": "Tuguegarao  Branch",
             "name": "Tuguegarao Branch",
             "address": "Ugac Sur, Tuguegarao City, Cagayan",
             "phone": "(078) 377-3689", 
-            "email": "Tuguegarao@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
+            "email": "rbci_tuguegarao@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
             "coordinates": { "lat": 17.6134174419404, "lng":  121.70971599860623 }
         },
         {
             "id": "Tumauini  Branch",
             "name": "Tumauini Branch",
             "address": "National Highway, Barangay Centro 2, Tumauini, Isabela",
-            "phone": "(078) 323-0142", 
-            "email": "Tumauini@rbcauayan.com",
-            "hours": "Mon - Fri: 8:00 AM - 3:30 PM",
-            "coordinates": { "lat": 40.7082, "lng": -74.0103 }
+            "phone": "0968-870-1698", 
+            "email": "rbcitumauini@yahoo.com",
+            "hours": "Mon - Fri: 8:00 AM - 3:00 PM",
+            "coordinates": { "lat": 17.27767302968487, "lng": 121.80841713484192 }
         }
         
     ]

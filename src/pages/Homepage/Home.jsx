@@ -121,18 +121,13 @@ function Home() {
                                 Rural Bank of Cauayan, Inc
                             </span>
                         </h1>
-                        <p>Secure, reliable, and innovative financial solutions for your future</p>
+                        <p>YOUR HARVEST STARTS HERE</p>
                     </div>
                 </section>
             )}
 
             {currentSection === 'fading' && (
                 <section className={`hero-section fade-out ${isHeroFading ? 'fade-out' : ''}`}>
-                    <div className="hero-content">
-                        <h3>Banking Made Simple</h3>
-                        <h1>with Rural Bank of Cauayan, Inc</h1>
-                        <p>Secure, reliable, and innovative financial solutions for your future</p>
-                    </div>
                 </section>
             )}
 

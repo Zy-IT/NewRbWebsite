@@ -63,7 +63,11 @@ function MoneyShopLoan() {
                     <div className="MSL-description-content">
                         <div className="MSL-description">
                             <h2>What is Money Shop Loan</h2>
-                            <p>context here pls</p>
+                            <p>
+                                These are loans granted to individuals for their micro-enterprises or small businesses,
+                                other than that defined under the Republic Act 8425. These loans are grant based on the
+                                borrowers’ business and cash flow and are typically but not necessarily unsecured.
+                            </p>
                         </div>
                     </div>
                 </div>
