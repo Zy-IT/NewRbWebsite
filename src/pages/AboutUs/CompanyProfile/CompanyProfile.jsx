@@ -4,16 +4,26 @@ import ScrollAnimation from "../../../components/ScrollAnimation/ScrollAnimation
 import "./CompanyProfile.css";
 import CompanyProfileImage from '../../../Assets/CompanyProfile.png';
 import Founder from '../../../Assets/Founder.jpg';
-import Chairman from '../../../Assets/Chairman.jpg';
-import ViceChairMan from '../../../Assets/ViceChairMan.jpg';
+import Chairman from '../../../Assets/DocEddie.jpg';
+import ViceChairMan from '../../../Assets/SirEdgar.jpg';
 import President from '../../../Assets/President.jpg';
-import BoardDirector1 from '../../../Assets/BoardDirector1.jpg';
-import BoardDirector2 from '../../../Assets/BoardDirector2.jpg';
-import BoardDirector3 from '../../../Assets/BoardDirector3.jpg';
-import BoardDirector4 from '../../../Assets/BoardDirector4.jpg';
-import BoardDirector5 from '../../../Assets/BoardDirector5.jpg';
+import SirIreneo from '../../../Assets/SirIreneo.jpg';
+import MaamAttorney from '../../../Assets/MaamAttorney.jpg';
+import EngrSusan from '../../../Assets/EngrSusan.jpg';
+import MaamMarlyn from '../../../Assets/MaamMarlyn.jpg';
+import SirRonaldo from '../../../Assets/SirRonaldo.jpg';
+import SirDanilo from '../../../Assets/SirDanilo.jpg';
 
 function CompanyProfile() {
+
+    const directors = [
+        { src: SirIreneo, name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
+        { src: SirRonaldo, name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
+        { src: SirDanilo, name: "Engr. Susana S. Wandag", title: "Board of Director" },
+        { src: MaamAttorney, name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
+        { src: EngrSusan, name: "Engr. Susana S. Wandag", title: "Board of Director" },
+        { src: MaamMarlyn, name: "Ms. Shirly Leocel A. Narag", title: "Board of Director" }
+    ];
 
     const scrolltotop = () => {
         window.scrollTo({
@@ -40,38 +50,43 @@ function CompanyProfile() {
                 <div className="CP-timeline-section">
                     <h2>Our Journey Through Time</h2>
                     <div className="CP-timeline">
-                        <div className="CP-timeline-item">
-                            <div className="CP-year">1965</div>
-                            <div className="CP-content">
-                                <h3>The Beginning</h3>
-                                <p>Founded by Dr. and Mrs. Ireneo C. Bucag Sr. along with distinguished incorporators,
-                                    establishing the first bank in Cauayan, Isabela.</p>
+                        <ScrollAnimation delay={0.1}>
+                            <div className="CP-timeline-item">
+                                <div className="CP-year">1965</div>
+                                <div className="CP-content">
+                                    <h3>The Beginning</h3>
+                                    <p>Founded by Dr. and Mrs. Ireneo C. Bucag Sr. along with distinguished incorporators,
+                                        establishing the first bank in Cauayan, Isabela.</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div className="CP-timeline-item">
-                            <div className="CP-year">1990-2000</div>
-                            <div className="CP-content">
-                                <h3>Initial Expansion</h3>
-                                <p>Opened six new branches, marking the beginning of our regional growth.</p>
+                        </ScrollAnimation>
+                        <ScrollAnimation delay={0.2}>
+                            <div className="CP-timeline-item-2">
+                                <div className="CP-content">
+                                    <h3>Initial Expansion</h3>
+                                    <p>Opened six new branches, marking the beginning of our regional growth.</p>
+                                </div>
+                                <div className="CP-year">1990-2000</div>
                             </div>
-                        </div>
-
-                        <div className="CP-timeline-item">
-                            <div className="CP-year">2001-2010</div>
-                            <div className="CP-content">
-                                <h3>Rapid Growth</h3>
-                                <p>Established eight additional branches, strengthening our presence in the region.</p>
+                        </ScrollAnimation>
+                        <ScrollAnimation delay={0.3}>
+                            <div className="CP-timeline-item">
+                                <div className="CP-year">2001-2010</div>
+                                <div className="CP-content">
+                                    <h3>Rapid Growth</h3>
+                                    <p>Established eight additional branches, strengthening our presence in the region.</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div className="CP-timeline-item">
-                            <div className="CP-year">2011-2013</div>
-                            <div className="CP-content">
-                                <h3>Continued Evolution</h3>
-                                <p>Added three more branches, further expanding our banking network.</p>
+                        </ScrollAnimation>
+                        <ScrollAnimation delay={0.4}>
+                            <div className="CP-timeline-item-2">
+                                <div className="CP-content">
+                                    <h3>Continued Evolution</h3>
+                                    <p>Added three more branches, further expanding our banking network.</p>
+                                </div>
+                                <div className="CP-year">2011-2013</div>
                             </div>
-                        </div>
+                        </ScrollAnimation>
                     </div>
                 </div>
             </section>
@@ -130,7 +145,7 @@ function CompanyProfile() {
 
                     <div className="CP-Core-values-wrapper">
                         <div className="CP-Core-values-Title">
-                           <h2>Our Core Values</h2> 
+                            <h2>Our Core Values</h2>
                         </div>
                         <div className="CP-Core-values-marquee">
                             <div className="CP-core-values-content">
@@ -306,17 +321,15 @@ function CompanyProfile() {
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation>
-                            <div className="CP-board-directors">
-                                {[
-                                    { src: BoardDirector1, name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
-                                    { src: BoardDirector4, name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
-                                    { src: BoardDirector5, name: "Engr. Susana S. Wandag", title: "Board of Director" },
-                                    { src: BoardDirector2, name: "Engr. Ronaldo R. Bucag", title: "Board of Director" },
-                                    { src: BoardDirector3, name: "Mr. Danilo R. San Pedro", title: "Board of Director" }
-                                ].map((director, index) => (
+                            <div className="board-directors-grid">
+                                {directors.map((director, index) => (
                                     <div key={index} className="CP-board-position">
                                         <div className="CP-board-card">
-                                            <img src={director.src} alt={director.name} />
+                                            <img
+                                                src={director.src}
+                                                alt={director.name}
+                                                className="director-image"
+                                            />
                                             <div className="CP-board-info">
                                                 <h3>{director.name}</h3>
                                                 <p>{director.title}</p>

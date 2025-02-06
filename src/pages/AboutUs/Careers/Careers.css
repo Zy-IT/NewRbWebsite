@@ -4,7 +4,6 @@
 }
 
 .C-screen {
-    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
     max-width: 100%;
@@ -12,10 +11,8 @@
 }
 
 .C-header-section {
-    background: linear-gradient(
-            rgba(26, 95, 122, 0.7),
-            rgba(26, 95, 122, 0.7)), 
-            url('/src/Assets/Cauayan.jpg');
+    background: linear-gradient(rgb(26, 96, 124),
+            rgba(38, 79, 95, 0.822)), url('/src/Assets/RbCauayan.jpg');
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -23,21 +20,22 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--text-light);
+    color: #F8F9FA;
     position: relative;
     overflow: hidden;
     padding: 2rem;
     bottom: 40px;
+    top: 10px;
 }
-
 
 .C-header-container {
     max-width: 90%;
-    width: 800px;
+    width: 450px;
+    height: 130px;
     padding: 3rem;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(5px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     animation: fadein 0.8s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -48,6 +46,7 @@
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0px);
@@ -58,6 +57,7 @@
     color: #ffffff;
     font-size: 2.7rem;
     font-weight: 700;
+    margin-top: 18px;
     margin-bottom: 16px;
 }
 
@@ -68,6 +68,8 @@
 }
 
 .C-filter-section {
+    position: relative;
+    top: 40px;
     display: flex;
     gap: 12px;
     margin-bottom: 32px;
@@ -195,6 +197,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -519,11 +522,12 @@
     }
 }
 
-@media (max-width: 480px) {   
+@media (max-width: 480px) {
     .C-header-container {
         padding: 1.5rem;
         max-width: 98%;
-    } 
+    }
+
     .C-header-content h1 {
         font-size: 1.8rem;
     }

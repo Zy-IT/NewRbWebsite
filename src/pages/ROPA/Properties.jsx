@@ -38,7 +38,7 @@ function Properties() {
         setCurrentImageIndex((prevIndex) =>
             prevIndex === 0 ? selectedProperty.images.length - 1 : prevIndex - 1
         );
-    };
+    };  
 
     const openGoogleMaps = () => {
         const coordinates = "17.408632,121.744082";

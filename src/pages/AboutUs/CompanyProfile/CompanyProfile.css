@@ -16,8 +16,8 @@
 
 /* Hero Section Responsive Adjustments */
 .CP-hero-section {
-    background: linear-gradient(rgba(26, 95, 122, 0.7),
-            rgba(26, 95, 122, 0.7)), url('/src/Assets/Cauayan.jpg');
+    background: linear-gradient(rgb(26, 96, 124),
+            rgba(38, 79, 95, 0.822)), url('/src/Assets/RbCauayan.jpg');
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -33,11 +33,12 @@
 
 .CP-hero-content {
     max-width: 90%;
-    width: 800px;
+    width: 600px;
+    height: 130px;
     padding: 3rem;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(5px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     animation: fadein 0.8s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -57,7 +58,8 @@
 }
 
 .CP-hero-content h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1rem, 4vw, 3rem);
+    margin-top: 5px;
     margin-bottom: 1rem;
     font-weight: 700;
     color: var(--text-light);
@@ -126,8 +128,22 @@
     gap: 2rem;
 }
 
+.CP-timeline-item-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
+    gap: 2rem;
+}
+
 /* Even numbered items (Year on right) */
 .CP-timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.CP-timeline-item-2:nth-child(even) {
     flex-direction: row-reverse;
 }
 
@@ -174,6 +190,14 @@
 }
 
 .CP-timeline-item:nth-child(even) .CP-year::before {
+    left: -20px;
+}
+
+.CP-timeline-item-2:nth-child(odd) .CP-year::before {
+    left: -20px;
+}
+
+.CP-timeline-item-2:nth-child(even) .CP-year::before {
     left: -20px;
 }
 
@@ -280,10 +304,12 @@
 .CP-mission-content,
 .CP-vision-content {
     flex: 1;
+    height: 280px;
     background: rgba(255, 255, 255, 0.05);
     padding: 3rem;
     border-radius: 20px;
     backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .CP-mission-content h2,
@@ -342,6 +368,7 @@
     border-radius: 15px;
     transition: transform 0.3s ease;
     width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .CP-core-values-content li:hover {
@@ -424,12 +451,66 @@
     width: 100%;
 }
 
-.CP-board-directors {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.board-directors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.director-card {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.director-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+    width: 100%;
+    height: 350px;
+    /* Fixed height for consistency */
+    position: relative;
+}
+
+.director-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.director-card:hover .director-image {
+    filter: grayscale(0%);
+}
+
+.director-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.director-info h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.director-info p {
+    color: #666;
+    font-size: 0.875rem;
 }
 
 .CP-board-position {
@@ -446,7 +527,7 @@
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
     margin: 1rem;
 }
@@ -537,6 +618,11 @@
     .CP-mission-vision-row {
         padding: 0 1rem;
     }
+
+    .board-directors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
 
 /* Medium Devices - Additional Adjustments */
@@ -589,6 +675,12 @@
         text-align: center;
     }
 
+    .CP-timeline-item-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .CP-timeline-item:nth-child(even) {
         flex-direction: column;
     }
@@ -607,6 +699,39 @@
     .CP-founder-card {
         width: 100%;
         max-width: 400px;
+    }
+
+    .board-directors-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 1rem;
+    }
+
+    .CP-board-position {
+        margin: 0 auto;
+        /* Center the cards */
+    }
+
+    .CP-board-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .CP-board-card img {
+        height: 400px;
+    }
+
+    .CP-board-info {
+        padding: 1.25rem;
+    }
+
+    .CP-board-info h3 {
+        font-size: 1.3rem;
+
+    }
+
+    .CP-board-info p {
+        font-size: 1rem;
     }
 
     .CP-mission-content,
@@ -670,6 +795,18 @@
     .CP-board-card {
         width: 100%;
         margin: 0.5rem 0;
+    }
+
+    .board-directors-grid {
+        gap: 2rem;
+    }
+
+    .CP-board-card {
+        max-width: 320px;
+    }
+
+    .CP-board-card img {
+        height: 380px;
     }
 
     .CP-board-info {
@@ -743,23 +880,6 @@
 .CP-board-card {
     animation: fadeInUp 0.6s ease forwards;
     opacity: 0;
-}
-
-/* Staggered Animation */
-.CP-timeline-item:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.CP-timeline-item:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.CP-timeline-item:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.CP-timeline-item:nth-child(4) {
-    animation-delay: 0.4s;
 }
 
 .CP-core-values-content li:nth-child(1) {
