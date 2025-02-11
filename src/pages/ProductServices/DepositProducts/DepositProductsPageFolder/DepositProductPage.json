@@ -7,9 +7,9 @@
             "category": "Deposit",
             "icon": "💰",
             "features": [
-                "No minimum balance",
-                "Free online banking",
-                "24/7 ATM access"
+                "Opening Account less than 100 pesos",
+                "No maintaining balance",
+                "Competitive Interest Rates"
             ],
             "route": "/deposit/BasicSavings"
         },
@@ -20,9 +20,8 @@
             "category": "Deposit",
             "features": [
                 "Competitive interest rates",
-                "Free online banking",
-                "ATM/Debit card access",
-                "Monthly e-statements"
+                "",
+                ""
             ],
             "icon": "🏦",
             "route": "/deposit/RegularSavings"

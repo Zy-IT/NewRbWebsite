@@ -205,7 +205,7 @@ function Home() {
                     <p>Explore our range of products and services tailored to meet your banking needs.</p>
                 </div>
                 <div className="features-grid">
-                    <ScrollAnimation delay={0}>
+                    <ScrollAnimation delay={0.2}>
                         <div
                             className={`feature-card ${selectedFeature === 0 ? 'active' : ''}`}
                             onMouseEnter={() => setSelectedFeature(0)}
@@ -218,7 +218,7 @@ function Home() {
                             >Learn More</button>
                         </div>
                     </ScrollAnimation>
-                    <ScrollAnimation delay={0.1}>
+                    <ScrollAnimation delay={0.3}>
                         <div
                             className={`feature-card ${selectedFeature === 1 ? 'active' : ''}`}
                             onMouseEnter={() => setSelectedFeature(1)}
@@ -231,7 +231,7 @@ function Home() {
                             >Learn More</button>
                         </div>
                     </ ScrollAnimation>
-                    <ScrollAnimation delay={0.2}>
+                    <ScrollAnimation delay={0.4}>
                         <div
                             className={`feature-card ${selectedFeature === 2 ? 'active' : ''}`}
                             onMouseEnter={() => setSelectedFeature(2)}

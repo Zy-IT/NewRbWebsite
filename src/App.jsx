@@ -36,6 +36,7 @@ import CompanyProfile from './pages/AboutUs/CompanyProfile/CompanyProfile';
 import Careers from './pages/AboutUs/Careers/Careers';
 import ContactUs from './pages/AboutUs/ContactUs/ContactUs';
 import AnnualReport from './pages/AnnualReport/AnnualReport';
+import BalanceSheet from './pages/BalanceSheet/BalanceSheet';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
 import Properties from './pages/ROPA/Properties';
 import TermsCondition from './pages/Application/TermsCondition/TermsConditions';
@@ -92,6 +93,7 @@ function App() {
             <Route path="/A&U/Careers" element={<Careers />} />
             <Route path="/A&U/ContactUs" element={<ContactUs />} />
             <Route path="/A&U/AnnualReport" element={<AnnualReport />} />
+            <Route path="/A&U/BalanceSheet" element={<BalanceSheet />}  />
             {/*News and Update */}
             <Route path="/N&U" element={<NewsUpdatePage />} />
             {/* Properties */}

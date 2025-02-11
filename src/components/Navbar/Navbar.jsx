@@ -162,6 +162,7 @@ const Navbar = () => {
                 <li><Link to="/A&U/Careers">Careers</Link></li>
                 <li><Link to="/A&U/ContactUs">Contact Us</Link></li>
                 <li><Link to="/A&U/AnnualReport">Annual Report</Link></li>
+                <li><Link to="/A&U/BalanceSheet">BalanceSheet</Link></li>
               </ul>
             )}
           </li>
@@ -262,6 +263,7 @@ const Navbar = () => {
                   <li><Link to="/A&U/Careers" onClick={toggleMenu}>Careers</Link></li>
                   <li><Link to="/A&U/ContactUs" onClick={toggleMenu}>Contact Us</Link></li>
                   <li><Link to="/A&U/AnnualReport" onClick={toggleMenu}>Annual Report</Link></li>
+                  <li><Link to="/A&U/BalanceSheet" onClick={toggleMenu}>BalanceSheet</Link></li>
                 </ul>
               )}
             </li>

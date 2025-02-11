@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../../../../components/Navbar/Navbar'
 import Footer from '../../../../components/Footer/Footer';
 import "./CheckingAccount.css";
-import { DomUtil } from 'leaflet';
 
 function CheckingAccount() {
 
@@ -45,14 +44,14 @@ function CheckingAccount() {
                     <h2>Account Benefits</h2>
                     <div className="CA-benefits-grid">
                         <div className="CA-benefit-card">
-                            <div className="CA-benefit-icon">📝</div>
+                            <div className="CA-benefit-icon">💵</div>
                             <h3>Start Now</h3>
-                            <p>open an Account starting at 5,000 Php</p>
+                            <p>open an Account starting at 10,000 Php</p>
                         </div>
                         <div className="CA-benefit-card">
-                            <div className="CA-benefit-icon">📝</div>
-                            <h3>Unlimited Transactions</h3>
-                            <p>No limits on withdrawals or deposits</p>
+                            <div className="CA-benefit-icon">💵</div>
+                            <h3>Maintaning Balance</h3>
+                            <p>Keep your balance above the minimum balance for as low as 10,000</p>
                         </div>
                         <div className="CA-benefit-card">
                             <div className="CA-benefit-icon">✔️</div>

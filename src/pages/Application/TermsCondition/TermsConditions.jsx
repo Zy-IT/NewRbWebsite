@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TermsCondition.css";
@@ -63,7 +64,7 @@ function TermsCondition() {
                 <div className="TC-body">
                     <div className="TC-body-container">
 
-                        {/*1st Section */}
+                        {/* Basic Deposit Account */}
                         <div className="TC-BDA-section">
                             <button
                                 className="TC-toggle-button"
@@ -116,7 +117,7 @@ function TermsCondition() {
                             )}
                         </div>
 
-                        {/* 2nd List */}
+                        {/* Interest Bearing Checking Account */}
                         <div className="TC-IBCA-section">
                             <button
                                 className="TC-toggle-button"
@@ -219,7 +220,7 @@ function TermsCondition() {
                             )}
                         </div>
 
-                        {/*3rd Section*/}
+                        {/* Regular Checking Account */}
                         <div className="TC-RCA-section">
                             <button
                                 className="TC-toggle-button"
@@ -327,7 +328,7 @@ function TermsCondition() {
                             )}
                         </div>
 
-                        {/*4th Section */}
+                        {/* Savings Account */}
                         <div className="TS-SA-section">
                             <button
                                 className="TC-toggle-button"
@@ -528,7 +529,7 @@ function TermsCondition() {
                                                 <li>To access your personal data.</li>
                                                 <li>To require the bank to correct any of your personal data, if inaccurate.</li>
                                                 <li>To obtain a copy of your personal data in an electronic or structured format for your further use.</li>
-                                                <li>To suspend, withdraw, or order the blocking, removal, or destruction of your personal data from RB Cauayan's system. It is understood that if you exercise this particular right, RB Cauayan has the right to terminate its services with you.</li>
+                                                <li>To suspend, withdraw, or order the blocking, removal, or destruction of your personal data from RB Cauayan&apos;s system. It is understood that if you exercise this particular right, RB Cauayan has the right to terminate its services with you.</li>
                                                 <li>To file a complaint with the NPC.</li>
                                                 <li>To be indemnified for any damages sustained due to such inaccurate, incomplete, outdated, false, unlawfully obtained or unauthorized use of your personal data</li>
                                             </ol>
@@ -569,7 +570,7 @@ function TermsCondition() {
                                     checked={isChecked}
                                     onChange={handleCheckboxChange}
                                 />
-                                I accept the "terms and conditions" and provide consent as stated in the "data privacy statement".
+                                I accept the &quot;terms and conditions&quot; and provide consent as stated in the &quot;data privacy statement&quot;.
                             </label>
                             <br />
                             <button

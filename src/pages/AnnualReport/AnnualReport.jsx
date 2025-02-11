@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import reportsData from './AnnualReport.json';
@@ -8,7 +8,7 @@ const AnnualReport = () => {
     const [selectedReport, setSelectedReport] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const [isTransitioning, setIsTransitioning] = useState(false);
-    const [isLoaded, setIsLoaded] = useState(false);
+    const [isLoaded] = useState(false);
 
     // Sort reports in descending order by id
     const sortedReports = [...reportsData.reports].sort((a, b) => b.id - a.id);

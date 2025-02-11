@@ -60,7 +60,7 @@ function CompanyProfile() {
                                 </div>
                             </div>
                         </ScrollAnimation>
-                        <ScrollAnimation delay={0.2}>
+                        <ScrollAnimation delay={0.1}>
                             <div className="CP-timeline-item-2">
                                 <div className="CP-content">
                                     <h3>Initial Expansion</h3>
@@ -69,7 +69,7 @@ function CompanyProfile() {
                                 <div className="CP-year">1990-2000</div>
                             </div>
                         </ScrollAnimation>
-                        <ScrollAnimation delay={0.3}>
+                        <ScrollAnimation delay={0.1}>
                             <div className="CP-timeline-item">
                                 <div className="CP-year">2001-2010</div>
                                 <div className="CP-content">
@@ -78,7 +78,7 @@ function CompanyProfile() {
                                 </div>
                             </div>
                         </ScrollAnimation>
-                        <ScrollAnimation delay={0.4}>
+                        <ScrollAnimation delay={0.1}>
                             <div className="CP-timeline-item-2">
                                 <div className="CP-content">
                                     <h3>Continued Evolution</h3>
