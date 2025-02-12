@@ -98,9 +98,10 @@ const Navbar = () => {
                   </Link>
                   {activeSubMenu === 'deposit' && (
                     <ul className={styles.submenu}>
-                      <li><Link to="/deposit/BasicSavings">Basic Savings Account</Link></li>
+                      <li><Link to="/deposit/BasicSavings">Basic Deposit Account</Link></li>
                       <li><Link to="/deposit/RegularSavings">Regular Saving Deposit</Link></li>
-                      <li><Link to="/deposit/CheckingDemand">Checking Account/ Demand Deposit</Link></li>
+                      <li><Link to="/deposit/CheckingAccount">Regular Checking Account</Link></li>
+                      <li><Link to="/deposit/InterestBearingCheckingAccount">Interest Bearing Checking Account</Link></li>
                       <li><Link to="/deposit/StudentSavings">Student Savings Deposit</Link></li>
                       <li><Link to="/deposit/TimeCertofDeposit">Time Certificate of Deposit</Link></li>
                     </ul>
@@ -205,9 +206,10 @@ const Navbar = () => {
                     </div>
                     {mobileNestedMenu === 'deposit' && (
                       <ul className={styles.mobileSubmenu}>
-                        <li><Link to="/deposit/BasicSavings" onClick={toggleMenu}>Basic Savings Account</Link></li>
+                        <li><Link to="/deposit/BasicSavings" onClick={toggleMenu}>Basic Deposit Account</Link></li>
                         <li><Link to="/deposit/RegularSavings" onClick={toggleMenu}>Regular Saving Deposit</Link></li>
-                        <li><Link to="/deposit/CheckingDemand" onClick={toggleMenu}>Checking Account/ Demand Deposit</Link></li> 
+                        <li><Link to="/deposit/CheckingAccount" onClick={toggleMenu}>Regular Checking Account</Link></li>
+                        <li><Link to="/deposit/InterestBearingCheckingAccount">Interest Bearing Checking Account</Link></li> 
                         <li><Link to="/deposit/StudentSavings" onClick={toggleMenu}>Student Savings Deposit</Link></li>
                         <li><Link to="/deposit/TimeCertofDeposit" onClick={toggleMenu}>Time Certificate of Deposit</Link></li>
                       </ul>

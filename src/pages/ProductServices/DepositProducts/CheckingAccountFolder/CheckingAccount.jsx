@@ -31,7 +31,7 @@ function CheckingAccount() {
 
             <div className="CA-hero">
                 <div className="CA-hero-content">
-                    <h1>Checking Account/Demand Deposit</h1>
+                    <h1>Regular Checking Account</h1>
                     <p>Manage your daily transactions with ease and flexibility</p>
                     <button className='CA-header-button'
                         onClick={scrolltoApply}
@@ -46,29 +46,29 @@ function CheckingAccount() {
                         <div className="CA-benefit-card">
                             <div className="CA-benefit-icon">💵</div>
                             <h3>Start Now</h3>
-                            <p>open an Account starting at 10,000 Php</p>
+                            <p>open an Account starting at 5,000 Php</p>
                         </div>
                         <div className="CA-benefit-card">
                             <div className="CA-benefit-icon">💵</div>
                             <h3>Maintaning Balance</h3>
-                            <p>Keep your balance above the minimum balance for as low as 10,000</p>
-                        </div>
-                        <div className="CA-benefit-card">
-                            <div className="CA-benefit-icon">✔️</div>
-                            <h3>Interesting Rates</h3>
-                            <p>Annual Interest 0% Compute Based on Average daily Balance</p>
+                            <p>Keep your balance above the minimum balance for as low as 5,000</p>
                         </div>
                     </div>
                 </section>
 
                 <section className='CA-description-section'>
                     <div className='CA-description-container'>
-                        <div className='CA-description-'>
-
-                        </div>
+                        <h2>What is Regular Checking Account</h2>
+                        <p>
+                            Refers to the bank’s deposit product that facilitates the Checking Account Deposit 
+                            transactions of a regular client/depositor, either a natural or juridical person that 
+                            can provide the bank with requirements and agrees in the bank’s policy that governs this product.
+                            It is a non-interest bearing deposit in which withdrawals are made through issuance 
+                            of a check. Passbooks are also issued to the depositor and check booklet is available 
+                            upon purchase.
+                        </p>
                     </div>
                 </section>
-
 
                 <section className="CA-features">
                     <div className="CA-features-container">
@@ -94,9 +94,10 @@ function CheckingAccount() {
                         <div className="CA-requirement-item">
                             <h3>Documents Needed</h3>
                             <ul>
-                                <li>Valid Government ID</li>
-                                <li>Complete Application Form</li>
-                                <li>Initial Deposit</li>
+                                <li>(1) valid Photo-Bearing ID</li>
+                                <li>(2) Copies of 1x1 ID picture</li>
+                                <li>Alien Cerftificate of Registration(if foreign National)</li>
+                                <li>Joint Account(for joint accounts)</li>
                             </ul>
                         </div>
                         <div className="CA-requirement-item">

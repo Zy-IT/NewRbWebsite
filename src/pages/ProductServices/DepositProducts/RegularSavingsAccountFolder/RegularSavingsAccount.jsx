@@ -31,7 +31,7 @@ function RegularSavingsAccount() {
 
       <div className="RSA-hero">
         <div className="RSA-hero-content">
-          <h1>Regular Savings Account</h1>
+          <h1>Regular Savings Deposit</h1>
           <p>Build your savings with our flexible and reliable savings account</p>
           <button className="RSA-header-button"
             onClick={scrolltoApply}
@@ -46,12 +46,12 @@ function RegularSavingsAccount() {
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Start Saving</h3>
-              <p>Start saving as low as 5000.00 Pesos</p>
+              <p>Start saving as low as 1000.00 Pesos</p>
             </div>
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Maintaining Balance</h3>
-              <p>Keep your balance above the minimum balance for as low as 5,000</p>
+              <p>Keep your balance above the minimum balance for as low as 1,000</p>
             </div>
             <div className="RSA-feature-card">
               <div className="RSA-feature-icon">💰</div>
@@ -65,13 +65,11 @@ function RegularSavingsAccount() {
           <div className="RSA-description-container">
             <div className="RSA-description-grid">
               <div className="RSA-description-content">
-                <h2>What is a Regular Savings Account?</h2>
+                <h2>What is a Regular Savings Deposit?</h2>
                 <p>
-                  bank’s deposit product that facilitates the Checking Account Deposit transactions 
-                  of a regular client/depositor, either a natural or juridical person that can provide 
-                  the bank with requirements and agrees in the bank’s policy that governs this product.
-                  It is a non-interest bearing deposit in which withdrawals are made through issuance of a check. 
-                  Passbooks are also issued to the depositor and check booklet is available upon purchase.
+                  This refers to the bank’s deposit product that facilitates the deposit transactions 
+                  of a regular client/depositor, either natural or juridical person that can provide bank’s 
+                  requirements and accept the banks terms and condition that govern this product.
                 </p>
               </div>
             </div>
@@ -82,10 +80,10 @@ function RegularSavingsAccount() {
           <h2>Requirements</h2>
           <div className="RSA-requirements-container">
             <ul className="RSA-requirements-list">
-              <li>Valid ID</li>
-              <li>Minimum initial deposit</li>
-              <li>Philippine Peso Only</li>
-              <li>Completed application form</li>
+              <li>1 Valid Photo-bearing ID</li>
+              <li>(2) Copies of 1x1 Picture</li>
+              <li>Alien Certificate of Registration (if foreign national)</li>
+              <li>Joint Account Agreement (for joint accounts)</li>
             </ul>
           </div>
         </section>

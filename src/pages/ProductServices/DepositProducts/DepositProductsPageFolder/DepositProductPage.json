@@ -2,43 +2,57 @@
     "depositProducts": [
         {
             "id": 1,
-            "title": "Basic Savings Account",
+            "title": "Basic Deposit Account",
             "description": "Perfect for daily banking needs",
             "category": "Deposit",
             "icon": "💰",
             "features": [
                 "Opening Account less than 100 pesos",
-                "No maintaining balance",
+                "Keep your balance above the minimum balance for as low as 1,000",
                 "Competitive Interest Rates"
             ],
             "route": "/deposit/BasicSavings"
         },
         {
             "id": 2,
-            "title": "Regular Savings Account",
+            "title": "Regular Savings Deposit",
             "description": "A comprehensive savings account with additional benefits and higher interest rates.",
             "category": "Deposit",
             "features": [
-                "Competitive interest rates",
-                "",
-                ""
+                "Opening Account less than 1000 pesos",
+                "No maintaining balance",
+                "Competitive Interest Rates"
             ],
             "icon": "🏦",
             "route": "/deposit/RegularSavings"
         },
         {
             "id": 3,
-            "title": "Checking Account / Demand Deposit",
+            "title": "Regular Checking Account",
             "description": "Manage your daily transactions with ease using our checking account services.",
             "category": "Deposit",
             "features": [
-                "Free initial checkbook",
-                "Online banking access",
-                "Bill payment facility",
-                "Mobile check deposit"
+                "Free checkbook",
+                "Free Passbook",
+                "Starting an Account at 5,000 Php",
+                "Maintainin Balance at 5,000 Php"
             ],
             "icon": "📝",
-            "route": "/deposit/CheckingDemand"
+            "route": "/deposit/CheckingAccount"
+        },
+        {
+            "id": 4,
+            "title": "Checking Account",
+            "description": "Manage your daily transactions with ease using our checking account services.",
+            "category": "Deposit",
+            "features": [
+                "Free checkbook",
+                "Free Passbook",
+                "Starting an Account at 10,000 Php",
+                "Maintainin Balance at 10,000 Php"
+            ],
+            "icon": "📝",
+            "route": "/deposit/InterestBearingCheckingAccount"
         },
         {
             "id": 5,
@@ -46,10 +60,9 @@
             "description": "Help young minds develop saving habits with our student-friendly account.",
             "category": "Deposit",
             "features": [
-                "Zero initial deposit",
-                "No maintaining balance",
-                "School ID as requirement",
-                "Financial literacy resources"
+                "Opening Account less as low as 100 pesos",
+                "Maintain Balance at 100 pesos",
+                "Competitive Interest Rates"
             ],
             "icon": "🎓",
             "route": "/deposit/StudentSavings"

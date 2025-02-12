@@ -12,6 +12,9 @@ function ProductServices() {
     const { categories, products } = productServicesData;
     const filteredProducts = products.filter(product => product.category === activeCategory);
 
+    // Import all images using Vite's import.meta.glob
+    const images = import.meta.glob('/src/Assets/*.{jpg,jpeg,png}', { eager: true });
+
     return (
         <div className="product-services">
             <Navbar />
@@ -32,26 +35,34 @@ function ProductServices() {
                 </div>
 
                 <div className="product-services__grid">
-                    {filteredProducts.map(product => (
-                        <div 
-                            key={product.id} 
-                            className="product-card"
-                            onClick={() => navigate(product.route)}
-                        >
-                            <div className="product-card__image-container">
-                                <img 
-                                    src={product.image} 
-                                    alt={product.title}
-                                    className="product-card__image"
-                                />
+                    {filteredProducts.map((product) => {
+                        const resolvedImage = images[`/src/Assets${product.image.replace('/src/Assets', '')}`];
+
+                        return (
+                            <div 
+                                key={product.id} 
+                                className="product-card"
+                                onClick={() => navigate(product.route)}
+                            >
+                                <div className="product-card__image-container">
+                                    {resolvedImage?.default ? (
+                                        <img 
+                                            src={resolvedImage.default}
+                                            alt={product.title}
+                                            className="product-card__image"
+                                        />
+                                    ) : (
+                                        <p>Image not found</p>
+                                    )}
+                                </div>
+                                <div className="product-card__content">
+                                    <h3 className="product-card__title">{product.title}</h3>
+                                    <p className="product-card__description">{product.description}</p>
+                                    <button className="product-card__button">Learn More →</button>
+                                </div>
                             </div>
-                            <div className="product-card__content">
-                                <h3 className="product-card__title">{product.title}</h3>
-                                <p className="product-card__description">{product.description}</p>
-                                <button className="product-card__button">Learn More →</button>
-                            </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
             <Footer />

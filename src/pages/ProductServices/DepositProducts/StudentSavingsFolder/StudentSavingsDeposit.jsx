@@ -105,26 +105,23 @@ function StudentSavingDeposit() {
                     </div>
                 </section>
 
+                <section className='SSD-Description'>
+                    <div className='SSD-Description-Container'>
+                        <h2>What is Students Savings Deposit?</h2>
+                        <p>This refers to the bank’s deposit product that facilitates the deposit transaction of a student.</p>
+                    </div>
+
+                </section>
+
                 <section className="SSD-requirements">
                     <h2>Requirements</h2>
                     <div className="SSD-requirements-container">
                         <div className="SSD-requirement-card">
                             <h3>For Students Below 18</h3>
                             <ul>
-                                <li>Birth Certificate</li>
-                                <li>School ID</li>
-                                <li>Parent/Guardian's Valid ID</li>
-                                <li>Proof of Address</li>
-                            </ul>
-                        </div>
-                        <div className="SSD-requirement-card">
-                            <h3>For Students 18 & Above</h3>
-                            <ul>
-                                <li>Valid School ID</li>
-                                <li>Valid Government ID</li>
-                                <li>Proof of Address</li>
-                                <li>Enrollment Certificate</li>
-                            </ul>
+                                <li>(1) Copy of valid photo-bearing School ID Duly signed by the principal or head of the school</li>
+                                <li>(2) Copies of 1x1 ID Picture</li>
+                            </ul>   
                         </div>
                     </div>
                 </section>

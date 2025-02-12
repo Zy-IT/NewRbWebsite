@@ -8,7 +8,8 @@ import ProductServices from "./pages/ProductServices/ProductServices";
 import DepositProductsPage from "./pages/ProductServices/DepositProducts/DepositProductsPageFolder/DepositProductsPage";
 import BasicSavings from "./pages/ProductServices/DepositProducts/BasicSavingsAccountFolder/BasicSavingsAccount";
 import RegularSaving from "./pages/ProductServices/DepositProducts/RegularSavingsAccountFolder/RegularSavingsAccount";
-import CheckingDemand from "./pages/ProductServices/DepositProducts/CheckingAccountFolder/CheckingAccount";
+import CheckingAccount from "./pages/ProductServices/DepositProducts/CheckingAccountFolder/CheckingAccount";
+import InterestBearingCheckingAccount from './pages/ProductServices/DepositProducts/CheckingAccountFolder/InterestBearingCheckingAccount';
 import StudentSavings from "./pages/ProductServices/DepositProducts/StudentSavingsFolder/StudentSavingsDeposit";
 import TimeCertofDeposit from "./pages/ProductServices/DepositProducts/TimeCertofDepositFolder/TimeCertOfDeposit";
 import LoanProducts from './pages/ProductServices/LoanProducts/LoanProductsPage/LoanProductsPage';
@@ -59,7 +60,8 @@ function App() {
             <Route path="/P&S/DepositProducts" element={<DepositProductsPage />} />
             <Route path="/deposit/BasicSavings" element={<BasicSavings />} />
             <Route path="/deposit/RegularSavings" element={<RegularSaving />} />
-            <Route path="/deposit/CheckingDemand" element={<CheckingDemand />} />
+            <Route path="/deposit/CheckingAccount" element={<CheckingAccount />} />
+            <Route path='/deposit/InterestBearingCheckingAccount' element={<InterestBearingCheckingAccount/>} />
             <Route path="/deposit/StudentSavings" element={<StudentSavings />} />
             <Route path="/deposit/TimeCertofDeposit" element={<TimeCertofDeposit />} />
             {/* Loan Products */}

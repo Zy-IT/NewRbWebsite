@@ -34,34 +34,12 @@ function TimeCertOfDeposit() {
                     <h1>Time Certificate of Deposit</h1>
                     <p>Maximize your returns with our fixed-term deposit options</p>
                     <button className='TCD-header-button'
-                    onClick={scrolltoApply}
+                        onClick={scrolltoApply}
                     >Apply Now</button>
                 </div>
             </div>
 
             <div className="TCD-wrapper">
-                <section className="TCD-rates">
-                    <h2>Available Terms</h2>
-                    <div className="TCD-rates-grid">
-                        <div className="TCD-rate-card">
-                            <div className="TCD-rate-term">30 Days</div>
-                            <div className="TCD-rate-min">Minimum: ₱10,000</div>
-                        </div>
-                        <div className="TCD-rate-card">
-                            <div className="TCD-rate-term">90 Days</div>
-                            <div className="TCD-rate-min">Minimum: ₱10,000</div>
-                        </div>
-                        <div className="TCD-rate-card">
-                            <div className="TCD-rate-term">180 Days</div>
-                            <div className="TCD-rate-min">Minimum: ₱10,000</div>
-                        </div>
-                        <div className="TCD-rate-card">
-                            <div className="TCD-rate-term">1 Year</div>
-                            <div className="TCD-rate-min">Minimum: ₱10,000</div>
-                        </div>
-                    </div>
-                </section>
-
                 <section className="TCD-benefits">
                     <h2>Key Benefits</h2>
                     <div className="TCD-benefits-grid">
@@ -85,6 +63,17 @@ function TimeCertOfDeposit() {
                             <h3>PDIC Insured</h3>
                             <p>Deposits insured up to ₱500,000</p>
                         </div>
+                    </div>
+                </section>
+
+                <section className='TCD-description-section'>
+                    <div className='TCD-description-container'>
+                        <h2>What is Time Deposit</h2>
+                        <p>
+                            Refers to the bank’s deposit product that facilitates the time deposit transactions
+                            of a regular client/depositor, either natural or juridical person that can provide bank’s
+                            requirements and accept the banks terms and condition that govern this product.
+                        </p>
                     </div>
                 </section>
 
@@ -125,19 +114,23 @@ function TimeCertOfDeposit() {
                         <div className="TCD-requirement-item">
                             <h3>Individual Account</h3>
                             <ul>
-                                <li>Valid Government ID</li>
-                                <li>Proof of Address</li>
-                                <li>Minimum Initial Deposit</li>
-                                <li>Completed Application Form</li>
+                                <li>(1)Copy of Valid Photo-bearing ID</li>
+                                <li>(2) copies of  1 x 1 ID picture</li>
+                                <li>Alien Certificate of Registration (if foreign national)</li>
+                                <li>Joint Account Agreement (for joint accounts)</li>
                             </ul>
                         </div>
                         <div className="TCD-requirement-item">
                             <h3>Corporate Account</h3>
                             <ul>
-                                <li>Business Registration</li>
-                                <li>Board Resolution</li>
                                 <li>Articles of Incorporation</li>
-                                <li>Corporate Secretary Certificate</li>
+                                <li>SEC Certificate of Registration</li>
+                                <li>Corporate By-Laws</li>
+                                <li>Board Resolution of Corporate Secretary for opening of deposit account</li>
+                                <li>Resolution designating authorized signatories (if foreign entity, must be authenticated by consul)</li>
+                                <li>Copy of at least one (1) valid Photo-bearing ID of the signatories</li>
+                                <li>Two (2) copies of 1x1 ID picture of the signatories</li>
+                                <li>Latest GIS or List of Directors/Partners</li>
                             </ul>
                         </div>
                     </div>
@@ -149,7 +142,7 @@ function TimeCertOfDeposit() {
                         <p>Visit our nearest branch to learn more about our competitive rates</p>
                         <div className="TCD-cta-buttons">
                             <button className="TCD-button-primary"
-                            onClick={handletonavigate}
+                                onClick={handletonavigate}
                             >Apply Now</button>
                         </div>
                     </div>

@@ -31,7 +31,7 @@ function BasicSavingsAccount() {
 
       <div className="BSA-hero">
         <div className="BSA-hero-content">
-          <h1>Basic Savings Account</h1>
+          <h1>Basic Deposit Account</h1>
           <p>Start your savings journey with our simple and secure account</p>
           <button className="BSA-header-button"
             onClick={scrolltoApply}
@@ -64,7 +64,7 @@ function BasicSavingsAccount() {
         <section className="BSA-description-section">
           <div className="BSA-description-container">
             <div className="BSA-description-content">
-              <h2>What is a Basic Savings Account?</h2>
+              <h2>What is a Basic Deposit Account?</h2>
               <p>
                 Interest bearing account designed to promote financial inclusion.
                 This Account will enable filipinos, especially the unserved, to recieve and make 
@@ -75,12 +75,12 @@ function BasicSavingsAccount() {
         </section>
 
         <section className="BSA-requirements">
-          <h2>Requirements</h2>
+          <h2>Requirements for individuals</h2>
           <div className="BSA-requirements-container">
             <ul className="BSA-requirements-list">
-              <li>Valid ID</li>
-              <li>Philippines Peso Only</li>
-              <li>1x1 Picture</li>
+              <li>Voters Certification</li>
+              <li>Barangay Certification</li>
+              <li>(2) Copies of 1x1 Picture</li>
               <li>Completed application form</li>
             </ul>
           </div>
@@ -89,7 +89,7 @@ function BasicSavingsAccount() {
         <section className="BSA-cta">
           <div className="BSA-cta-content">
             <h2>Ready to Start Saving?</h2>
-            <p>Open your Basic Savings Account today</p>
+            <p>Open your Basic Deposit Account today</p>
             <div className="BSA-cta-buttons">
               <button
                 className="BSA-cta-button primary"

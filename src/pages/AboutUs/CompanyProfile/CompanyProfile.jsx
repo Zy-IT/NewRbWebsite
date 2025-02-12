@@ -19,7 +19,10 @@ function CompanyProfile() {
     const directors = [
         { src: SirIreneo, name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
         { src: SirRonaldo, name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
-        { src: SirDanilo, name: "Engr. Susana S. Wandag", title: "Board of Director" },
+        { src: SirDanilo, name: "Engr. Susana S. Wandag", title: "Board of Director" }
+    ];
+
+    const directors2 = [
         { src: MaamAttorney, name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
         { src: EngrSusan, name: "Engr. Susana S. Wandag", title: "Board of Director" },
         { src: MaamMarlyn, name: "Ms. Shirly Leocel A. Narag", title: "Board of Director" }
@@ -333,6 +336,25 @@ function CompanyProfile() {
                                             <div className="CP-board-info">
                                                 <h3>{director.name}</h3>
                                                 <p>{director.title}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation>
+                            <div className="board-directors-grid">
+                                {directors2.map((director2, index) => (
+                                    <div key={index} className="CP-board-position">
+                                        <div className="CP-board-card">
+                                            <img
+                                                src={director2.src}
+                                                alt={director2.name}
+                                                className="director-image"
+                                            />
+                                            <div className="CP-board-info">
+                                                <h3>{director2.name}</h3>
+                                                <p>{director2.title}</p>
                                             </div>
                                         </div>
                                     </div>

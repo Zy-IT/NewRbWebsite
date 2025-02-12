@@ -280,6 +280,32 @@
     background: #1a365d;
 }
 
+/* Description Section */
+.SSD-Description {
+    position: relative;
+    margin-top: 10px;
+    padding: 20px;
+    padding-bottom: 50px;
+    
+}
+
+.SSD-Description-Container {
+    position: relative;
+    text-align: center;
+}
+
+.SSD-Description-Container h2 {
+    font-size: 2.3rem;
+    color: #2d3748;
+    font-weight: 800;
+}
+
+.SSD-Description-Container p {
+    color: #2d3748;
+    font-size: 20px;
+}
+
+
 /* Requirements Section */
 .SSD-requirements {
     background: white;
@@ -298,7 +324,7 @@
 
 .SSD-requirements h2 {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     color: #2d3748;
     font-size: 2.2rem;
     font-weight: 800;
@@ -327,7 +353,7 @@
 
 .SSD-requirement-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 10px;
     padding: 2rem;
     background: #f7fafc;
@@ -336,12 +362,6 @@
     border: 2px solid transparent;
 }
 
-.SSD-requirement-card:hover {
-    transform: translateY(-5px);
-    border-color: #2b6cb0;
-    background: white;
-    box-shadow: 0 8px 20px rgba(43, 108, 176, 0.15);
-}
 
 .SSD-requirement-card h3 {
     color: #2b6cb0;

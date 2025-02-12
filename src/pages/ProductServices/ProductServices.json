@@ -32,11 +32,19 @@
         },
         {
             "id": 3,
-            "title": "Checking Account / Demand Deposit",
+            "title": " Regular Checking Account",
             "description": "Start your savings journey with our basic account",
             "image": "/src/Assets/Checking_Account.png",
             "category": "deposit",
-            "route": "/deposit/CheckingDemand"
+            "route": "/deposit/CheckingAccount"
+        },
+        {
+            "id": 4,
+            "title": "Interest Bearing Checking Account",
+            "description": "Start your savings journey with our basic account",
+            "image": "/src/Assets/Checking_Account.png",
+            "category": "deposit",
+            "route": "/deposit/InterestBearingCheckingAccount"
         },
         { 
             "id": 5,
