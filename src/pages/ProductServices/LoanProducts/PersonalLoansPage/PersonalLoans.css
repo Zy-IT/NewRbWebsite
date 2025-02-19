@@ -1,7 +1,6 @@
 .PL-personal-loans {
     min-height: 100vh;
     background: linear-gradient(135deg, #f8faff 0%, #f0f5ff 100%);
-    padding: 2rem 0;
 }
 
 .PL-container {
@@ -17,6 +16,8 @@
 }
 
 .PL-title {
+    position: relative;
+    top: 30px;
     font-size: 3rem;
     color: #1a1f36;
     margin-bottom: 1rem;

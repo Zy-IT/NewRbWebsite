@@ -205,7 +205,7 @@ function Home() {
                     <p>Explore our range of products and services tailored to meet your banking needs.</p>
                 </div>
                 <div className="features-grid">
-                    <ScrollAnimation delay={0.2}>
+                    <ScrollAnimation delay={0.1}>
                         <div
                             className={`feature-card ${selectedFeature === 0 ? 'active' : ''}`}
                             onMouseEnter={() => setSelectedFeature(0)}
@@ -218,7 +218,7 @@ function Home() {
                             >Learn More</button>
                         </div>
                     </ScrollAnimation>
-                    <ScrollAnimation delay={0.3}>
+                    <ScrollAnimation delay={0.2}>
                         <div
                             className={`feature-card ${selectedFeature === 1 ? 'active' : ''}`}
                             onMouseEnter={() => setSelectedFeature(1)}
@@ -231,7 +231,7 @@ function Home() {
                             >Learn More</button>
                         </div>
                     </ ScrollAnimation>
-                    <ScrollAnimation delay={0.4}>
+                    <ScrollAnimation delay={0.3}>
                         <div
                             className={`feature-card ${selectedFeature === 2 ? 'active' : ''}`}
                             onMouseEnter={() => setSelectedFeature(2)}
@@ -303,7 +303,7 @@ function Home() {
                         </div>
 
                         <div className="about-grid">
-                            <ScrollAnimation delay={0.1}>
+                            <ScrollAnimation delay={0.2}>
                                 <div className="about-card">
                                     <div className="card-icon">
                                         <i className="fas fa-bullseye"></i>
@@ -312,7 +312,7 @@ function Home() {
                                     <p>To help improve quality of life by delivering superior services and operate with a high level of competence, integrity, honesty, professionalism, and community involvement.</p>
                                 </div>
                             </ScrollAnimation>
-                            <ScrollAnimation delay={0.2}>
+                            <ScrollAnimation delay={0.3}>
                                 <div className="about-card">
                                     <div className="card-icon">
                                         <i className="fas fa-eye"></i>
@@ -324,7 +324,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>   
 
             {/* Contacts Sections*/}
             <section className="cta-section" >

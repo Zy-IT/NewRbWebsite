@@ -13,6 +13,8 @@ function TermsCondition() {
     const [list5section, setlist5Section] = useState(false);
     const [list6section, setlist6Section] = useState(false);
     const [list7section, setlist7section] = useState(false);
+    const [list8section, setlist8section] = useState(false);
+    const [list9section, setlist9section] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
 
     const navigate = new useNavigate();
@@ -77,7 +79,7 @@ function TermsCondition() {
                                 <div className="TC-BDA-Container">
                                     <div className="TC-BDA-contents">
                                         <h2>Basic Deposit Account</h2>
-                                        <ol className="TC-BDA-list">
+                                        <ol>
                                             <li>Passbook must be presented every time a deposit or withdrawal is made.</li>
                                             <li>Initial Deposit should not more than P100.00.</li>
                                             <li>Required minimum Average Daily Balance (ADB) is P1000.00 to earn interest.</li>
@@ -117,103 +119,60 @@ function TermsCondition() {
                             )}
                         </div>
 
-                        {/* Interest Bearing Checking Account */}
-                        <div className="TC-IBCA-section">
+                        {/* Savings Account */}
+                        <div className="TS-SA-section">
                             <button
                                 className="TC-toggle-button"
                                 onClick={() => togglevisibility(setlist2Section)}
                             >
-                                Interest Bearing Checking Account
+                                Savings Account
                                 <span className={`TC-dropdown-icon ${list2section ? 'open' : ''}`}>▼</span>
                             </button>
                             {list2section && (
-                                <div className="TC-IBCA-container">
-                                    <div className="TC-IBCA-contents">
-                                        <h2>Interest Bearing Checking Account</h2>
-                                        <ol className="TC-IBCA-list">
+                                <div className="TC-SA-container">
+                                    <div className="TC-SA-contents">
+                                        <h2>Savings Account</h2>
+                                        <ol>
+                                            <li>Passbook must be presented every time a deposit or withdrawal is made.</li>
+                                            <li>Initial Deposit should not be less than P1,000.00</li>
+                                            <li>Required minimum Average Daily Balance (ADB) is P1,000.00 to earn interest.</li>
                                             <li>
-                                                The depositor agrees that this demand deposit account is governed by the laws, Presidential Decrees,
-                                                Circulars of the Banko Sentral ng Pilipinas and policies adopted by the
-                                                Board of Directors of the Rural Bank of Cauayan, (Isa.), Inc.
-                                            </li>
-                                            <li>Initial deposit should not be less than P 10,000.00 to open an Interest Bearing Checking Account.</li>
-                                            <li>Withdrawal over the counter is not allowed. All withdrawals shall be done using a check.</li>
-                                            <li>The bank shall issue a passbook and Check booklet at the cost of the depositor and shall surrender all unused checks upon closing of the account.</li>
-                                            <li>Required minimum Average Daily Balance (ADB) is P 10,000.00.</li>
-                                            <li>
-                                                Interest Bearing Checking Account shall earn an annual interest of 0.25% computed
-                                                based on the account’s Average Daily Balance (ADB) and shall be posted every quarter end.
-                                            </li>
-                                            <li>Accounts closed before the end of reference quarter will not earn interest for the quarter.</li>
-                                            <li>
-                                                Interest Earned every quarter shall be subject to Twenty percent (20%) withholding tax as per
-                                                National Internal Revenue Code of 1997 Chapter III Sec. 24 under RA 10653.
+                                                The depositor agrees that this Savings Account is governed by the laws, Presidential Decrees,
+                                                Circulars of the Bangko Sentral ng Pilipinas and policies adopted by the Board of Directors of the Rural Bank of Cauayan, (Isa.), Inc.
                                             </li>
                                             <li>
                                                 Checks deposited shall be accepted on collection basis and maybe withdrawn only after the prescribed reglamentary clearing period.
-                                                The bank may charge back any defective or lost items credited to this account, regardless of the time that has elapsed,
-                                                whether or not the item itself can be returned. The depositor assumes full responsibility for the validity of the items deposited,
-                                                as well as the correctness and genuineness of all the endorsements thereon.
+                                                The bank may charge back any defective or lost items credited to this account, regardless of the time that has elapsed, whether or not the item itself can be returned.
+                                                The depositor assumes full responsibility for the validity of the items deposited, as well as the correctness and genuineness of all the endorsements thereon.
                                             </li>
-                                            <li>The Depositor assumes full responsibility of monitoring/checking if fund is enough against issued checks.</li>
-                                            <li>Cash deposits must be in units of One Peso (1.00).</li>
-                                            <li>A Demand deposit account opened and subsequently closed within a period of thirty (30) days will be charged P100.00 to cover the cost of the passbook and supplies.</li>
-                                            <li>The bank reserves the right to require advance notice in writing before any substantial issuance of check is made.</li>
-                                            <li></li>
+                                            <li>Deposits and withdrawals must be in units of One Peso (1.00).</li>
+                                            <li>A Savings Account opened and subsequently closed within a period of thirty (30) days will be charged P100.00 to cover the cost of the passbook and ledger card.</li>
+                                            <li>Deposit under Savings Account shall earn an annual Interest of 0.25% computed based on the account’s Average Daily Balance (ADB) and shall be posted every quarter end.</li>
+                                            <li>Accounts closed before the end of reference quarter will not earn interest for the quarter.</li>
+                                            <li>Interest Earned every quarter shall be subject to Twenty percent (20%) withholding tax as per National Bureau of Internal Revenue Code of 1997 Chapter III Sec. 24 under RA 10653.</li>
+                                            <li>The bank reserves the right to require advance notice in writing before any substantial withdrawal is made.</li>
                                             <li>Any claim by the depositor against any erroneous entry in the book must be made before leaving the bank.</li>
                                             <li>Depositors must not write or alter anything in the passbook or deface the same.</li>
-                                            <li>In case of death of the depositors the outstanding balance will be paid to his/her legal heir/s.</li>
+                                            <li>In case of death of the depositors the balance outstanding will be paid to his/her legal heir/s.</li>
                                             <li>Notify the bank immediately in case of loss or destruction of the passbook.</li>
                                             <li>
-                                                Deposit account showing non-activity for a period of one (1) year/365 days after the last activity shall be considered dormant.
-                                                The Bank shall send individual notifications to the client’s last known address/email address/ contact number indicated in the
-                                                Client Information Sheet sixty (60) days prior to dormancy of the account.
+                                                Deposit account showing no activity for a period of two (2) years shall be considered as dormant account. The Bank shall send individual notifications to the client’s last known
+                                                address/email address/ contact number indicated in the Client Information Sheet sixty (60) days prior to dormancy of the account.
                                             </li>
                                             <li>
-                                                The Bank shall impose and collect Dormant Service Charge (DSC) of P30.00 monthly on dormant
-                                                accounts that fall below the required minimum monthly average daily balance without any transaction
-                                                for five (5) years (1825 days).
-                                            </li>
-                                            <li>The Bank shall impose and collect Below Maintaining Service Charge of P50.00 every end of day on deposit accounts that fall below the required minimum average daily balance.</li>
-                                            <li>The bank reserves the right to dishonor checks issued by the drawer and return them to the payee in the following cases:
-                                                <ol type="a">
-                                                    <li>When the check is drawn against insufficient funds (“DAIF”).</li>
-                                                    <li>When the check is drawn against uncollected deposit (“DAUD”).</li>
-                                                    <li>When the drawer notifies the bank of a stop payment order for the issued check (“SPO”).</li>
-                                                    <li>When the check is from a drawer’s closed account (“AC”).</li>
-                                                    <li>When the check is drawn six (6) months ago from the date of the check (“STALE CHECK”).</li>
-                                                    <li>When the check is post-dated once it is drawn to the bank (“PDC”).</li>
-                                                    <li>When the check has the following technical defects:
-                                                        <ol type="i">
-                                                            <li>Checks with erasure, alteration, and/or deficiency (e.g., incomplete information such as date, payee, amount in words/figures, signature) will no longer be accepted, regardless of any signature indicating authorization.</li>
-                                                            <li>Checks that are folded, crumpled, deformed, mutilated, with torn edges, smudges, among others.</li>
-                                                            <li>Use of a “check-writer” which affixes the numbers in the amount in words line.</li>
-                                                        </ol>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>The bank shall impose a filing fee of P200.00 per check on Stop Payment Order (SPO) requested by the depositor.</li>
-                                            <li>
-                                                The bank shall impose Returned Check Service Charge for every check mentioned in number 21 letter A, B and C by P2,000.00
-                                                for the first P40,000.00 and additional P200.00 for every P40,000.00 excess and a fraction thereof.
+                                                The Bank shall collect Below Maintaining Service Charge (BMSC) of P25.00per month on deposit account that fall below the required minimum monthly average daily balance for
+                                                two (2) consecutive months for active accounts and upon transfer for dormant accounts.
                                             </li>
                                             <li>
-                                                The bank has the discretion to impose Returned Check Service Charge for every check mention in number 21 letter “G” by P2,000.00
-                                                for the first P40,000.00 and additional P200.00 for every P40,000.00 excess and a fraction thereof.
+                                                The Bank shall collect a Dormancy Service Charge (DSC) of 30.00 per month on dormant accounts that fall below the required minimum monthly Average Daily Balance (ADB)
+                                                five (5) years (1825 days) after last transaction.
                                             </li>
-                                            <li>The bank reserves the right to automatically close the account under the following grounds:</li>
-                                            <ol type="a">
-                                                <li>When the DDA has ten (10) or more returned checks in a month.</li>
-                                                <li>The ADB is not enough to cover Returned Check Charges.</li>
-                                                <li>The depositor intentionally uses the account for fraudulent transactions.</li>
-                                                <li>The account is identified/involved in suspicious activity e.i, issuing a check with an amount that is not consistent to his financial capacity. Issued 1M amount of check but his declared source of income is below 30k per month.</li>
-                                            </ol>
                                             <li>
-                                                That as per BSP Circular 928 Series of 2016, pursuant to Monetary Board Resolution dated September 29, 2016
-                                                Dormant Accounts will be included in the list of unclaimed balances to be submitted to the Treasurer of the Philippines
-                                                for escheat in accordance with the Unclaimed Balances Act if account has no activity for ten (10) years.
+                                                That as per BSP Circular 928 Series of 2016, pursuant to Monetary Board Resolution dated September 29, 2016 Dormant Accounts will be included in the list of
+                                                unclaimed balances to be submitted to the Treasurer of the Philippines for escheat in accordance with the Unclaimed Balances Act if account has no activity
+                                                for ten (10) years.
                                             </li>
-                                            <li>The foregoing rules, regulations and conditions shall be deemed accepted by the depositor upon signing this term and condition.</li>
+                                            <li> The foregoing rules, regulations and conditions shall be deemed accepted by the depositor upon signing this TERMS and CONDITIONS.</li>
                                         </ol>
                                     </div>
                                 </div>
@@ -328,26 +287,131 @@ function TermsCondition() {
                             )}
                         </div>
 
-                        {/* Savings Account */}
-                        <div className="TS-SA-section">
+                        {/* Interest Bearing Checking Account */}
+                        <div className="TC-IBCA-section">
                             <button
                                 className="TC-toggle-button"
                                 onClick={() => togglevisibility(setlist4Section)}
                             >
-                                Savings Account
+                                Interest Bearing Checking Account
                                 <span className={`TC-dropdown-icon ${list4section ? 'open' : ''}`}>▼</span>
                             </button>
                             {list4section && (
+                                <div className="TC-IBCA-container">
+                                    <div className="TC-IBCA-contents">
+                                        <h2>Interest Bearing Checking Account</h2>
+                                        <ol className="TC-IBCA-list">
+                                            <li>
+                                                The depositor agrees that this demand deposit account is governed by the laws, Presidential Decrees,
+                                                Circulars of the Banko Sentral ng Pilipinas and policies adopted by the
+                                                Board of Directors of the Rural Bank of Cauayan, (Isa.), Inc.
+                                            </li>
+                                            <li>Initial deposit should not be less than P 10,000.00 to open an Interest Bearing Checking Account.</li>
+                                            <li>Withdrawal over the counter is not allowed. All withdrawals shall be done using a check.</li>
+                                            <li>The bank shall issue a passbook and Check booklet at the cost of the depositor and shall surrender all unused checks upon closing of the account.</li>
+                                            <li>Required minimum Average Daily Balance (ADB) is P 10,000.00.</li>
+                                            <li>
+                                                Interest Bearing Checking Account shall earn an annual interest of 0.25% computed
+                                                based on the account’s Average Daily Balance (ADB) and shall be posted every quarter end.
+                                            </li>
+                                            <li>Accounts closed before the end of reference quarter will not earn interest for the quarter.</li>
+                                            <li>
+                                                Interest Earned every quarter shall be subject to Twenty percent (20%) withholding tax as per
+                                                National Internal Revenue Code of 1997 Chapter III Sec. 24 under RA 10653.
+                                            </li>
+                                            <li>
+                                                Checks deposited shall be accepted on collection basis and maybe withdrawn only after the prescribed reglamentary clearing period.
+                                                The bank may charge back any defective or lost items credited to this account, regardless of the time that has elapsed,
+                                                whether or not the item itself can be returned. The depositor assumes full responsibility for the validity of the items deposited,
+                                                as well as the correctness and genuineness of all the endorsements thereon.
+                                            </li>
+                                            <li>The Depositor assumes full responsibility of monitoring/checking if fund is enough against issued checks.</li>
+                                            <li>Cash deposits must be in units of One Peso (1.00).</li>
+                                            <li>A Demand deposit account opened and subsequently closed within a period of thirty (30) days will be charged P100.00 to cover the cost of the passbook and supplies.</li>
+                                            <li>The bank reserves the right to require advance notice in writing before any substantial issuance of check is made.</li>
+                                            <li></li>
+                                            <li>Any claim by the depositor against any erroneous entry in the book must be made before leaving the bank.</li>
+                                            <li>Depositors must not write or alter anything in the passbook or deface the same.</li>
+                                            <li>In case of death of the depositors the outstanding balance will be paid to his/her legal heir/s.</li>
+                                            <li>Notify the bank immediately in case of loss or destruction of the passbook.</li>
+                                            <li>
+                                                Deposit account showing non-activity for a period of one (1) year/365 days after the last activity shall be considered dormant.
+                                                The Bank shall send individual notifications to the client’s last known address/email address/ contact number indicated in the
+                                                Client Information Sheet sixty (60) days prior to dormancy of the account.
+                                            </li>
+                                            <li>
+                                                The Bank shall impose and collect Dormant Service Charge (DSC) of P30.00 monthly on dormant
+                                                accounts that fall below the required minimum monthly average daily balance without any transaction
+                                                for five (5) years (1825 days).
+                                            </li>
+                                            <li>The Bank shall impose and collect Below Maintaining Service Charge of P50.00 every end of day on deposit accounts that fall below the required minimum average daily balance.</li>
+                                            <li>The bank reserves the right to dishonor checks issued by the drawer and return them to the payee in the following cases:
+                                                <ol type="a">
+                                                    <li>When the check is drawn against insufficient funds (“DAIF”).</li>
+                                                    <li>When the check is drawn against uncollected deposit (“DAUD”).</li>
+                                                    <li>When the drawer notifies the bank of a stop payment order for the issued check (“SPO”).</li>
+                                                    <li>When the check is from a drawer’s closed account (“AC”).</li>
+                                                    <li>When the check is drawn six (6) months ago from the date of the check (“STALE CHECK”).</li>
+                                                    <li>When the check is post-dated once it is drawn to the bank (“PDC”).</li>
+                                                    <li>When the check has the following technical defects:
+                                                        <ol type="i">
+                                                            <li>Checks with erasure, alteration, and/or deficiency (e.g., incomplete information such as date, payee, amount in words/figures, signature) will no longer be accepted, regardless of any signature indicating authorization.</li>
+                                                            <li>Checks that are folded, crumpled, deformed, mutilated, with torn edges, smudges, among others.</li>
+                                                            <li>Use of a “check-writer” which affixes the numbers in the amount in words line.</li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>The bank shall impose a filing fee of P200.00 per check on Stop Payment Order (SPO) requested by the depositor.</li>
+                                            <li>
+                                                The bank shall impose Returned Check Service Charge for every check mentioned in number 21 letter A, B and C by P2,000.00
+                                                for the first P40,000.00 and additional P200.00 for every P40,000.00 excess and a fraction thereof.
+                                            </li>
+                                            <li>
+                                                The bank has the discretion to impose Returned Check Service Charge for every check mention in number 21 letter “G” by P2,000.00
+                                                for the first P40,000.00 and additional P200.00 for every P40,000.00 excess and a fraction thereof.
+                                            </li>
+                                            <li>The bank reserves the right to automatically close the account under the following grounds:</li>
+                                            <ol type="a">
+                                                <li>When the DDA has ten (10) or more returned checks in a month.</li>
+                                                <li>The ADB is not enough to cover Returned Check Charges.</li>
+                                                <li>The depositor intentionally uses the account for fraudulent transactions.</li>
+                                                <li>The account is identified/involved in suspicious activity e.i, issuing a check with an amount that is not consistent to his financial capacity. Issued 1M amount of check but his declared source of income is below 30k per month.</li>
+                                            </ol>
+                                            <li>
+                                                That as per BSP Circular 928 Series of 2016, pursuant to Monetary Board Resolution dated September 29, 2016
+                                                Dormant Accounts will be included in the list of unclaimed balances to be submitted to the Treasurer of the Philippines
+                                                for escheat in accordance with the Unclaimed Balances Act if account has no activity for ten (10) years.
+                                            </li>
+                                            <li>The foregoing rules, regulations and conditions shall be deemed accepted by the depositor upon signing this term and condition.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
+
+                        {/* Students Deposit Account */}
+                        <div className="TS-SA-section">
+                            <button
+                                className="TC-toggle-button"
+                                onClick={() => togglevisibility(setlist5Section)}
+                            >
+                                Student Deposit Account
+                                <span className={`TC-dropdown-icon ${list5section ? 'open' : ''}`}>▼</span>
+                            </button>
+                            {list5section && (
                                 <div className="TC-SA-container">
                                     <div className="TC-SA-contents">
-                                        <h2>Savings Account</h2>
+                                        <h2>Student Deposit Account</h2>
                                         <ol>
                                             <li>Passbook must be presented every time a deposit or withdrawal is made.</li>
-                                            <li>Initial Deposit should not be less than P1,000.00</li>
+                                            <li>Initial Deposit should not be less than P100.00</li>
                                             <li>Required minimum Average Daily Balance (ADB) is P1,000.00 to earn interest.</li>
                                             <li>
-                                                The depositor agrees that this Savings Account is governed by the laws, Presidential Decrees,
-                                                Circulars of the Bangko Sentral ng Pilipinas and policies adopted by the Board of Directors of the Rural Bank of Cauayan, (Isa.), Inc.
+                                                The depositor agrees that this Student Deposit Account is governed by the laws,
+                                                Presidential Decrees, Circulars of the Bangko Sentral ng Pilipinas and policies
+                                                adopted by the Board of Directors of the Rural Bank of Cauayan, (Isa.), Inc.
                                             </li>
                                             <li>
                                                 Checks deposited shall be accepted on collection basis and maybe withdrawn only after the prescribed reglamentary clearing period.
@@ -355,8 +419,8 @@ function TermsCondition() {
                                                 The depositor assumes full responsibility for the validity of the items deposited, as well as the correctness and genuineness of all the endorsements thereon.
                                             </li>
                                             <li>Deposits and withdrawals must be in units of One Peso (1.00).</li>
-                                            <li>A Savings Account opened and subsequently closed within a period of thirty (30) days will be charged P100.00 to cover the cost of the passbook and ledger card.</li>
-                                            <li>Deposit under Savings Account shall earn an annual Interest of 0.25% computed based on the account’s Average Daily Balance (ADB) and shall be posted every quarter end.</li>
+                                            <li>A Student Deposit Account opened and subsequently closed within a period of thirty (30) days will be charged  P100.00 to cover the cost of the passbook and ledger card.</li>
+                                            <li>Deposit under Student Deposit Account shall earn an annual Interest of 0.25% computed based on the account’s Average Daily Balance (ADB) and shall be posted every quarter end.</li>
                                             <li>Accounts closed before the end of reference quarter will not earn interest for the quarter.</li>
                                             <li>Interest Earned every quarter shall be subject to Twenty percent (20%) withholding tax as per National Bureau of Internal Revenue Code of 1997 Chapter III Sec. 24 under RA 10653.</li>
                                             <li>The bank reserves the right to require advance notice in writing before any substantial withdrawal is made.</li>
@@ -388,6 +452,41 @@ function TermsCondition() {
                             )}
                         </div>
 
+                        {/* Time Certificate Deposit */}
+                        <div className="TS-SA-section">
+                            <button
+                                className="TC-toggle-button"
+                                onClick={() => togglevisibility(setlist6Section)}
+                            >
+                                Time Certificate of Deposits
+                                <span className={`TC-dropdown-icon ${list6section ? 'open' : ''}`}>▼</span>
+                            </button>
+                            {list6section && (
+                                <div className="TC-SA-container">
+                                    <div className="TC-SA-contents">
+                                        <h2>Time Certificate of Deposit</h2>
+                                        <ol>
+                                            <li>Upon pre-termination, the Documentary Stamp tax paid by the bank shall be automatically deducted from the principal. Withholding tax on pre terminated 5 year term shall be deducted from Principal</li>
+                                            <li>
+                                                In case of pre-termination, the following rates will apply based on the interest rate upon placement:
+                                                <ol type="a">
+                                                    <li>25% of the agreed interest rate- if pre termination occurs during the first half of the agreed term.</li>
+                                                    <li>50% of the agreed interest rate- if pre-termination occurs during the second half of the agreed term. </li>
+                                                </ol>
+                                            </li>
+                                            <li>For withdrawal after maturity date- the interest rate shall be based on the prevailing SAVINGS interest rate of the Bank.</li>
+                                            <li>
+                                                For automatic Renewal, TD renewal notices will be mailed to the address indicated on this certificate.
+                                            </li>
+                                            <li>No partial pre-termination allowed.</li>
+                                            <li>The bank, however, reserves the right to be notified 15 days in advance before withdrawal is made/.</li>
+                                            <li>The above terms and conditions are accepted and fully understood by the depositor.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
                         <div className="TC-second-area-section">
                             <div className="TC-second-area-header">
                                 <h1>Data Privacy Statement</h1>
@@ -405,12 +504,12 @@ function TermsCondition() {
                                 <div className="TC-DOT-outer-section">
                                     <button
                                         className="TC-toggle-button"
-                                        onClick={() => togglevisibility(setlist5Section)}
+                                        onClick={() => togglevisibility(setlist7section)}
                                     >
                                         DEFINITION OF TERMS
-                                        <span className={`TC-dropdown-icon ${list5section ? 'open' : ''}`}>▼</span>
+                                        <span className={`TC-dropdown-icon ${list7section ? 'open' : ''}`}>▼</span>
                                     </button>
-                                    {list5section && (
+                                    {list7section && (
                                         <div className="TC-DOT-section">
                                             <h2>DEFINITION OF TERMS</h2>
                                             <p>
@@ -446,12 +545,12 @@ function TermsCondition() {
                                 <div className="TC-PPI-outer-section">
                                     <button
                                         className="TC-toggle-button"
-                                        onClick={() => togglevisibility(setlist6Section)}
+                                        onClick={() => togglevisibility(setlist8section)}
                                     >
                                         PROCESSING PERSONAL INFORMATION
-                                        <span className={`TC-dropdown-icon ${list6section ? 'open' : ''}`}>▼</span>
+                                        <span className={`TC-dropdown-icon ${list8section ? 'open' : ''}`}>▼</span>
                                     </button>
-                                    {list6section && (
+                                    {list8section && (
                                         <div className="TC-PPI-section">
                                             <h1>PROCESSING PERSONAL INFORMATION</h1>
                                             <ol type="A">
@@ -514,12 +613,12 @@ function TermsCondition() {
                                 <div className="TC-RDS-outer-section">
                                     <button
                                         className="TC-toggle-button"
-                                        onClick={() => togglevisibility(setlist7section)}
+                                        onClick={() => togglevisibility(setlist9section)}
                                     >
                                         RIGHTS OF A DATA SUBJECT
-                                        <span className={`TC-dropdown-icon ${list7section ? 'open' : ''}`}>▼</span>
+                                        <span className={`TC-dropdown-icon ${list9section ? 'open' : ''}`}>▼</span>
                                     </button>
-                                    {list7section && (
+                                    {list9section && (
                                         <div className="TC-RDS-section">
                                             <h2>RIGHTS OF A DATA SUBJECT</h2>
                                             <p>In adherence to the Data Privacy Act, all data subjects are entitled to the following rights:</p>
