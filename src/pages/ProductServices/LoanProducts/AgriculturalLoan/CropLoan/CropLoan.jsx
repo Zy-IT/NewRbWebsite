@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../../../../components/Navbar/Navbar";
 import Footer from "../../../../../components/Footer/Footer";
@@ -41,25 +40,6 @@ function CropLoan() {
                 </div>
             </div>
 
-            <div className="CLL-benefits-section">
-                <div className="CLL-benefits-grid">
-                    <div className="CLL-benefit-card">
-                        <div className="CLL-benefit-icon">🌱</div>
-                        <h3>Flexible Financing</h3>
-                        <p>Customized loan solutions for agricultural entrepreneurs</p>
-                    </div>
-                    <div className="CLL-benefit-card">
-                        <div className="CLL-benefit-icon">💰</div>
-                        <h3>Competitive Rates</h3>
-                        <p>Affordable interest rates tailored for farmers</p>
-                    </div>
-                    <div className="CLL-benefit-card">
-                        <div className="CLL-benefit-icon">📈</div>
-                        <h3>Growth Support</h3>
-                        <p>Empowering agricultural development</p>
-                    </div>
-                </div>
-            </div>
 
             <div className='CLL-description-container'>
                 <div className="CLL-description-section">
@@ -68,40 +48,23 @@ function CropLoan() {
                         <p>
                             A loan program specifically for small farmers and fisherfolk who work the land or raise livestock
                             and have CLOA, EP, or CLT titles. It is mainly meant to support food production,
-                            it's the perfect solution for your agricultural business. Explore the benefits and apply now!
+                            it&apos;s the perfect solution for your agricultural business. Explore the benefits and apply now!
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div className="CLL-features-section" >
-                <div className="CLL-features-content">
-                    <h2>Loan Features</h2>
-                    <div className="CLL-features-grid">
-                        <div className="CLL-feature-item">
-                            <div className="CLL-feature-icon">💡</div>
-                            <div className="CLL-feature-details">
-                                <h4>Low Interest Rates</h4>
-                                <p>Competitive rates to support your agricultural ventures</p>
-                            </div>
-                        </div>
-                        <div className="CLL-feature-item">
-                            <div className="CLL-feature-icon">⚡</div>
-                            <div className="CLL-feature-details">
-                                <h4>Quick Processing</h4>
-                                <p>StreCLLined application and approval process</p>
-                            </div>
-                        </div>
-                        <div className="CLL-feature-item">
-                            <div className="CLL-feature-icon">🤝</div>
-                            <div className="CLL-feature-details">
-                                <h4>Flexible Terms</h4>
-                                <p>Adaptable repayment options for farmers</p>
-                            </div>
-                        </div>
-                    </div>
+            <section className="CLL-requirements">
+                <h2>Loan Requirements</h2>
+                <div className="CLL-requirements-container">
+                    <ul className="CLL-requirements-list">
+                        <li>Voters Certification</li>
+                        <li>Barangay Certification</li>
+                        <li>(2) Copies of 1x1 Picture</li>
+                        <li>Completed application form</li>
+                    </ul>
                 </div>
-            </div>
+            </section>
 
             <div className="CLL-cta-section">
                 <div className="CLL-cta-content">

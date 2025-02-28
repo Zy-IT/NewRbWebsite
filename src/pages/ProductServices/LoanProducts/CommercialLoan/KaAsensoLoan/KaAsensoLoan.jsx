@@ -12,7 +12,7 @@ function KaAsensoLoan() {
     }
 
     const scrolltodescription = () => {
-        const descriptionElement = document.querySelector('.KAL-offer-icon');
+        const descriptionElement = document.querySelector('.AML-requirements-list');
         if (descriptionElement) {
             descriptionElement.scrollIntoView({ behavior: 'smooth' });
         }
@@ -39,32 +39,25 @@ function KaAsensoLoan() {
                     </div>
                 </div>
 
-                <div className='KAL-offers-container'>
-                    <div className='KAL-offers'>
-                        <div className='KAL-offer-card'>
-                            <span className='KAL-offer-icon'>...</span>
-                            <h3>Title Here</h3>
-                            <p>Kindly input context here</p>
-                        </div>
-                        <div className='KAL-offer-card'>
-                            <span className='KAL-offer-icon'>...</span>
-                            <h3>Title Here</h3>
-                            <p>Kindly input context here</p>
-                        </div>
-                        <div className='KAL-offer-card'>
-                            <span className='KAL-offer-icon'>...</span>
-                            <h3>Title Here</h3>
-                            <p>Kindly input context here</p>
-                        </div>
-                    </div>
-                </div>
-
                 <div className='KAL-description-container'>
                     <div className='KAL-description-content'>
                         <div className='KAL-description'>
                             <h2>What is Ka-Asenso Loan?</h2>
                             <p>kindly input the description for udpates</p>
                         </div>
+                    </div>
+                </div>
+
+                <div className="AML-requirements">
+                    <h2>Loan Requirements</h2>
+                    <div className="AML-requirements-container">
+                        <ul className="AML-requirements-list">
+                            <li>Land Title(TCT, OCT, EP, CLOA & Tax eclaration)</li>
+                            <li>Updated Tax Declaration of Lot & Updated Tax Receipt of Lot and Tax Clearance</li>
+                            <li>Latest (2)Copies of 2x2 Picture</li>
+                            <li>Valid ID, preferably TIN</li>
+                            <li>Proof of sources of income</li>
+                        </ul>
                     </div>
                 </div>
 

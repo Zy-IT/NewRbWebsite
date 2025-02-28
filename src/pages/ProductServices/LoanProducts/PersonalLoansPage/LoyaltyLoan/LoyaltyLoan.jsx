@@ -78,7 +78,7 @@ function LoyaltyLoan() {
                         who have completed ten (10) years of permanent service. It aims to provide
                         financial support as a reward for their loyalty and commitment.
                     </p>
-                    <p>
+                    <p className='LL Special Note'>
                         !!!Note: This is only Applicable to Employees of Rural Bank of Cauayuan, INC
                     </p>
                 </div>

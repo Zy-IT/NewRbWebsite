@@ -5,17 +5,17 @@
 }
 
 .MSL-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: clamp(1rem, 3vw, 2rem);
 }
 
 /*Header Section*/
-
 .MSL-header-container {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
-    padding: 4rem 2rem;
+    padding: 4rem;
+    padding-top: 2rem;
     text-align: center;
     margin-bottom: 3rem;
     position: relative;
@@ -24,9 +24,12 @@
 }
 
 .MSL-header {
+    gap: 10px;
     text-align: center;
     margin: clamp(2rem, 5vw, 4rem) 0;
     position: relative;
+    animation: fadein 0.8s ease-out;
+    z-index: 1;
 }
 
 .MSL-title {
@@ -80,85 +83,6 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-/*Offers Section*/
-.MSL-offers {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
-}
-
-.MSL-offer-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    position: relative;
-    overflow: hidden;
-}
-
-.MSL-offer-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #1e3c72, #2563eb);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.MSL-offer-card:hover {
-    border-color: #6366f1;
-    transform: translateY(-5px);
-}
-
-.MSL-offer-card:hover::before {
-    transform: scaleX(1);
-}
-
-.MSL-offer-icon {
-    background: linear-gradient(135deg, #1e3c72, #2563eb);
-    color: white;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.MSL-offer-icon::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2));
-    top: 0;
-    left: 0;
-}
-
-.MSL-offer-card h3 {
-    color: #1e293b;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.MSL-offer-card p {
-    color: #64748b;
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
 /*Description Section*/
 .MSL-description-container {
     width: 100%;
@@ -197,6 +121,71 @@
     z-index: 1;
 }
 
+/* Requirements Section*/
+.MSL-requirements {
+    background: white;
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.MSL-requirements:hover {
+    border-color: rgba(30, 60, 114, 0.1);
+    box-shadow: 0 8px 20px rgba(30, 60, 114, 0.15);
+}
+
+.MSL-requirements h2 {
+    color: #1e3c72;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.MSL-requirements h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    border-radius: 2px;
+}
+
+.MSL-requirements-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.MSL-requirements-list li {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    text-align: center;
+    color: #2a5298;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: 500;
+}
+
+.MSL-requirements-list li:hover {
+    transform: translateY(-5px);
+    background: white;
+    border-color: #2a5298;
+    box-shadow: 0 6px 15px rgba(42, 82, 152, 0.15);
+    color: #1e3c72;
+}
+
+/* Apply Section */
 .MSL-appply-container {
     background: white;
     border-radius: 24px;
@@ -286,10 +275,6 @@
 
 /* Desktop-specific enhancements */
 @media (min-width: 768px) {
-    .MSL-header {
-        animation: fadeIn 0.8s ease-out;
-    }
-
     .MSL-offer-card {
         transform-origin: center;
     }

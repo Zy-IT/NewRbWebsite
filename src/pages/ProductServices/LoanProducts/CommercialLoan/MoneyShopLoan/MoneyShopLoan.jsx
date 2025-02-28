@@ -12,7 +12,7 @@ function MoneyShopLoan() {
     }
 
     const scrolltodescription = () => {
-        const descriptionElement = document.querySelector('.MSL-offer-icon');
+        const descriptionElement = document.querySelector('.MSL-requirements-list');
         if (descriptionElement) {
             descriptionElement.scrollIntoView({ behavior: 'smooth' });
         }
@@ -41,23 +41,6 @@ function MoneyShopLoan() {
                     </div>
                 </div>
 
-                <div className="MSL-offers">
-                    <div className="MSL-offer-card">
-                        <span className="MSL-offer-icon">ICON</span>
-                        <h3>Title here</h3>
-                        <p>Input context here</p>
-                    </div>
-                    <div className="MSL-offer-card">
-                        <span className="MSL-offer-icon">ICON</span>
-                        <h3>Title here</h3>
-                        <p>Input context here</p>
-                    </div>
-                    <div className="MSL-offer-card">
-                        <span className="MSL-offer-icon">ICON</span>
-                        <h3>Title here</h3>
-                        <p>Input context here</p>
-                    </div>
-                </div>
 
                 <div className="MSL-description-container">
                     <div className="MSL-description-content">
@@ -69,6 +52,19 @@ function MoneyShopLoan() {
                                 borrowers’ business and cash flow and are typically but not necessarily unsecured.
                             </p>
                         </div>
+                    </div>
+                </div>
+
+                <div className="MSL-requirements">
+                    <h2>Loan Requirements</h2>
+                    <div className="MSL-requirements-container">
+                        <ul className="MSL-requirements-list">
+                            <li>Land Title(TCT, OCT, EP, CLOA & Tax eclaration)</li>
+                            <li>Updated Tax Declaration of Lot & Updated Tax Receipt of Lot and Tax Clearance</li>
+                            <li>Latest (2)Copies of 2x2 Picture</li>
+                            <li>Valid ID, preferably TIN</li>
+                            <li>Proof of sources of income</li>
+                        </ul>
                     </div>
                 </div>
 

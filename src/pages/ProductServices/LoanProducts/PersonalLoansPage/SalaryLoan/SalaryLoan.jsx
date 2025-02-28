@@ -76,9 +76,9 @@ function SalaryLoan() {
                     <p>
                         A loan facility designed to support the financial needs of
                         salaried individuals with stable employment. This program is
-                        secured through a Memorandum of Agreement between RB Cauayan and the applicant's employer.
+                        secured through a Memorandum of Agreement between RB Cauayan and the applicant&apos;s employer.
                     </p>
-                    <p>
+                    <p className="SLL Special Note">
                         !!!Note: This is only Applicable to Employees of Rural Bank of Cauayuan, INC 
                     </p>
                 </div>

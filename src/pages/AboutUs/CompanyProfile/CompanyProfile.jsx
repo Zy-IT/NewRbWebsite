@@ -18,8 +18,8 @@ function CompanyProfile() {
 
     const directors = [
         { src: SirIreneo, name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
-        { src: SirRonaldo, name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
-        { src: SirDanilo, name: "Engr. Susana S. Wandag", title: "Board of Director" }
+        { src: SirRonaldo, name: "Engr. Ronaldo R. Bucag", title: "Board of Director" },
+        { src: SirDanilo, name: "Mr. Danillo R. San Pedro", title: "Board of Director" }
     ];
 
     const directors2 = [

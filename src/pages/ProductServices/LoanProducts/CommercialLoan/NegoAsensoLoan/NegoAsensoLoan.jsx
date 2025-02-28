@@ -12,7 +12,7 @@ function NegoAsensoLoan() {
     }
 
     const scrolltoDescription = () => {
-        const descriptionElement = document.querySelector('.NAL-offer-icon');
+        const descriptionElement = document.querySelector('.NAL-requirements-list');
         if (descriptionElement) {
             descriptionElement.scrollIntoView({ behavior: 'smooth' });
         }
@@ -40,26 +40,6 @@ function NegoAsensoLoan() {
                     </div>
                 </div>
 
-                <div className="NAL-offers-container">
-                    <div className="NAL-offers">
-                        <div className="NAL-offer-card">
-                            <span className="NAL-offer-icon">🏢</span>
-                            <h3>Start-Up Success Package</h3>
-                            <p>Flexible loan terms tailored to your payment capacity.</p>
-                        </div>
-                        <div className="NAL-offer-card">
-                            <span className="NAL-offer-icon">📈</span>
-                            <h3>Business Expansion Boost</h3>
-                            <p>Need more capital for growth? We&apos;ve got you covered!</p>
-                        </div>
-                        <div className="NAL-offer-card">
-                            <span className="NAL-offer-icon">🤝</span>
-                            <h3>Your Partner in Progress</h3>
-                            <p>Affordable loans to meet your business needs.</p>
-                        </div>
-                    </div>
-                </div>
-
                 <div className="NAL-description-container">
                     <div className="NAL-description-content">
                         <div className="NAL-description" >
@@ -74,6 +54,19 @@ function NegoAsensoLoan() {
                     </div>
                 </div>
 
+                <div className="NAL-requirements">
+                    <h2>Loan Requirements</h2>
+                    <div className="NAL-requirements-container">
+                        <ul className="NAL-requirements-list">
+                            <li>Land Title(TCT, OCT, EP, CLOA & Tax eclaration)</li>
+                            <li>Updated Tax Declaration of Lot & Updated Tax Receipt of Lot and Tax Clearance</li>
+                            <li>Latest (2)Copies of 2x2 Picture</li>
+                            <li>Valid ID, preferably TIN</li>
+                            <li>Proof of sources of income</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div className="NAL-apply-container" >
                     <div className="NAL-apply-section">
                         <h3>Want to Apply?</h3>
@@ -84,7 +77,7 @@ function NegoAsensoLoan() {
                         >Apply Now</button>
                     </div>
                 </div>
-                
+
                 <button className="NAL-scroll-top"
                     onClick={scrollToTop}
                 >↑</button>

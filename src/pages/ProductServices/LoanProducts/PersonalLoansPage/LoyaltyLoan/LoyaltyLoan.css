@@ -163,6 +163,11 @@
     font-weight: 400;
 }
 
+.LL.Special.Note {
+    color: rgb(238, 47, 47);
+}
+
+/* Requirements Container */
 .LL-requirements-container {
     background-color: #f8f9fa;
     padding: 60px 20px;

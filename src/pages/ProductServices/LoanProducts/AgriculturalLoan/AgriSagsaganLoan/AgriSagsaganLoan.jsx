@@ -43,21 +43,6 @@ function AgriSagsaganLoan() {
                 </div>
             </section>
 
-            <section className="ASL-benefits-section">
-                <div className="ASL-benefits-grid">
-                    <div className="ASL-benefit-card">
-                        <div className="ASL-benefit-icon">🏦</div>
-                        <h3>Online Transfer</h3>
-                        <p>Transfer funds from your account to another account seamlessly</p>
-                    </div>
-                    <div className="ASL-benefit-card">
-                        <div className="ASL-benefit-icon">💳</div>
-                        <h3>ATM Withdrawal</h3>
-                        <p>Convenient withdrawal of funds from any ATM</p>
-                    </div>
-                </div>
-            </section>
-
             <section className="ASL-description-section">
                 <div className="ASL-description-container">
                     <div className="ASL-description-content">
@@ -65,38 +50,21 @@ function AgriSagsaganLoan() {
                         <p>
                             It’s a secured loan that helps landowners and farmers buy things like work animals, farming tools
                             and machines, seeds, fertilizers, chickens, livestock, animal feed, and similar supplies.
-                            it's the perfect solution for your agricultural business. Explore the benefits and apply now!
+                            it&apos;s the perfect solution for your agricultural business. Explore the benefits and apply now!
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section className="ASL-features-section">
-                <div className="ASL-features-content">
-                    <h2>Our Features</h2>
-                    <div className="ASL-features-grid">
-                        <div className="ASL-feature-item">
-                            <div className="ASL-feature-icon">💰</div>
-                            <div className="ASL-feature-details">
-                                <h4>Competitive Rates</h4>
-                                <p>Best exchange rates guaranteed for your financial needs</p>
-                            </div>
-                        </div>
-                        <div className="ASL-feature-item">
-                            <div className="ASL-feature-icon">⚡</div>
-                            <div className="ASL-feature-details">
-                                <h4>Quick Processing</h4>
-                                <p>Fast and reliable loan processing</p>
-                            </div>
-                        </div>
-                        <div className="ASL-feature-item">
-                            <div className="ASL-feature-icon">🚀</div>
-                            <div className="ASL-feature-details">
-                                <h4>Instant Accessibility</h4>
-                                <p>Loans processed and approved within minutes</p>
-                            </div>
-                        </div>
-                    </div>
+            <section className="ASL-requirements">
+                <h2>Loan Requirements</h2>
+                <div className="ASL-requirements-container">
+                    <ul className="ASL-requirements-list">
+                        <li>Voters Certification</li>
+                        <li>Barangay Certification</li>
+                        <li>(2) Copies of 1x1 Picture</li>
+                        <li>Completed application form</li>
+                    </ul>
                 </div>
             </section>
 

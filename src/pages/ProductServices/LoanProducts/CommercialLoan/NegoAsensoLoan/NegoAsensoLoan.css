@@ -5,7 +5,7 @@
 }
 
 .NAL-container {
-    max-width: 12 00px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: clamp(1rem, 3vw, 2rem);
 }
@@ -91,54 +91,6 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/*Offers Section*/
-.NAL-offers {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
-}
-
-.NAL-offer-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    position: relative;
-}
-
-.NAL-offer-card:hover {
-    border-color: #2563eb;
-    transform: translateY(-5px);
-}
-
-.NAL-offer-icon {
-    background: linear-gradient(135deg, #2563eb, #60a5fa);
-    color: white;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.NAL-offer-card h3 {
-    color: #1e293b;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.NAL-offer-card p {
-    color: #546e7a;
-    line-height: 1.6;
-    font-size: 1rem;
-}
 
 /*Description Container*/
 .NAL-description-container {
@@ -148,13 +100,11 @@
 
 .NAL-description {
     height: 200px;
-    background: linear-gradient(135deg, #2563eb, #60a5fa);
-    color: white;
+    color: #2a5298;
     padding: clamp(2rem, 4vw, 3rem);
     border-radius: 16px;
     margin: 3rem 0;
     text-align: center;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .NAL-description p {
@@ -163,6 +113,70 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* Requirements Section*/
+.NAL-requirements {
+    background: white;
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .NAL-requirements:hover {
+    border-color: rgba(30, 60, 114, 0.1);
+    box-shadow: 0 8px 20px rgba(30, 60, 114, 0.15);
+  }
+  
+  .NAL-requirements h2 {
+    color: #1e3c72;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    position: relative;
+  }
+  
+  .NAL-requirements h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    border-radius: 2px;
+  }
+  
+  .NAL-requirements-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .NAL-requirements-list li {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    text-align: center;
+    color: #2a5298;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: 500;
+  }
+  
+  .NAL-requirements-list li:hover {
+    transform: translateY(-5px);
+    background: white;
+    border-color: #2a5298;
+    box-shadow: 0 6px 15px rgba(42, 82, 152, 0.15);
+    color: #1e3c72;
+  }
 
 /*Apply Section*/
 .NAL-apply-container {

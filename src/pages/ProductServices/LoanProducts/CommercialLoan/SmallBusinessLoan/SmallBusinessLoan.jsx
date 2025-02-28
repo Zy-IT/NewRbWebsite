@@ -12,7 +12,7 @@ function SmallBusinessLoan() {
     }
 
     const scrolltodescription = () => {
-        const descriptionElement = document.querySelector('.SBL-offer-icon');
+        const descriptionElement = document.querySelector('.SBL-requirements-list');
         if (descriptionElement) {
             descriptionElement.scrollIntoView({ behavior: 'smooth' });
         }
@@ -38,24 +38,6 @@ function SmallBusinessLoan() {
                     </div>
                 </div>
 
-                <div className="SBL-offers">
-                    <div className="SBL-offer-card">
-                        <span className="SBL-offer-icon">...</span>
-                        <h3>Title Here</h3>
-                        <p>Kindly input context here</p>
-                    </div>
-                    <div className="SBL-offer-card">
-                        <span className="SBL-offer-icon">...</span>
-                        <h3>Title Here</h3>
-                        <p>Kindly input context here</p>
-                    </div>
-                    <div className="SBL-offer-card">
-                        <span className="SBL-offer-icon">...</span>
-                        <h3>Title Here</h3>
-                        <p>Kindly input context here</p>
-                    </div>
-                </div>
-
                 <div className="SBL-description-container">
                     <div className="SBL-description-content">
                         <div className="SBL-description">
@@ -67,6 +49,19 @@ function SmallBusinessLoan() {
                                 funding character with the bank.
                             </p>
                         </div>
+                    </div>
+                </div>
+
+                <div className="SBL-requirements">
+                    <h2>Loan Requirements</h2>
+                    <div className="SBL-requirements-container">
+                        <ul className="SBL-requirements-list">
+                            <li>Land Title(TCT, OCT, EP, CLOA & Tax eclaration)</li>
+                            <li>Updated Tax Declaration of Lot & Updated Tax Receipt of Lot and Tax Clearance</li>
+                            <li>Latest (2)Copies of 2x2 Picture</li>
+                            <li>Valid ID, preferably TIN</li>
+                            <li>Proof of sources of income</li>
+                        </ul>
                     </div>
                 </div>
 

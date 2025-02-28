@@ -163,6 +163,11 @@
     font-weight: 400;
 }
 
+.SLL.Special.Note {
+    color: rgb(238, 47, 47);
+}
+
+/* Requirement Section */
 .SLL-requirements-container {
     background-color: #f8f9fa;
     padding: 60px 20px;
