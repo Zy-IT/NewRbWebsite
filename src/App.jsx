@@ -30,7 +30,6 @@ import InterBranch from './pages/ProductServices/OtherServices/InterBranch/Inter
 import DomesticRemittance from './pages/ProductServices/OtherServices/DomesticRemittance/DomesticRemittance';
 import BillsPayment from './pages/ProductServices/OtherServices/BillsPayment/BillsPayment';
 import FundTransfer from './pages/ProductServices/OtherServices/FundTransfer/FundTransfer';
-import MobilePOSAtm from './pages/ProductServices/OtherServices/MobilePOSAtm/MobilePOSAtm';
 import CompanyProfile from './pages/AboutUs/CompanyProfile/CompanyProfile';
 import Careers from './pages/AboutUs/Careers/Careers';
 import ContactUs from './pages/AboutUs/ContactUs/ContactUs';
@@ -84,7 +83,6 @@ function App() {
             <Route path="/other/DomesticRemittance" element={<DomesticRemittance />} />
             <Route path="/other/BillsPayment" element={<BillsPayment />} />
             <Route path="/other/FundTransfer" element={<FundTransfer />} />
-            <Route path="/other/MobilePOSAtm" element={<MobilePOSAtm />} />
             {/*About Us */}
             <Route path="/A&U/CompanyProfile" element={<CompanyProfile />} />
             <Route path="/A&U/Careers" element={<Careers />} />

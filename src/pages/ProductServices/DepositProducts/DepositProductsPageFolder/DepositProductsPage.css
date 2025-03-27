@@ -1,6 +1,7 @@
   .deposit-page {
       max-width: 1440px;
-      margin: 0 auto;
+      margin: 5px;
+      padding: 5px;
       background-color: #f8fafc;
   }
 
@@ -79,8 +80,7 @@
       transition: all 0.3s ease;
       position: relative;
       border: 2px solid transparent;
-      display: flex;
-      flex-direction: column;
+
   }
 
   .product-card:hover {

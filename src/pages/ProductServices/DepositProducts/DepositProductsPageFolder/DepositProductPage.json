@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Regular Savings Deposit",
-            "description": "This refers to the bank’s deposit product that facilitates the deposit transactions of a regular client/depositor, either natural or ...",
+            "description": "This refers to the bank’s deposit product that facilitates the deposit transactions of a regular client/depositor, either ...",
             "category": "Deposit",
             "features": [
                 "Opening Account at ₱1,000 pesos",
@@ -19,7 +19,7 @@
             "category": "Deposit",
             "features": [
                 "Opening Account at ₱100 pesos",
-                "Maintaining Balance at ₱100 pesos"
+                "Maintaining Balance at ₱1000 pesos to earn interest"
             ],
             "icon": "🎓",
             "route": "/deposit/StudentSavings"
@@ -27,7 +27,7 @@
         {
             "id": 3,
             "title": "Basic Deposit Account",
-            "description": "This refers to interest or non-interest bearing account designed to promote financial inclusion. This account will enable Filipinos, especially the unserved, to receive and make payments ...",
+            "description": "This refers to interest bearing account designed to promote financial inclusion. This account will enable Filipino ...",
             "category": "Deposit",
             "icon": "💰",
             "features": [
@@ -39,7 +39,7 @@
         {
             "id": 4,
             "title": "Regular Checking Account",
-            "description": "Refers to the bank’s deposit product that facilitates the Checking Account Deposit transactions of a regular client/depositor, either a natural or juridical person that can provide the bank with requirements and ...",
+            "description": "",
             "category": "Deposit",
             "features": [
                 "with Passbook",
@@ -52,7 +52,7 @@
         {
             "id": 5,
             "title": "Interest Bearing Checking Account",
-            "description": "Refers to the bank’s deposit product that facilitates the Checking Account Deposit transactions of a regular client/depositor, either a natural or juridical person that can ...",
+            "description": "",
             "category": "Deposit",
             "features": [
                 "with Passbook",
@@ -65,7 +65,7 @@
         {
             "id": 6,
             "title": "Time Certificate of Deposit",
-            "description": "Refers to the bank’s deposit product that facilitates the time deposit transactions of a regular client/depositor, either natural or juridical person that can provide bank’s ...",
+            "description": "",
             "category": "Deposit",
             "features": [
                 "Competitive interest rates",

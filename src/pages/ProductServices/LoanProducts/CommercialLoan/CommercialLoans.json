@@ -18,7 +18,7 @@
         {
             "id": "nego-asenso-loan",
             "icon": "🏦",
-            "title": "Nego-Asenso Loan",
+            "title": "Nego-Asenso Loan (Small & Medium Enterprise)",
             "description": "",
             "category": "Commercial",
             "features": [
@@ -31,7 +31,7 @@
         {
             "id": "ka-asenso-loan",
             "icon": "🏦",
-            "title": "Ka-Asenso Loan", 
+            "title": "Ka-Asenso Loan (Commercial Loan)", 
             "description": "",
             "category": "Commercial",
             "features": [
@@ -53,6 +53,19 @@
                 "Comprehensive coverage"
             ],
             "route": "/A&U/ContactUs"
-        }     
+        },
+        {
+            "id": "credit-line-facility",
+            "icon": "🏦",
+            "title": "Credit Line Facility", 
+            "description": "",
+            "category": "Commercial",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/A&U/ContactUs"
+        }        
     ]
 }

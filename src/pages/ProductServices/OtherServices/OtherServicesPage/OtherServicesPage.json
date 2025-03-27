@@ -3,37 +3,24 @@
         {
             "id": 1,
             "title": "Inter Branch Deposit",
-            "description": "Expert advice and guidance for your business needs",
+            "description": "",
             "icon": "📋",
             "route": "/other/InterBranch"
         },
         {
             "id": 2,
-            "title": "Domestic Remittance",
-            "description": "Professional development and skill enhancement programs",
+            "title": "Domestic Remittance thru Philpass ",
+            "description": "- Bills Payment",
+            "description2": "- Fund Transfer",
             "icon": "🎓",
             "route": "/other/DomesticRemittance"
         },
         {
             "id": 3,
-            "title": "Bills Payment",
-            "description": "24/7 technical support and assistance",
+            "title": " i 2 i ",
+            "description": "- Gcash Cash-in - Bills Payment - Fund Transfer",
             "icon": "🛟",
             "route": "/other/BillsPayment"
-        },
-        {
-            "id": 4,
-            "title": "Fund Transfer",
-            "description": "Regular system maintenance and updates",
-            "icon": "🔧",
-            "route": "/other/FundTransfer"
-        },
-        {
-            "id": 5,
-            "title": "Mobile / POS Atm",
-            "description": "Tailored solutions for specific requirements",
-            "icon": "⚙️",
-            "route": "/other/MobilePOSAtm"
         }
     ]
 }

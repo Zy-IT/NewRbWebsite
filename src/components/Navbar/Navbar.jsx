@@ -9,12 +9,10 @@ const Navbar = () => {
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(null);
-  // New state for mobile nested menus
   const [mobileNestedMenu, setMobileNestedMenu] = useState(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    // Reset other states when main menu is toggled
     setIsProductsDropdownOpen(false);
     setIsAboutDropdownOpen(false);
     setMobileNestedMenu(null);
@@ -47,7 +45,6 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
-        {/* Mobile Logo Container - Only visible on mobile */}
         <div className={styles.mobileBrandContainer}>
           <Link to="/">
             <img src={Logo} alt="RBCI Logo" className={styles.mobileLogo} />
@@ -139,7 +136,6 @@ const Navbar = () => {
                       <li><Link to="/other/DomesticRemittance">Domestic Remittance</Link></li>
                       <li><Link to="/other/BillsPayment">Bills Payment</Link></li>
                       <li><Link to="/other/FundTransfer">Fund Transfer</Link></li>
-                      <li><Link to="/other/MobilePOSAtm">Mobile/ POS ATM</Link></li>
                     </ul>
                   )}
                 </li>
@@ -243,7 +239,6 @@ const Navbar = () => {
                         <li><Link to="/other/DomesticRemittance" onClick={toggleMenu}>Domestic Remittance</Link></li>
                         <li><Link to="/other/BillsPayment" onClick={toggleMenu}>Bills Payment</Link></li>
                         <li><Link to="/other/FundTransfer" onClick={toggleMenu}>Fund Transfer</Link></li>
-                        <li><Link to="/other/MobilePOSAtm" onClick={toggleMenu}>Mobile/ POS ATM</Link></li>
                       </ul>
                     )}
                   </li>

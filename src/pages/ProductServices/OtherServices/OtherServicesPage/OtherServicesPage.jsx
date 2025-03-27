@@ -37,17 +37,9 @@ function OtherServicesPage() {
                             <div className="OSP-service-icon">{service.icon}</div>
                             <h2 className="OSP-service-title">{service.title}</h2>
                             <p className="OSP-service-description">
-                                {service.description}
+                                {service.description }
+                                {service.description2}
                             </p>
-                            <button
-                                className="OSP-service-button"
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    handleServiceClick(service.route);
-                                }}
-                            >
-                                Learn More
-                            </button>
                         </div>
                     ))}
                 </div>

@@ -55,8 +55,8 @@ function TimeCertOfDeposit() {
                         </div>
                         <div className="TCD-benefit-card">
                             <div className="TCD-benefit-icon">⏱️</div>
-                            <h3>Flexible Terms</h3>
-                            <p>Choose from various tenure options</p>
+                            <h3>Flexibility</h3>
+                            <p>Choose from various maturity date options</p>
                         </div>
                     </div>
                 </section>

@@ -46,7 +46,7 @@
             "category": "deposit",
             "route": "/deposit/InterestBearingCheckingAccount"
         },
-        { 
+        {
             "id": 5,
             "title": "Student Savings Deposit",
             "description": "Start your savings journey with our basic account",
@@ -62,12 +62,10 @@
             "category": "deposit",
             "route": "/deposit/TimeCertofDeposit"
         },
-
-        
         {
             "id": 7,
             "title": "Agricultural Loan",
-            "description": "Quick personal loans with flexible terms",
+            "description": "Agricultural loans tailored for farmers' success",
             "image": "/src/Assets/Agricultural_Loan.png",
             "category": "loan",
             "route": "/loan/AgriculturalLoans"
@@ -83,13 +81,11 @@
         {
             "id": 9,
             "title": "Personal Loan",
-            "description": "Grow your business with our financing solutions",
+            "description": "Quick personal loans with flexible terms",
             "image": "/src/Assets/Personal_Loan.png",
             "category": "loan",
             "route": "/loan/PersonalLoans"
         },
-
-
         {
             "id": 10,
             "title": "Inter Branch",
@@ -121,15 +117,6 @@
             "image": "/src/Assets/FundTransfer.png",
             "category": "Other",
             "route": "/other/FundTransfer"
-        },
-        {
-            "id": 14,
-            "title": "Mobile / POS ATM",
-            "description": "Expert financial planning and investment advice",
-            "image": "/src/Assets/MobilePOSAtm.jpg",
-            "category": "Other",
-            "route": "/other/MobilePOSATm"
         }
-       
     ]
 }

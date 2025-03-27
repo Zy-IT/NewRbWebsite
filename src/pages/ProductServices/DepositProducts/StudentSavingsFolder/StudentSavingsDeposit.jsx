@@ -48,8 +48,8 @@ function StudentSavingDeposit() {
                             <span className="SSD-info-label">Opening Account</span>
                         </div>
                         <div className="SSD-info-card">
-                            <span className="SSD-info-value">₱100</span>
-                            <span className="SSD-info-label">Maintaining Balance</span>
+                            <span className="SSD-info-value">₱1000</span>
+                            <span className="SSD-info-label">Maintaining Balance to earn interest</span>
                         </div>
                     </div>
                 </section>
