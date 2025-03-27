@@ -24,8 +24,6 @@ import MoneyShopLoan from './pages/ProductServices/LoanProducts/CommercialLoan/M
 import SmallBusinessLoan from './pages/ProductServices/LoanProducts/CommercialLoan/SmallBusinessLoan/SmallBusinessLoan';
 import PersonalLoans from './pages/ProductServices/LoanProducts/PersonalLoansPage/PersonalLoans';
 import InstaCashLoan from './pages/ProductServices/LoanProducts/PersonalLoansPage/InstaCashLoan/InstaCashLoan';
-import SalaryLoan from './pages/ProductServices/LoanProducts/PersonalLoansPage/SalaryLoan/SalaryLoan';
-import LoyaltyLoan from './pages/ProductServices/LoanProducts/PersonalLoansPage/LoyaltyLoan/LoyaltyLoan';
 import VisaLoan from './pages/ProductServices/LoanProducts/PersonalLoansPage/VisaLoan/VisaLoan';
 import OtherServices from './pages/ProductServices/OtherServices/OtherServicesPage/OtherServicesPage';
 import InterBranch from './pages/ProductServices/OtherServices/InterBranch/InterBranch';
@@ -40,8 +38,7 @@ import AnnualReport from './pages/AnnualReport/AnnualReport';
 import BalanceSheet from './pages/BalanceSheet/BalanceSheet';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
 import Properties from './pages/ROPA/Properties';
-import TermsCondition from './pages/Application/TermsCondition/TermsConditions';
-import ApplyJob from './pages/Application/Apply/ApplyJob';
+import TermsCondition from './pages/Application/TermsCondition';
 
 
 
@@ -80,8 +77,6 @@ function App() {
 
             <Route path="/loan/PersonalLoans" element={<PersonalLoans />} />
             <Route path="/loan/PersonalLoans/InstaCashLoan" element={<InstaCashLoan />} />
-            <Route path="/loan/PersonalLoans/SalaryLoan" element={<SalaryLoan />} />
-            <Route path="/loan/PersonalLoans/LoyaltyLoan" element={<LoyaltyLoan />} />
             <Route path="/loan/PersonalLoans/VisaLoan" element={<VisaLoan />} />
             {/*Other Services */}
             <Route path="/P&S/OtherServices" element={<OtherServices />} />
@@ -102,7 +97,6 @@ function App() {
             <Route path='/ROPA' element={<Properties/>} />
             {/*Terms and Conditions page and another set of page again */}
             <Route path="/T&C" element={<TermsCondition />} />
-            <Route path="/ApplyJob" element={<ApplyJob />} />
           </Routes>
         </main>
       </div>

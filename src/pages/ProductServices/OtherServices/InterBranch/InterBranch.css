@@ -25,8 +25,13 @@
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 
@@ -43,11 +48,12 @@
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
-    
+
 }
 
 .IBD-title {
@@ -55,7 +61,7 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .IBD-subtitle {
@@ -75,12 +81,12 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .IBD-header-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     background-color: #0093e9;
 }
 
@@ -95,50 +101,6 @@
     z-index: 2;
 }
 
-.IBD-offer-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.IBD-card-accent {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #005fb8, #0093e9);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: left;
-}
-
-.IBD-offer-card:hover {
-    transform: translateY(-5px);
-}
-
-.IBD-offer-card:hover .IBD-card-accent {
-    transform: scaleX(1);
-}
-
-.IBD-offer-icon {
-    font-size: 2.5rem;
-    color: #005fb8;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.IBD-offer-card h3 {
-    color: #2c3e50;
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
 
 .IBD-description {
     background-color: #ffffff;
@@ -160,54 +122,6 @@
 .IBD-description-content p {
     color: #005fb8;
     font-weight: 400;
-}
-
-.IBD-requirements-container {
-    background-color: #f8f9fa;
-    padding: 60px 20px;
-}
-
-.IBD-requirements-list {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 35px;
-    border-radius: 15px;
-    background: #ffffff;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.IBD-requirements-list h4 {
-    color: #005fb8;
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.IBD-requirements-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.IBD-requirements-list li {
-    padding: 15px 0;
-    border-bottom: 1px solid #eef2f7;
-    color: #2c3e50;
-    font-size: 1rem;
-    position: relative;
-    padding-left: 25px;
-    transition: all 0.3s ease;
-}
-
-.IBD-requirements-list li:before {
-    content: "✓";
-    color: #005fb8;
-    position: absolute;
-    left: 0;
-}
-
-.IBD-requirements-list li:hover {
-    padding-left: 30px;
-    color: #005fb8;
 }
 
 .IBD-apply-container {
@@ -241,12 +155,12 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .IBD-apply-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .IBD-scroll-top {
@@ -261,15 +175,15 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     z-index: 1000;
-  }
-  
-  .IBD-scroll-top:hover {
+}
+
+.IBD-scroll-top:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  }
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
 
 @media (max-width: 768px) {
     .IBD-container {
@@ -290,24 +204,12 @@
         margin-top: -30px;
     }
 
-    .IBD-offer-card {
-        padding: 25px;
-    }
-
     .IBD-description {
         padding: 40px 15px;
     }
 
     .IBD-description-content h2 {
         font-size: 1.8rem;
-    }
-
-    .IBD-requirements-container {
-        padding: 40px 15px;
-    }
-
-    .IBD-requirements-list {
-        padding: 25px;
     }
 
     .IBD-apply-section h3 {
@@ -337,18 +239,6 @@
 
     .IBD-subtitle {
         font-size: 1rem;
-    }
-
-    .IBD-offer-card {
-        margin: 0 10px;
-    }
-
-    .IBD-requirements-list h4 {
-        font-size: 1.3rem;
-    }
-
-    .IBD-requirements-list li {
-        font-size: 0.95rem;
     }
 
     .IBD-scroll-top {

@@ -71,7 +71,7 @@ function PersonalLoans () {
                                     handleLoanCardClick(loan.route);
                                 }}
                             >
-                                Learn More
+                                Contact Us
                             </button>
                         </div>
                     ))}

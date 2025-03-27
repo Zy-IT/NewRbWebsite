@@ -8,7 +8,7 @@ function RegularSavingsAccount() {
   const navigate = useNavigate();
 
   const handletonavigate = () => {
-    navigate("/T&C");
+    navigate("/T&C", { state: { application: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Regular%20Savings%20Deposit" } });
   }
 
   const scrolltoApply = () => {
@@ -46,17 +46,12 @@ function RegularSavingsAccount() {
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Start Saving</h3>
-              <p>Start saving as low as 1000.00 Pesos</p>
+              <p>Opening Account at ₱1,000 pesos</p>
             </div>
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Maintaining Balance</h3>
-              <p>Keep your balance above the minimum balance for as low as 1,000</p>
-            </div>
-            <div className="RSA-feature-card">
-              <div className="RSA-feature-icon">💰</div>
-              <h3>Competitive Interest Rates</h3>
-              <p>Earn more with our attractive interest rates on your savings</p>
+              <p>Maintaining Balance at ₱1,000 pesos to earn interest</p>
             </div>
           </div>
         </section>
@@ -67,8 +62,8 @@ function RegularSavingsAccount() {
               <div className="RSA-description-content">
                 <h2>What is a Regular Savings Deposit?</h2>
                 <p>
-                  This refers to the bank’s deposit product that facilitates the deposit transactions 
-                  of a regular client/depositor, either natural or juridical person that can provide bank’s 
+                  This refers to the bank’s deposit product that facilitates the deposit transactions
+                  of a regular client/depositor, either natural or juridical person that can provide bank’s
                   requirements and accept the banks terms and condition that govern this product.
                 </p>
               </div>
@@ -82,8 +77,6 @@ function RegularSavingsAccount() {
             <ul className="RSA-requirements-list">
               <li>1 Valid Photo-bearing ID</li>
               <li>(2) Copies of 1x1 Picture</li>
-              <li>Alien Certificate of Registration (if foreign national)</li>
-              <li>Joint Account Agreement (for joint accounts)</li>
             </ul>
           </div>
         </section>
@@ -91,7 +84,7 @@ function RegularSavingsAccount() {
         <section className="RSA-cta">
           <div className="RSA-cta-content">
             <h2>Ready to Open an Account?</h2>
-            <p>Start managing your finances with our checking account today</p>
+            <p>Start managing your finances with our Savings account today</p>
             <button className="RSA-cta-button-primary"
               onClick={handletonavigate}
             >Apply Now</button>

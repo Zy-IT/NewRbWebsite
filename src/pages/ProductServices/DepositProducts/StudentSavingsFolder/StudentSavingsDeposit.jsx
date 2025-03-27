@@ -8,14 +8,14 @@ function StudentSavingDeposit() {
     const navigate = useNavigate();
 
     const handletonavigate = () => {
-        navigate('/T&C');
+        navigate('/T&C', { state: { applicationUrl: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Student%20Savings%20Deposit" } });
     }
 
 
     const scrolltoApply = () => {
         const Apply = document.querySelector('.SSD-cta');
         if (Apply) {
-            Apply.scrollIntoView({ behavior: 'smooth'});
+            Apply.scrollIntoView({ behavior: 'smooth' });
         }
     }
 
@@ -35,7 +35,7 @@ function StudentSavingDeposit() {
                     <h1>Student Saving Deposit</h1>
                     <p>Start your savings journey early with our student-friendly account</p>
                     <button className='SSD-header-button'
-                    onClick={scrolltoApply}
+                        onClick={scrolltoApply}
                     >Apply Now</button>
                 </div>
             </div>
@@ -45,15 +45,11 @@ function StudentSavingDeposit() {
                     <div className="SSD-info-grid">
                         <div className="SSD-info-card">
                             <span className="SSD-info-value">₱100</span>
-                            <span className="SSD-info-label">Initial Deposit</span>
+                            <span className="SSD-info-label">Opening Account</span>
                         </div>
                         <div className="SSD-info-card">
                             <span className="SSD-info-value">₱100</span>
                             <span className="SSD-info-label">Maintaining Balance</span>
-                        </div>
-                        <div className="SSD-info-card">
-                            <span className="SSD-info-value">0.25%</span>
-                            <span className="SSD-info-label">Interest Rate computed based on Average Daily Balance</span>
                         </div>
                     </div>
                 </section>
@@ -85,17 +81,17 @@ function StudentSavingDeposit() {
                         <div className="SSD-step">
                             <div className="SSD-step-number">1</div>
                             <h3>Prepare Documents</h3>
-                            <p>School ID and Birth Certificate</p>
+                            <p>School ID/Certificate of Enrollment</p>
                         </div>
                         <div className="SSD-step">
                             <div className="SSD-step-number">2</div>
                             <h3>Visit Branch</h3>
-                            <p>With parent/guardian if under 18</p>
+                            <p>With parent/guardian</p>
                         </div>
                         <div className="SSD-step">
                             <div className="SSD-step-number">3</div>
                             <h3>Initial Deposit</h3>
-                            <p>Minimum of ₱100 to start</p>
+                            <p>Minimum of ₱100</p>
                         </div>
                         <div className="SSD-step">
                             <div className="SSD-step-number">4</div>
@@ -117,11 +113,10 @@ function StudentSavingDeposit() {
                     <h2>Requirements</h2>
                     <div className="SSD-requirements-container">
                         <div className="SSD-requirement-card">
-                            <h3>For Students Below 18</h3>
                             <ul>
-                                <li>(1) Copy of valid photo-bearing School ID Duly signed by the principal or head of the school</li>
+                                <li>(1) Copy of valid photo-bearing School ID Duly signed by the principal or head of the school / Certificate of Enrollment</li>
                                 <li>(2) Copies of 1x1 ID Picture</li>
-                            </ul>   
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -132,7 +127,7 @@ function StudentSavingDeposit() {
                         <p>Open a Student Savings Account and build your financial future</p>
                         <div className="SSD-cta-buttons">
                             <button className="SSD-button-secondary"
-                            onClick={handletonavigate}
+                                onClick={handletonavigate}
                             >Apply Now</button>
                         </div>
                     </div>

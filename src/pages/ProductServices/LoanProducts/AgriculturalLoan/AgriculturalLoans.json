@@ -12,48 +12,59 @@
             "id": "Personal",
             "label": "Personal Loans"
         }
-        
     ],
     "loanProducts": [
         {
             "id": "agri-masikap-loan",
-            "icon": "🏗️",
+            "icon": "🌾",
             "title": "Agri-Masikap Loans",
-            "description": "Financing for agricultural machinery and equipment",
+            "description": "",
             "category": "Agricultural",
             "features": [
                 "Extended repayment period",
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/loan/AgriculturalLoans/AgriMasikapLoan"
+            "route": "/A&U/ContactUs"
         },
         {
             "id": "agri-sagana-loan",
-            "icon": "🏗️",
+            "icon": "🌾",
             "title": "Agri-Sagana Loans",
-            "description": "Seasonal loans to support crop cultivation",
+            "description": "",
             "category": "Agricultural",
             "features": [
                 "Extended repayment period",
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/loan/AgriculturalLoans/AgriSagsaganLoan"
+            "route": "/A&U/ContactUs"
         },
         {
             "id": "crop-loan",
-            "icon": "🏗️",
+            "icon": "🌾",
             "title": "Crop Loans",
-            "description": "Flexible financing for growing businesses",
+            "description": "",
             "category": "Agricultural",
             "features": [
                 "Extended repayment period",
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/loan/AgriculturalLoans/CropLoans"
+            "route": "/A&U/ContactUs"
+        },
+        {
+            "id": "crop-loan",
+            "icon": "🌾",
+            "title": "ACPC",
+            "description": "",
+            "category": "Agricultural",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/A&U/ContactUs"
         }
- 
     ]
 }

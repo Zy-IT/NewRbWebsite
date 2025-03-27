@@ -11,7 +11,7 @@ function Footer() {
                         <img src={logo} alt="RB Cauayan Logo" className="footer-logo" />
                         <h3>Rural Bank of Cauayan, INC</h3>
                     </div>
-                    <p>Rural Bank of Cauayan, Inc. 57 Years in service.</p>
+                    <p>Rural Bank of Cauayan, Inc. 60 Years in service.</p>
                 </div>
 
                 <div className="footer-section">

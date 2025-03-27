@@ -8,7 +8,7 @@ function InterestBearingCheckingAccount() {
     const navigate = useNavigate();
 
     const handletonavigate = () => {
-        navigate('/T&C');
+        navigate('/T&C', {state: { applicationUrl: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Interest%20Bearing%20Checking%20Account"}});
     }
 
     const scrolltoApply = () => {
@@ -46,17 +46,12 @@ function InterestBearingCheckingAccount() {
                         <div className="IBCA-benefit-card">
                             <div className="IBCA-benefit-icon">💵</div>
                             <h3>Start Now</h3>
-                            <p>open an Account starting at 10,000 Php</p>
+                            <p>Opening Account at ₱10,000 Php</p>
                         </div>
                         <div className="IBCA-benefit-card">
                             <div className="IBCA-benefit-icon">💵</div>
                             <h3>Maintaning Balance</h3>
-                            <p>Keep your balance above the minimum balance for as low as 10,000</p>
-                        </div>
-                        <div className="IBCA-benefit-card">
-                            <div className="IBCA-benefit-icon">✔️</div>
-                            <h3>Interesting Rates</h3>
-                            <p>Annual Interest 0% Compute Based on Average daily Balance</p>
+                            <p>Maintaining Balance at ₱10,000 pesos to earn interest</p>
                         </div>
                     </div>
                 </section>
@@ -65,11 +60,11 @@ function InterestBearingCheckingAccount() {
                     <div className='CA-description-container'>
                         <h2>What is Interest Bearing Checking Account</h2>
                         <p>
-                            Refers to the bank’s deposit product that facilitates the Checking Account Deposit 
-                            transactions of a regular client/depositor, either a natural or juridical person that 
+                            Refers to the bank’s deposit product that facilitates the Checking Account Deposit
+                            transactions of a regular client/depositor, either a natural or juridical person that
                             can provide the bank with requirements and agrees in the bank’s policy that governs this product.
-                            It is a Checking Account that earns an interest that is equal to Regular Savings Account. 
-                            Withdrawals are made through issuance of a check. Passbooks are also issued to the 
+                            It is a Checking Account that earns an interest that is equal to Regular Savings Account.
+                            Withdrawals are made through issuance of a check. Passbooks are also issued to the
                             depositor and check booklet is available upon purchase.
 
                         </p>
@@ -83,11 +78,15 @@ function InterestBearingCheckingAccount() {
                             <ul className="IBCA-features-list">
                                 <li>
                                     <span className="IBCA-check">✓</span>
-                                    Free checkbook
+                                    with Passbook
                                 </li>
                                 <li>
                                     <span className="IBCA-check">✓</span>
-                                    Free Passbook
+                                    Opening Account at ₱10,000 Php
+                                </li>
+                                <li>
+                                    <span className="IBCA-check">✓</span>
+                                    Maintaining Balance at ₱10,000 pesos to earn interest
                                 </li>
                             </ul>
                         </div>
@@ -102,14 +101,12 @@ function InterestBearingCheckingAccount() {
                             <ul>
                                 <li>(1) Copy Valid Photo-Bearing ID</li>
                                 <li>(2) Copies of 1x1 ID Picture</li>
-                                <li>Alien Certificate of Registration (if foreign national)</li>
-                                <li>Joint Account Agreement (for joint accounts)</li>
                             </ul>
                         </div>
                         <div className="IBCA-requirement-item">
                             <h3>Special Notice</h3>
                             <ul>
-                                <li>Non-Activity foy a 5 years shall be considered as Dormant</li>
+                                <li>Non-Activity foy a 1 year shall be considered as Dormant</li>
                             </ul>
                         </div>
                     </div>
@@ -118,7 +115,7 @@ function InterestBearingCheckingAccount() {
                 <section className="IBCA-cta">
                     <div className="IBCA-cta-content">
                         <h2>Ready to Open an Account?</h2>
-                        <p>Start managing your finances with our checking account today</p>
+                        <p>Start managing your finances with our interest bearing checking account today</p>
                         <div className="IBCA-cta-buttons">
                             <button className="IBCA-cta-button primary"
                                 onClick={handletonavigate}

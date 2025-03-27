@@ -8,7 +8,7 @@ function CheckingAccount() {
     const navigate = useNavigate();
 
     const handletonavigate = () => {
-        navigate('/T&C');
+        navigate('/T&C', {state: { applicationUrl: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Regular%20Checking%20Account"}});
     }
 
     const scrolltoApply = () => {
@@ -46,12 +46,12 @@ function CheckingAccount() {
                         <div className="CA-benefit-card">
                             <div className="CA-benefit-icon">💵</div>
                             <h3>Start Now</h3>
-                            <p>open an Account starting at 5,000 Php</p>
+                            <p>Opening Account at ₱5,000 Php</p>
                         </div>
                         <div className="CA-benefit-card">
                             <div className="CA-benefit-icon">💵</div>
                             <h3>Maintaning Balance</h3>
-                            <p>Keep your balance above the minimum balance for as low as 5,000</p>
+                            <p>Maintaining Balance at ₱5,000 Php</p>
                         </div>
                     </div>
                 </section>
@@ -60,11 +60,11 @@ function CheckingAccount() {
                     <div className='CA-description-container'>
                         <h2>What is Regular Checking Account</h2>
                         <p>
-                            Refers to the bank’s deposit product that facilitates the Checking Account Deposit 
-                            transactions of a regular client/depositor, either a natural or juridical person that 
+                            Refers to the bank’s deposit product that facilitates the Checking Account Deposit
+                            transactions of a regular client/depositor, either a natural or juridical person that
                             can provide the bank with requirements and agrees in the bank’s policy that governs this product.
-                            It is a non-interest bearing deposit in which withdrawals are made through issuance 
-                            of a check. Passbooks are also issued to the depositor and check booklet is available 
+                            It is a non-interest bearing deposit in which withdrawals are made through issuance
+                            of a check. Passbooks are also issued to the depositor and check booklet is available
                             upon purchase.
                         </p>
                     </div>
@@ -77,11 +77,15 @@ function CheckingAccount() {
                             <ul className="CA-features-list">
                                 <li>
                                     <span className="CA-check">✓</span>
-                                    Free checkbook
+                                    with Passbook
                                 </li>
                                 <li>
                                     <span className="CA-check">✓</span>
-                                    Free Passbook
+                                    Opening Account at ₱5,000 Php
+                                </li>
+                                <li>
+                                    <span className="CA-check">✓</span>
+                                    Maintaining Balance at ₱5,000 Php
                                 </li>
                             </ul>
                         </div>
@@ -96,14 +100,12 @@ function CheckingAccount() {
                             <ul>
                                 <li>(1) valid Photo-Bearing ID</li>
                                 <li>(2) Copies of 1x1 ID picture</li>
-                                <li>Alien Cerftificate of Registration(if foreign National)</li>
-                                <li>Joint Account(for joint accounts)</li>
                             </ul>
                         </div>
                         <div className="CA-requirement-item">
                             <h3>Special Notice</h3>
                             <ul>
-                                <li>Non-Activity foy a 1 whole year shall be considered as Dormant</li>
+                                <li>Non-Activity for a 1 year shall be considered as Dormant</li>
                             </ul>
                         </div>
                     </div>

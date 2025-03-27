@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import ScrollAnimation from '../../components/ScrollAnimation/ScrollAnimation';
 import { Shield, Landmark, CreditCard } from 'lucide-react';
-import FounderImage from '../../Assets/50years.jpg';
+import FounderImage from '../../Assets/50years.png';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
 import News from '../NewsUpdatePage/NewsUpdate.json';
@@ -252,22 +252,22 @@ function Home() {
                 <div className="stats-grid">
                     <div className="stat-card">
                         <span className="prefix">Up to</span>
-                        <h3>10M</h3>
-                        <span className="label">Loan</span>
-                    </div>
-                    <div className="stat-card">
-                        <span className="prefix">Up to</span>
                         <h3>50M</h3>
-                        <span className="label">Transactions</span>
+                        <span className="label">Loan</span> 
                     </div>
                     <div className="stat-card">
-                        <span className="prefix">Over</span>
+                        <span className="prefix"></span>
+                        <h3>60 Years</h3>
+                        <span className="label">In Service</span>
+                    </div>
+                    <div className="stat-card">
+                        <span className="prefix">Total of</span>
                         <h3>16</h3>
                         <span className="label">Branches</span>
                     </div>
                     <div className="stat-card">
                         <span className="prefix">Weekdays</span>
-                        <h3>9:30AM-5:00PM</h3>
+                        <h3>8:00AM-3:00PM</h3>
                         <span className="label">Support</span>
                     </div>
                 </div>
@@ -324,7 +324,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section>   
+            </section>
 
             {/* Contacts Sections*/}
             <section className="cta-section" >

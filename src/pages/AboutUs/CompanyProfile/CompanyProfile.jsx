@@ -3,7 +3,7 @@ import Footer from "../../../components/Footer/Footer";
 import ScrollAnimation from "../../../components/ScrollAnimation/ScrollAnimation";
 import "./CompanyProfile.css";
 import CompanyProfileImage from '../../../Assets/CompanyProfile.png';
-import Founder from '../../../Assets/Founder.jpg';
+import Founder from '../../../Assets/Founder.png';
 import Chairman from '../../../Assets/DocEddie.jpg';
 import ViceChairMan from '../../../Assets/SirEdgar.jpg';
 import President from '../../../Assets/President.jpg';
@@ -13,19 +13,31 @@ import EngrSusan from '../../../Assets/EngrSusan.jpg';
 import MaamMarlyn from '../../../Assets/MaamMarlyn.jpg';
 import SirRonaldo from '../../../Assets/SirRonaldo.jpg';
 import SirDanilo from '../../../Assets/SirDanilo.jpg';
+import MaamMarissa from '../../../Assets/MaamMarissa.png';
+import MaamJanette from '../../../Assets/MaamJanette.png';
+import MaamReggie from '../../../Assets/MaamReggie.png';
+import MaamAi from '../../../Assets/MaamAi.jpg';
+
 
 function CompanyProfile() {
 
     const directors = [
-        { src: SirIreneo, name: "Mr. Ireneo R. Bucag Jr.", title: "Board of Director" },
+        { src: SirIreneo, name: "Ireneo R. Bucag Jr.", title: "Board of Director" },
         { src: SirRonaldo, name: "Engr. Ronaldo R. Bucag", title: "Board of Director" },
-        { src: SirDanilo, name: "Mr. Danillo R. San Pedro", title: "Board of Director" }
+        { src: SirDanilo, name: "Danilo R. San Pedro, CPA", title: "Board of Director" }
     ];
 
     const directors2 = [
-        { src: MaamAttorney, name: "Atty. Ma. Luisa M. Andres", title: "Board of Director" },
+        { src: MaamAttorney, name: "Ma. Luisa M. Andres, CPA/Lawyer ", title: "Board of Director" },
         { src: EngrSusan, name: "Engr. Susana S. Wandag", title: "Board of Director" },
-        { src: MaamMarlyn, name: "Ms. Shirly Leocel A. Narag", title: "Board of Director" }
+        { src: MaamMarlyn, name: "Shirly Leocel A. Narag, CPA", title: "Board of Director" }
+    ];
+
+    const COO = [
+        { src: MaamMarissa, name: "Marissa M. Paraguison", title: "Chief Operating Officer" },
+        { src: MaamJanette, name: "Jannette B. Domingo", title: "Chief Operating Officer" },
+        { src: MaamReggie, name: "Emerlyne M. Manangan", title: "Chief Operating Officer" },
+        { src: MaamAi, name: "Aileen V. Barlis", title: "Chief Operating Officer" }
     ];
 
     const scrolltotop = () => {
@@ -119,7 +131,7 @@ function CompanyProfile() {
                                 As of now, Rural Bank of Cauayan Inc. has a total of 16 branches and 2 Branch Lite operating in Provinces in Region 2–Isabela, Cagayan, and Nueva Vizcaya with resources of over a Billion pesos, and a total of 200 employees more or less.
                                 <br />
                                 <br />
-                                The bank’s tremendous growth over the years was fueled by the active & dynamic stewardship of its Members of the Board namely:Chairman Dr. Eduardo R. Bucag Chairman, Vice Chairman Mr. Edgardo R. Bucag , Board of Director Mr. Ireneo R. Bucag Jr., Board of Director Engr. Ronaldo R. Bucag, Board of Director Mr. Danilo San Pedro, Board of Director Atty. Ma. Luisa M. Andres, Board of Director Engr, Susana S. Wandag, Board of Director Ms. Shirly Leocel A. Narag.and its dedicated Management Team under the leadership of Ms. Charita P. Guinid-President and its hard-working Chief Operating Officers namely Ms. Marissa M. Paraguison, Ms. Janette B. Domingo, Ms. Emerlyne M. Manangan and Ms. Aileen V. Barlis.
+                                The bank’s tremendous growth over the years was fueled by the active & dynamic stewardship of its Members of the Board namely:Chairman Dr. Eduardo R. Bucag , Vice Chairman Mr. Edgardo R. Bucag , Board of Director Mr. Ireneo R. Bucag Jr., Board of Director Engr. Ronaldo R. Bucag, Board of Director Mr. Danilo San Pedro, Board of Director Atty. Ma. Luisa M. Andres, Board of Director Engr, Susana S. Wandag, Board of Director Ms. Shirly Leocel A. Narag.and its dedicated Management Team under the leadership of Ms. Charita P. Guinid-President and its hard-working Chief Operating Officers namely Ms. Marissa M. Paraguison, Ms. Jannette B. Domingo, Ms. Emerlyne M. Manangan and Ms. Aileen V. Barlis.
                                 <br />
                                 <br />
                                 Social responsibilities have been a part of Rural Bank of Cauayan’s distinctiveness. By conducting a Job fair, Brigada Eskwela, Operation during Calamities, and Medical Mission.
@@ -304,7 +316,7 @@ function CompanyProfile() {
                                 <div className="CP-board-card">
                                     <img src={ViceChairMan} alt="Vice Chairman" />
                                     <div className="CP-board-info">
-                                        <h3>Mr. Edgardo R. Bucag</h3>
+                                        <h3>Edgardo R. Bucag</h3>
                                         <p>Vice Chairman of the Board</p>
                                     </div>
                                 </div>
@@ -317,7 +329,7 @@ function CompanyProfile() {
                                 <div className="CP-board-card">
                                     <img src={President} alt="President" />
                                     <div className="CP-board-info">
-                                        <h3>Ms. Charita P. Guinid</h3>
+                                        <h3>Charita P. Guinid, CPA</h3>
                                         <p>President</p>
                                     </div>
                                 </div>
@@ -355,6 +367,25 @@ function CompanyProfile() {
                                             <div className="CP-board-info">
                                                 <h3>{director2.name}</h3>
                                                 <p>{director2.title}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation>
+                            <div className="COO-board-grid">
+                                {COO.map((COO, index) => (
+                                    <div key={index} className="CP-board-position">
+                                        <div className="CP-board-card">
+                                            <img
+                                                src={COO.src}
+                                                alt={COO.name}
+                                                className="director-image"
+                                            />
+                                            <div className="CP-board-info">
+                                                <h3>{COO.name}</h3>
+                                                <p>{COO.title}</p>
                                             </div>
                                         </div>
                                     </div>

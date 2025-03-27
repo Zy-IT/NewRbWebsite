@@ -8,7 +8,7 @@ function TimeCertOfDeposit() {
     const navigate = useNavigate();
 
     const handletonavigate = () => {
-        navigate('/T&C');
+        navigate('/T&C', { state: { applicationUrl: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Time%20Certificate%20of%20Deposit" } });
     }
 
     const scrolltoApply = () => {
@@ -58,11 +58,6 @@ function TimeCertOfDeposit() {
                             <h3>Flexible Terms</h3>
                             <p>Choose from various tenure options</p>
                         </div>
-                        <div className="TCD-benefit-card">
-                            <div className="TCD-benefit-icon">🏦</div>
-                            <h3>PDIC Insured</h3>
-                            <p>Deposits insured up to ₱500,000</p>
-                        </div>
                     </div>
                 </section>
 
@@ -85,10 +80,8 @@ function TimeCertOfDeposit() {
                                 <li>Automatic renewal option</li>
                                 <li>Interest paid at maturity</li>
                                 <li>Multiple term options</li>
-                                <li>Early withdrawal available*</li>
-                                <li>Interest can be credited to savings account</li>
+                                <li>Interest can be credited to Savings Account</li>
                             </ul>
-                            <p className="TCD-features-note">*Subject to penalty fees</p>
                         </div>
                         <div className="TCD-visit-info">
                             <h3>Visit Our Branch</h3>
@@ -96,14 +89,10 @@ function TimeCertOfDeposit() {
                             <div className="TCD-hours">
                                 <div className="TCD-hours-item">
                                     <span>Monday - Friday</span>
-                                    <span>9:00 AM - 3:00 PM</span>
-                                </div>
-                                <div className="TCD-hours-item">
-                                    <span>Saturday</span>
-                                    <span>9:00 AM - 12:00 PM</span>
+                                    <span>8:00 AM - 3:00 PM</span>
                                 </div>
                             </div>
-                            <p className="TCD-visit-note">Our financial advisors will be happy to discuss the best options for your investment needs.</p>
+                            <p className="TCD-visit-note">Our Manager and New Accounts Clerk will be happy to discuss the best options for your investment needs.</p>
                         </div>
                     </div>
                 </section>
@@ -116,21 +105,6 @@ function TimeCertOfDeposit() {
                             <ul>
                                 <li>(1)Copy of Valid Photo-bearing ID</li>
                                 <li>(2) copies of  1 x 1 ID picture</li>
-                                <li>Alien Certificate of Registration (if foreign national)</li>
-                                <li>Joint Account Agreement (for joint accounts)</li>
-                            </ul>
-                        </div>
-                        <div className="TCD-requirement-item">
-                            <h3>Corporate Account</h3>
-                            <ul>
-                                <li>Articles of Incorporation</li>
-                                <li>SEC Certificate of Registration</li>
-                                <li>Corporate By-Laws</li>
-                                <li>Board Resolution of Corporate Secretary for opening of deposit account</li>
-                                <li>Resolution designating authorized signatories (if foreign entity, must be authenticated by consul)</li>
-                                <li>Copy of at least one (1) valid Photo-bearing ID of the signatories</li>
-                                <li>Two (2) copies of 1x1 ID picture of the signatories</li>
-                                <li>Latest GIS or List of Directors/Partners</li>
                             </ul>
                         </div>
                     </div>

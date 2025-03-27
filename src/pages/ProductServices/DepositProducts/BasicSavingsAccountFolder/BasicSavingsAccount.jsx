@@ -8,7 +8,8 @@ function BasicSavingsAccount() {
   const navigate = useNavigate();
 
   const handletonavigate = () => {
-    navigate('/T&C');
+
+    navigate('/T&C', { state: { applicationUrl: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Basic%20Savings%20Account" } });
   }
 
   const scrolltoApply = () => {
@@ -46,17 +47,12 @@ function BasicSavingsAccount() {
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Start Saving</h3>
-              <p>Opening Account not more than 100.00 pesos</p>
+              <p>Opening Account less than ₱100 pesos</p>
             </div>
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Maintaining Balance</h3>
-              <p>No Maintaining Balance</p>
-            </div>
-            <div className="BSA-feature-card">
-              <div className="BSA-feature-icon">💰</div>
-              <h3>Competitive Interest Rates</h3>
-              <p>Earn more with our attractive interest rates</p>
+              <p>No maintaining balance</p>
             </div>
           </div>
         </section>
@@ -66,9 +62,10 @@ function BasicSavingsAccount() {
             <div className="BSA-description-content">
               <h2>What is a Basic Deposit Account?</h2>
               <p>
-                Interest bearing account designed to promote financial inclusion.
-                This Account will enable filipinos, especially the unserved, to recieve and make 
-                payments, as well as have a facility for store of value.
+                This refers to interest or non-interest bearing account designed to promote financial inclusion.
+                This account will enable Filipinos, especially the unserved, to receive and make payments,
+                as well as have a facility for store of value.  It will have basic functionalities that
+                will characterize ease, accessibility, convenience, and reasonable cost for both banks and customers.
               </p>
             </div>
           </div>
@@ -81,7 +78,6 @@ function BasicSavingsAccount() {
               <li>Voters Certification</li>
               <li>Barangay Certification</li>
               <li>(2) Copies of 1x1 Picture</li>
-              <li>Completed application form</li>
             </ul>
           </div>
         </section>
