@@ -203,7 +203,8 @@
 .stat-card h3 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     color: #4299e1;
 }
 
