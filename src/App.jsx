@@ -29,7 +29,6 @@ import OtherServices from './pages/ProductServices/OtherServices/OtherServicesPa
 import InterBranch from './pages/ProductServices/OtherServices/InterBranch/InterBranch';
 import DomesticRemittance from './pages/ProductServices/OtherServices/DomesticRemittance/DomesticRemittance';
 import BillsPayment from './pages/ProductServices/OtherServices/BillsPayment/BillsPayment';
-import FundTransfer from './pages/ProductServices/OtherServices/FundTransfer/FundTransfer';
 import CompanyProfile from './pages/AboutUs/CompanyProfile/CompanyProfile';
 import Careers from './pages/AboutUs/Careers/Careers';
 import ContactUs from './pages/AboutUs/ContactUs/ContactUs';
@@ -81,8 +80,7 @@ function App() {
             <Route path="/P&S/OtherServices" element={<OtherServices />} />
             <Route path="/other/InterBranch" element={<InterBranch />} />
             <Route path="/other/DomesticRemittance" element={<DomesticRemittance />} />
-            <Route path="/other/BillsPayment" element={<BillsPayment />} />
-            <Route path="/other/FundTransfer" element={<FundTransfer />} />
+            <Route path="/other/i2i" element={<BillsPayment />} />
             {/*About Us */}
             <Route path="/A&U/CompanyProfile" element={<CompanyProfile />} />
             <Route path="/A&U/Careers" element={<Careers />} />

@@ -2,12 +2,10 @@ import Navbar from "../../../../components/Navbar/Navbar";
 import Footer from "../../../../components/Footer/Footer";
 import { useNavigate } from "react-router-dom"; // 
 import "./BillsPayments.css";
-import { BsSpeedometer, BsShieldCheck, BsCashStack } from 'react-icons/bs';
-
 
 function BillsPayment() {
     const navigate = useNavigate();
-    
+
     const handletonavigate = () => {
         navigate('/A&U/ContactUs');
     };
@@ -32,7 +30,7 @@ function BillsPayment() {
 
             <div className="BP-container">
                 <div className="BP-header">
-                    <h1 className="BP-title">Bills Payment</h1>
+                    <h1 className="BP-title">i 2 i</h1>
                     <p className="BP-subtitle">Your quick and reliable financial partner</p>
                     <button
                         className="BP-header-button"
@@ -44,49 +42,43 @@ function BillsPayment() {
 
             <div className="BP-type-card">
                 <div className="BP-offer-card">
-                    <span className="BP-offer-icon">
-                        <BsSpeedometer />
-                    </span>
-                    <h3>Fast Approval</h3>
-                    <p>Get approved within 24 hours with minimal requirements</p>
+                    <h3>Gcash Cash-in</h3>
+                    <p>Top up your GCash in seconds!</p>
                     <div className="BP-card-accent"></div>
                 </div>
                 <div className="BP-offer-card">
-                    <span className="BP-offer-icon">
-                        <BsCashStack />
-                    </span>
-                    <h3>Flexible Amount</h3>
-                    <p>Borrow from ₱10,000 up to ₱500,000</p>
+
+                    <h3>Bills Payment</h3>
+                    <p>Fast. Easy. Paid.</p>
                     <div className="BP-card-accent"></div>
                 </div>
                 <div className="BP-offer-card">
-                    <span className="BP-offer-icon">
-                        <BsShieldCheck />
-                    </span>
-                    <h3>Low Interest Rate</h3>
-                    <p>Competitive rates starting at 1.3% monthly</p>
+                    <h3>Fund Transfer</h3>
+                    <p>Your money, your way!</p>
                     <div className="BP-card-accent"></div>
                 </div>
             </div>
 
             <div className="BP-description">
-                <div className="BP-description-content">
-                    <h2>Why Choose Bills Payment?</h2>
-                    <p>Get the financial boost you need with our hassle-free loan service.
-                        Perfect for emergency expenses, business needs, or personal goals.</p>
-                </div>
-            </div>
-
-            <div className="BP-requirements-container">
-                <div className="BP-requirements-item">
-                    <div className="BP-requirements-list">
-                        <h4>Simple Requirements</h4>
-                        <ul>
-                            <li>Filipino Citizen, 21-65 years old</li>
-                            <li>Minimum gross monthly income of ₱20,000</li>
-                            <li>Valid government-issued ID</li>
-                            <li>Latest proof of income</li>
-                        </ul>
+                <h2>Why Choose Bills Payment?</h2>
+                <div className="BP-description-grid">
+                    <div className="BP-description-content">
+                        <h4>Gcash Cash-in</h4>
+                        <p>
+                            Fund youre Gcash wallet in seconds with our platform.
+                        </p>
+                    </div>
+                    <div className="BP-description-content">
+                        <h4>Bills Payment</h4>
+                        <p>
+                            Pay your bills quickly and securely through our platform.
+                        </p>
+                    </div>
+                    <div className="BP-description-content">
+                        <h4>Fund Transfer</h4>
+                        <p>
+                            Transfer funds quickly and securely through our platform.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -105,7 +97,7 @@ function BillsPayment() {
                     onClick={scrolltotop}
                 >↑</button>
             </div>
-            <Footer />  
+            <Footer />
         </div>
     );
 }

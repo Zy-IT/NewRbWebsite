@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Regular Savings Deposit",
-            "description": "This refers to the bank’s deposit product that facilitates the deposit transactions of a regular client/depositor, either ...",
+            "description": "",
             "category": "Deposit",
             "features": [
                 "Opening Account at ₱1,000 pesos",
@@ -15,7 +15,7 @@
         {
             "id": 2,
             "title": "Students Saving Deposit",
-            "description": "This refers to the bank’s deposit product that facilitates the deposit transaction of a student.",
+            "description": "",
             "category": "Deposit",
             "features": [
                 "Opening Account at ₱100 pesos",
@@ -27,7 +27,7 @@
         {
             "id": 3,
             "title": "Basic Deposit Account",
-            "description": "This refers to interest bearing account designed to promote financial inclusion. This account will enable Filipino ...",
+            "description": "",
             "category": "Deposit",
             "icon": "💰",
             "features": [

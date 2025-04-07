@@ -134,8 +134,8 @@ const Navbar = () => {
                     <ul className={styles.submenu}>
                       <li><Link to="/other/InterBranch">Inter Branch Deposit</Link></li>
                       <li><Link to="/other/DomesticRemittance">Domestic Remittance</Link></li>
-                      <li><Link to="/other/BillsPayment">Bills Payment</Link></li>
-                      <li><Link to="/other/FundTransfer">Fund Transfer</Link></li>
+                      <li><Link to="/other/i2i">i2i</Link></li>
+
                     </ul>
                   )}
                 </li>
@@ -237,8 +237,7 @@ const Navbar = () => {
                       <ul className={styles.mobileSubmenu}>
                         <li><Link to="/other/InterBranch" onClick={toggleMenu}>Inter Branch Deposit</Link></li>
                         <li><Link to="/other/DomesticRemittance" onClick={toggleMenu}>Domestic Remittance</Link></li>
-                        <li><Link to="/other/BillsPayment" onClick={toggleMenu}>Bills Payment</Link></li>
-                        <li><Link to="/other/FundTransfer" onClick={toggleMenu}>Fund Transfer</Link></li>
+                        <li><Link to="/other/i2i" onClick={toggleMenu}>i2i</Link></li>
                       </ul>
                     )}
                   </li>

@@ -266,6 +266,11 @@ function Home() {
                         <span className="label">Branches</span>
                     </div>
                     <div className="stat-card">
+                        <span className="prefix">Total of</span>
+                        <h3>2</h3>
+                        <span className="label">Branch   Lite</span>
+                    </div>
+                    <div className="stat-card">
                         <span className="prefix">Weekdays</span>
                         <h3>8:00AM-3:00PM</h3>
                         <span className="label">Support</span>

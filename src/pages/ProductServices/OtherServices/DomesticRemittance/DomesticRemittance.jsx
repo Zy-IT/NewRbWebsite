@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from "../../../../components/Navbar/Navbar";
 import Footer from "../../../../components/Footer/Footer";
 import './DomesticRemittance.css';
-import { BsSpeedometer, BsShieldCheck, BsCashStack } from 'react-icons/bs';
 
 
 function DomesticRemittance() {
@@ -45,52 +44,34 @@ function DomesticRemittance() {
             <div className="DR-type-card">
                 <div className="DR-offer-card">
                     <span className="DR-offer-icon">
-                        <BsSpeedometer />
                     </span>
-                    <h3>Fast Approval</h3>
-                    <p>Get approved within 24 hours with minimal requirements</p>
+                    <h3>Bills Payment</h3>
+                    <p>Fast. Easy. Paid.</p>
                     <div className="DR-card-accent"></div>
                 </div>
                 <div className="DR-offer-card">
                     <span className="DR-offer-icon">
-                        <BsCashStack />
                     </span>
-                    <h3>Flexible Amount</h3>
-                    <p>Borrow from ₱10,000 up to ₱500,000</p>
-                    <div className="DR-card-accent"></div>
-                </div>
-                <div className="DR-offer-card">
-                    <span className="DR-offer-icon">
-                        <BsShieldCheck />
-                    </span>
-                    <h3>Low Interest Rate</h3>
-                    <p>Competitive rates starting at 1.3% monthly</p>
+                    <h3>Fund Transfer</h3>
+                    <p>Your money, your way!</p>
                     <div className="DR-card-accent"></div>
                 </div>
             </div>
 
             <div className="DR-description">
-                <div className="DR-description-content">
-                    <h2>Why Choose Domestic Remittance?</h2>
-                    <p>
-                        Pay your bills quickly and securely through our platform,
-                        with access to over 600 trusted merchants.
-                        Enjoy the convenience of managing all your payments in one place,
-                        anytime and anywhere.
-                    </p>
-                </div>
-            </div>
-
-            <div className="DR-requirements-container">
-                <div className="DR-requirements-item">
-                    <div className="DR-requirements-list">
-                        <h4>Simple Requirements</h4>
-                        <ul>
-                            <li>Filipino Citizen, 21-65 years old</li>
-                            <li>Minimum gross monthly income of ₱20,000</li>
-                            <li>Valid government-issued ID</li>
-                            <li>Latest proof of income</li>
-                        </ul>
+                <h2>Why Choose Domestic Remittance?</h2>
+                <div className="DR-description-grid">
+                    <div className='DR-description-content'>
+                        <h4>Bills Payment</h4>
+                        <p>
+                            Pay your bills quickly and securely through our platform.
+                        </p>
+                    </div>
+                    <div className='DR-description-content'>
+                        <h4>Fund Tranfer </h4>
+                        <p>
+                            Transfer funds quickly and securely through our platform.
+                        </p>
                     </div>
                 </div>
             </div>

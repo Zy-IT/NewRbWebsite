@@ -74,7 +74,7 @@
             "id": 8,
             "title": "Commercial Loan",
             "description": "Grow your business with our financing solutions",
-            "image": "/src/Assets/Commercial_Loan.png",
+            "image": "/src/Assets/CommercialLoan.png",
             "category": "loan",
             "route": "/loan/CommercialLoans"
         },
@@ -96,7 +96,7 @@
         },
         {
             "id": 11,
-            "title": "Domestic Remittance",
+            "title": "Domestic Remittance thru Philpass",
             "description": "Expert financial planning and investment advice",
             "image": "/src/Assets/DomesticRemittance.png",
             "category": "Other",
@@ -104,19 +104,12 @@
         },
         {
             "id": 12,
-            "title": "Bills Payment",
+            "title": "i2i",
             "description": "Expert financial planning and investment advice",
             "image": "/src/Assets/BillsPayment.png",
             "category": "Other",
             "route": "/other/BillsPayment"
-        },
-        {
-            "id": 13,
-            "title": "Fund Transfer",
-            "description": "Expert financial planning and investment advice",
-            "image": "/src/Assets/FundTransfer.png",
-            "category": "Other",
-            "route": "/other/FundTransfer"
         }
+
     ]
 }
