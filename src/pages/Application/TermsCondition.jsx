@@ -3,10 +3,10 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./TermsCondition.css";
 
 
-function TermsCondition() {
+const TermsCondition = () => {
 
     const location = useLocation();
-    const navigate = new useNavigate();
+    const navigate = useNavigate();
 
     const [list7section, setlist7section] = useState(false);
     const [list8section, setlist8section] = useState(false);
@@ -15,7 +15,7 @@ function TermsCondition() {
 
     const applicationUrl = location.state?.applicationUrl || "/";
 
-    const  handleContinue = () => {
+    const handleContinue = () => {
         window.location.href = applicationUrl;
     }
 

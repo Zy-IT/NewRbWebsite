@@ -90,7 +90,7 @@ function Home() {
     }
 
     const handletoLoanProducts = () => {
-        navigate("/P&S/LoanProducts")
+        navigate("/loan/AgriculturalLoans")
     }
 
     const handletoOtherServices = () => {
@@ -212,7 +212,7 @@ function Home() {
                         >
                             <div className="feature-icon"><Landmark className="w-6 h-6" /></div>
                             <h3>Deposit Products</h3>
-                            <p>Unlock your financial potential with our range of deposit products, designed to help you save and grow your wealth effortlessly.</p>
+                            <p>Unlock your financial potential with our range of deposit products, designed to help you save and grow your wealth.</p>
                             <button className='feature-button'
                                 onClick={handletoDepositProducts}
                             >Learn More</button>
@@ -253,7 +253,7 @@ function Home() {
                     <div className="stat-card">
                         <span className="prefix">Up to</span>
                         <h3>50M</h3>
-                        <span className="label">Loan</span> 
+                        <span className="label">Loan</span>
                     </div>
                     <div className="stat-card">
                         <span className="prefix"></span>

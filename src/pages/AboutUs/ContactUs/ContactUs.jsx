@@ -9,10 +9,14 @@ import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
 import "./ContactUs.css";
 
 function ContactUs() {
-    const [fullname, setFullName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
+
+    const [formData, setFormData] = useState({
+        name: "",
+        contactNo: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
 
     const [selectedBranch, setSelectedBranch] = useState(branchdata.branches[0]);
     const [branchDetails, setBranchDetails] = useState({
@@ -21,6 +25,11 @@ function ContactUs() {
         email: "",
         hours: "",
         coordinates: "",
+    });
+
+    const [submissionStatus, setSubmissionStatus] = useState({
+        success: false,
+        message: ""
     });
 
     const mapContainerStyle = {
@@ -84,15 +93,49 @@ function ContactUs() {
         });
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form Submitted", { fullname, email, subject, message });
-        setFullName('');
-        setEmail('');
-        setSubject('');
-        setMessage('');
-    }
+    const handleInputChange = (e) => {
+        setFormData(prev => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }));
+    };
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            await fetch("https://www.rbcauayan.com/ssl/form-to-email.php", {
+                method: "POST",
+                mode: "no-cors", 
+                body: new URLSearchParams({
+                    name: formData.name,
+                    email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message,
+                    contact: formData.contactNo, 
+                }),
+            });
+
+            console.log("Message attempted to send (no-cors mode).");
+
+            setSubmissionStatus({
+                success: true,
+                message: "Message was sent!"
+            });
+
+            setFormData({
+                name: "",
+                contactNo: "",
+                email: "",
+                subject: "",
+                message: "",
+            });
+
+        } catch (error) {
+            console.error("Error:", error);
+            alert("An error occurred while sending your message. Please try again.");
+        }
+    };
     const openGoogleMaps = () => {
         if (selectedBranch && selectedBranch.coordinates) {
             const coordinatesString = `${selectedBranch.coordinates.lat},${selectedBranch.coordinates.lng}`;
@@ -192,6 +235,13 @@ function ContactUs() {
                                 <div className="CU-Inner-Container">
                                     <div className="CU-form-card-container">
                                         <div className="CU-form-card">
+
+                                            {submissionStatus.message && (
+                                                <div className={`CU-message-box ${submissionStatus.success ? 'success' : 'error'}`}>
+                                                    {submissionStatus.message}
+                                                </div>
+                                            )}
+
                                             <form onSubmit={handleSubmit} className="CU-form">
                                                 {/* Existing form groups remain the same */}
                                                 <div className="CU-form-group">
@@ -199,9 +249,22 @@ function ContactUs() {
                                                     <input
                                                         id="fullname"
                                                         type="text"
-                                                        value={fullname}
-                                                        onChange={(e) => setFullName(e.target.value)}
+                                                        name="name"
+                                                        value={formData.name}
+                                                        onChange={handleInputChange}
                                                         placeholder="Your full name"
+                                                        required
+                                                    />
+                                                </div>
+                                                <div className="CU-form-group">
+                                                    <label htmlFor="fullname">Contact No.</label>
+                                                    <input
+                                                        id="contactNo"
+                                                        type="number"
+                                                        name="contactNo"
+                                                        value={formData.contactNo}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Your Contact Number"
                                                         required
                                                     />
                                                 </div>
@@ -211,8 +274,9 @@ function ContactUs() {
                                                     <input
                                                         id="email"
                                                         type="email"
-                                                        value={email}
-                                                        onChange={(e) => setEmail(e.target.value)}
+                                                        name="email"
+                                                        value={formData.email}
+                                                        onChange={handleInputChange}
                                                         placeholder="you@example.com"
                                                         required
                                                     />
@@ -223,8 +287,9 @@ function ContactUs() {
                                                     <input
                                                         id="subject"
                                                         type="text"
-                                                        value={subject}
-                                                        onChange={(e) => setSubject(e.target.value)}
+                                                        name="subject"
+                                                        value={formData.subject}
+                                                        onChange={handleInputChange}
                                                         placeholder="Subject of your message"
                                                         required
                                                     />
@@ -234,8 +299,9 @@ function ContactUs() {
                                                     <label htmlFor="message">Your Message</label>
                                                     <textarea
                                                         id="message"
-                                                        value={message}
-                                                        onChange={(e) => setMessage(e.target.value)}
+                                                        name="message"
+                                                        value={formData.message}
+                                                        onChange={handleInputChange}
                                                         placeholder="Type your message here"
                                                         required
                                                     />
