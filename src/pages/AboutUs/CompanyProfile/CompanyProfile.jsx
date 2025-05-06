@@ -13,9 +13,9 @@ import EngrSusan from '../../../Assets/EngrSusan.jpg';
 import MaamMarlyn from '../../../Assets/MaamMarlyn.jpg';
 import SirRonaldo from '../../../Assets/SirRonaldo.jpg';
 import SirDanilo from '../../../Assets/SirDanilo.jpg';
-import MaamMarissa from '../../../Assets/MaamMarissa.png';
-import MaamJanette from '../../../Assets/MaamJanette.png';
-import MaamReggie from '../../../Assets/MaamReggie.png';
+import MaamMarissa from '../../../Assets/MaamMarissa.jpg';
+import MaamJanette from '../../../Assets/MaamJanette.jpg';
+import MaamReggie from '../../../Assets/MaamReggie.jpg';
 import MaamAi from '../../../Assets/MaamAi.jpg';
 
 

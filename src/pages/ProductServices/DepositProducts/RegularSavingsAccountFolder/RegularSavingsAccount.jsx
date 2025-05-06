@@ -8,7 +8,7 @@ function RegularSavingsAccount() {
   const navigate = useNavigate();
 
   const handletonavigate = () => {
-    navigate("/T&C", { state: { application: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Regular%20Savings%20Deposit" } });
+    navigate("/T&C", { state: { applicationUrl: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Regular%20Savings%20Deposit" } });
   }
 
   const scrolltoApply = () => {

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import logo from '../../Assets/rbci-logo.png'; 
+import logo from '../../Assets/rbci-logo.png';
 
 function Footer() {
     return (
@@ -30,8 +30,9 @@ function Footer() {
                     <h3>Contact Info</h3>
                     <ul>
                         <li>Email: hrad-a2@rbcauayan.com</li>
-                        <li>Phone: (078) 652-1928</li>
-                        <li>Address: Don Jose Canciller Ave.
+                        <li>Phone: (078) 652-1016</li>
+                        <li>
+                            Address: Don Jose Canciller Ave.
                             Cauayan City Isabela 3305
                         </li>
                     </ul>
