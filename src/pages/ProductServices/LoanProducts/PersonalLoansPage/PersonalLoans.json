@@ -20,7 +20,7 @@
             "title": "Insta-Cash Loan",
             "description": "",
             "category": "Personal",  
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "visa-loan",
@@ -28,7 +28,7 @@
             "title": "Visa Loan",
             "description": "",
             "category": "Personal",
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "Mortgage-Facility",
@@ -36,7 +36,7 @@
             "title": "Mortgage Facility",
             "description": "",
             "category": "Personal",
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "Hold-Out ",
@@ -44,7 +44,7 @@
             "title": "Hold-Out Against Deposit (Back to Back Loan)",
             "description": "",
             "category": "Personal",
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         }
     ]
 }

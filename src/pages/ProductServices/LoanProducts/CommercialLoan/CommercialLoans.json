@@ -26,7 +26,7 @@
                 "Competitive interest rates", 
                 "Quick approval process"
             ],
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "ka-asenso-loan",
@@ -39,7 +39,7 @@
                 "Low down payment",
                 "Fixed interest rates"
             ],
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "small-business-loan",
@@ -52,7 +52,7 @@
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "credit-line-facility",
@@ -65,7 +65,7 @@
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         }        
     ]
 }

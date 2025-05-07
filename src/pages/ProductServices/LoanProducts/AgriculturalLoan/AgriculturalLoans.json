@@ -25,7 +25,7 @@
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "agri-sagana-loan",
@@ -38,7 +38,7 @@
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "crop-loan",
@@ -51,7 +51,7 @@
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         },
         {
             "id": "ACPC",
@@ -64,7 +64,7 @@
                 "Customizable terms",
                 "Comprehensive coverage"
             ],
-            "route": "/A&U/ContactUs"
+            "route": "/ApplyLoan"
         }
     ]
 }

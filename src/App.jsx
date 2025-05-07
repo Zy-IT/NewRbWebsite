@@ -37,7 +37,7 @@ import BalanceSheet from './pages/BalanceSheet/BalanceSheet';
 import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
 import Properties from './pages/ROPA/Properties';
 import TermsCondition from './pages/Application/TermsCondition';
-
+import LoanApplication from './pages/Application/LoanApplication/LoanApplication';
 
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
             <Route path="/deposit/BasicSavings" element={<BasicSavings />} />
             <Route path="/deposit/RegularSavings" element={<RegularSaving />} />
             <Route path="/deposit/CheckingAccount" element={<CheckingAccount />} />
-            <Route path='/deposit/InterestBearingCheckingAccount' element={<InterestBearingCheckingAccount/>} />
+            <Route path='/deposit/InterestBearingCheckingAccount' element={<InterestBearingCheckingAccount />} />
             <Route path="/deposit/StudentSavings" element={<StudentSavings />} />
             <Route path="/deposit/TimeCertofDeposit" element={<TimeCertofDeposit />} />
             {/* Loan Products */}
@@ -86,13 +86,15 @@ function App() {
             <Route path="/A&U/Careers" element={<Careers />} />
             <Route path="/A&U/ContactUs" element={<ContactUs />} />
             <Route path="/A&U/AnnualReport" element={<AnnualReport />} />
-            <Route path="/A&U/BalanceSheet" element={<BalanceSheet />}  />
+            <Route path="/A&U/BalanceSheet" element={<BalanceSheet />} />
             {/*News and Update */}
             <Route path="/N&U" element={<NewsUpdatePage />} />
             {/* Properties */}
-            <Route path='/ROPA' element={<Properties/>} />
+            <Route path='/ROPA' element={<Properties />} />
             {/*Terms and Conditions page and another set of page again */}
             <Route path="/T&C" element={<TermsCondition />} />
+
+            <Route path="/ApplyLoan" element={<LoanApplication />} />
           </Routes>
         </main>
       </div>

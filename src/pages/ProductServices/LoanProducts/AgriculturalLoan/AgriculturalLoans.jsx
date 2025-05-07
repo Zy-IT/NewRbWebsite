@@ -71,7 +71,7 @@ function AgriculturalLoans () {
                                     handleLoanCardClick(loan.route);
                                 }}
                             >
-                                Contact Us
+                                Apply Now
                             </button>
                         </div>
                     ))}
