@@ -108,7 +108,7 @@
             "description": "Expert financial planning and investment advice",
             "image": "/src/Assets/BillsPayment.png",
             "category": "Other",
-            "route": "/other/BillsPayment"
+            "route": "/other/i2i    "
         }
 
     ]

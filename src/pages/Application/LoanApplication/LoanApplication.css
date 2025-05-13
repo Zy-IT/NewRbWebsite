@@ -212,6 +212,24 @@
     color: #e74c3c;
 }
 
+.LAP-message-box {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.LAP-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.LAP-error {
+    background-color: #dc3545;
+    color: white;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .LAP-loan-content {

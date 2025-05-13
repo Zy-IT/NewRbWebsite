@@ -4,11 +4,10 @@ import { PostApplication } from "../Services/LoanServices";
 export const usePostLoan = () => {
     const queryClient = useQueryClient();
 
-    return useMutation({
+    return useMutation({    
         mutationFn: PostApplication,
-        onSuccess: (Loan) => {
+        onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: ['Loan'] })
-            console.log("Loan Posted ", Loan)
         },
         onError: (error) => {
             console.log("Error Posting ", error)

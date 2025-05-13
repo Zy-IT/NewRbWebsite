@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import useLoanApplicationStore from '../../../store/LoanApplicationsStore';
 import { usePostLoan } from '../../../hooks/loanApplicationHook';
 import { useNavigate } from 'react-router-dom';
@@ -6,13 +6,12 @@ import './LoanApplication.css';
 
 const LoanApplication = () => {
     const navigate = useNavigate();
+    const [showMessage, setShowMessage] = useState('');
     const LoanApplication = useLoanApplicationStore((state) => state.loanApplication);
     const updateLoanFields = useLoanApplicationStore((state) => state.updateLoanFields);
     const resetLoanApplicationForm = useLoanApplicationStore((state) => state.resetLoanApplicationForm);
 
     const { mutate: postLoan, isLoading, error } = usePostLoan();
-
-    console.log("loanApplication:", LoanApplication)
 
     useEffect(() => {
         return () => {
@@ -28,16 +27,9 @@ const LoanApplication = () => {
         e.preventDefault();
 
         try {
-            postLoan(LoanApplication, {
-                onSuccess: (Loan) => {
-                    console.log("Loan Posted ", Loan);
-                    alert("Loan Application Submitted Successfully");
-                    resetLoanApplicationForm();
-                },
-                onError: (error) => {
-                    console.log("Error Posting ", error);
-                }
-            })
+            postLoan(LoanApplication)
+            setShowMessage("Youre Loan Application is Passed ")
+            resetLoanApplicationForm();
         } catch (error) {
             console.error("Error submitting form:", error);
             alert("Error submitting form. Please try again.");
@@ -137,7 +129,7 @@ const LoanApplication = () => {
                                     name="contactNo"
                                     type="text"
                                     value={LoanApplication?.contactNo}
-                                    onChange={handleInputChange}
+                                    onChange={({ target }) => /^\d*$/.test(target.value) && handleInputChange({ target })}
                                     maxLength={11}
                                     required
                                     placeholder="Enter your phone number"
@@ -201,6 +193,7 @@ const LoanApplication = () => {
                                     value={LoanApplication?.message}
                                     onChange={handleInputChange}
                                     placeholder="Additional information about your loan request"
+                                    maxLength={255}
                                     rows="4"
                                 />
                             </div>
@@ -229,6 +222,12 @@ const LoanApplication = () => {
                             </div>
                         </div>
                     </div>
+
+                    {showMessage && (
+                        <div className='LAP-message-box-success'>
+                            {showMessage}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
