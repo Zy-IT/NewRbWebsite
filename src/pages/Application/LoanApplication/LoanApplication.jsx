@@ -2,11 +2,14 @@ import { useState, useEffect } from 'react';
 import useLoanApplicationStore from '../../../store/LoanApplicationsStore';
 import { usePostLoan } from '../../../hooks/loanApplicationHook';
 import { useNavigate } from 'react-router-dom';
+import FriendlyError from './FriendlyError';
 import './LoanApplication.css';
 
 const LoanApplication = () => {
     const navigate = useNavigate();
     const [showMessage, setShowMessage] = useState('');
+    const [showError, setShowError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
     const LoanApplication = useLoanApplicationStore((state) => state.loanApplication);
     const updateLoanFields = useLoanApplicationStore((state) => state.updateLoanFields);
     const resetLoanApplicationForm = useLoanApplicationStore((state) => state.resetLoanApplicationForm);
@@ -14,9 +17,12 @@ const LoanApplication = () => {
     const { mutate: postLoan, isLoading, error } = usePostLoan();
 
     useEffect(() => {
-        return () => {
+        if (error) {
+            setErrorMessage("We couldn't process your loan application at this time. Please try again shortly.");
+            setShowError(true);
         }
-    }, [resetLoanApplicationForm]);
+        return () => { }
+    }, [error]);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -25,15 +31,22 @@ const LoanApplication = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setShowError(false);
 
         try {
-            postLoan(LoanApplication)
-            setShowMessage("Youre Loan Application is Passed ")
+            postLoan(LoanApplication);
+            setShowMessage("Your Loan Application has been successfully submitted!");
             resetLoanApplicationForm();
+            // eslint-disable-next-line no-unused-vars
         } catch (error) {
-            console.error("Error submitting form:", error);
-            alert("Error submitting form. Please try again.");
+            setErrorMessage("We couldn't process your loan application. Please check your information and try again.");
+            setShowError(true);
         }
+    }
+
+    const handleRetry = () => {
+        setShowError(false);
+        // You can add specific retry logic here if needed
     }
 
     const goBack = () => {
@@ -76,11 +89,21 @@ const LoanApplication = () => {
     ];
 
     if (isLoading) {
-        return <div className="LAP-loading-container">Loading...</div>
+        return (
+            <div className="LAP-loading-container">
+                <div className="LAP-loading-spinner"></div>
+                <p>Processing your application...</p>
+            </div>
+        );
     }
 
-    if (error) {
-        return <div className="LAP-error-container">Error: {error.message}</div>
+    if (showError) {
+        return <FriendlyError
+            message={errorMessage}
+            onRetry={handleRetry}
+            onCancel={() => navigate(-1)}
+            icon="🧾"
+        />;
     }
 
     return (

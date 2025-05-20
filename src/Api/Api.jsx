@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Api = axios.create({
-    baseURL: import.meta.env.VITE_TEST_API_URL,
+    baseURL: import.meta.env.VITE_DEPLOYED_API_URL,
     headers: {
         "Content-Type": "application/json"
     },
