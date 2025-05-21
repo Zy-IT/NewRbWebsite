@@ -24,10 +24,6 @@ function BalanceSheet() {
         setIsLoaded(true);
     }, [reportId, sortedReports]);
 
-    const handleReportSelect = (balancesheet) => {
-        navigate(`/balance-sheets/${balancesheet.id}`);
-    };
-
     const handleViewPdf = (e, pdfUrl, reportId) => {
         e.stopPropagation(); 
         window.open(`${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1&source=balance-sheet&id=${reportId}`, '_blank');
@@ -53,7 +49,7 @@ function BalanceSheet() {
                             <div
                                 key={balancesheet.id}
                                 className={`BS-card ${isLoaded ? 'animate' : ''}`}
-                                onClick={() => handleReportSelect(balancesheet)}
+                                // Removed onClick handler here so the card is not clickable
                             >
                                 <div className="card-media-container">
                                     <video
@@ -69,7 +65,6 @@ function BalanceSheet() {
                                         <div className="card-content">
                                             <div className="card-header">
                                                 <span className="year-badge">{balancesheet.year}</span>
-                                                <h3>{balancesheet.title}</h3>
                                             </div>
                                             <div className="card-actions">
                                                 <button
