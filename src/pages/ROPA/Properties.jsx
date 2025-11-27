@@ -38,7 +38,7 @@ function Properties() {
         setCurrentImageIndex((prevIndex) =>
             prevIndex === 0 ? selectedProperty.images.length - 1 : prevIndex - 1
         );
-    };  
+    };
 
     const openGoogleMaps = () => {
         const coordinates = "17.408632,121.744082";
@@ -58,7 +58,7 @@ function Properties() {
             <div className="properties-container">
                 <div className="properties-header">
                     <h1>Real and Other Properties Acquired (ROPA)</h1>
-                    <p>Acquired Assets (Updated as of December 31, 2024)</p>
+                    <p>Acquired Assets (Updated as of May 31, 2025)</p>
                 </div>
 
                 <div className="properties-grid">

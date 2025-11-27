@@ -444,16 +444,19 @@
 
 .CP-board-bottom {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
     width: 100%;
 }
 
+/* Updated Board Directors Grid - now follows middle section pattern */
 .board-directors-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     width: 100%;
     max-width: 1400px;
@@ -461,10 +464,22 @@
     padding: 1rem;
 }
 
+.board-directors-grid2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Updated COO Grid - now follows middle section pattern */
 .COO-board-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     width: 100%;
     max-width: 1400px;
@@ -472,6 +487,16 @@
     padding: 1rem;
 }
 
+.COO-board-grid2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
 .director-card {
     width: 100%;
@@ -528,6 +553,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex: 0 0 auto;
+    /* Prevents items from growing/shrinking unexpectedly */
 }
 
 .CP-board-card {
@@ -648,6 +675,36 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Desktop specific - maintain 2-column grid for larger screens */
+@media (min-width: 769px) {
+    .board-directors-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 2rem;
+    }
+
+    .board-directors-grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 2rem;
+    }
+
+    .COO-board-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 3rem;
+    }
+
+    .COO-board-grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 3rem;
+    }
+}
 
 @media (max-width: 1024px) {
     .CP-hero-content {
@@ -662,16 +719,6 @@
 
     .CP-mission-vision-row {
         padding: 0 1rem;
-    }
-
-    .board-directors-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .COO-board-grid {
-        grid-template-columns: (2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
 }
 
@@ -698,6 +745,21 @@
 
     .CP-core-values-content {
         padding: 2rem;
+    }
+}
+
+/* Tablet and Mobile - Flexbox layout like chairman/vice-chairman */
+@media (max-width: 768px) {
+
+    .board-directors-grid,
+    .board-directors-grid2,
+    .COO-board-grid,
+    .COO-board-grid2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem;
     }
 }
 
@@ -751,15 +813,8 @@
         max-width: 400px;
     }
 
-    .board-directors-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-        padding: 1rem;
-    }
-
     .CP-board-position {
         margin: 0 auto;
-        /* Center the cards */
     }
 
     .CP-board-card {
@@ -777,7 +832,6 @@
 
     .CP-board-info h3 {
         font-size: 1.3rem;
-
     }
 
     .CP-board-info p {
@@ -847,8 +901,14 @@
         margin: 0.5rem 0;
     }
 
-    .board-directors-grid {
-        gap: 2rem;
+    /* Mobile stacking - single column layout */
+    .board-directors-grid,
+    .board-directors-grid2,
+    .COO-board-grid,
+    .COO-board-grid2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
     }
 
     .CP-board-card {

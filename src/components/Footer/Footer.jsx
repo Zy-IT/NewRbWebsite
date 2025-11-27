@@ -9,9 +9,13 @@ function Footer() {
                 <div className="footer-section">
                     <div className="footer-brand">
                         <img src={logo} alt="RB Cauayan Logo" className="footer-logo" />
-                        <h3>Rural Bank of Cauayan, INC</h3>
+                        <h3>Rural Bank of Cauayan, Inc</h3>
                     </div>
                     <p>Rural Bank of Cauayan, Inc. 60 Years in service.</p>
+
+                    <p className='footer-p2'>Rural Bank of Cauayan is regulated by the Bangko Sentral ng Pilipinas. <u><a href='https://www.bsp.gov.ph'>https://www.bsp.gov.ph</a></u></p>
+
+                    <p className='footer-p3'>For concerns, please reach us through <Link to="/A&U/ContactUs"><u>Contact Us</u></Link></p>
                 </div>
 
                 <div className="footer-section">

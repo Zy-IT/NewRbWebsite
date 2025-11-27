@@ -45,6 +45,11 @@ function BasicSavingsAccount() {
           <h2>Account Features</h2>
           <div className="BSA-features-grid">
             <div className="BSA-feature-card">
+              <div className="BSA-feature-icon">💰</div>
+              <h3>Interest Rate</h3>
+              <p>Grow your savings faster with a 0.25% Annual Interest Rate. Every peso counts!</p>
+            </div>
+            <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Start Saving</h3>
               <p>Opening Account less than ₱100 pesos</p>
