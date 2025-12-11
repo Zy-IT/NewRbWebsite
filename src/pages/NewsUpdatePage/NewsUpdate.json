@@ -77,7 +77,38 @@
             "category": "News",
             "image": "/src/Assets/Motorcade2025.png",
             "date": "February 3, 2025"
+        },
+        {
+            "id": 9,
+            "title": "Depositor Protection Awareness Week",
+            "description": "Observance of the 23rd Depositor Protection Awareness Week from 16 to 22 June 2025",
+            "category": "News",
+            "image": "/src/Assets/Streamer23rdDPAWFinal1.jpg",
+            "date": "June 16, 2025"
+        },
+        {
+            "id": 10,
+            "title": "Rural Banking Consciousness Week",
+            "description": "Rural Banks as Gateways for Economic Empowerment",
+            "category": "News",
+            "image": "/src/Assets/RuralBankingConciousnessWeek.jpg",
+            "date": "August 22, 2025"
+        },
+        {
+            "id": 11,
+            "title": "36th National Statistic Month ",
+            "description": "Accelarating the SDG Pace of Progress: Mobilizing Data for All",
+            "category": "News",
+            "image": "/src/Assets/36thNationalStatisticsMonth.jpg",
+            "date": "October 1, 2025"
+        },
+        {
+            "id": 12,
+            "title": "Coming Soon",
+            "description": "Coming Soon",
+            "category": "News",
+            "image": "/src/Assets/ComingSoon.png",
+            "date": "October 0, 2025"
         }
-
     ]
 }

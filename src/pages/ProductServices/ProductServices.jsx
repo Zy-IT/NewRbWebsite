@@ -29,7 +29,7 @@ function ProductServices() {
                             className={`category-button ${activeCategory === category.id ? 'category-button--active' : ''}`}
                             onClick={() => setActiveCategory(category.id)}
                         >
-                            {category.label}
+                            {category.label}    
                         </button>
                     ))}
                 </div>

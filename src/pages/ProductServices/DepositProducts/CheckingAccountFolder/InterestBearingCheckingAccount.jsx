@@ -8,7 +8,7 @@ function InterestBearingCheckingAccount() {
     const navigate = useNavigate();
 
     const handletonavigate = () => {
-        navigate('/T&C', {state: { applicationUrl: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Interest%20Bearing%20Checking%20Account"}});
+        navigate('/T&C', { state: { applicationUrl: "https://rbcauayan.com/rbcauayandata/onlineappform/Script/Firstpage.php?ProductchildID=Interest%20Bearing%20Checking%20Account" } });
     }
 
     const scrolltoApply = () => {
@@ -43,6 +43,11 @@ function InterestBearingCheckingAccount() {
                 <section className="IBCA-benefits">
                     <h2>Account Benefits</h2>
                     <div className="IBCA-benefits-grid">
+                        <div className="IBCA-benefit-card">
+                            <div className="IBCA-benefit-icon">💰</div>
+                            <h3>Interest Rate</h3>
+                            <p>Grow your savings faster with a 0.25% Annual Interest Rate. Every peso counts!</p>
+                        </div>
                         <div className="IBCA-benefit-card">
                             <div className="IBCA-benefit-icon">💵</div>
                             <h3>Start Now</h3>

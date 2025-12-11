@@ -201,6 +201,7 @@ function Home() {
             {/* Features Section */}
             <section className="features-section" >
                 <div className='feature-header'>
+                    <h1>&quot;Deposits are insured by PDIC up to P1,000,000 per depositor!&quot;</h1>
                     <h2>Products and Services</h2>
                     <p>Explore our range of products and services tailored to meet your banking needs.</p>
                 </div>
@@ -314,7 +315,12 @@ function Home() {
                                         <i className="fas fa-bullseye"></i>
                                     </div>
                                     <h3>Our Mission</h3>
-                                    <p>To help improve quality of life by delivering superior services and operate with a high level of competence, integrity, honesty, professionalism, and community involvement.</p>
+                                    <p>
+                                        To help improve quality of life by delivering
+                                        superior and reliable financial products and
+                                        services and operate with a high level of competence,
+                                        integrity, honesty, professionalism, and community involvement.
+                                    </p>
                                 </div>
                             </ScrollAnimation>
                             <ScrollAnimation delay={0.3}>
@@ -323,7 +329,9 @@ function Home() {
                                         <i className="fas fa-eye"></i>
                                     </div>
                                     <h3>Our Vision</h3>
-                                    <p>To be one of the best provider financial services in the rural banking industry.</p>
+                                    <p>
+                                        To be one of the best provider of financial services in the rural banking industry.
+                                    </p>
                                 </div>
                             </ScrollAnimation>
                         </div>

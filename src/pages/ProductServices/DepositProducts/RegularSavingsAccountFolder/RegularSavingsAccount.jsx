@@ -43,6 +43,11 @@ function RegularSavingsAccount() {
         <section className="RSA-features">
           <h2>Account Features</h2>
           <div className="RSA-features-grid">
+            <div className="RSA-feature-card">
+              <div className="RSA-feature-icon">💰</div>
+              <h3>Interest Rate</h3>
+              <p>Grow your savings faster with a 0.25% Annual Interest Rate. Every peso counts!</p>
+            </div>
             <div className="BSA-feature-card">
               <div className="BSA-feature-icon">💵</div>
               <h3>Start Saving</h3>

@@ -14,13 +14,7 @@
             "description2": "- Fund Transfer",
             "icon": "🎓",
             "route": "/other/DomesticRemittance"
-        },
-        {
-            "id": 3,
-            "title": " i 2 i ",
-            "description": "- Gcash Cash-in - Bills Payment - Fund Transfer",
-            "icon": "🛟",
-            "route": "/other/i2i"
         }
+
     ]
 }

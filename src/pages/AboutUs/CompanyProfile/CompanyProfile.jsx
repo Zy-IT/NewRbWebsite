@@ -12,31 +12,34 @@ import MaamAttorney from '../../../Assets/MaamAttorney.jpg';
 import EngrSusan from '../../../Assets/EngrSusan.jpg';
 import MaamMarlyn from '../../../Assets/MaamMarlyn.jpg';
 import SirRonaldo from '../../../Assets/SirRonaldo.jpg';
-import SirDanilo from '../../../Assets/SirDanilo.jpg';
 import MaamMarissa from '../../../Assets/MaamMarissa.jpg';
-import MaamJanette from '../../../Assets/MaamJanette.jpg';
 import MaamReggie from '../../../Assets/MaamReggie.jpg';
 import MaamAi from '../../../Assets/MaamAi.jpg';
+import MaamTeresita from '../../../Assets/MaamTeresita.jpeg';
+import MaamAgnes from '../../../Assets/MaamAgnes.jpg';
 
 
 function CompanyProfile() {
 
     const directors = [
         { src: SirIreneo, name: "Ireneo R. Bucag Jr.", title: "Board of Director" },
-        { src: SirRonaldo, name: "Engr. Ronaldo R. Bucag", title: "Board of Director" },
-        { src: SirDanilo, name: "Danilo R. San Pedro, CPA", title: "Board of Director" }
+        { src: SirRonaldo, name: "Engr. Ronaldo R. Bucag", title: "Board of Director" }
     ];
 
     const directors2 = [
         { src: MaamAttorney, name: "Ma. Luisa M. Andres, CPA/Lawyer ", title: "Board of Director" },
         { src: EngrSusan, name: "Engr. Susana S. Wandag", title: "Board of Director" },
-        { src: MaamMarlyn, name: "Shirly Leocel A. Narag, CPA", title: "Board of Director" }
+        { src: MaamMarlyn, name: "Shirly Leocel A. Narag, CPA", title: "Board of Director" },
+        { src: MaamTeresita, name: "Teresita R. San Pedro, CPA", title: "Board of Director" }
     ];
 
     const COO = [
         { src: MaamMarissa, name: "Marissa M. Paraguison", title: "Chief Operating Officer" },
-        { src: MaamJanette, name: "Jannette B. Domingo", title: "Chief Operating Officer" },
         { src: MaamReggie, name: "Emerlyne M. Manangan", title: "Chief Operating Officer" },
+    ];
+
+    const COO2 = [
+        { src: MaamAgnes, name: "Agnes A. Obligado", title: "Chief Operating Officer" },
         { src: MaamAi, name: "Aileen V. Barlis", title: "Chief Operating Officer" }
     ];
 
@@ -147,13 +150,17 @@ function CompanyProfile() {
                     <div className="CP-mission-vision-row">
                         <div className="CP-vision-content">
                             <h2>Our Vision</h2>
-                            <p>To be one of the best provider financial services in the rural banking industry.</p>
+                            <p>
+                                To be one of the best provider of financial services in the rural banking industry.
+                            </p>
                         </div>
                         <div className="CP-mission-content">
                             <h2>Our Mission</h2>
                             <p>
-                                To help improve quality of life by delivering superior services and operate with a
-                                high level of competence, integrity, honesty, professionalism, and community involvement.
+                                To help improve quality of life by delivering
+                                superior and reliable financial products and
+                                services and operate with a high level of competence,
+                                integrity, honesty, professionalism, and community involvement.
                             </p>
                         </div>
                     </div>
@@ -324,17 +331,7 @@ function CompanyProfile() {
                         </ScrollAnimation>
                     </div>
                     <div className="CP-board-bottom">
-                        <ScrollAnimation>
-                            <div className="CP-board-president CP-board-position">
-                                <div className="CP-board-card">
-                                    <img src={President} alt="President" />
-                                    <div className="CP-board-info">
-                                        <h3>Charita P. Guinid, CPA</h3>
-                                        <p>President</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </ScrollAnimation>
+
                         <ScrollAnimation>
                             <div className="board-directors-grid">
                                 {directors.map((director, index) => (
@@ -355,7 +352,7 @@ function CompanyProfile() {
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation>
-                            <div className="board-directors-grid">
+                            <div className="board-directors-grid2">
                                 {directors2.map((director2, index) => (
                                     <div key={index} className="CP-board-position">
                                         <div className="CP-board-card">
@@ -371,6 +368,17 @@ function CompanyProfile() {
                                         </div>
                                     </div>
                                 ))}
+                            </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation>
+                            <div className="CP-board-president CP-board-position">
+                                <div className="CP-board-card">
+                                    <img src={President} alt="President" />
+                                    <div className="CP-board-info">
+                                        <h3>Charita P. Guinid, CPA</h3>
+                                        <p>President</p>
+                                    </div>
+                                </div>
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation>
@@ -392,9 +400,30 @@ function CompanyProfile() {
                                 ))}
                             </div>
                         </ScrollAnimation>
+                        <ScrollAnimation>
+                            <div className="COO-board-grid2">
+                                {COO2.map((COO, index) => (
+                                    <div key={index} className="CP-board-position">
+                                        <div className="CP-board-card">
+                                            <img
+                                                src={COO.src}
+                                                alt={COO.name}
+                                                className="director-image"
+                                            />
+                                            <div className="CP-board-info">
+                                                <h3>{COO.name}</h3>
+                                                <p>{COO.title}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </ScrollAnimation>
                     </div>
                 </div>
             </section>
+
+
             <button
                 className="CP-scroll-top"
                 onClick={scrolltotop}

@@ -44,6 +44,10 @@ function StudentSavingDeposit() {
                 <section className="SSD-quick-info">
                     <div className="SSD-info-grid">
                         <div className="SSD-info-card">
+                            <span className="SSD-info-value">0.25%</span>
+                            <span className="SSD-info-label">Earn more with a 0.25% Annual Interest Rate.</span>
+                        </div>
+                        <div className="SSD-info-card">
                             <span className="SSD-info-value">₱100</span>
                             <span className="SSD-info-label">Opening Account</span>
                         </div>

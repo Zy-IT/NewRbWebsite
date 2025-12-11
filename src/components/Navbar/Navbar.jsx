@@ -134,7 +134,6 @@ const Navbar = () => {
                     <ul className={styles.submenu}>
                       <li><Link to="/other/InterBranch">Inter Branch Deposit</Link></li>
                       <li><Link to="/other/DomesticRemittance">Domestic Remittance</Link></li>
-                      <li><Link to="/other/i2i">i2i</Link></li>
 
                     </ul>
                   )}

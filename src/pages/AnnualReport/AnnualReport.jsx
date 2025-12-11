@@ -9,7 +9,7 @@ const AnnualReport = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [isLoaded] = useState(false);
-
+    
     // Sort reports in descending order by id
     const sortedReports = [...reportsData.reports].sort((a, b) => b.id - a.id);
 

@@ -25,7 +25,7 @@ function BalanceSheet() {
     }, [reportId, sortedReports]);
 
     const handleViewPdf = (e, pdfUrl, reportId) => {
-        e.stopPropagation(); 
+        e.stopPropagation();
         window.open(`${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1&source=balance-sheet&id=${reportId}`, '_blank');
     };
 
@@ -49,7 +49,7 @@ function BalanceSheet() {
                             <div
                                 key={balancesheet.id}
                                 className={`BS-card ${isLoaded ? 'animate' : ''}`}
-                                // Removed onClick handler here so the card is not clickable
+                            // Removed onClick handler here so the card is not clickable
                             >
                                 <div className="card-media-container">
                                     <video
