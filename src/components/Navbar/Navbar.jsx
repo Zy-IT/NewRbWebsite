@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './Navbar.module.css';
+import styles from './navbar.module.css';
 import Logo from '../../Assets/rbci-logo.png';
 
 const Navbar = () => {

@@ -68,6 +68,7 @@ const LoanApplication = () => {
         "Roxas Branch",
         "Santiago Branch",
         "San Mateo Branch",
+        "San Manuel Branch",
         "Solano Branch",
         "Tuguegarao Branch",
         "Tumauini Branch",
