@@ -101,15 +101,6 @@
             "image": "/src/Assets/DomesticRemittance.png",
             "category": "Other",
             "route": "/other/DomesticRemittance"
-        },
-        {
-            "id": 12,
-            "title": "i2i",
-            "description": "Expert financial planning and investment advice",
-            "image": "/src/Assets/BillsPayment.png",
-            "category": "Other",
-            "route": "/other/i2i    "
         }
-
     ]
 }

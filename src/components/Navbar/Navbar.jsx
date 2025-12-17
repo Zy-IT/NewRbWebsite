@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-import styles from './navbar.module.css';
+import './Navbar.css';
 import Logo from '../../Assets/rbci-logo.png';
 
 const Navbar = () => {
@@ -43,58 +42,58 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.navbarContainer}>
-        <div className={styles.mobileBrandContainer}>
+    <nav className="Navbar-navbar">
+      <div className="Navbar-container">
+        <div className="Navbar-mobile-brand-container">
           <Link to="/">
-            <img src={Logo} alt="RBCI Logo" className={styles.mobileLogo} />
+            <img src={Logo} alt="RBCI Logo" className="Navbar-mobile-logo" />
           </Link>
-          <div className={styles.mobileBrandText}>
-            <Link to="/" className={styles.logo}>Rural Bank of Cauayan, Inc.</Link>
-            <p className={styles.mobileTagline}>Your Harvest Starts Here</p>
+          <div className="Navbar-mobile-brand-text">
+            <Link to="/" className="Navbar-logo">Rural Bank of Cauayan, Inc.</Link>
+            <p className="Navbar-mobile-tagline">Your Harvest Starts Here</p>
           </div>
         </div>
 
         {/* Desktop Logo Container - Only visible on desktop */}
-        <div className={styles.desktopLogoContainer}>
-          <div className={styles.desktopBrandWrapper}>
+        <div className="Navbar-desktop-logo-container">
+          <div className="Navbar-desktop-brand-wrapper">
             <Link to="/">
-              <img src={Logo} alt="RBCI Logo" className={styles.desktopLogo} />
+              <img src={Logo} alt="RBCI Logo" className="Navbar-desktop-logo" />
             </Link>
-            <div className={styles.desktopBrandText}>
-              <Link to="/" className={styles.desktopBrandName}>Rural Bank of Cauayan, Inc.</Link>
-              <p className={styles.desktopTagline}>Your Harvest Starts Here</p>
+            <div className="Navbar-desktop-brand-text">
+              <Link to="/" className="Navbar-desktop-brand-name">Rural Bank of Cauayan, Inc.</Link>
+              <p className="Navbar-desktop-tagline">Your Harvest Starts Here</p>
             </div>
           </div>
         </div>
 
         {/* Desktop Navigation */}
-        <ul className={styles.desktopNav}>
-          <li><Link to="/" className={styles.navLink}>Home</Link></li>
+        <ul className="Navbar-desktop-nav">
+          <li><Link to="/" className="Navbar-nav-link">Home</Link></li>
           
           {/* Products and Services Dropdown */}
           <li 
-            className={styles.dropdownContainer}
+            className="Navbar-dropdown-container"
             onMouseEnter={toggleProductsDropdown}
             onMouseLeave={toggleProductsDropdown}
           >
-            <Link to="/P&S" className={styles.navLink}>
+            <Link to="/P&S" className="Navbar-nav-link">
               Products and Services
-              <span className={styles.dropdownIcon}>▼</span>
+              <span className="Navbar-dropdown-icon">▼</span>
             </Link>
             {isProductsDropdownOpen && (
-              <ul className={styles.dropdownMenu}>
+              <ul className="Navbar-dropdown-menu">
                 <li 
-                  className={styles.nestedDropdown}
+                  className="Navbar-nested-dropdown"
                   onMouseEnter={() => handleSubMenuEnter('deposit')}
                   onMouseLeave={handleSubMenuLeave}
                 >
                   <Link to="/P&S/DepositProducts">
                     Deposit Products
-                    <span className={styles.dropdownIcon}>▼</span>
+                    <span className="Navbar-dropdown-icon">▼</span>
                   </Link>
                   {activeSubMenu === 'deposit' && (
-                    <ul className={styles.submenu}>
+                    <ul className="Navbar-submenu">
                       <li><Link to="/deposit/BasicSavings">Basic Deposit Account</Link></li>
                       <li><Link to="/deposit/RegularSavings">Regular Saving Deposit</Link></li>
                       <li><Link to="/deposit/CheckingAccount">Regular Checking Account</Link></li>
@@ -105,16 +104,16 @@ const Navbar = () => {
                   )}
                 </li>
                 <li 
-                  className={styles.nestedDropdown}
+                  className="Navbar-nested-dropdown"
                   onMouseEnter={() => handleSubMenuEnter('loan')}
                   onMouseLeave={handleSubMenuLeave}
                 >
                   <Link to="/loan/AgriculturalLoans">
                     Loan Products
-                    <span className={styles.dropdownIcon}>▼</span>
+                    <span className="Navbar-dropdown-icon">▼</span>
                   </Link>
                   {activeSubMenu === 'loan' && (
-                    <ul className={styles.submenu}>
+                    <ul className="Navbar-submenu">
                       <li><Link to="/loan/AgriculturalLoans">Agricultural Loan</Link></li>
                       <li><Link to="/loan/CommercialLoans">Commercial Loan</Link></li>
                       <li><Link to="/loan/PersonalLoans">Personal Loan</Link></li>
@@ -122,19 +121,18 @@ const Navbar = () => {
                   )}
                 </li>
                 <li 
-                  className={styles.nestedDropdown}
+                  className="Navbar-nested-dropdown"
                   onMouseEnter={() => handleSubMenuEnter('services')}
                   onMouseLeave={handleSubMenuLeave}
                 >
                   <Link to="/P&S/OtherServices">
                     Other Services
-                    <span className={styles.dropdownIcon}>▼</span>
+                    <span className="Navbar-dropdown-icon">▼</span>
                   </Link>
                   {activeSubMenu === 'services' && (
-                    <ul className={styles.submenu}>
+                    <ul className="Navbar-submenu">
                       <li><Link to="/other/InterBranch">Inter Branch Deposit</Link></li>
                       <li><Link to="/other/DomesticRemittance">Domestic Remittance</Link></li>
-
                     </ul>
                   )}
                 </li>
@@ -144,16 +142,16 @@ const Navbar = () => {
           
           {/* About Us Dropdown */}
           <li 
-            className={styles.dropdownContainer}
+            className="Navbar-dropdown-container"
             onMouseEnter={toggleAboutDropdown}
             onMouseLeave={toggleAboutDropdown}
           >
-            <Link to="/A&U/CompanyProfile" className={styles.navLink}>
+            <Link to="/A&U/CompanyProfile" className="Navbar-nav-link">
               About Us
-              <span className={styles.dropdownIcon}>▼</span>
+              <span className="Navbar-dropdown-icon">▼</span>
             </Link>
             {isAboutDropdownOpen && (
-              <ul className={styles.dropdownMenu}>
+              <ul className="Navbar-dropdown-menu">
                 <li><Link to="/A&U/CompanyProfile">Company Profile</Link></li>
                 <li><Link to="/A&U/Careers">Careers</Link></li>
                 <li><Link to="/A&U/ContactUs">Contact Us</Link></li>
@@ -163,48 +161,48 @@ const Navbar = () => {
             )}
           </li>
           
-          <li><Link to="/ROPA" className={styles.navLink}>ROPA</Link></li>
-          <li><Link to="/N&U" className={styles.navLink}>News and Update</Link></li>
+          <li><Link to="/ROPA" className="Navbar-nav-link">ROPA</Link></li>
+          <li><Link to="/N&U" className="Navbar-nav-link">News and Update</Link></li>
         </ul>
 
         {/* Mobile Menu Toggle */}
         <div 
-          className={`${styles.mobileMenuToggle} ${isMenuOpen ? styles.open : ''}`} 
+          className={`Navbar-mobile-menu-toggle ${isMenuOpen ? 'Navbar-open' : ''}`} 
           onClick={toggleMenu}
         >
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
+          <span className="Navbar-bar"></span>
+          <span className="Navbar-bar"></span>
+          <span className="Navbar-bar"></span>
         </div>
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <ul className={styles.mobileNav}>
-            <li><Link to="/" className={styles.mobileNavLink} onClick={toggleMenu}>Home</Link></li>
+          <ul className="Navbar-mobile-nav">
+            <li><Link to="/" className="Navbar-mobile-nav-link" onClick={toggleMenu}>Home</Link></li>
             
             {/* Mobile Products and Services Dropdown */}
             <li>
               <div 
-                className={styles.mobileDropdownToggle}
+                className="Navbar-mobile-dropdown-toggle"
                 onClick={toggleProductsDropdown}
               >
                 Products and Services {isProductsDropdownOpen ? '▲' : '▼'}
               </div>
               {isProductsDropdownOpen && (
-                <ul className={styles.mobileDropdownMenu}>
+                <ul className="Navbar-mobile-dropdown-menu">
                   <li>
                     <div 
-                      className={styles.mobileNestedToggle}
+                      className="Navbar-mobile-nested-toggle"
                       onClick={() => toggleMobileNestedMenu('deposit')}
                     >
                       Deposit Products {mobileNestedMenu === 'deposit' ? '▲' : '▼'}
                     </div>
                     {mobileNestedMenu === 'deposit' && (
-                      <ul className={styles.mobileSubmenu}>
+                      <ul className="Navbar-mobile-submenu">
                         <li><Link to="/deposit/BasicSavings" onClick={toggleMenu}>Basic Deposit Account</Link></li>
                         <li><Link to="/deposit/RegularSavings" onClick={toggleMenu}>Regular Saving Deposit</Link></li>
                         <li><Link to="/deposit/CheckingAccount" onClick={toggleMenu}>Regular Checking Account</Link></li>
-                        <li><Link to="/deposit/InterestBearingCheckingAccount">Interest Bearing Checking Account</Link></li> 
+                        <li><Link to="/deposit/InterestBearingCheckingAccount" onClick={toggleMenu}>Interest Bearing Checking Account</Link></li> 
                         <li><Link to="/deposit/StudentSavings" onClick={toggleMenu}>Student Savings Deposit</Link></li>
                         <li><Link to="/deposit/TimeCertofDeposit" onClick={toggleMenu}>Time Certificate of Deposit</Link></li>
                       </ul>
@@ -212,13 +210,13 @@ const Navbar = () => {
                   </li>
                   <li>
                     <div 
-                      className={styles.mobileNestedToggle}
+                      className="Navbar-mobile-nested-toggle"
                       onClick={() => toggleMobileNestedMenu('loan')}
                     >
                       Loan Products {mobileNestedMenu === 'loan' ? '▲' : '▼'}
                     </div>
                     {mobileNestedMenu === 'loan' && (
-                      <ul className={styles.mobileSubmenu}>
+                      <ul className="Navbar-mobile-submenu">
                         <li><Link to="/loan/AgriculturalLoans" onClick={toggleMenu}>Agricultural Loan</Link></li>
                         <li><Link to="/loan/CommercialLoans" onClick={toggleMenu}>Commercial Loan</Link></li>
                         <li><Link to="/loan/PersonalLoans" onClick={toggleMenu}>Personal Loan</Link></li>
@@ -227,13 +225,13 @@ const Navbar = () => {
                   </li>
                   <li>
                     <div 
-                      className={styles.mobileNestedToggle}
+                      className="Navbar-mobile-nested-toggle"
                       onClick={() => toggleMobileNestedMenu('services')}
                     >
                       Other Services {mobileNestedMenu === 'services' ? '▲' : '▼'}
                     </div>
                     {mobileNestedMenu === 'services' && (
-                      <ul className={styles.mobileSubmenu}>
+                      <ul className="Navbar-mobile-submenu">
                         <li><Link to="/other/InterBranch" onClick={toggleMenu}>Inter Branch Deposit</Link></li>
                         <li><Link to="/other/DomesticRemittance" onClick={toggleMenu}>Domestic Remittance</Link></li>
                         <li><Link to="/other/i2i" onClick={toggleMenu}>i2i</Link></li>
@@ -247,13 +245,13 @@ const Navbar = () => {
             {/* Mobile About Us Dropdown */}
             <li>
               <div 
-                className={styles.mobileDropdownToggle}
+                className="Navbar-mobile-dropdown-toggle"
                 onClick={toggleAboutDropdown}
               >
                 About Us {isAboutDropdownOpen ? '▲' : '▼'}
               </div>
               {isAboutDropdownOpen && (
-                <ul className={styles.mobileDropdownMenu}>
+                <ul className="Navbar-mobile-dropdown-menu">
                   <li><Link to="/A&U/CompanyProfile" onClick={toggleMenu}>Company Profile</Link></li>
                   <li><Link to="/A&U/Careers" onClick={toggleMenu}>Careers</Link></li>
                   <li><Link to="/A&U/ContactUs" onClick={toggleMenu}>Contact Us</Link></li>
@@ -262,8 +260,8 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-            <li><Link to="/ROPA" className={styles.mobileNavLink} onClick={toggleMenu}>ROPA</Link></li>
-            <li><Link to="/N&U" className={styles.mobileNavLink} onClick={toggleMenu}>News and Update</Link></li>
+            <li><Link to="/ROPA" className="Navbar-mobile-nav-link" onClick={toggleMenu}>ROPA</Link></li>
+            <li><Link to="/N&U" className="Navbar-mobile-nav-link" onClick={toggleMenu}>News and Update</Link></li>
           </ul>
         )}
       </div>
